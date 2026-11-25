@@ -1,0 +1,1202 @@
+table,pdf_page,printed_page,instruction,condition,operand_form,cycles,per_unit,reads,writes,projection,extraction,note,source_text
+10-1,300,10-4,Superscalar,OEP dispatch test algorithm,classification,,0,,,not-modeled,pdftotext,reason=dual issue and the dispatch test are excluded from the single-instruction base time; actual=each instruction is timed alone,Table 10-1. OEP dispatch test algorithm
+10-2,300,10-4,Superscalar,superscalar classification,classification,,0,,,not-modeled,pdftotext,reason=dual issue and the dispatch test are excluded from the single-instruction base time; actual=each instruction is timed alone,Table 10-2. superscalar classification
+10-3,303,10-7,Superscalar,superscalar classification of privileged instructions,classification,,0,,,not-modeled,pdftotext,reason=dual issue and the dispatch test are excluded from the single-instruction base time; actual=each instruction is timed alone,Table 10-3. superscalar classification of privileged instructions
+10-4,303,10-7,Superscalar,superscalar classification of floating-point instructions,classification,,0,,,not-modeled,pdftotext,reason=dual issue and the dispatch test are excluded from the single-instruction base time; actual=each instruction is timed alone,Table 10-4. superscalar classification of floating-point instructions
+10-5,310,10-14,EA calculation,time,Dn,0,0,0,0,nominal,pdftotext,,Dn EA calculation time 0(0/0)
+10-5,310,10-14,EA calculation,time,An,0,0,0,0,nominal,pdftotext,,An EA calculation time 0(0/0)
+10-5,310,10-14,EA calculation,time,(An),0,0,0,0,nominal,pdftotext,,(An) EA calculation time 0(0/0)
+10-5,310,10-14,EA calculation,time,(An)+,0,0,0,0,nominal,pdftotext,,(An)+ EA calculation time 0(0/0)
+10-5,310,10-14,EA calculation,time,-(An),0,0,0,0,nominal,pdftotext,,-(An) EA calculation time 0(0/0)
+10-5,310,10-14,EA calculation,time,"(d16,An)",0,0,0,0,nominal,pdftotext,,"(d16,An) EA calculation time 0(0/0)"
+10-5,310,10-14,EA calculation,time,"(d8,An,Xi)",0,0,0,0,nominal,pdftotext,,"(d8,An,Xi) EA calculation time 0(0/0)"
+10-5,310,10-14,EA calculation,time,"(bd,An,Xi)",1,0,0,0,nominal,pdftotext,,"(bd,An,Xi) EA calculation time 1(0/0)"
+10-5,310,10-14,EA calculation,time,"([bd,An,Xi],od)",3,0,1,0,nominal,pdftotext,,"([bd,An,Xi],od) EA calculation time 3(1/0)"
+10-5,310,10-14,EA calculation,time,"([bd,An],Xi,od)",3,0,1,0,nominal,pdftotext,,"([bd,An],Xi,od) EA calculation time 3(1/0)"
+10-5,310,10-14,EA calculation,time,(xxx).W,0,0,0,0,nominal,pdftotext,,(xxx).W EA calculation time 0(0/0)
+10-5,310,10-14,EA calculation,time,(xxx).L,0,0,0,0,nominal,pdftotext,,(xxx).L EA calculation time 0(0/0)
+10-5,310,10-14,EA calculation,time,"(d16,PC)",0,0,0,0,nominal,pdftotext,,"(d16,PC) EA calculation time 0(0/0)"
+10-5,310,10-14,EA calculation,time,"(d8,PC,Xi)",0,0,0,0,nominal,pdftotext,,"(d8,PC,Xi) EA calculation time 0(0/0)"
+10-5,310,10-14,EA calculation,time,"(bd,PC,Xi)",1,0,0,0,nominal,pdftotext,,"(bd,PC,Xi) EA calculation time 1(0/0)"
+10-5,310,10-14,EA calculation,time,#imm,0,0,0,0,nominal,pdftotext,,#imm EA calculation time 0(0/0)
+10-5,310,10-14,EA calculation,time,"([bd,PC,Xi],od)",3,0,1,0,nominal,pdftotext,,"([bd,PC,Xi],od) EA calculation time 3(1/0)"
+10-5,310,10-14,EA calculation,time,"([bd,PC],Xi,od)",3,0,1,0,nominal,pdftotext,,"([bd,PC],Xi,od) EA calculation time 3(1/0)"
+10-6,311,10-15,MOVE.B/W,src=Dn,dst=Dn,1,0,0,0,nominal,pdftotext,,MOVE.B/W src=Dn dst=Dn: 1
+10-6,311,10-15,MOVE.B/W,src=Dn,dst=An,1,0,0,0,nominal,pdftotext,,MOVE.B/W src=Dn dst=An: 1
+10-6,311,10-15,MOVE.B/W,src=Dn,dst=(An),1,0,0,1,nominal,pdftotext,,MOVE.B/W src=Dn dst=(An): 1
+10-6,311,10-15,MOVE.B/W,src=Dn,dst=(An)+,1,0,0,1,nominal,pdftotext,,MOVE.B/W src=Dn dst=(An)+: 1
+10-6,311,10-15,MOVE.B/W,src=Dn,dst=-(An),1,0,0,1,nominal,pdftotext,,MOVE.B/W src=Dn dst=-(An): 1
+10-6,311,10-15,MOVE.B/W,src=Dn,"dst=(d16,An)",1,0,0,1,nominal,pdftotext,,"MOVE.B/W src=Dn dst=(d16,An): 1"
+10-6,311,10-15,MOVE.B/W,src=Dn,"dst=(d8,An,Xi)",1,0,0,1,nominal,pdftotext,,"MOVE.B/W src=Dn dst=(d8,An,Xi): 1"
+10-6,311,10-15,MOVE.B/W,src=Dn,"dst=(bd,An,Xi)",2,0,0,1,nominal,pdftotext,,"MOVE.B/W src=Dn dst=(bd,An,Xi): 2"
+10-6,311,10-15,MOVE.B/W,src=Dn,dst=(xxx).WL,1,0,0,1,nominal,pdftotext,,MOVE.B/W src=Dn dst=(xxx).WL: 1
+10-6,311,10-15,MOVE.B/W,src=An,dst=Dn,1,0,0,0,nominal,pdftotext,,MOVE.B/W src=An dst=Dn: 1
+10-6,311,10-15,MOVE.B/W,src=An,dst=An,1,0,0,0,nominal,pdftotext,,MOVE.B/W src=An dst=An: 1
+10-6,311,10-15,MOVE.B/W,src=An,dst=(An),1,0,0,1,nominal,pdftotext,,MOVE.B/W src=An dst=(An): 1
+10-6,311,10-15,MOVE.B/W,src=An,dst=(An)+,1,0,0,1,nominal,pdftotext,,MOVE.B/W src=An dst=(An)+: 1
+10-6,311,10-15,MOVE.B/W,src=An,dst=-(An),1,0,0,1,nominal,pdftotext,,MOVE.B/W src=An dst=-(An): 1
+10-6,311,10-15,MOVE.B/W,src=An,"dst=(d16,An)",1,0,0,1,nominal,pdftotext,,"MOVE.B/W src=An dst=(d16,An): 1"
+10-6,311,10-15,MOVE.B/W,src=An,"dst=(d8,An,Xi)",1,0,0,1,nominal,pdftotext,,"MOVE.B/W src=An dst=(d8,An,Xi): 1"
+10-6,311,10-15,MOVE.B/W,src=An,"dst=(bd,An,Xi)",2,0,0,1,nominal,pdftotext,,"MOVE.B/W src=An dst=(bd,An,Xi): 2"
+10-6,311,10-15,MOVE.B/W,src=An,dst=(xxx).WL,1,0,0,1,nominal,pdftotext,,MOVE.B/W src=An dst=(xxx).WL: 1
+10-6,311,10-15,MOVE.B/W,src=(An),dst=Dn,1,0,1,0,nominal,pdftotext,,MOVE.B/W src=(An) dst=Dn: 1
+10-6,311,10-15,MOVE.B/W,src=(An),dst=An,1,0,1,0,nominal,pdftotext,,MOVE.B/W src=(An) dst=An: 1
+10-6,311,10-15,MOVE.B/W,src=(An),dst=(An),2,0,1,1,nominal,pdftotext,,MOVE.B/W src=(An) dst=(An): 2
+10-6,311,10-15,MOVE.B/W,src=(An),dst=(An)+,2,0,1,1,nominal,pdftotext,,MOVE.B/W src=(An) dst=(An)+: 2
+10-6,311,10-15,MOVE.B/W,src=(An),dst=-(An),2,0,1,1,nominal,pdftotext,,MOVE.B/W src=(An) dst=-(An): 2
+10-6,311,10-15,MOVE.B/W,src=(An),"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(An) dst=(d16,An): 2"
+10-6,311,10-15,MOVE.B/W,src=(An),"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(An) dst=(d8,An,Xi): 2"
+10-6,311,10-15,MOVE.B/W,src=(An),"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(An) dst=(bd,An,Xi): 3"
+10-6,311,10-15,MOVE.B/W,src=(An),dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,MOVE.B/W src=(An) dst=(xxx).WL: 2
+10-6,311,10-15,MOVE.B/W,src=(An)+,dst=Dn,1,0,1,0,nominal,pdftotext,,MOVE.B/W src=(An)+ dst=Dn: 1
+10-6,311,10-15,MOVE.B/W,src=(An)+,dst=An,1,0,1,0,nominal,pdftotext,,MOVE.B/W src=(An)+ dst=An: 1
+10-6,311,10-15,MOVE.B/W,src=(An)+,dst=(An),2,0,1,1,nominal,pdftotext,,MOVE.B/W src=(An)+ dst=(An): 2
+10-6,311,10-15,MOVE.B/W,src=(An)+,dst=(An)+,2,0,1,1,nominal,pdftotext,,MOVE.B/W src=(An)+ dst=(An)+: 2
+10-6,311,10-15,MOVE.B/W,src=(An)+,dst=-(An),2,0,1,1,nominal,pdftotext,,MOVE.B/W src=(An)+ dst=-(An): 2
+10-6,311,10-15,MOVE.B/W,src=(An)+,"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(An)+ dst=(d16,An): 2"
+10-6,311,10-15,MOVE.B/W,src=(An)+,"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(An)+ dst=(d8,An,Xi): 2"
+10-6,311,10-15,MOVE.B/W,src=(An)+,"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(An)+ dst=(bd,An,Xi): 3"
+10-6,311,10-15,MOVE.B/W,src=(An)+,dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,MOVE.B/W src=(An)+ dst=(xxx).WL: 2
+10-6,311,10-15,MOVE.B/W,src=-(An),dst=Dn,1,0,1,0,nominal,pdftotext,,MOVE.B/W src=-(An) dst=Dn: 1
+10-6,311,10-15,MOVE.B/W,src=-(An),dst=An,1,0,1,0,nominal,pdftotext,,MOVE.B/W src=-(An) dst=An: 1
+10-6,311,10-15,MOVE.B/W,src=-(An),dst=(An),2,0,1,1,nominal,pdftotext,,MOVE.B/W src=-(An) dst=(An): 2
+10-6,311,10-15,MOVE.B/W,src=-(An),dst=(An)+,2,0,1,1,nominal,pdftotext,,MOVE.B/W src=-(An) dst=(An)+: 2
+10-6,311,10-15,MOVE.B/W,src=-(An),dst=-(An),2,0,1,1,nominal,pdftotext,,MOVE.B/W src=-(An) dst=-(An): 2
+10-6,311,10-15,MOVE.B/W,src=-(An),"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=-(An) dst=(d16,An): 2"
+10-6,311,10-15,MOVE.B/W,src=-(An),"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=-(An) dst=(d8,An,Xi): 2"
+10-6,311,10-15,MOVE.B/W,src=-(An),"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=-(An) dst=(bd,An,Xi): 3"
+10-6,311,10-15,MOVE.B/W,src=-(An),dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,MOVE.B/W src=-(An) dst=(xxx).WL: 2
+10-6,311,10-15,MOVE.B/W,"src=(d16,An)",dst=Dn,1,0,1,0,nominal,pdftotext,,"MOVE.B/W src=(d16,An) dst=Dn: 1"
+10-6,311,10-15,MOVE.B/W,"src=(d16,An)",dst=An,1,0,1,0,nominal,pdftotext,,"MOVE.B/W src=(d16,An) dst=An: 1"
+10-6,311,10-15,MOVE.B/W,"src=(d16,An)",dst=(An),2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d16,An) dst=(An): 2"
+10-6,311,10-15,MOVE.B/W,"src=(d16,An)",dst=(An)+,2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d16,An) dst=(An)+: 2"
+10-6,311,10-15,MOVE.B/W,"src=(d16,An)",dst=-(An),2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d16,An) dst=-(An): 2"
+10-6,311,10-15,MOVE.B/W,"src=(d16,An)","dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d16,An) dst=(d16,An): 2"
+10-6,311,10-15,MOVE.B/W,"src=(d16,An)","dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d16,An) dst=(d8,An,Xi): 2"
+10-6,311,10-15,MOVE.B/W,"src=(d16,An)","dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d16,An) dst=(bd,An,Xi): 3"
+10-6,311,10-15,MOVE.B/W,"src=(d16,An)",dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d16,An) dst=(xxx).WL: 2"
+10-6,311,10-15,MOVE.B/W,"src=(d8,An,Xi)",dst=Dn,1,0,1,0,nominal,pdftotext,,"MOVE.B/W src=(d8,An,Xi) dst=Dn: 1"
+10-6,311,10-15,MOVE.B/W,"src=(d8,An,Xi)",dst=An,1,0,1,0,nominal,pdftotext,,"MOVE.B/W src=(d8,An,Xi) dst=An: 1"
+10-6,311,10-15,MOVE.B/W,"src=(d8,An,Xi)",dst=(An),2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d8,An,Xi) dst=(An): 2"
+10-6,311,10-15,MOVE.B/W,"src=(d8,An,Xi)",dst=(An)+,2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d8,An,Xi) dst=(An)+: 2"
+10-6,311,10-15,MOVE.B/W,"src=(d8,An,Xi)",dst=-(An),2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d8,An,Xi) dst=-(An): 2"
+10-6,311,10-15,MOVE.B/W,"src=(d8,An,Xi)","dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d8,An,Xi) dst=(d16,An): 2"
+10-6,311,10-15,MOVE.B/W,"src=(d8,An,Xi)","dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d8,An,Xi) dst=(d8,An,Xi): 2"
+10-6,311,10-15,MOVE.B/W,"src=(d8,An,Xi)","dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d8,An,Xi) dst=(bd,An,Xi): 3"
+10-6,311,10-15,MOVE.B/W,"src=(d8,An,Xi)",dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d8,An,Xi) dst=(xxx).WL: 2"
+10-6,311,10-15,MOVE.B/W,"src=(bd,An,Xi)",dst=Dn,2,0,1,0,nominal,pdftotext,,"MOVE.B/W src=(bd,An,Xi) dst=Dn: 2"
+10-6,311,10-15,MOVE.B/W,"src=(bd,An,Xi)",dst=An,2,0,1,0,nominal,pdftotext,,"MOVE.B/W src=(bd,An,Xi) dst=An: 2"
+10-6,311,10-15,MOVE.B/W,"src=(bd,An,Xi)",dst=(An),3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(bd,An,Xi) dst=(An): 3"
+10-6,311,10-15,MOVE.B/W,"src=(bd,An,Xi)",dst=(An)+,3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(bd,An,Xi) dst=(An)+: 3"
+10-6,311,10-15,MOVE.B/W,"src=(bd,An,Xi)",dst=-(An),3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(bd,An,Xi) dst=-(An): 3"
+10-6,311,10-15,MOVE.B/W,"src=(bd,An,Xi)","dst=(d16,An)",3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(bd,An,Xi) dst=(d16,An): 3"
+10-6,311,10-15,MOVE.B/W,"src=(bd,An,Xi)","dst=(d8,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(bd,An,Xi) dst=(d8,An,Xi): 3"
+10-6,311,10-15,MOVE.B/W,"src=(bd,An,Xi)","dst=(bd,An,Xi)",4,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(bd,An,Xi) dst=(bd,An,Xi): 4"
+10-6,311,10-15,MOVE.B/W,"src=(bd,An,Xi)",dst=(xxx).WL,3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(bd,An,Xi) dst=(xxx).WL: 3"
+10-6,311,10-15,MOVE.B/W,src=(xxx).W,dst=Dn,1,0,1,0,nominal,pdftotext,,MOVE.B/W src=(xxx).W dst=Dn: 1
+10-6,311,10-15,MOVE.B/W,src=(xxx).W,dst=An,1,0,1,0,nominal,pdftotext,,MOVE.B/W src=(xxx).W dst=An: 1
+10-6,311,10-15,MOVE.B/W,src=(xxx).W,dst=(An),2,0,1,1,nominal,pdftotext,,MOVE.B/W src=(xxx).W dst=(An): 2
+10-6,311,10-15,MOVE.B/W,src=(xxx).W,dst=(An)+,2,0,1,1,nominal,pdftotext,,MOVE.B/W src=(xxx).W dst=(An)+: 2
+10-6,311,10-15,MOVE.B/W,src=(xxx).W,dst=-(An),2,0,1,1,nominal,pdftotext,,MOVE.B/W src=(xxx).W dst=-(An): 2
+10-6,311,10-15,MOVE.B/W,src=(xxx).W,"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(xxx).W dst=(d16,An): 2"
+10-6,311,10-15,MOVE.B/W,src=(xxx).W,"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(xxx).W dst=(d8,An,Xi): 2"
+10-6,311,10-15,MOVE.B/W,src=(xxx).W,"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(xxx).W dst=(bd,An,Xi): 3"
+10-6,311,10-15,MOVE.B/W,src=(xxx).W,dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,MOVE.B/W src=(xxx).W dst=(xxx).WL: 2
+10-6,311,10-15,MOVE.B/W,src=(xxx).L,dst=Dn,1,0,1,0,nominal,pdftotext,,MOVE.B/W src=(xxx).L dst=Dn: 1
+10-6,311,10-15,MOVE.B/W,src=(xxx).L,dst=An,1,0,1,0,nominal,pdftotext,,MOVE.B/W src=(xxx).L dst=An: 1
+10-6,311,10-15,MOVE.B/W,src=(xxx).L,dst=(An),2,0,1,1,nominal,pdftotext,,MOVE.B/W src=(xxx).L dst=(An): 2
+10-6,311,10-15,MOVE.B/W,src=(xxx).L,dst=(An)+,2,0,1,1,nominal,pdftotext,,MOVE.B/W src=(xxx).L dst=(An)+: 2
+10-6,311,10-15,MOVE.B/W,src=(xxx).L,dst=-(An),2,0,1,1,nominal,pdftotext,,MOVE.B/W src=(xxx).L dst=-(An): 2
+10-6,311,10-15,MOVE.B/W,src=(xxx).L,"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(xxx).L dst=(d16,An): 2"
+10-6,311,10-15,MOVE.B/W,src=(xxx).L,"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(xxx).L dst=(d8,An,Xi): 2"
+10-6,311,10-15,MOVE.B/W,src=(xxx).L,"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(xxx).L dst=(bd,An,Xi): 3"
+10-6,311,10-15,MOVE.B/W,src=(xxx).L,dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,MOVE.B/W src=(xxx).L dst=(xxx).WL: 2
+10-6,311,10-15,MOVE.B/W,"src=(d16,PC)",dst=Dn,1,0,1,0,nominal,pdftotext,,"MOVE.B/W src=(d16,PC) dst=Dn: 1"
+10-6,311,10-15,MOVE.B/W,"src=(d16,PC)",dst=An,1,0,1,0,nominal,pdftotext,,"MOVE.B/W src=(d16,PC) dst=An: 1"
+10-6,311,10-15,MOVE.B/W,"src=(d16,PC)",dst=(An),2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d16,PC) dst=(An): 2"
+10-6,311,10-15,MOVE.B/W,"src=(d16,PC)",dst=(An)+,2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d16,PC) dst=(An)+: 2"
+10-6,311,10-15,MOVE.B/W,"src=(d16,PC)",dst=-(An),2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d16,PC) dst=-(An): 2"
+10-6,311,10-15,MOVE.B/W,"src=(d16,PC)","dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d16,PC) dst=(d16,An): 2"
+10-6,311,10-15,MOVE.B/W,"src=(d16,PC)","dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d16,PC) dst=(d8,An,Xi): 2"
+10-6,311,10-15,MOVE.B/W,"src=(d16,PC)","dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d16,PC) dst=(bd,An,Xi): 3"
+10-6,311,10-15,MOVE.B/W,"src=(d16,PC)",dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d16,PC) dst=(xxx).WL: 2"
+10-6,311,10-15,MOVE.B/W,"src=(d8,PC,Xi)",dst=Dn,1,0,1,0,nominal,pdftotext,,"MOVE.B/W src=(d8,PC,Xi) dst=Dn: 1"
+10-6,311,10-15,MOVE.B/W,"src=(d8,PC,Xi)",dst=An,1,0,1,0,nominal,pdftotext,,"MOVE.B/W src=(d8,PC,Xi) dst=An: 1"
+10-6,311,10-15,MOVE.B/W,"src=(d8,PC,Xi)",dst=(An),2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d8,PC,Xi) dst=(An): 2"
+10-6,311,10-15,MOVE.B/W,"src=(d8,PC,Xi)",dst=(An)+,2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d8,PC,Xi) dst=(An)+: 2"
+10-6,311,10-15,MOVE.B/W,"src=(d8,PC,Xi)",dst=-(An),2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d8,PC,Xi) dst=-(An): 2"
+10-6,311,10-15,MOVE.B/W,"src=(d8,PC,Xi)","dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d8,PC,Xi) dst=(d16,An): 2"
+10-6,311,10-15,MOVE.B/W,"src=(d8,PC,Xi)","dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d8,PC,Xi) dst=(d8,An,Xi): 2"
+10-6,311,10-15,MOVE.B/W,"src=(d8,PC,Xi)","dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d8,PC,Xi) dst=(bd,An,Xi): 3"
+10-6,311,10-15,MOVE.B/W,"src=(d8,PC,Xi)",dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(d8,PC,Xi) dst=(xxx).WL: 2"
+10-6,311,10-15,MOVE.B/W,"src=(bd,PC,Xi)",dst=Dn,2,0,1,0,nominal,pdftotext,,"MOVE.B/W src=(bd,PC,Xi) dst=Dn: 2"
+10-6,311,10-15,MOVE.B/W,"src=(bd,PC,Xi)",dst=An,2,0,1,0,nominal,pdftotext,,"MOVE.B/W src=(bd,PC,Xi) dst=An: 2"
+10-6,311,10-15,MOVE.B/W,"src=(bd,PC,Xi)",dst=(An),3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(bd,PC,Xi) dst=(An): 3"
+10-6,311,10-15,MOVE.B/W,"src=(bd,PC,Xi)",dst=(An)+,3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(bd,PC,Xi) dst=(An)+: 3"
+10-6,311,10-15,MOVE.B/W,"src=(bd,PC,Xi)",dst=-(An),3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(bd,PC,Xi) dst=-(An): 3"
+10-6,311,10-15,MOVE.B/W,"src=(bd,PC,Xi)","dst=(d16,An)",3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(bd,PC,Xi) dst=(d16,An): 3"
+10-6,311,10-15,MOVE.B/W,"src=(bd,PC,Xi)","dst=(d8,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(bd,PC,Xi) dst=(d8,An,Xi): 3"
+10-6,311,10-15,MOVE.B/W,"src=(bd,PC,Xi)","dst=(bd,An,Xi)",4,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(bd,PC,Xi) dst=(bd,An,Xi): 4"
+10-6,311,10-15,MOVE.B/W,"src=(bd,PC,Xi)",dst=(xxx).WL,3,0,1,1,nominal,pdftotext,,"MOVE.B/W src=(bd,PC,Xi) dst=(xxx).WL: 3"
+10-6,311,10-15,MOVE.B/W,src=#imm,dst=Dn,1,0,0,0,nominal,pdftotext,,MOVE.B/W src=#imm dst=Dn: 1
+10-6,311,10-15,MOVE.B/W,src=#imm,dst=An,1,0,0,0,nominal,pdftotext,,MOVE.B/W src=#imm dst=An: 1
+10-6,311,10-15,MOVE.B/W,src=#imm,dst=(An),1,0,0,1,nominal,pdftotext,,MOVE.B/W src=#imm dst=(An): 1
+10-6,311,10-15,MOVE.B/W,src=#imm,dst=(An)+,1,0,0,1,nominal,pdftotext,,MOVE.B/W src=#imm dst=(An)+: 1
+10-6,311,10-15,MOVE.B/W,src=#imm,dst=-(An),1,0,0,1,nominal,pdftotext,,MOVE.B/W src=#imm dst=-(An): 1
+10-6,311,10-15,MOVE.B/W,src=#imm,"dst=(d16,An)",2,0,0,1,nominal,pdftotext,,"MOVE.B/W src=#imm dst=(d16,An): 2"
+10-6,311,10-15,MOVE.B/W,src=#imm,"dst=(d8,An,Xi)",2,0,0,1,nominal,pdftotext,,"MOVE.B/W src=#imm dst=(d8,An,Xi): 2"
+10-6,311,10-15,MOVE.B/W,src=#imm,"dst=(bd,An,Xi)",3,0,0,1,nominal,pdftotext,,"MOVE.B/W src=#imm dst=(bd,An,Xi): 3"
+10-6,311,10-15,MOVE.B/W,src=#imm,dst=(xxx).WL,2,0,0,1,nominal,pdftotext,,MOVE.B/W src=#imm dst=(xxx).WL: 2
+10-7,311,10-15,MOVE.L,src=Dn,dst=Dn,1,0,0,0,nominal,pdftotext,,MOVE.L src=Dn dst=Dn: 1
+10-7,311,10-15,MOVE.L,src=Dn,dst=An,1,0,0,0,nominal,pdftotext,,MOVE.L src=Dn dst=An: 1
+10-7,311,10-15,MOVE.L,src=Dn,dst=(An),1,0,0,1,nominal,pdftotext,,MOVE.L src=Dn dst=(An): 1
+10-7,311,10-15,MOVE.L,src=Dn,dst=(An)+,1,0,0,1,nominal,pdftotext,,MOVE.L src=Dn dst=(An)+: 1
+10-7,311,10-15,MOVE.L,src=Dn,dst=-(An),1,0,0,1,nominal,pdftotext,,MOVE.L src=Dn dst=-(An): 1
+10-7,311,10-15,MOVE.L,src=Dn,"dst=(d16,An)",1,0,0,1,nominal,pdftotext,,"MOVE.L src=Dn dst=(d16,An): 1"
+10-7,311,10-15,MOVE.L,src=Dn,"dst=(d8,An,Xi)",1,0,0,1,nominal,pdftotext,,"MOVE.L src=Dn dst=(d8,An,Xi): 1"
+10-7,311,10-15,MOVE.L,src=Dn,"dst=(bd,An,Xi)",2,0,0,1,nominal,pdftotext,,"MOVE.L src=Dn dst=(bd,An,Xi): 2"
+10-7,311,10-15,MOVE.L,src=Dn,dst=(xxx).WL,1,0,0,1,nominal,pdftotext,,MOVE.L src=Dn dst=(xxx).WL: 1
+10-7,311,10-15,MOVE.L,src=An,dst=Dn,1,0,0,0,nominal,pdftotext,,MOVE.L src=An dst=Dn: 1
+10-7,311,10-15,MOVE.L,src=An,dst=An,1,0,0,0,nominal,pdftotext,,MOVE.L src=An dst=An: 1
+10-7,311,10-15,MOVE.L,src=An,dst=(An),1,0,0,1,nominal,pdftotext,,MOVE.L src=An dst=(An): 1
+10-7,311,10-15,MOVE.L,src=An,dst=(An)+,1,0,0,1,nominal,pdftotext,,MOVE.L src=An dst=(An)+: 1
+10-7,311,10-15,MOVE.L,src=An,dst=-(An),1,0,0,1,nominal,pdftotext,,MOVE.L src=An dst=-(An): 1
+10-7,311,10-15,MOVE.L,src=An,"dst=(d16,An)",1,0,0,1,nominal,pdftotext,,"MOVE.L src=An dst=(d16,An): 1"
+10-7,311,10-15,MOVE.L,src=An,"dst=(d8,An,Xi)",1,0,0,1,nominal,pdftotext,,"MOVE.L src=An dst=(d8,An,Xi): 1"
+10-7,311,10-15,MOVE.L,src=An,"dst=(bd,An,Xi)",2,0,0,1,nominal,pdftotext,,"MOVE.L src=An dst=(bd,An,Xi): 2"
+10-7,311,10-15,MOVE.L,src=An,dst=(xxx).WL,1,0,0,1,nominal,pdftotext,,MOVE.L src=An dst=(xxx).WL: 1
+10-7,311,10-15,MOVE.L,src=(An),dst=Dn,1,0,1,0,nominal,pdftotext,,MOVE.L src=(An) dst=Dn: 1
+10-7,311,10-15,MOVE.L,src=(An),dst=An,1,0,1,0,nominal,pdftotext,,MOVE.L src=(An) dst=An: 1
+10-7,311,10-15,MOVE.L,src=(An),dst=(An),2,0,1,1,nominal,pdftotext,,MOVE.L src=(An) dst=(An): 2
+10-7,311,10-15,MOVE.L,src=(An),dst=(An)+,2,0,1,1,nominal,pdftotext,,MOVE.L src=(An) dst=(An)+: 2
+10-7,311,10-15,MOVE.L,src=(An),dst=-(An),2,0,1,1,nominal,pdftotext,,MOVE.L src=(An) dst=-(An): 2
+10-7,311,10-15,MOVE.L,src=(An),"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=(An) dst=(d16,An): 2"
+10-7,311,10-15,MOVE.L,src=(An),"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=(An) dst=(d8,An,Xi): 2"
+10-7,311,10-15,MOVE.L,src=(An),"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.L src=(An) dst=(bd,An,Xi): 3"
+10-7,311,10-15,MOVE.L,src=(An),dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,MOVE.L src=(An) dst=(xxx).WL: 2
+10-7,311,10-15,MOVE.L,src=(An)+,dst=Dn,1,0,1,0,nominal,pdftotext,,MOVE.L src=(An)+ dst=Dn: 1
+10-7,311,10-15,MOVE.L,src=(An)+,dst=An,1,0,1,0,nominal,pdftotext,,MOVE.L src=(An)+ dst=An: 1
+10-7,311,10-15,MOVE.L,src=(An)+,dst=(An),2,0,1,1,nominal,pdftotext,,MOVE.L src=(An)+ dst=(An): 2
+10-7,311,10-15,MOVE.L,src=(An)+,dst=(An)+,2,0,1,1,nominal,pdftotext,,MOVE.L src=(An)+ dst=(An)+: 2
+10-7,311,10-15,MOVE.L,src=(An)+,dst=-(An),2,0,1,1,nominal,pdftotext,,MOVE.L src=(An)+ dst=-(An): 2
+10-7,311,10-15,MOVE.L,src=(An)+,"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=(An)+ dst=(d16,An): 2"
+10-7,311,10-15,MOVE.L,src=(An)+,"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=(An)+ dst=(d8,An,Xi): 2"
+10-7,311,10-15,MOVE.L,src=(An)+,"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.L src=(An)+ dst=(bd,An,Xi): 3"
+10-7,311,10-15,MOVE.L,src=(An)+,dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,MOVE.L src=(An)+ dst=(xxx).WL: 2
+10-7,311,10-15,MOVE.L,src=-(An),dst=Dn,1,0,1,0,nominal,pdftotext,,MOVE.L src=-(An) dst=Dn: 1
+10-7,311,10-15,MOVE.L,src=-(An),dst=An,1,0,1,0,nominal,pdftotext,,MOVE.L src=-(An) dst=An: 1
+10-7,311,10-15,MOVE.L,src=-(An),dst=(An),2,0,1,1,nominal,pdftotext,,MOVE.L src=-(An) dst=(An): 2
+10-7,311,10-15,MOVE.L,src=-(An),dst=(An)+,2,0,1,1,nominal,pdftotext,,MOVE.L src=-(An) dst=(An)+: 2
+10-7,311,10-15,MOVE.L,src=-(An),dst=-(An),2,0,1,1,nominal,pdftotext,,MOVE.L src=-(An) dst=-(An): 2
+10-7,311,10-15,MOVE.L,src=-(An),"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=-(An) dst=(d16,An): 2"
+10-7,311,10-15,MOVE.L,src=-(An),"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=-(An) dst=(d8,An,Xi): 2"
+10-7,311,10-15,MOVE.L,src=-(An),"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.L src=-(An) dst=(bd,An,Xi): 3"
+10-7,311,10-15,MOVE.L,src=-(An),dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,MOVE.L src=-(An) dst=(xxx).WL: 2
+10-7,311,10-15,MOVE.L,"src=(d16,An)",dst=Dn,1,0,1,0,nominal,pdftotext,,"MOVE.L src=(d16,An) dst=Dn: 1"
+10-7,311,10-15,MOVE.L,"src=(d16,An)",dst=An,1,0,1,0,nominal,pdftotext,,"MOVE.L src=(d16,An) dst=An: 1"
+10-7,311,10-15,MOVE.L,"src=(d16,An)",dst=(An),2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d16,An) dst=(An): 2"
+10-7,311,10-15,MOVE.L,"src=(d16,An)",dst=(An)+,2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d16,An) dst=(An)+: 2"
+10-7,311,10-15,MOVE.L,"src=(d16,An)",dst=-(An),2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d16,An) dst=-(An): 2"
+10-7,311,10-15,MOVE.L,"src=(d16,An)","dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d16,An) dst=(d16,An): 2"
+10-7,311,10-15,MOVE.L,"src=(d16,An)","dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d16,An) dst=(d8,An,Xi): 2"
+10-7,311,10-15,MOVE.L,"src=(d16,An)","dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.L src=(d16,An) dst=(bd,An,Xi): 3"
+10-7,311,10-15,MOVE.L,"src=(d16,An)",dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d16,An) dst=(xxx).WL: 2"
+10-7,311,10-15,MOVE.L,"src=(d8,An,Xi)",dst=Dn,1,0,1,0,nominal,pdftotext,,"MOVE.L src=(d8,An,Xi) dst=Dn: 1"
+10-7,311,10-15,MOVE.L,"src=(d8,An,Xi)",dst=An,1,0,1,0,nominal,pdftotext,,"MOVE.L src=(d8,An,Xi) dst=An: 1"
+10-7,311,10-15,MOVE.L,"src=(d8,An,Xi)",dst=(An),2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d8,An,Xi) dst=(An): 2"
+10-7,311,10-15,MOVE.L,"src=(d8,An,Xi)",dst=(An)+,2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d8,An,Xi) dst=(An)+: 2"
+10-7,311,10-15,MOVE.L,"src=(d8,An,Xi)",dst=-(An),2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d8,An,Xi) dst=-(An): 2"
+10-7,311,10-15,MOVE.L,"src=(d8,An,Xi)","dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d8,An,Xi) dst=(d16,An): 2"
+10-7,311,10-15,MOVE.L,"src=(d8,An,Xi)","dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d8,An,Xi) dst=(d8,An,Xi): 2"
+10-7,311,10-15,MOVE.L,"src=(d8,An,Xi)","dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.L src=(d8,An,Xi) dst=(bd,An,Xi): 3"
+10-7,311,10-15,MOVE.L,"src=(d8,An,Xi)",dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d8,An,Xi) dst=(xxx).WL: 2"
+10-7,311,10-15,MOVE.L,"src=(bd,An,Xi)",dst=Dn,2,0,1,0,nominal,pdftotext,,"MOVE.L src=(bd,An,Xi) dst=Dn: 2"
+10-7,311,10-15,MOVE.L,"src=(bd,An,Xi)",dst=An,2,0,1,0,nominal,pdftotext,,"MOVE.L src=(bd,An,Xi) dst=An: 2"
+10-7,311,10-15,MOVE.L,"src=(bd,An,Xi)",dst=(An),3,0,1,1,nominal,pdftotext,,"MOVE.L src=(bd,An,Xi) dst=(An): 3"
+10-7,311,10-15,MOVE.L,"src=(bd,An,Xi)",dst=(An)+,3,0,1,1,nominal,pdftotext,,"MOVE.L src=(bd,An,Xi) dst=(An)+: 3"
+10-7,311,10-15,MOVE.L,"src=(bd,An,Xi)",dst=-(An),3,0,1,1,nominal,pdftotext,,"MOVE.L src=(bd,An,Xi) dst=-(An): 3"
+10-7,311,10-15,MOVE.L,"src=(bd,An,Xi)","dst=(d16,An)",3,0,1,1,nominal,pdftotext,,"MOVE.L src=(bd,An,Xi) dst=(d16,An): 3"
+10-7,311,10-15,MOVE.L,"src=(bd,An,Xi)","dst=(d8,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.L src=(bd,An,Xi) dst=(d8,An,Xi): 3"
+10-7,311,10-15,MOVE.L,"src=(bd,An,Xi)","dst=(bd,An,Xi)",4,0,1,1,nominal,pdftotext,,"MOVE.L src=(bd,An,Xi) dst=(bd,An,Xi): 4"
+10-7,311,10-15,MOVE.L,"src=(bd,An,Xi)",dst=(xxx).WL,3,0,1,1,nominal,pdftotext,,"MOVE.L src=(bd,An,Xi) dst=(xxx).WL: 3"
+10-7,311,10-15,MOVE.L,src=(xxx).W,dst=Dn,1,0,1,0,nominal,pdftotext,,MOVE.L src=(xxx).W dst=Dn: 1
+10-7,311,10-15,MOVE.L,src=(xxx).W,dst=An,1,0,1,0,nominal,pdftotext,,MOVE.L src=(xxx).W dst=An: 1
+10-7,311,10-15,MOVE.L,src=(xxx).W,dst=(An),2,0,1,1,nominal,pdftotext,,MOVE.L src=(xxx).W dst=(An): 2
+10-7,311,10-15,MOVE.L,src=(xxx).W,dst=(An)+,2,0,1,1,nominal,pdftotext,,MOVE.L src=(xxx).W dst=(An)+: 2
+10-7,311,10-15,MOVE.L,src=(xxx).W,dst=-(An),2,0,1,1,nominal,pdftotext,,MOVE.L src=(xxx).W dst=-(An): 2
+10-7,311,10-15,MOVE.L,src=(xxx).W,"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=(xxx).W dst=(d16,An): 2"
+10-7,311,10-15,MOVE.L,src=(xxx).W,"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=(xxx).W dst=(d8,An,Xi): 2"
+10-7,311,10-15,MOVE.L,src=(xxx).W,"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.L src=(xxx).W dst=(bd,An,Xi): 3"
+10-7,311,10-15,MOVE.L,src=(xxx).W,dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,MOVE.L src=(xxx).W dst=(xxx).WL: 2
+10-7,311,10-15,MOVE.L,src=(xxx).L,dst=Dn,1,0,1,0,nominal,pdftotext,,MOVE.L src=(xxx).L dst=Dn: 1
+10-7,311,10-15,MOVE.L,src=(xxx).L,dst=An,1,0,1,0,nominal,pdftotext,,MOVE.L src=(xxx).L dst=An: 1
+10-7,311,10-15,MOVE.L,src=(xxx).L,dst=(An),2,0,1,1,nominal,pdftotext,,MOVE.L src=(xxx).L dst=(An): 2
+10-7,311,10-15,MOVE.L,src=(xxx).L,dst=(An)+,2,0,1,1,nominal,pdftotext,,MOVE.L src=(xxx).L dst=(An)+: 2
+10-7,311,10-15,MOVE.L,src=(xxx).L,dst=-(An),2,0,1,1,nominal,pdftotext,,MOVE.L src=(xxx).L dst=-(An): 2
+10-7,311,10-15,MOVE.L,src=(xxx).L,"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=(xxx).L dst=(d16,An): 2"
+10-7,311,10-15,MOVE.L,src=(xxx).L,"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=(xxx).L dst=(d8,An,Xi): 2"
+10-7,311,10-15,MOVE.L,src=(xxx).L,"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.L src=(xxx).L dst=(bd,An,Xi): 3"
+10-7,311,10-15,MOVE.L,src=(xxx).L,dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,MOVE.L src=(xxx).L dst=(xxx).WL: 2
+10-7,311,10-15,MOVE.L,"src=(d16,PC)",dst=Dn,1,0,1,0,nominal,pdftotext,,"MOVE.L src=(d16,PC) dst=Dn: 1"
+10-7,311,10-15,MOVE.L,"src=(d16,PC)",dst=An,1,0,1,0,nominal,pdftotext,,"MOVE.L src=(d16,PC) dst=An: 1"
+10-7,311,10-15,MOVE.L,"src=(d16,PC)",dst=(An),2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d16,PC) dst=(An): 2"
+10-7,311,10-15,MOVE.L,"src=(d16,PC)",dst=(An)+,2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d16,PC) dst=(An)+: 2"
+10-7,311,10-15,MOVE.L,"src=(d16,PC)",dst=-(An),2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d16,PC) dst=-(An): 2"
+10-7,311,10-15,MOVE.L,"src=(d16,PC)","dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d16,PC) dst=(d16,An): 2"
+10-7,311,10-15,MOVE.L,"src=(d16,PC)","dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d16,PC) dst=(d8,An,Xi): 2"
+10-7,311,10-15,MOVE.L,"src=(d16,PC)","dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.L src=(d16,PC) dst=(bd,An,Xi): 3"
+10-7,311,10-15,MOVE.L,"src=(d16,PC)",dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d16,PC) dst=(xxx).WL: 2"
+10-7,311,10-15,MOVE.L,"src=(d8,PC,Xi)",dst=Dn,1,0,1,0,nominal,pdftotext,,"MOVE.L src=(d8,PC,Xi) dst=Dn: 1"
+10-7,311,10-15,MOVE.L,"src=(d8,PC,Xi)",dst=An,1,0,1,0,nominal,pdftotext,,"MOVE.L src=(d8,PC,Xi) dst=An: 1"
+10-7,311,10-15,MOVE.L,"src=(d8,PC,Xi)",dst=(An),2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d8,PC,Xi) dst=(An): 2"
+10-7,311,10-15,MOVE.L,"src=(d8,PC,Xi)",dst=(An)+,2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d8,PC,Xi) dst=(An)+: 2"
+10-7,311,10-15,MOVE.L,"src=(d8,PC,Xi)",dst=-(An),2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d8,PC,Xi) dst=-(An): 2"
+10-7,311,10-15,MOVE.L,"src=(d8,PC,Xi)","dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d8,PC,Xi) dst=(d16,An): 2"
+10-7,311,10-15,MOVE.L,"src=(d8,PC,Xi)","dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d8,PC,Xi) dst=(d8,An,Xi): 2"
+10-7,311,10-15,MOVE.L,"src=(d8,PC,Xi)","dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.L src=(d8,PC,Xi) dst=(bd,An,Xi): 3"
+10-7,311,10-15,MOVE.L,"src=(d8,PC,Xi)",dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,"MOVE.L src=(d8,PC,Xi) dst=(xxx).WL: 2"
+10-7,311,10-15,MOVE.L,"src=(bd,PC,Xi)",dst=Dn,2,0,1,0,nominal,pdftotext,,"MOVE.L src=(bd,PC,Xi) dst=Dn: 2"
+10-7,311,10-15,MOVE.L,"src=(bd,PC,Xi)",dst=An,2,0,1,0,nominal,pdftotext,,"MOVE.L src=(bd,PC,Xi) dst=An: 2"
+10-7,311,10-15,MOVE.L,"src=(bd,PC,Xi)",dst=(An),3,0,1,1,nominal,pdftotext,,"MOVE.L src=(bd,PC,Xi) dst=(An): 3"
+10-7,311,10-15,MOVE.L,"src=(bd,PC,Xi)",dst=(An)+,3,0,1,1,nominal,pdftotext,,"MOVE.L src=(bd,PC,Xi) dst=(An)+: 3"
+10-7,311,10-15,MOVE.L,"src=(bd,PC,Xi)",dst=-(An),3,0,1,1,nominal,pdftotext,,"MOVE.L src=(bd,PC,Xi) dst=-(An): 3"
+10-7,311,10-15,MOVE.L,"src=(bd,PC,Xi)","dst=(d16,An)",3,0,1,1,nominal,pdftotext,,"MOVE.L src=(bd,PC,Xi) dst=(d16,An): 3"
+10-7,311,10-15,MOVE.L,"src=(bd,PC,Xi)","dst=(d8,An,Xi)",3,0,1,1,nominal,pdftotext,,"MOVE.L src=(bd,PC,Xi) dst=(d8,An,Xi): 3"
+10-7,311,10-15,MOVE.L,"src=(bd,PC,Xi)","dst=(bd,An,Xi)",4,0,1,1,nominal,pdftotext,,"MOVE.L src=(bd,PC,Xi) dst=(bd,An,Xi): 4"
+10-7,311,10-15,MOVE.L,"src=(bd,PC,Xi)",dst=(xxx).WL,3,0,1,1,nominal,pdftotext,,"MOVE.L src=(bd,PC,Xi) dst=(xxx).WL: 3"
+10-7,311,10-15,MOVE.L,src=#imm,dst=Dn,1,0,0,0,nominal,pdftotext,,MOVE.L src=#imm dst=Dn: 1
+10-7,311,10-15,MOVE.L,src=#imm,dst=An,1,0,0,0,nominal,pdftotext,,MOVE.L src=#imm dst=An: 1
+10-7,311,10-15,MOVE.L,src=#imm,dst=(An),1,0,0,1,nominal,pdftotext,,MOVE.L src=#imm dst=(An): 1
+10-7,311,10-15,MOVE.L,src=#imm,dst=(An)+,1,0,0,1,nominal,pdftotext,,MOVE.L src=#imm dst=(An)+: 1
+10-7,311,10-15,MOVE.L,src=#imm,dst=-(An),1,0,0,1,nominal,pdftotext,,MOVE.L src=#imm dst=-(An): 1
+10-7,311,10-15,MOVE.L,src=#imm,"dst=(d16,An)",2,0,0,1,nominal,pdftotext,,"MOVE.L src=#imm dst=(d16,An): 2"
+10-7,311,10-15,MOVE.L,src=#imm,"dst=(d8,An,Xi)",2,0,0,1,nominal,pdftotext,,"MOVE.L src=#imm dst=(d8,An,Xi): 2"
+10-7,311,10-15,MOVE.L,src=#imm,"dst=(bd,An,Xi)",3,0,0,1,nominal,pdftotext,,"MOVE.L src=#imm dst=(bd,An,Xi): 3"
+10-7,311,10-15,MOVE.L,src=#imm,dst=(xxx).WL,2,0,0,1,nominal,pdftotext,,MOVE.L src=#imm dst=(xxx).WL: 2
+10-8,311,10-15,MOVE16,src=(Ay),dst=(xxx).L,18,0,1,1,nominal,pdftotext,cache miss on both accesses; 11 when the read hits the data cache,"MOVE16 (Ay),(xxx).L 18(1/1)"
+10-8,311,10-15,MOVE16,src=(Ay)+,dst=(xxx).L,18,0,1,1,nominal,pdftotext,cache miss on both accesses; 11 when the read hits the data cache,"MOVE16 (Ay)+,(xxx).L 18(1/1)"
+10-8,311,10-15,MOVE16,src=(Ay)+,dst=(Ax)+,18,0,1,1,nominal,pdftotext,cache miss on both accesses; 11 when the read hits the data cache,"MOVE16 (Ay)+,(Ax)+ 18(1/1)"
+10-8,311,10-15,MOVE16,src=(xxx).L,dst=(Ax),18,0,1,1,nominal,pdftotext,cache miss on both accesses; 11 when the read hits the data cache,"MOVE16 (xxx).L,(Ax) 18(1/1)"
+10-8,311,10-15,MOVE16,src=(xxx).L,dst=(Ax)+,18,0,1,1,nominal,pdftotext,cache miss on both accesses; 11 when the read hits the data cache,"MOVE16 (xxx).L,(Ax)+ 18(1/1)"
+10-9,312,10-16,ADD,"Byte, Word","op <ea>,An",1,0,1,0,nominal,pdftotext,,"ADD Byte, Word op <ea>,An 1(1/0)"
+10-9,312,10-16,ADD,"Byte, Word","op <ea>,Dn",1,0,1,0,nominal,pdftotext,,"ADD Byte, Word op <ea>,Dn 1(1/0)"
+10-9,312,10-16,ADD,"Byte, Word","op Dn,<M>",1,0,1,1,nominal,pdftotext,,"ADD Byte, Word op Dn,<M> 1(1/1)"
+10-9,312,10-16,ADD,Long,"op <ea>,An",1,0,1,0,nominal,pdftotext,,"ADD Long op <ea>,An 1(1/0)"
+10-9,312,10-16,ADD,Long,"op <ea>,Dn",1,0,1,0,nominal,pdftotext,,"ADD Long op <ea>,Dn 1(1/0)"
+10-9,312,10-16,ADD,Long,"op Dn,<M>",1,0,1,1,nominal,pdftotext,,"ADD Long op Dn,<M> 1(1/1)"
+10-9,312,10-16,AND,"Byte, Word","op <ea>,Dn",1,0,1,0,nominal,pdftotext,,"AND Byte, Word op <ea>,Dn 1(1/0)"
+10-9,312,10-16,AND,"Byte, Word","op Dn,<M>",1,0,1,1,nominal,pdftotext,,"AND Byte, Word op Dn,<M> 1(1/1)"
+10-9,312,10-16,AND,Long,"op <ea>,Dn",1,0,1,0,nominal,pdftotext,,"AND Long op <ea>,Dn 1(1/0)"
+10-9,312,10-16,AND,Long,"op Dn,<M>",1,0,1,1,nominal,pdftotext,,"AND Long op Dn,<M> 1(1/1)"
+10-9,312,10-16,CMP,"Byte, Word","op <ea>,An",1,0,1,0,nominal,pdftotext,,"CMP Byte, Word op <ea>,An 1(1/0)"
+10-9,312,10-16,CMP,"Byte, Word","op <ea>,Dn",1,0,1,0,nominal,pdftotext,,"CMP Byte, Word op <ea>,Dn 1(1/0)"
+10-9,312,10-16,CMP,Long,"op <ea>,An",1,0,1,0,nominal,pdftotext,,"CMP Long op <ea>,An 1(1/0)"
+10-9,312,10-16,CMP,Long,"op <ea>,Dn",1,0,1,0,nominal,pdftotext,,"CMP Long op <ea>,Dn 1(1/0)"
+10-9,312,10-16,DIVS,Word,"op <ea>,Dn",22,0,1,0,upper-bound,pdftotext,word divide has conditional exit points; the value is the upper bound,"DIVS Word op <ea>,Dn 22(1/0)"
+10-9,312,10-16,DIVS,Long,"op <ea>,Dn",38,0,1,0,nominal,pdftotext,,"DIVS Long op <ea>,Dn 38(1/0)"
+10-9,312,10-16,DIVU,Word,"op <ea>,Dn",22,0,1,0,upper-bound,pdftotext,word divide has conditional exit points; the value is the upper bound,"DIVU Word op <ea>,Dn 22(1/0)"
+10-9,312,10-16,DIVU,Long,"op <ea>,Dn",38,0,1,0,nominal,pdftotext,,"DIVU Long op <ea>,Dn 38(1/0)"
+10-9,312,10-16,EOR,"Byte, Word","op <ea>,Dn",1,0,1,0,nominal,pdftotext,,"EOR Byte, Word op <ea>,Dn 1(1/0)"
+10-9,312,10-16,EOR,"Byte, Word","op Dn,<M>",1,0,1,1,nominal,pdftotext,,"EOR Byte, Word op Dn,<M> 1(1/1)"
+10-9,312,10-16,EOR,Long,"op <ea>,Dn",1,0,1,0,nominal,pdftotext,,"EOR Long op <ea>,Dn 1(1/0)"
+10-9,312,10-16,EOR,Long,"op Dn,<M>",1,0,1,1,nominal,pdftotext,,"EOR Long op Dn,<M> 1(1/1)"
+10-9,312,10-16,MULS,Word,"op <ea>,Dn",2,0,1,0,nominal,pdftotext,,"MULS Word op <ea>,Dn 2(1/0)"
+10-9,312,10-16,MULS,Long,"op <ea>,Dn",2,0,1,0,nominal,pdftotext,,"MULS Long op <ea>,Dn 2(1/0)"
+10-9,312,10-16,MULU,Word,"op <ea>,Dn",2,0,1,0,nominal,pdftotext,,"MULU Word op <ea>,Dn 2(1/0)"
+10-9,312,10-16,MULU,Long,"op <ea>,Dn",2,0,1,0,nominal,pdftotext,,"MULU Long op <ea>,Dn 2(1/0)"
+10-9,312,10-16,OR,"Byte, Word","op <ea>,Dn",1,0,1,0,nominal,pdftotext,,"OR Byte, Word op <ea>,Dn 1(1/0)"
+10-9,312,10-16,OR,"Byte, Word","op Dn,<M>",1,0,1,1,nominal,pdftotext,,"OR Byte, Word op Dn,<M> 1(1/1)"
+10-9,312,10-16,OR,Long,"op <ea>,Dn",1,0,1,0,nominal,pdftotext,,"OR Long op <ea>,Dn 1(1/0)"
+10-9,312,10-16,OR,Long,"op Dn,<M>",1,0,1,1,nominal,pdftotext,,"OR Long op Dn,<M> 1(1/1)"
+10-9,312,10-16,SUB,"Byte, Word","op <ea>,An",1,0,1,0,nominal,pdftotext,,"SUB Byte, Word op <ea>,An 1(1/0)"
+10-9,312,10-16,SUB,"Byte, Word","op <ea>,Dn",1,0,1,0,nominal,pdftotext,,"SUB Byte, Word op <ea>,Dn 1(1/0)"
+10-9,312,10-16,SUB,"Byte, Word","op Dn,<M>",1,0,1,1,nominal,pdftotext,,"SUB Byte, Word op Dn,<M> 1(1/1)"
+10-9,312,10-16,SUB,Long,"op <ea>,An",1,0,1,0,nominal,pdftotext,,"SUB Long op <ea>,An 1(1/0)"
+10-9,312,10-16,SUB,Long,"op <ea>,Dn",1,0,1,0,nominal,pdftotext,,"SUB Long op <ea>,Dn 1(1/0)"
+10-9,312,10-16,SUB,Long,"op Dn,<M>",1,0,1,1,nominal,pdftotext,,"SUB Long op Dn,<M> 1(1/1)"
+10-10,313,10-17,ADDI,"Byte, Word",dst=Dn,1,0,0,0,nominal,pdftotext,,"ADDI Byte, Word dst=Dn: 1"
+10-10,313,10-17,ADDI,"Byte, Word",dst=(An),1,0,1,1,nominal,pdftotext,,"ADDI Byte, Word dst=(An): 1"
+10-10,313,10-17,ADDI,"Byte, Word",dst=(An)+,1,0,1,1,nominal,pdftotext,,"ADDI Byte, Word dst=(An)+: 1"
+10-10,313,10-17,ADDI,"Byte, Word",dst=-(An),1,0,1,1,nominal,pdftotext,,"ADDI Byte, Word dst=-(An): 1"
+10-10,313,10-17,ADDI,"Byte, Word","dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"ADDI Byte, Word dst=(d16,An): 2"
+10-10,313,10-17,ADDI,"Byte, Word","dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"ADDI Byte, Word dst=(d8,An,Xi): 2"
+10-10,313,10-17,ADDI,"Byte, Word","dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"ADDI Byte, Word dst=(bd,An,Xi): 3"
+10-10,313,10-17,ADDI,"Byte, Word",dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,"ADDI Byte, Word dst=(xxx).WL: 2"
+10-10,313,10-17,ADDI,Long,dst=Dn,1,0,0,0,nominal,pdftotext,,ADDI Long dst=Dn: 1
+10-10,313,10-17,ADDI,Long,dst=(An),1,0,1,1,nominal,pdftotext,,ADDI Long dst=(An): 1
+10-10,313,10-17,ADDI,Long,dst=(An)+,1,0,1,1,nominal,pdftotext,,ADDI Long dst=(An)+: 1
+10-10,313,10-17,ADDI,Long,dst=-(An),1,0,1,1,nominal,pdftotext,,ADDI Long dst=-(An): 1
+10-10,313,10-17,ADDI,Long,"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"ADDI Long dst=(d16,An): 2"
+10-10,313,10-17,ADDI,Long,"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"ADDI Long dst=(d8,An,Xi): 2"
+10-10,313,10-17,ADDI,Long,"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"ADDI Long dst=(bd,An,Xi): 3"
+10-10,313,10-17,ADDI,Long,dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,ADDI Long dst=(xxx).WL: 2
+10-10,313,10-17,ANDI,"Byte, Word",dst=Dn,1,0,0,0,nominal,pdftotext,,"ANDI Byte, Word dst=Dn: 1"
+10-10,313,10-17,ANDI,"Byte, Word",dst=(An),1,0,1,1,nominal,pdftotext,,"ANDI Byte, Word dst=(An): 1"
+10-10,313,10-17,ANDI,"Byte, Word",dst=(An)+,1,0,1,1,nominal,pdftotext,,"ANDI Byte, Word dst=(An)+: 1"
+10-10,313,10-17,ANDI,"Byte, Word",dst=-(An),1,0,1,1,nominal,pdftotext,,"ANDI Byte, Word dst=-(An): 1"
+10-10,313,10-17,ANDI,"Byte, Word","dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"ANDI Byte, Word dst=(d16,An): 2"
+10-10,313,10-17,ANDI,"Byte, Word","dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"ANDI Byte, Word dst=(d8,An,Xi): 2"
+10-10,313,10-17,ANDI,"Byte, Word","dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"ANDI Byte, Word dst=(bd,An,Xi): 3"
+10-10,313,10-17,ANDI,"Byte, Word",dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,"ANDI Byte, Word dst=(xxx).WL: 2"
+10-10,313,10-17,ANDI,Long,dst=Dn,1,0,0,0,nominal,pdftotext,,ANDI Long dst=Dn: 1
+10-10,313,10-17,ANDI,Long,dst=(An),1,0,1,1,nominal,pdftotext,,ANDI Long dst=(An): 1
+10-10,313,10-17,ANDI,Long,dst=(An)+,1,0,1,1,nominal,pdftotext,,ANDI Long dst=(An)+: 1
+10-10,313,10-17,ANDI,Long,dst=-(An),1,0,1,1,nominal,pdftotext,,ANDI Long dst=-(An): 1
+10-10,313,10-17,ANDI,Long,"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"ANDI Long dst=(d16,An): 2"
+10-10,313,10-17,ANDI,Long,"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"ANDI Long dst=(d8,An,Xi): 2"
+10-10,313,10-17,ANDI,Long,"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"ANDI Long dst=(bd,An,Xi): 3"
+10-10,313,10-17,ANDI,Long,dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,ANDI Long dst=(xxx).WL: 2
+10-10,313,10-17,CMPI,"Byte, Word",dst=Dn,1,0,0,0,nominal,pdftotext,,"CMPI Byte, Word dst=Dn: 1"
+10-10,313,10-17,CMPI,"Byte, Word",dst=(An),1,0,1,0,nominal,pdftotext,,"CMPI Byte, Word dst=(An): 1"
+10-10,313,10-17,CMPI,"Byte, Word",dst=(An)+,1,0,1,0,nominal,pdftotext,,"CMPI Byte, Word dst=(An)+: 1"
+10-10,313,10-17,CMPI,"Byte, Word",dst=-(An),1,0,1,0,nominal,pdftotext,,"CMPI Byte, Word dst=-(An): 1"
+10-10,313,10-17,CMPI,"Byte, Word","dst=(d16,An)",2,0,1,0,nominal,pdftotext,,"CMPI Byte, Word dst=(d16,An): 2"
+10-10,313,10-17,CMPI,"Byte, Word","dst=(d8,An,Xi)",2,0,1,0,nominal,pdftotext,,"CMPI Byte, Word dst=(d8,An,Xi): 2"
+10-10,313,10-17,CMPI,"Byte, Word","dst=(bd,An,Xi)",3,0,1,0,nominal,pdftotext,,"CMPI Byte, Word dst=(bd,An,Xi): 3"
+10-10,313,10-17,CMPI,"Byte, Word",dst=(xxx).WL,2,0,1,0,nominal,pdftotext,,"CMPI Byte, Word dst=(xxx).WL: 2"
+10-10,313,10-17,CMPI,Long,dst=Dn,1,0,0,0,nominal,pdftotext,,CMPI Long dst=Dn: 1
+10-10,313,10-17,CMPI,Long,dst=(An),1,0,1,0,nominal,pdftotext,,CMPI Long dst=(An): 1
+10-10,313,10-17,CMPI,Long,dst=(An)+,1,0,1,0,nominal,pdftotext,,CMPI Long dst=(An)+: 1
+10-10,313,10-17,CMPI,Long,dst=-(An),1,0,1,0,nominal,pdftotext,,CMPI Long dst=-(An): 1
+10-10,313,10-17,CMPI,Long,"dst=(d16,An)",2,0,1,0,nominal,pdftotext,,"CMPI Long dst=(d16,An): 2"
+10-10,313,10-17,CMPI,Long,"dst=(d8,An,Xi)",2,0,1,0,nominal,pdftotext,,"CMPI Long dst=(d8,An,Xi): 2"
+10-10,313,10-17,CMPI,Long,"dst=(bd,An,Xi)",3,0,1,0,nominal,pdftotext,,"CMPI Long dst=(bd,An,Xi): 3"
+10-10,313,10-17,CMPI,Long,dst=(xxx).WL,2,0,1,0,nominal,pdftotext,,CMPI Long dst=(xxx).WL: 2
+10-10,313,10-17,EORI,"Byte, Word",dst=Dn,1,0,0,0,nominal,pdftotext,,"EORI Byte, Word dst=Dn: 1"
+10-10,313,10-17,EORI,"Byte, Word",dst=(An),1,0,1,1,nominal,pdftotext,,"EORI Byte, Word dst=(An): 1"
+10-10,313,10-17,EORI,"Byte, Word",dst=(An)+,1,0,1,1,nominal,pdftotext,,"EORI Byte, Word dst=(An)+: 1"
+10-10,313,10-17,EORI,"Byte, Word",dst=-(An),1,0,1,1,nominal,pdftotext,,"EORI Byte, Word dst=-(An): 1"
+10-10,313,10-17,EORI,"Byte, Word","dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"EORI Byte, Word dst=(d16,An): 2"
+10-10,313,10-17,EORI,"Byte, Word","dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"EORI Byte, Word dst=(d8,An,Xi): 2"
+10-10,313,10-17,EORI,"Byte, Word","dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"EORI Byte, Word dst=(bd,An,Xi): 3"
+10-10,313,10-17,EORI,"Byte, Word",dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,"EORI Byte, Word dst=(xxx).WL: 2"
+10-10,313,10-17,EORI,Long,dst=Dn,1,0,0,0,nominal,pdftotext,,EORI Long dst=Dn: 1
+10-10,313,10-17,EORI,Long,dst=(An),1,0,1,1,nominal,pdftotext,,EORI Long dst=(An): 1
+10-10,313,10-17,EORI,Long,dst=(An)+,1,0,1,1,nominal,pdftotext,,EORI Long dst=(An)+: 1
+10-10,313,10-17,EORI,Long,dst=-(An),1,0,1,1,nominal,pdftotext,,EORI Long dst=-(An): 1
+10-10,313,10-17,EORI,Long,"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"EORI Long dst=(d16,An): 2"
+10-10,313,10-17,EORI,Long,"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"EORI Long dst=(d8,An,Xi): 2"
+10-10,313,10-17,EORI,Long,"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"EORI Long dst=(bd,An,Xi): 3"
+10-10,313,10-17,EORI,Long,dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,EORI Long dst=(xxx).WL: 2
+10-10,313,10-17,ORI,"Byte, Word",dst=Dn,1,0,0,0,nominal,pdftotext,,"ORI Byte, Word dst=Dn: 1"
+10-10,313,10-17,ORI,"Byte, Word",dst=(An),1,0,1,1,nominal,pdftotext,,"ORI Byte, Word dst=(An): 1"
+10-10,313,10-17,ORI,"Byte, Word",dst=(An)+,1,0,1,1,nominal,pdftotext,,"ORI Byte, Word dst=(An)+: 1"
+10-10,313,10-17,ORI,"Byte, Word",dst=-(An),1,0,1,1,nominal,pdftotext,,"ORI Byte, Word dst=-(An): 1"
+10-10,313,10-17,ORI,"Byte, Word","dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"ORI Byte, Word dst=(d16,An): 2"
+10-10,313,10-17,ORI,"Byte, Word","dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"ORI Byte, Word dst=(d8,An,Xi): 2"
+10-10,313,10-17,ORI,"Byte, Word","dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"ORI Byte, Word dst=(bd,An,Xi): 3"
+10-10,313,10-17,ORI,"Byte, Word",dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,"ORI Byte, Word dst=(xxx).WL: 2"
+10-10,313,10-17,ORI,Long,dst=Dn,1,0,0,0,nominal,pdftotext,,ORI Long dst=Dn: 1
+10-10,313,10-17,ORI,Long,dst=(An),1,0,1,1,nominal,pdftotext,,ORI Long dst=(An): 1
+10-10,313,10-17,ORI,Long,dst=(An)+,1,0,1,1,nominal,pdftotext,,ORI Long dst=(An)+: 1
+10-10,313,10-17,ORI,Long,dst=-(An),1,0,1,1,nominal,pdftotext,,ORI Long dst=-(An): 1
+10-10,313,10-17,ORI,Long,"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"ORI Long dst=(d16,An): 2"
+10-10,313,10-17,ORI,Long,"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"ORI Long dst=(d8,An,Xi): 2"
+10-10,313,10-17,ORI,Long,"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"ORI Long dst=(bd,An,Xi): 3"
+10-10,313,10-17,ORI,Long,dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,ORI Long dst=(xxx).WL: 2
+10-10,313,10-17,SUBI,"Byte, Word",dst=Dn,1,0,0,0,nominal,pdftotext,,"SUBI Byte, Word dst=Dn: 1"
+10-10,313,10-17,SUBI,"Byte, Word",dst=(An),1,0,1,1,nominal,pdftotext,,"SUBI Byte, Word dst=(An): 1"
+10-10,313,10-17,SUBI,"Byte, Word",dst=(An)+,1,0,1,1,nominal,pdftotext,,"SUBI Byte, Word dst=(An)+: 1"
+10-10,313,10-17,SUBI,"Byte, Word",dst=-(An),1,0,1,1,nominal,pdftotext,,"SUBI Byte, Word dst=-(An): 1"
+10-10,313,10-17,SUBI,"Byte, Word","dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"SUBI Byte, Word dst=(d16,An): 2"
+10-10,313,10-17,SUBI,"Byte, Word","dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"SUBI Byte, Word dst=(d8,An,Xi): 2"
+10-10,313,10-17,SUBI,"Byte, Word","dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"SUBI Byte, Word dst=(bd,An,Xi): 3"
+10-10,313,10-17,SUBI,"Byte, Word",dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,"SUBI Byte, Word dst=(xxx).WL: 2"
+10-10,313,10-17,SUBI,Long,dst=Dn,1,0,0,0,nominal,pdftotext,,SUBI Long dst=Dn: 1
+10-10,313,10-17,SUBI,Long,dst=(An),1,0,1,1,nominal,pdftotext,,SUBI Long dst=(An): 1
+10-10,313,10-17,SUBI,Long,dst=(An)+,1,0,1,1,nominal,pdftotext,,SUBI Long dst=(An)+: 1
+10-10,313,10-17,SUBI,Long,dst=-(An),1,0,1,1,nominal,pdftotext,,SUBI Long dst=-(An): 1
+10-10,313,10-17,SUBI,Long,"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"SUBI Long dst=(d16,An): 2"
+10-10,313,10-17,SUBI,Long,"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"SUBI Long dst=(d8,An,Xi): 2"
+10-10,313,10-17,SUBI,Long,"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"SUBI Long dst=(bd,An,Xi): 3"
+10-10,313,10-17,SUBI,Long,dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,SUBI Long dst=(xxx).WL: 2
+10-10,313,10-17,ADDQ,"Byte, Word",dst=Dn,1,0,0,0,nominal,pdftotext,,"ADDQ Byte, Word dst=Dn: 1"
+10-10,313,10-17,ADDQ,"Byte, Word",dst=An,1,0,0,0,nominal,pdftotext,,"ADDQ Byte, Word dst=An: 1"
+10-10,313,10-17,ADDQ,"Byte, Word",dst=(An),1,0,1,1,nominal,pdftotext,,"ADDQ Byte, Word dst=(An): 1"
+10-10,313,10-17,ADDQ,"Byte, Word",dst=(An)+,1,0,1,1,nominal,pdftotext,,"ADDQ Byte, Word dst=(An)+: 1"
+10-10,313,10-17,ADDQ,"Byte, Word",dst=-(An),1,0,1,1,nominal,pdftotext,,"ADDQ Byte, Word dst=-(An): 1"
+10-10,313,10-17,ADDQ,"Byte, Word","dst=(d16,An)",1,0,1,1,nominal,pdftotext,,"ADDQ Byte, Word dst=(d16,An): 1"
+10-10,313,10-17,ADDQ,"Byte, Word","dst=(d8,An,Xi)",1,0,1,1,nominal,pdftotext,,"ADDQ Byte, Word dst=(d8,An,Xi): 1"
+10-10,313,10-17,ADDQ,"Byte, Word","dst=(bd,An,Xi)",2,0,1,1,nominal,pdftotext,,"ADDQ Byte, Word dst=(bd,An,Xi): 2"
+10-10,313,10-17,ADDQ,"Byte, Word",dst=(xxx).WL,1,0,1,1,nominal,pdftotext,,"ADDQ Byte, Word dst=(xxx).WL: 1"
+10-10,313,10-17,ADDQ,Long,dst=Dn,1,0,0,0,nominal,pdftotext,,ADDQ Long dst=Dn: 1
+10-10,313,10-17,ADDQ,Long,dst=An,1,0,0,0,nominal,pdftotext,,ADDQ Long dst=An: 1
+10-10,313,10-17,ADDQ,Long,dst=(An),1,0,1,1,nominal,pdftotext,,ADDQ Long dst=(An): 1
+10-10,313,10-17,ADDQ,Long,dst=(An)+,1,0,1,1,nominal,pdftotext,,ADDQ Long dst=(An)+: 1
+10-10,313,10-17,ADDQ,Long,dst=-(An),1,0,1,1,nominal,pdftotext,,ADDQ Long dst=-(An): 1
+10-10,313,10-17,ADDQ,Long,"dst=(d16,An)",1,0,1,1,nominal,pdftotext,,"ADDQ Long dst=(d16,An): 1"
+10-10,313,10-17,ADDQ,Long,"dst=(d8,An,Xi)",1,0,1,1,nominal,pdftotext,,"ADDQ Long dst=(d8,An,Xi): 1"
+10-10,313,10-17,ADDQ,Long,"dst=(bd,An,Xi)",2,0,1,1,nominal,pdftotext,,"ADDQ Long dst=(bd,An,Xi): 2"
+10-10,313,10-17,ADDQ,Long,dst=(xxx).WL,1,0,1,1,nominal,pdftotext,,ADDQ Long dst=(xxx).WL: 1
+10-10,313,10-17,SUBQ,"Byte, Word",dst=Dn,1,0,0,0,nominal,pdftotext,,"SUBQ Byte, Word dst=Dn: 1"
+10-10,313,10-17,SUBQ,"Byte, Word",dst=An,1,0,0,0,nominal,pdftotext,,"SUBQ Byte, Word dst=An: 1"
+10-10,313,10-17,SUBQ,"Byte, Word",dst=(An),1,0,1,1,nominal,pdftotext,,"SUBQ Byte, Word dst=(An): 1"
+10-10,313,10-17,SUBQ,"Byte, Word",dst=(An)+,1,0,1,1,nominal,pdftotext,,"SUBQ Byte, Word dst=(An)+: 1"
+10-10,313,10-17,SUBQ,"Byte, Word",dst=-(An),1,0,1,1,nominal,pdftotext,,"SUBQ Byte, Word dst=-(An): 1"
+10-10,313,10-17,SUBQ,"Byte, Word","dst=(d16,An)",1,0,1,1,nominal,pdftotext,,"SUBQ Byte, Word dst=(d16,An): 1"
+10-10,313,10-17,SUBQ,"Byte, Word","dst=(d8,An,Xi)",1,0,1,1,nominal,pdftotext,,"SUBQ Byte, Word dst=(d8,An,Xi): 1"
+10-10,313,10-17,SUBQ,"Byte, Word","dst=(bd,An,Xi)",2,0,1,1,nominal,pdftotext,,"SUBQ Byte, Word dst=(bd,An,Xi): 2"
+10-10,313,10-17,SUBQ,"Byte, Word",dst=(xxx).WL,1,0,1,1,nominal,pdftotext,,"SUBQ Byte, Word dst=(xxx).WL: 1"
+10-10,313,10-17,SUBQ,Long,dst=Dn,1,0,0,0,nominal,pdftotext,,SUBQ Long dst=Dn: 1
+10-10,313,10-17,SUBQ,Long,dst=An,1,0,0,0,nominal,pdftotext,,SUBQ Long dst=An: 1
+10-10,313,10-17,SUBQ,Long,dst=(An),1,0,1,1,nominal,pdftotext,,SUBQ Long dst=(An): 1
+10-10,313,10-17,SUBQ,Long,dst=(An)+,1,0,1,1,nominal,pdftotext,,SUBQ Long dst=(An)+: 1
+10-10,313,10-17,SUBQ,Long,dst=-(An),1,0,1,1,nominal,pdftotext,,SUBQ Long dst=-(An): 1
+10-10,313,10-17,SUBQ,Long,"dst=(d16,An)",1,0,1,1,nominal,pdftotext,,"SUBQ Long dst=(d16,An): 1"
+10-10,313,10-17,SUBQ,Long,"dst=(d8,An,Xi)",1,0,1,1,nominal,pdftotext,,"SUBQ Long dst=(d8,An,Xi): 1"
+10-10,313,10-17,SUBQ,Long,"dst=(bd,An,Xi)",2,0,1,1,nominal,pdftotext,,"SUBQ Long dst=(bd,An,Xi): 2"
+10-10,313,10-17,SUBQ,Long,dst=(xxx).WL,1,0,1,1,nominal,pdftotext,,SUBQ Long dst=(xxx).WL: 1
+10-10,313,10-17,MOVEQ,Long,dst=Dn,1,0,0,0,nominal,pdftotext,,MOVEQ Long dst=Dn: 1
+10-11,314,10-18,CAS,"Byte, Word",Memory,19,0,1,1,nominal,pdftotext,,"CAS Byte, Word Memory: 19"
+10-11,314,10-18,CAS,Long,Memory,19,0,1,1,nominal,pdftotext,,CAS Long Memory: 19
+10-11,314,10-18,NBCD,Byte,Register,1,0,0,0,nominal,pdftotext,,NBCD Byte Register: 1
+10-11,314,10-18,NBCD,Byte,Memory,1,0,1,1,nominal,pdftotext,,NBCD Byte Memory: 1
+10-11,314,10-18,NEG,"Byte, Word",Register,1,0,0,0,nominal,pdftotext,,"NEG Byte, Word Register: 1"
+10-11,314,10-18,NEG,"Byte, Word",Memory,1,0,1,1,nominal,pdftotext,,"NEG Byte, Word Memory: 1"
+10-11,314,10-18,NEG,Long,Register,1,0,0,0,nominal,pdftotext,,NEG Long Register: 1
+10-11,314,10-18,NEG,Long,Memory,1,0,1,1,nominal,pdftotext,,NEG Long Memory: 1
+10-11,314,10-18,NEGX,"Byte, Word",Register,1,0,0,0,nominal,pdftotext,,"NEGX Byte, Word Register: 1"
+10-11,314,10-18,NEGX,"Byte, Word",Memory,1,0,1,1,nominal,pdftotext,,"NEGX Byte, Word Memory: 1"
+10-11,314,10-18,NEGX,Long,Register,1,0,0,0,nominal,pdftotext,,NEGX Long Register: 1
+10-11,314,10-18,NEGX,Long,Memory,1,0,1,1,nominal,pdftotext,,NEGX Long Memory: 1
+10-11,314,10-18,NOT,"Byte, Word",Register,1,0,0,0,nominal,pdftotext,,"NOT Byte, Word Register: 1"
+10-11,314,10-18,NOT,"Byte, Word",Memory,1,0,1,1,nominal,pdftotext,,"NOT Byte, Word Memory: 1"
+10-11,314,10-18,NOT,Long,Register,1,0,0,0,nominal,pdftotext,,NOT Long Register: 1
+10-11,314,10-18,NOT,Long,Memory,1,0,1,1,nominal,pdftotext,,NOT Long Memory: 1
+10-11,314,10-18,Scc,Byte -> False,Register,1,0,0,0,nominal,pdftotext,,Scc Byte -> False Register: 1
+10-11,314,10-18,Scc,Byte -> False,Memory,1,0,1,1,nominal,pdftotext,,Scc Byte -> False Memory: 1
+10-11,314,10-18,Scc,Byte -> True,Register,1,0,0,0,nominal,pdftotext,,Scc Byte -> True Register: 1
+10-11,314,10-18,Scc,Byte -> True,Memory,1,0,1,1,nominal,pdftotext,,Scc Byte -> True Memory: 1
+10-11,314,10-18,TAS,Byte,Register,1,0,0,0,nominal,pdftotext,,TAS Byte Register: 1
+10-11,314,10-18,TAS,Byte,Memory,17,0,1,1,nominal,pdftotext,,TAS Byte Memory: 17
+10-11,314,10-18,TST,"Byte, Word",Register,1,0,0,0,nominal,pdftotext,,"TST Byte, Word Register: 1"
+10-11,314,10-18,TST,"Byte, Word",Memory,1,0,1,0,nominal,pdftotext,,"TST Byte, Word Memory: 1"
+10-11,314,10-18,TST,Long,Register,1,0,0,0,nominal,pdftotext,,TST Long Register: 1
+10-11,314,10-18,TST,Long,Memory,1,0,1,0,nominal,pdftotext,,TST Long Memory: 1
+10-12,314,10-18,CLR,"Byte, Word",dst=Dn,1,0,0,0,nominal,pdftotext,,"CLR Byte, Word dst=Dn: 1"
+10-12,314,10-18,CLR,"Byte, Word",dst=(An),1,0,0,1,nominal,pdftotext,,"CLR Byte, Word dst=(An): 1"
+10-12,314,10-18,CLR,"Byte, Word",dst=(An)+,1,0,0,1,nominal,pdftotext,,"CLR Byte, Word dst=(An)+: 1"
+10-12,314,10-18,CLR,"Byte, Word",dst=-(An),1,0,0,1,nominal,pdftotext,,"CLR Byte, Word dst=-(An): 1"
+10-12,314,10-18,CLR,"Byte, Word","dst=(d16,An)",1,0,0,1,nominal,pdftotext,,"CLR Byte, Word dst=(d16,An): 1"
+10-12,314,10-18,CLR,"Byte, Word","dst=(d8,An,Xi)",1,0,0,1,nominal,pdftotext,,"CLR Byte, Word dst=(d8,An,Xi): 1"
+10-12,314,10-18,CLR,"Byte, Word","dst=(bd,An,Xi)",2,0,0,1,nominal,pdftotext,,"CLR Byte, Word dst=(bd,An,Xi): 2"
+10-12,314,10-18,CLR,"Byte, Word",dst=(xxx).WL,1,0,0,1,nominal,pdftotext,,"CLR Byte, Word dst=(xxx).WL: 1"
+10-12,314,10-18,CLR,Long,dst=Dn,1,0,0,0,nominal,pdftotext,,CLR Long dst=Dn: 1
+10-12,314,10-18,CLR,Long,dst=(An),1,0,0,1,nominal,pdftotext,,CLR Long dst=(An): 1
+10-12,314,10-18,CLR,Long,dst=(An)+,1,0,0,1,nominal,pdftotext,,CLR Long dst=(An)+: 1
+10-12,314,10-18,CLR,Long,dst=-(An),1,0,0,1,nominal,pdftotext,,CLR Long dst=-(An): 1
+10-12,314,10-18,CLR,Long,"dst=(d16,An)",1,0,0,1,nominal,pdftotext,,"CLR Long dst=(d16,An): 1"
+10-12,314,10-18,CLR,Long,"dst=(d8,An,Xi)",1,0,0,1,nominal,pdftotext,,"CLR Long dst=(d8,An,Xi): 1"
+10-12,314,10-18,CLR,Long,"dst=(bd,An,Xi)",2,0,0,1,nominal,pdftotext,,"CLR Long dst=(bd,An,Xi): 2"
+10-12,314,10-18,CLR,Long,dst=(xxx).WL,1,0,0,1,nominal,pdftotext,,CLR Long dst=(xxx).WL: 1
+10-13,315,10-19,ASL,"Byte, Word",Register,1,0,0,0,nominal,pdftotext,,"ASL Byte, Word Register: 1"
+10-13,315,10-19,ASL,"Byte, Word",Memory,1,0,1,1,nominal,pdftotext,,"ASL Byte, Word Memory: 1"
+10-13,315,10-19,ASL,Long,Register,1,0,0,0,nominal,pdftotext,,ASL Long Register: 1
+10-13,315,10-19,ASR,"Byte, Word",Register,1,0,0,0,nominal,pdftotext,,"ASR Byte, Word Register: 1"
+10-13,315,10-19,ASR,"Byte, Word",Memory,1,0,1,1,nominal,pdftotext,,"ASR Byte, Word Memory: 1"
+10-13,315,10-19,ASR,Long,Register,1,0,0,0,nominal,pdftotext,,ASR Long Register: 1
+10-13,315,10-19,LSL,"Byte, Word",Register,1,0,0,0,nominal,pdftotext,,"LSL Byte, Word Register: 1"
+10-13,315,10-19,LSL,"Byte, Word",Memory,1,0,1,1,nominal,pdftotext,,"LSL Byte, Word Memory: 1"
+10-13,315,10-19,LSL,Long,Register,1,0,0,0,nominal,pdftotext,,LSL Long Register: 1
+10-13,315,10-19,LSR,"Byte, Word",Register,1,0,0,0,nominal,pdftotext,,"LSR Byte, Word Register: 1"
+10-13,315,10-19,LSR,"Byte, Word",Memory,1,0,1,1,nominal,pdftotext,,"LSR Byte, Word Memory: 1"
+10-13,315,10-19,LSR,Long,Register,1,0,0,0,nominal,pdftotext,,LSR Long Register: 1
+10-13,315,10-19,ROL,"Byte, Word",Register,1,0,0,0,nominal,pdftotext,,"ROL Byte, Word Register: 1"
+10-13,315,10-19,ROL,"Byte, Word",Memory,1,0,1,1,nominal,pdftotext,,"ROL Byte, Word Memory: 1"
+10-13,315,10-19,ROL,Long,Register,1,0,0,0,nominal,pdftotext,,ROL Long Register: 1
+10-13,315,10-19,ROR,"Byte, Word",Register,1,0,0,0,nominal,pdftotext,,"ROR Byte, Word Register: 1"
+10-13,315,10-19,ROR,"Byte, Word",Memory,1,0,1,1,nominal,pdftotext,,"ROR Byte, Word Memory: 1"
+10-13,315,10-19,ROR,Long,Register,1,0,0,0,nominal,pdftotext,,ROR Long Register: 1
+10-13,315,10-19,ROXL,"Byte, Word",Register,1,0,0,0,nominal,pdftotext,,"ROXL Byte, Word Register: 1"
+10-13,315,10-19,ROXL,"Byte, Word",Memory,1,0,1,1,nominal,pdftotext,,"ROXL Byte, Word Memory: 1"
+10-13,315,10-19,ROXL,Long,Register,1,0,0,0,nominal,pdftotext,,ROXL Long Register: 1
+10-13,315,10-19,ROXR,"Byte, Word",Register,1,0,0,0,nominal,pdftotext,,"ROXR Byte, Word Register: 1"
+10-13,315,10-19,ROXR,"Byte, Word",Memory,1,0,1,1,nominal,pdftotext,,"ROXR Byte, Word Memory: 1"
+10-13,315,10-19,ROXR,Long,Register,1,0,0,0,nominal,pdftotext,,ROXR Long Register: 1
+10-14,315,10-19,BTST,Byte,Memory,1,0,1,0,nominal,pdftotext,,BTST Byte Memory: 1
+10-14,315,10-19,BTST,Long,Register,1,0,0,0,nominal,pdftotext,,BTST Long Register: 1
+10-15,316,10-20,BTST,Byte,dst=(An),1,0,1,0,nominal,pdftotext,,BTST Byte dst=(An): 1
+10-15,316,10-20,BTST,Byte,dst=(An)+,1,0,1,0,nominal,pdftotext,,BTST Byte dst=(An)+: 1
+10-15,316,10-20,BTST,Byte,dst=-(An),1,0,1,0,nominal,pdftotext,,BTST Byte dst=-(An): 1
+10-15,316,10-20,BTST,Byte,"dst=(d16,An)",2,0,1,0,nominal,pdftotext,,"BTST Byte dst=(d16,An): 2"
+10-15,316,10-20,BTST,Byte,"dst=(d8,An,Xi)",2,0,1,0,nominal,pdftotext,,"BTST Byte dst=(d8,An,Xi): 2"
+10-15,316,10-20,BTST,Byte,"dst=(bd,An,Xi)",3,0,1,0,nominal,pdftotext,,"BTST Byte dst=(bd,An,Xi): 3"
+10-15,316,10-20,BTST,Byte,dst=(xxx).WL,2,0,1,0,nominal,pdftotext,,BTST Byte dst=(xxx).WL: 2
+10-15,316,10-20,BTST,Long,dst=Dn,1,0,0,0,nominal,pdftotext,,BTST Long dst=Dn: 1
+10-14,315,10-19,BCHG,Byte,Memory,1,0,1,1,nominal,pdftotext,,BCHG Byte Memory: 1
+10-14,315,10-19,BCHG,Long,Register,1,0,0,0,nominal,pdftotext,,BCHG Long Register: 1
+10-15,316,10-20,BCHG,Byte,dst=(An),1,0,1,1,nominal,pdftotext,,BCHG Byte dst=(An): 1
+10-15,316,10-20,BCHG,Byte,dst=(An)+,1,0,1,1,nominal,pdftotext,,BCHG Byte dst=(An)+: 1
+10-15,316,10-20,BCHG,Byte,dst=-(An),1,0,1,1,nominal,pdftotext,,BCHG Byte dst=-(An): 1
+10-15,316,10-20,BCHG,Byte,"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"BCHG Byte dst=(d16,An): 2"
+10-15,316,10-20,BCHG,Byte,"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"BCHG Byte dst=(d8,An,Xi): 2"
+10-15,316,10-20,BCHG,Byte,"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"BCHG Byte dst=(bd,An,Xi): 3"
+10-15,316,10-20,BCHG,Byte,dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,BCHG Byte dst=(xxx).WL: 2
+10-15,316,10-20,BCHG,Long,dst=Dn,1,0,0,0,nominal,pdftotext,,BCHG Long dst=Dn: 1
+10-14,315,10-19,BCLR,Byte,Memory,1,0,1,1,nominal,pdftotext,,BCLR Byte Memory: 1
+10-14,315,10-19,BCLR,Long,Register,1,0,0,0,nominal,pdftotext,,BCLR Long Register: 1
+10-15,316,10-20,BCLR,Byte,dst=(An),1,0,1,1,nominal,pdftotext,,BCLR Byte dst=(An): 1
+10-15,316,10-20,BCLR,Byte,dst=(An)+,1,0,1,1,nominal,pdftotext,,BCLR Byte dst=(An)+: 1
+10-15,316,10-20,BCLR,Byte,dst=-(An),1,0,1,1,nominal,pdftotext,,BCLR Byte dst=-(An): 1
+10-15,316,10-20,BCLR,Byte,"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"BCLR Byte dst=(d16,An): 2"
+10-15,316,10-20,BCLR,Byte,"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"BCLR Byte dst=(d8,An,Xi): 2"
+10-15,316,10-20,BCLR,Byte,"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"BCLR Byte dst=(bd,An,Xi): 3"
+10-15,316,10-20,BCLR,Byte,dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,BCLR Byte dst=(xxx).WL: 2
+10-15,316,10-20,BCLR,Long,dst=Dn,1,0,0,0,nominal,pdftotext,,BCLR Long dst=Dn: 1
+10-14,315,10-19,BSET,Byte,Memory,1,0,1,1,nominal,pdftotext,,BSET Byte Memory: 1
+10-14,315,10-19,BSET,Long,Register,1,0,0,0,nominal,pdftotext,,BSET Long Register: 1
+10-15,316,10-20,BSET,Byte,dst=(An),1,0,1,1,nominal,pdftotext,,BSET Byte dst=(An): 1
+10-15,316,10-20,BSET,Byte,dst=(An)+,1,0,1,1,nominal,pdftotext,,BSET Byte dst=(An)+: 1
+10-15,316,10-20,BSET,Byte,dst=-(An),1,0,1,1,nominal,pdftotext,,BSET Byte dst=-(An): 1
+10-15,316,10-20,BSET,Byte,"dst=(d16,An)",2,0,1,1,nominal,pdftotext,,"BSET Byte dst=(d16,An): 2"
+10-15,316,10-20,BSET,Byte,"dst=(d8,An,Xi)",2,0,1,1,nominal,pdftotext,,"BSET Byte dst=(d8,An,Xi): 2"
+10-15,316,10-20,BSET,Byte,"dst=(bd,An,Xi)",3,0,1,1,nominal,pdftotext,,"BSET Byte dst=(bd,An,Xi): 3"
+10-15,316,10-20,BSET,Byte,dst=(xxx).WL,2,0,1,1,nominal,pdftotext,,BSET Byte dst=(xxx).WL: 2
+10-15,316,10-20,BSET,Long,dst=Dn,1,0,0,0,nominal,pdftotext,,BSET Long dst=Dn: 1
+10-16,316,10-20,BFCHG,< 5 bytes,dst=Dn,8,0,0,0,nominal,pdftotext,,BFCHG < 5 bytes dst=Dn: 8
+10-16,316,10-20,BFCHG,< 5 bytes,dst=(An),8,0,2,1,nominal,pdftotext,,BFCHG < 5 bytes dst=(An): 8
+10-16,316,10-20,BFCHG,< 5 bytes,"dst=(d16,An)",8,0,2,1,nominal,pdftotext,,"BFCHG < 5 bytes dst=(d16,An): 8"
+10-16,316,10-20,BFCHG,< 5 bytes,"dst=(d8,An,Xi)",9,0,2,1,nominal,pdftotext,,"BFCHG < 5 bytes dst=(d8,An,Xi): 9"
+10-16,316,10-20,BFCHG,< 5 bytes,"dst=(bd,An,Xi)",10,0,2,1,nominal,pdftotext,,"BFCHG < 5 bytes dst=(bd,An,Xi): 10"
+10-16,316,10-20,BFCHG,< 5 bytes,dst=(xxx).WL,9,0,2,1,nominal,pdftotext,,BFCHG < 5 bytes dst=(xxx).WL: 9
+10-16,316,10-20,BFCHG,= 5 bytes,dst=Dn,12,0,0,0,nominal,pdftotext,,BFCHG = 5 bytes dst=Dn: 12
+10-16,316,10-20,BFCHG,= 5 bytes,dst=(An),12,0,4,2,nominal,pdftotext,,BFCHG = 5 bytes dst=(An): 12
+10-16,316,10-20,BFCHG,= 5 bytes,"dst=(d16,An)",12,0,4,2,nominal,pdftotext,,"BFCHG = 5 bytes dst=(d16,An): 12"
+10-16,316,10-20,BFCHG,= 5 bytes,"dst=(d8,An,Xi)",13,0,4,2,nominal,pdftotext,,"BFCHG = 5 bytes dst=(d8,An,Xi): 13"
+10-16,316,10-20,BFCHG,= 5 bytes,"dst=(bd,An,Xi)",14,0,4,2,nominal,pdftotext,,"BFCHG = 5 bytes dst=(bd,An,Xi): 14"
+10-16,316,10-20,BFCHG,= 5 bytes,dst=(xxx).WL,13,0,4,2,nominal,pdftotext,,BFCHG = 5 bytes dst=(xxx).WL: 13
+10-16,316,10-20,BFCLR,< 5 bytes,dst=Dn,8,0,0,0,nominal,pdftotext,,BFCLR < 5 bytes dst=Dn: 8
+10-16,316,10-20,BFCLR,< 5 bytes,dst=(An),8,0,2,1,nominal,pdftotext,,BFCLR < 5 bytes dst=(An): 8
+10-16,316,10-20,BFCLR,< 5 bytes,"dst=(d16,An)",8,0,2,1,nominal,pdftotext,,"BFCLR < 5 bytes dst=(d16,An): 8"
+10-16,316,10-20,BFCLR,< 5 bytes,"dst=(d8,An,Xi)",9,0,2,1,nominal,pdftotext,,"BFCLR < 5 bytes dst=(d8,An,Xi): 9"
+10-16,316,10-20,BFCLR,< 5 bytes,"dst=(bd,An,Xi)",10,0,2,1,nominal,pdftotext,,"BFCLR < 5 bytes dst=(bd,An,Xi): 10"
+10-16,316,10-20,BFCLR,< 5 bytes,dst=(xxx).WL,9,0,2,1,nominal,pdftotext,,BFCLR < 5 bytes dst=(xxx).WL: 9
+10-16,316,10-20,BFCLR,= 5 bytes,dst=Dn,12,0,0,0,nominal,pdftotext,,BFCLR = 5 bytes dst=Dn: 12
+10-16,316,10-20,BFCLR,= 5 bytes,dst=(An),12,0,4,2,nominal,pdftotext,,BFCLR = 5 bytes dst=(An): 12
+10-16,316,10-20,BFCLR,= 5 bytes,"dst=(d16,An)",12,0,4,2,nominal,pdftotext,,"BFCLR = 5 bytes dst=(d16,An): 12"
+10-16,316,10-20,BFCLR,= 5 bytes,"dst=(d8,An,Xi)",13,0,4,2,nominal,pdftotext,,"BFCLR = 5 bytes dst=(d8,An,Xi): 13"
+10-16,316,10-20,BFCLR,= 5 bytes,"dst=(bd,An,Xi)",14,0,4,2,nominal,pdftotext,,"BFCLR = 5 bytes dst=(bd,An,Xi): 14"
+10-16,316,10-20,BFCLR,= 5 bytes,dst=(xxx).WL,13,0,4,2,nominal,pdftotext,,BFCLR = 5 bytes dst=(xxx).WL: 13
+10-16,316,10-20,BFEXTS,< 5 bytes,dst=Dn,6,0,0,0,nominal,pdftotext,,BFEXTS < 5 bytes dst=Dn: 6
+10-16,316,10-20,BFEXTS,< 5 bytes,dst=(An),6,0,1,0,nominal,pdftotext,,BFEXTS < 5 bytes dst=(An): 6
+10-16,316,10-20,BFEXTS,< 5 bytes,"dst=(d16,An)",6,0,1,0,nominal,pdftotext,,"BFEXTS < 5 bytes dst=(d16,An): 6"
+10-16,316,10-20,BFEXTS,< 5 bytes,"dst=(d8,An,Xi)",7,0,1,0,nominal,pdftotext,,"BFEXTS < 5 bytes dst=(d8,An,Xi): 7"
+10-16,316,10-20,BFEXTS,< 5 bytes,"dst=(bd,An,Xi)",8,0,1,0,nominal,pdftotext,,"BFEXTS < 5 bytes dst=(bd,An,Xi): 8"
+10-16,316,10-20,BFEXTS,< 5 bytes,dst=(xxx).WL,7,0,1,0,nominal,pdftotext,,BFEXTS < 5 bytes dst=(xxx).WL: 7
+10-16,316,10-20,BFEXTS,= 5 bytes,dst=Dn,8,0,0,0,nominal,pdftotext,,BFEXTS = 5 bytes dst=Dn: 8
+10-16,316,10-20,BFEXTS,= 5 bytes,dst=(An),8,0,2,0,nominal,pdftotext,,BFEXTS = 5 bytes dst=(An): 8
+10-16,316,10-20,BFEXTS,= 5 bytes,"dst=(d16,An)",8,0,2,0,nominal,pdftotext,,"BFEXTS = 5 bytes dst=(d16,An): 8"
+10-16,316,10-20,BFEXTS,= 5 bytes,"dst=(d8,An,Xi)",9,0,2,0,nominal,pdftotext,,"BFEXTS = 5 bytes dst=(d8,An,Xi): 9"
+10-16,316,10-20,BFEXTS,= 5 bytes,"dst=(bd,An,Xi)",10,0,2,0,nominal,pdftotext,,"BFEXTS = 5 bytes dst=(bd,An,Xi): 10"
+10-16,316,10-20,BFEXTS,= 5 bytes,dst=(xxx).WL,9,0,2,0,nominal,pdftotext,,BFEXTS = 5 bytes dst=(xxx).WL: 9
+10-16,316,10-20,BFEXTU,< 5 bytes,dst=Dn,6,0,0,0,nominal,pdftotext,,BFEXTU < 5 bytes dst=Dn: 6
+10-16,316,10-20,BFEXTU,< 5 bytes,dst=(An),6,0,1,0,nominal,pdftotext,,BFEXTU < 5 bytes dst=(An): 6
+10-16,316,10-20,BFEXTU,< 5 bytes,"dst=(d16,An)",6,0,1,0,nominal,pdftotext,,"BFEXTU < 5 bytes dst=(d16,An): 6"
+10-16,316,10-20,BFEXTU,< 5 bytes,"dst=(d8,An,Xi)",7,0,1,0,nominal,pdftotext,,"BFEXTU < 5 bytes dst=(d8,An,Xi): 7"
+10-16,316,10-20,BFEXTU,< 5 bytes,"dst=(bd,An,Xi)",8,0,1,0,nominal,pdftotext,,"BFEXTU < 5 bytes dst=(bd,An,Xi): 8"
+10-16,316,10-20,BFEXTU,< 5 bytes,dst=(xxx).WL,7,0,1,0,nominal,pdftotext,,BFEXTU < 5 bytes dst=(xxx).WL: 7
+10-16,316,10-20,BFEXTU,= 5 bytes,dst=Dn,8,0,0,0,nominal,pdftotext,,BFEXTU = 5 bytes dst=Dn: 8
+10-16,316,10-20,BFEXTU,= 5 bytes,dst=(An),8,0,2,0,nominal,pdftotext,,BFEXTU = 5 bytes dst=(An): 8
+10-16,316,10-20,BFEXTU,= 5 bytes,"dst=(d16,An)",8,0,2,0,nominal,pdftotext,,"BFEXTU = 5 bytes dst=(d16,An): 8"
+10-16,316,10-20,BFEXTU,= 5 bytes,"dst=(d8,An,Xi)",9,0,2,0,nominal,pdftotext,,"BFEXTU = 5 bytes dst=(d8,An,Xi): 9"
+10-16,316,10-20,BFEXTU,= 5 bytes,"dst=(bd,An,Xi)",10,0,2,0,nominal,pdftotext,,"BFEXTU = 5 bytes dst=(bd,An,Xi): 10"
+10-16,316,10-20,BFEXTU,= 5 bytes,dst=(xxx).WL,9,0,2,0,nominal,pdftotext,,BFEXTU = 5 bytes dst=(xxx).WL: 9
+10-16,316,10-20,BFFFO,< 5 bytes,dst=Dn,9,0,0,0,nominal,pdftotext,,BFFFO < 5 bytes dst=Dn: 9
+10-16,316,10-20,BFFFO,< 5 bytes,dst=(An),9,0,1,0,nominal,pdftotext,,BFFFO < 5 bytes dst=(An): 9
+10-16,316,10-20,BFFFO,< 5 bytes,"dst=(d16,An)",9,0,1,0,nominal,pdftotext,,"BFFFO < 5 bytes dst=(d16,An): 9"
+10-16,316,10-20,BFFFO,< 5 bytes,"dst=(d8,An,Xi)",10,0,1,0,nominal,pdftotext,,"BFFFO < 5 bytes dst=(d8,An,Xi): 10"
+10-16,316,10-20,BFFFO,< 5 bytes,"dst=(bd,An,Xi)",11,0,1,0,nominal,pdftotext,,"BFFFO < 5 bytes dst=(bd,An,Xi): 11"
+10-16,316,10-20,BFFFO,< 5 bytes,dst=(xxx).WL,10,0,1,0,nominal,pdftotext,,BFFFO < 5 bytes dst=(xxx).WL: 10
+10-16,316,10-20,BFFFO,= 5 bytes,dst=Dn,11,0,0,0,nominal,pdftotext,,BFFFO = 5 bytes dst=Dn: 11
+10-16,316,10-20,BFFFO,= 5 bytes,dst=(An),11,0,2,0,nominal,pdftotext,,BFFFO = 5 bytes dst=(An): 11
+10-16,316,10-20,BFFFO,= 5 bytes,"dst=(d16,An)",11,0,2,0,nominal,pdftotext,,"BFFFO = 5 bytes dst=(d16,An): 11"
+10-16,316,10-20,BFFFO,= 5 bytes,"dst=(d8,An,Xi)",12,0,2,0,nominal,pdftotext,,"BFFFO = 5 bytes dst=(d8,An,Xi): 12"
+10-16,316,10-20,BFFFO,= 5 bytes,"dst=(bd,An,Xi)",13,0,2,0,nominal,pdftotext,,"BFFFO = 5 bytes dst=(bd,An,Xi): 13"
+10-16,316,10-20,BFFFO,= 5 bytes,dst=(xxx).WL,12,0,2,0,nominal,pdftotext,,BFFFO = 5 bytes dst=(xxx).WL: 12
+10-16,316,10-20,BFINS,< 5 bytes,dst=Dn,6,0,0,0,nominal,pdftotext,,BFINS < 5 bytes dst=Dn: 6
+10-16,316,10-20,BFINS,< 5 bytes,dst=(An),6,0,1,1,nominal,pdftotext,,BFINS < 5 bytes dst=(An): 6
+10-16,316,10-20,BFINS,< 5 bytes,"dst=(d16,An)",6,0,1,1,nominal,pdftotext,,"BFINS < 5 bytes dst=(d16,An): 6"
+10-16,316,10-20,BFINS,< 5 bytes,"dst=(d8,An,Xi)",7,0,1,1,nominal,pdftotext,,"BFINS < 5 bytes dst=(d8,An,Xi): 7"
+10-16,316,10-20,BFINS,< 5 bytes,"dst=(bd,An,Xi)",8,0,1,1,nominal,pdftotext,,"BFINS < 5 bytes dst=(bd,An,Xi): 8"
+10-16,316,10-20,BFINS,< 5 bytes,dst=(xxx).WL,7,0,1,1,nominal,pdftotext,,BFINS < 5 bytes dst=(xxx).WL: 7
+10-16,316,10-20,BFINS,= 5 bytes,dst=Dn,6,0,0,0,nominal,pdftotext,,BFINS = 5 bytes dst=Dn: 6
+10-16,316,10-20,BFINS,= 5 bytes,dst=(An),6,0,2,2,nominal,pdftotext,,BFINS = 5 bytes dst=(An): 6
+10-16,316,10-20,BFINS,= 5 bytes,"dst=(d16,An)",6,0,2,2,nominal,pdftotext,,"BFINS = 5 bytes dst=(d16,An): 6"
+10-16,316,10-20,BFINS,= 5 bytes,"dst=(d8,An,Xi)",7,0,2,2,nominal,pdftotext,,"BFINS = 5 bytes dst=(d8,An,Xi): 7"
+10-16,316,10-20,BFINS,= 5 bytes,"dst=(bd,An,Xi)",8,0,2,2,nominal,pdftotext,,"BFINS = 5 bytes dst=(bd,An,Xi): 8"
+10-16,316,10-20,BFINS,= 5 bytes,dst=(xxx).WL,7,0,2,2,nominal,pdftotext,,BFINS = 5 bytes dst=(xxx).WL: 7
+10-16,316,10-20,BFSET,< 5 bytes,dst=Dn,8,0,0,0,nominal,pdftotext,,BFSET < 5 bytes dst=Dn: 8
+10-16,316,10-20,BFSET,< 5 bytes,dst=(An),8,0,2,1,nominal,pdftotext,,BFSET < 5 bytes dst=(An): 8
+10-16,316,10-20,BFSET,< 5 bytes,"dst=(d16,An)",8,0,2,1,nominal,pdftotext,,"BFSET < 5 bytes dst=(d16,An): 8"
+10-16,316,10-20,BFSET,< 5 bytes,"dst=(d8,An,Xi)",9,0,2,1,nominal,pdftotext,,"BFSET < 5 bytes dst=(d8,An,Xi): 9"
+10-16,316,10-20,BFSET,< 5 bytes,"dst=(bd,An,Xi)",10,0,2,1,nominal,pdftotext,,"BFSET < 5 bytes dst=(bd,An,Xi): 10"
+10-16,316,10-20,BFSET,< 5 bytes,dst=(xxx).WL,9,0,2,1,nominal,pdftotext,,BFSET < 5 bytes dst=(xxx).WL: 9
+10-16,316,10-20,BFSET,= 5 bytes,dst=Dn,12,0,0,0,nominal,pdftotext,,BFSET = 5 bytes dst=Dn: 12
+10-16,316,10-20,BFSET,= 5 bytes,dst=(An),12,0,4,2,nominal,pdftotext,,BFSET = 5 bytes dst=(An): 12
+10-16,316,10-20,BFSET,= 5 bytes,"dst=(d16,An)",12,0,4,2,nominal,pdftotext,,"BFSET = 5 bytes dst=(d16,An): 12"
+10-16,316,10-20,BFSET,= 5 bytes,"dst=(d8,An,Xi)",13,0,4,2,nominal,pdftotext,,"BFSET = 5 bytes dst=(d8,An,Xi): 13"
+10-16,316,10-20,BFSET,= 5 bytes,"dst=(bd,An,Xi)",14,0,4,2,nominal,pdftotext,,"BFSET = 5 bytes dst=(bd,An,Xi): 14"
+10-16,316,10-20,BFSET,= 5 bytes,dst=(xxx).WL,13,0,4,2,nominal,pdftotext,,BFSET = 5 bytes dst=(xxx).WL: 13
+10-16,316,10-20,BFTST,< 5 bytes,dst=Dn,6,0,0,0,nominal,pdftotext,,BFTST < 5 bytes dst=Dn: 6
+10-16,316,10-20,BFTST,< 5 bytes,dst=(An),6,0,1,0,nominal,pdftotext,,BFTST < 5 bytes dst=(An): 6
+10-16,316,10-20,BFTST,< 5 bytes,"dst=(d16,An)",6,0,1,0,nominal,pdftotext,,"BFTST < 5 bytes dst=(d16,An): 6"
+10-16,316,10-20,BFTST,< 5 bytes,"dst=(d8,An,Xi)",7,0,1,0,nominal,pdftotext,,"BFTST < 5 bytes dst=(d8,An,Xi): 7"
+10-16,316,10-20,BFTST,< 5 bytes,"dst=(bd,An,Xi)",8,0,1,0,nominal,pdftotext,,"BFTST < 5 bytes dst=(bd,An,Xi): 8"
+10-16,316,10-20,BFTST,< 5 bytes,dst=(xxx).WL,7,0,1,0,nominal,pdftotext,,BFTST < 5 bytes dst=(xxx).WL: 7
+10-16,316,10-20,BFTST,= 5 bytes,dst=Dn,8,0,0,0,nominal,pdftotext,,BFTST = 5 bytes dst=Dn: 8
+10-16,316,10-20,BFTST,= 5 bytes,dst=(An),8,0,2,0,nominal,pdftotext,,BFTST = 5 bytes dst=(An): 8
+10-16,316,10-20,BFTST,= 5 bytes,"dst=(d16,An)",8,0,2,0,nominal,pdftotext,,"BFTST = 5 bytes dst=(d16,An): 8"
+10-16,316,10-20,BFTST,= 5 bytes,"dst=(d8,An,Xi)",9,0,2,0,nominal,pdftotext,,"BFTST = 5 bytes dst=(d8,An,Xi): 9"
+10-16,316,10-20,BFTST,= 5 bytes,"dst=(bd,An,Xi)",10,0,2,0,nominal,pdftotext,,"BFTST = 5 bytes dst=(bd,An,Xi): 10"
+10-16,316,10-20,BFTST,= 5 bytes,dst=(xxx).WL,9,0,2,0,nominal,pdftotext,,BFTST = 5 bytes dst=(xxx).WL: 9
+10-17,317,10-21,Bcc,"not predicted, forward, taken",displacement,7,0,0,0,nominal,pdftotext,,"Bcc not predicted, forward, taken displacement: 7"
+10-17,317,10-21,Bcc,"not predicted, forward, not taken",displacement,1,0,0,0,nominal,pdftotext,,"Bcc not predicted, forward, not taken displacement: 1"
+10-17,317,10-21,Bcc,"not predicted, backward, taken",displacement,3,0,0,0,nominal,pdftotext,,"Bcc not predicted, backward, taken displacement: 3"
+10-17,317,10-21,Bcc,"not predicted, backward, not taken",displacement,7,0,0,0,nominal,pdftotext,,"Bcc not predicted, backward, not taken displacement: 7"
+10-17,317,10-21,Bcc,predicted correctly as taken,displacement,0,0,0,0,nominal,pdftotext,,Bcc predicted correctly as taken displacement: 0
+10-17,317,10-21,Bcc,predicted correctly as not taken,displacement,1,0,0,0,not-modeled,pdftotext,reason=the branch cache keeps no predicted-not-taken state; the model uses the static-prediction column instead; actual=static-prediction column,Bcc predicted correctly as not taken displacement: 1
+10-17,317,10-21,Bcc,predicted incorrectly,displacement,7,0,0,0,nominal,pdftotext,,Bcc predicted incorrectly displacement: 7
+10-17,317,10-21,BRA,"not predicted, forward, taken",displacement,3,0,0,0,nominal,pdftotext,,"BRA not predicted, forward, taken displacement: 3"
+10-17,317,10-21,BRA,"not predicted, backward, taken",displacement,3,0,0,0,nominal,pdftotext,,"BRA not predicted, backward, taken displacement: 3"
+10-17,317,10-21,BRA,predicted correctly as taken,displacement,0,0,0,0,nominal,pdftotext,,BRA predicted correctly as taken displacement: 0
+10-17,317,10-21,BSR,"not predicted, forward, taken",displacement,3,0,0,1,nominal,pdftotext,,"BSR not predicted, forward, taken displacement: 3"
+10-17,317,10-21,BSR,"not predicted, backward, taken",displacement,3,0,0,1,nominal,pdftotext,,"BSR not predicted, backward, taken displacement: 3"
+10-17,317,10-21,BSR,predicted correctly as taken,displacement,1,0,0,1,nominal,pdftotext,,BSR predicted correctly as taken displacement: 1
+10-17,317,10-21,DBcc,"not predicted, forward, taken",displacement,3,0,0,0,nominal,pdftotext,,"DBcc not predicted, forward, taken displacement: 3"
+10-17,317,10-21,DBcc,"not predicted, forward, not taken",displacement,8,0,0,0,nominal,pdftotext,,"DBcc not predicted, forward, not taken displacement: 8"
+10-17,317,10-21,DBcc,"not predicted, backward, taken",displacement,3,0,0,0,nominal,pdftotext,,"DBcc not predicted, backward, taken displacement: 3"
+10-17,317,10-21,DBcc,"not predicted, backward, not taken",displacement,8,0,0,0,nominal,pdftotext,,"DBcc not predicted, backward, not taken displacement: 8"
+10-17,317,10-21,DBcc,predicted correctly as taken,displacement,2,0,0,0,nominal,pdftotext,,DBcc predicted correctly as taken displacement: 2
+10-17,317,10-21,DBcc,predicted correctly as not taken,displacement,2,0,0,0,not-modeled,pdftotext,reason=the branch cache keeps no predicted-not-taken state; the model uses the static-prediction column instead; actual=static-prediction column,DBcc predicted correctly as not taken displacement: 2
+10-17,317,10-21,DBcc,predicted incorrectly,displacement,8,0,0,0,nominal,pdftotext,,DBcc predicted incorrectly displacement: 8
+10-17,317,10-21,DBRA,"not predicted, forward, taken",displacement,3,0,0,0,nominal,pdftotext,,"DBRA not predicted, forward, taken displacement: 3"
+10-17,317,10-21,DBRA,"not predicted, forward, not taken",displacement,7,0,0,0,nominal,pdftotext,,"DBRA not predicted, forward, not taken displacement: 7"
+10-17,317,10-21,DBRA,"not predicted, backward, taken",displacement,3,0,0,0,nominal,pdftotext,,"DBRA not predicted, backward, taken displacement: 3"
+10-17,317,10-21,DBRA,"not predicted, backward, not taken",displacement,7,0,0,0,nominal,pdftotext,,"DBRA not predicted, backward, not taken displacement: 7"
+10-17,317,10-21,DBRA,predicted correctly as taken,displacement,1,0,0,0,nominal,pdftotext,,DBRA predicted correctly as taken displacement: 1
+10-17,317,10-21,DBRA,predicted correctly as not taken,displacement,1,0,0,0,not-modeled,pdftotext,reason=the branch cache keeps no predicted-not-taken state; the model uses the static-prediction column instead; actual=static-prediction column,DBRA predicted correctly as not taken displacement: 1
+10-17,317,10-21,DBRA,predicted incorrectly,displacement,7,0,0,0,nominal,pdftotext,,DBRA predicted incorrectly displacement: 7
+10-17,317,10-21,FBcc,"not predicted, forward, taken",displacement,8,0,0,0,nominal,pdftotext,,"FBcc not predicted, forward, taken displacement: 8"
+10-17,317,10-21,FBcc,"not predicted, forward, not taken",displacement,2,0,0,0,nominal,pdftotext,,"FBcc not predicted, forward, not taken displacement: 2"
+10-17,317,10-21,FBcc,"not predicted, backward, taken",displacement,8,0,0,0,nominal,pdftotext,,"FBcc not predicted, backward, taken displacement: 8"
+10-17,317,10-21,FBcc,"not predicted, backward, not taken",displacement,2,0,0,0,nominal,pdftotext,,"FBcc not predicted, backward, not taken displacement: 2"
+10-17,317,10-21,FBcc,predicted correctly as taken,displacement,2,0,0,0,nominal,pdftotext,,FBcc predicted correctly as taken displacement: 2
+10-17,317,10-21,FBcc,predicted correctly as not taken,displacement,2,0,0,0,not-modeled,pdftotext,reason=the branch cache keeps no predicted-not-taken state; the model uses the static-prediction column instead; actual=static-prediction column,FBcc predicted correctly as not taken displacement: 2
+10-17,317,10-21,FBcc,predicted incorrectly,displacement,8,0,0,0,nominal,pdftotext,,FBcc predicted incorrectly displacement: 8
+10-18,317,10-21,JMP,"not predicted, forward, taken","(d16,PC)",3,0,0,0,nominal,pdftotext,,"JMP not predicted, forward, taken (d16,PC): 3"
+10-18,317,10-21,JMP,"not predicted, backward, taken","(d16,PC)",3,0,0,0,nominal,pdftotext,,"JMP not predicted, backward, taken (d16,PC): 3"
+10-18,317,10-21,JMP,predicted correctly as taken,"(d16,PC)",0,0,0,0,nominal,pdftotext,,"JMP predicted correctly as taken (d16,PC): 0"
+10-18,317,10-21,JMP,"not predicted, forward, taken",xxx.WL,3,0,0,0,nominal,pdftotext,,"JMP not predicted, forward, taken xxx.WL: 3"
+10-18,317,10-21,JMP,"not predicted, backward, taken",xxx.WL,3,0,0,0,nominal,pdftotext,,"JMP not predicted, backward, taken xxx.WL: 3"
+10-18,317,10-21,JMP,predicted correctly as taken,xxx.WL,0,0,0,0,nominal,pdftotext,,JMP predicted correctly as taken xxx.WL: 0
+10-18,317,10-21,JMP,"not predicted, forward, taken",Remaining,5,0,0,0,nominal,pdftotext,,"JMP not predicted, forward, taken Remaining: 5"
+10-18,317,10-21,JMP,"not predicted, backward, taken",Remaining,5,0,0,0,nominal,pdftotext,,"JMP not predicted, backward, taken Remaining: 5"
+10-18,317,10-21,JMP,predicted correctly as taken,Remaining,5,0,0,0,nominal,pdftotext,,JMP predicted correctly as taken Remaining: 5
+10-18,317,10-21,JSR,"not predicted, forward, taken","(d16,PC)",3,0,0,1,nominal,pdftotext,,"JSR not predicted, forward, taken (d16,PC): 3"
+10-18,317,10-21,JSR,"not predicted, backward, taken","(d16,PC)",3,0,0,1,nominal,pdftotext,,"JSR not predicted, backward, taken (d16,PC): 3"
+10-18,317,10-21,JSR,predicted correctly as taken,"(d16,PC)",1,0,0,1,nominal,pdftotext,,"JSR predicted correctly as taken (d16,PC): 1"
+10-18,317,10-21,JSR,"not predicted, forward, taken",xxx.WL,3,0,0,1,nominal,pdftotext,,"JSR not predicted, forward, taken xxx.WL: 3"
+10-18,317,10-21,JSR,"not predicted, backward, taken",xxx.WL,3,0,0,1,nominal,pdftotext,,"JSR not predicted, backward, taken xxx.WL: 3"
+10-18,317,10-21,JSR,predicted correctly as taken,xxx.WL,1,0,0,1,nominal,pdftotext,,JSR predicted correctly as taken xxx.WL: 1
+10-18,317,10-21,JSR,"not predicted, forward, taken",Remaining,5,0,0,1,nominal,pdftotext,,"JSR not predicted, forward, taken Remaining: 5"
+10-18,317,10-21,JSR,"not predicted, backward, taken",Remaining,5,0,0,1,nominal,pdftotext,,"JSR not predicted, backward, taken Remaining: 5"
+10-18,317,10-21,JSR,predicted correctly as taken,Remaining,5,0,0,1,nominal,pdftotext,,JSR predicted correctly as taken Remaining: 5
+10-19,317,10-21,RTD,return,execution time,7,0,1,0,nominal,pdftotext,,RTD return execution time: 7
+10-19,317,10-21,RTE,return,execution time,17,0,3,0,nominal,pdftotext,,RTE return execution time: 17
+10-19,317,10-21,RTR,return,execution time,8,0,2,0,nominal,pdftotext,,RTR return execution time: 8
+10-19,317,10-21,RTS,return,execution time,7,0,1,0,nominal,pdftotext,,RTS return execution time: 7
+10-20,318,10-22,LEA,Long,(An),1,0,0,0,nominal,pdftotext,,LEA Long (An): 1
+10-20,318,10-22,LEA,Long,"(d16,An)",1,0,0,0,nominal,pdftotext,,"LEA Long (d16,An): 1"
+10-20,318,10-22,LEA,Long,"(d8,An,Xi)",1,0,0,0,nominal,pdftotext,,"LEA Long (d8,An,Xi): 1"
+10-20,318,10-22,LEA,Long,"(bd,An,Xi)",2,0,0,0,nominal,pdftotext,,"LEA Long (bd,An,Xi): 2"
+10-20,318,10-22,LEA,Long,(xxx).WL,1,0,0,0,nominal,pdftotext,,LEA Long (xxx).WL: 1
+10-20,318,10-22,LEA,Long,"(d16,PC)",1,0,0,0,nominal,pdftotext,,"LEA Long (d16,PC): 1"
+10-20,318,10-22,LEA,Long,"(d8,PC,Xi)",1,0,0,0,nominal,pdftotext,,"LEA Long (d8,PC,Xi): 1"
+10-20,318,10-22,LEA,Long,"(bd,PC,Xi)",2,0,0,0,nominal,pdftotext,,"LEA Long (bd,PC,Xi): 2"
+10-20,318,10-22,PEA,Long,(An),1,0,0,1,nominal,pdftotext,,PEA Long (An): 1
+10-20,318,10-22,PEA,Long,"(d16,An)",2,0,0,1,nominal,pdftotext,,"PEA Long (d16,An): 2"
+10-20,318,10-22,PEA,Long,"(d8,An,Xi)",2,0,0,1,nominal,pdftotext,,"PEA Long (d8,An,Xi): 2"
+10-20,318,10-22,PEA,Long,"(bd,An,Xi)",3,0,0,1,nominal,pdftotext,,"PEA Long (bd,An,Xi): 3"
+10-20,318,10-22,PEA,Long,(xxx).WL,1,0,0,1,nominal,pdftotext,,PEA Long (xxx).WL: 1
+10-20,318,10-22,PEA,Long,"(d16,PC)",1,0,0,1,nominal,pdftotext,,"PEA Long (d16,PC): 1"
+10-20,318,10-22,PEA,Long,"(d8,PC,Xi)",2,0,0,1,nominal,pdftotext,,"PEA Long (d8,PC,Xi): 2"
+10-20,318,10-22,PEA,Long,"(bd,PC,Xi)",2,0,0,1,nominal,pdftotext,,"PEA Long (bd,PC,Xi): 2"
+10-20,318,10-22,MOVEM Mem->Reg,Long,(An),0,1,n,0,nominal,pdftotext,,MOVEM Mem->Reg Long (An): 0
+10-20,318,10-22,MOVEM Mem->Reg,Long,(An)+,0,1,n,0,nominal,pdftotext,,MOVEM Mem->Reg Long (An)+: 0
+10-20,318,10-22,MOVEM Mem->Reg,Long,"(d16,An)",0,1,n,0,nominal,pdftotext,,"MOVEM Mem->Reg Long (d16,An): 0"
+10-20,318,10-22,MOVEM Mem->Reg,Long,"(d8,An,Xi)",1,1,n,0,nominal,pdftotext,,"MOVEM Mem->Reg Long (d8,An,Xi): 1"
+10-20,318,10-22,MOVEM Mem->Reg,Long,"(bd,An,Xi)",2,1,n,0,nominal,pdftotext,,"MOVEM Mem->Reg Long (bd,An,Xi): 2"
+10-20,318,10-22,MOVEM Mem->Reg,Long,(xxx).WL,1,1,n,0,nominal,pdftotext,,MOVEM Mem->Reg Long (xxx).WL: 1
+10-20,318,10-22,MOVEM Mem->Reg,Long,"(d16,PC)",0,1,n,0,nominal,pdftotext,,"MOVEM Mem->Reg Long (d16,PC): 0"
+10-20,318,10-22,MOVEM Mem->Reg,Long,"(d8,PC,Xi)",1,1,n,0,nominal,pdftotext,,"MOVEM Mem->Reg Long (d8,PC,Xi): 1"
+10-20,318,10-22,MOVEM Mem->Reg,Long,"(bd,PC,Xi)",2,1,n,0,nominal,pdftotext,,"MOVEM Mem->Reg Long (bd,PC,Xi): 2"
+10-20,318,10-22,MOVEM Reg->Mem,Long,(An),0,1,0,n,nominal,pdftotext,,MOVEM Reg->Mem Long (An): 0
+10-20,318,10-22,MOVEM Reg->Mem,Long,-(An),0,1,0,n,nominal,pdftotext,,MOVEM Reg->Mem Long -(An): 0
+10-20,318,10-22,MOVEM Reg->Mem,Long,"(d16,An)",0,1,0,n,nominal,pdftotext,,"MOVEM Reg->Mem Long (d16,An): 0"
+10-20,318,10-22,MOVEM Reg->Mem,Long,"(d8,An,Xi)",1,1,0,n,nominal,pdftotext,,"MOVEM Reg->Mem Long (d8,An,Xi): 1"
+10-20,318,10-22,MOVEM Reg->Mem,Long,"(bd,An,Xi)",2,1,0,n,nominal,pdftotext,,"MOVEM Reg->Mem Long (bd,An,Xi): 2"
+10-20,318,10-22,MOVEM Reg->Mem,Long,(xxx).WL,1,1,0,n,nominal,pdftotext,,MOVEM Reg->Mem Long (xxx).WL: 1
+10-21,318,10-22,ADDX,"Byte, Word","op Dy,Dx",1,0,0,0,nominal,pdftotext,,"ADDX Byte, Word op Dy,Dx: 1"
+10-21,318,10-22,ADDX,"Byte, Word","op <ea>y,<ea>x",2,0,2,1,nominal,pdftotext,,"ADDX Byte, Word op <ea>y,<ea>x: 2"
+10-21,318,10-22,ADDX,Long,"op Dy,Dx",1,0,0,0,nominal,pdftotext,,"ADDX Long op Dy,Dx: 1"
+10-21,318,10-22,ADDX,Long,"op <ea>y,<ea>x",2,0,2,1,nominal,pdftotext,,"ADDX Long op <ea>y,<ea>x: 2"
+10-21,318,10-22,CMPM,"Byte, Word","op <ea>y,<ea>x",2,0,2,0,nominal,pdftotext,,"CMPM Byte, Word op <ea>y,<ea>x: 2"
+10-21,318,10-22,CMPM,Long,"op <ea>y,<ea>x",2,0,2,0,nominal,pdftotext,,"CMPM Long op <ea>y,<ea>x: 2"
+10-21,318,10-22,SUBX,"Byte, Word","op Dy,Dx",1,0,0,0,nominal,pdftotext,,"SUBX Byte, Word op Dy,Dx: 1"
+10-21,318,10-22,SUBX,"Byte, Word","op <ea>y,<ea>x",2,0,2,1,nominal,pdftotext,,"SUBX Byte, Word op <ea>y,<ea>x: 2"
+10-21,318,10-22,SUBX,Long,"op Dy,Dx",1,0,0,0,nominal,pdftotext,,"SUBX Long op Dy,Dx: 1"
+10-21,318,10-22,SUBX,Long,"op <ea>y,<ea>x",2,0,2,1,nominal,pdftotext,,"SUBX Long op <ea>y,<ea>x: 2"
+10-21,318,10-22,ABCD,Byte,"op Dy,Dx",1,0,0,0,nominal,pdftotext,,"ABCD Byte op Dy,Dx: 1"
+10-21,318,10-22,ABCD,Byte,"op <ea>y,<ea>x",2,0,2,1,nominal,pdftotext,,"ABCD Byte op <ea>y,<ea>x: 2"
+10-21,318,10-22,SBCD,Byte,"op Dy,Dx",1,0,0,0,nominal,pdftotext,,"SBCD Byte op Dy,Dx: 1"
+10-21,318,10-22,SBCD,Byte,"op <ea>y,<ea>x",2,0,2,1,nominal,pdftotext,,"SBCD Byte op <ea>y,<ea>x: 2"
+10-22,319,10-23,ANDI to SR,SR,immediate,12,0,0,0,nominal,pdftotext,,ANDI to SR SR immediate: 12
+10-22,319,10-23,EORI to SR,SR,immediate,12,0,0,0,nominal,pdftotext,,EORI to SR SR immediate: 12
+10-22,319,10-23,ORI to SR,SR,immediate,5,0,0,0,nominal,pdftotext,,ORI to SR SR immediate: 5
+10-22,319,10-23,MOVE from SR,SR,<ea>,1,0,0,1,nominal,pdftotext,,MOVE from SR SR <ea>: 1
+10-22,319,10-23,MOVE to SR,SR,<ea>,12,0,1,0,nominal,pdftotext,,MOVE to SR SR <ea>: 12
+10-23,319,10-23,MOVES,"Source<SFC> -> Rn Byte, Word",(An),1,0,1,0,nominal,pdftotext,,"MOVES Source<SFC> -> Rn Byte, Word (An): 1"
+10-23,319,10-23,MOVES,"Source<SFC> -> Rn Byte, Word",(An)+,1,0,1,0,nominal,pdftotext,,"MOVES Source<SFC> -> Rn Byte, Word (An)+: 1"
+10-23,319,10-23,MOVES,"Source<SFC> -> Rn Byte, Word",-(An),1,0,1,0,nominal,pdftotext,,"MOVES Source<SFC> -> Rn Byte, Word -(An): 1"
+10-23,319,10-23,MOVES,"Source<SFC> -> Rn Byte, Word","(d16,An)",1,0,1,0,nominal,pdftotext,,"MOVES Source<SFC> -> Rn Byte, Word (d16,An): 1"
+10-23,319,10-23,MOVES,"Source<SFC> -> Rn Byte, Word","(d8,An,Xi)",2,0,1,0,nominal,pdftotext,,"MOVES Source<SFC> -> Rn Byte, Word (d8,An,Xi): 2"
+10-23,319,10-23,MOVES,"Source<SFC> -> Rn Byte, Word","(bd,An,Xi)",3,0,1,0,nominal,pdftotext,,"MOVES Source<SFC> -> Rn Byte, Word (bd,An,Xi): 3"
+10-23,319,10-23,MOVES,"Source<SFC> -> Rn Byte, Word",(xxx).WL,2,0,1,0,nominal,pdftotext,,"MOVES Source<SFC> -> Rn Byte, Word (xxx).WL: 2"
+10-23,319,10-23,MOVES,"Rn -> Dest <DFC> Byte, Word",(An),1,0,0,1,nominal,pdftotext,,"MOVES Rn -> Dest <DFC> Byte, Word (An): 1"
+10-23,319,10-23,MOVES,"Rn -> Dest <DFC> Byte, Word",(An)+,1,0,0,1,nominal,pdftotext,,"MOVES Rn -> Dest <DFC> Byte, Word (An)+: 1"
+10-23,319,10-23,MOVES,"Rn -> Dest <DFC> Byte, Word",-(An),1,0,0,1,nominal,pdftotext,,"MOVES Rn -> Dest <DFC> Byte, Word -(An): 1"
+10-23,319,10-23,MOVES,"Rn -> Dest <DFC> Byte, Word","(d16,An)",1,0,0,1,nominal,pdftotext,,"MOVES Rn -> Dest <DFC> Byte, Word (d16,An): 1"
+10-23,319,10-23,MOVES,"Rn -> Dest <DFC> Byte, Word","(d8,An,Xi)",2,0,0,1,nominal,pdftotext,,"MOVES Rn -> Dest <DFC> Byte, Word (d8,An,Xi): 2"
+10-23,319,10-23,MOVES,"Rn -> Dest <DFC> Byte, Word","(bd,An,Xi)",3,0,0,1,nominal,pdftotext,,"MOVES Rn -> Dest <DFC> Byte, Word (bd,An,Xi): 3"
+10-23,319,10-23,MOVES,"Rn -> Dest <DFC> Byte, Word",(xxx).WL,2,0,0,1,nominal,pdftotext,,"MOVES Rn -> Dest <DFC> Byte, Word (xxx).WL: 2"
+10-23,319,10-23,MOVES,Source<SFC> -> Rn Long,(An),1,0,1,0,nominal,pdftotext,,MOVES Source<SFC> -> Rn Long (An): 1
+10-23,319,10-23,MOVES,Source<SFC> -> Rn Long,(An)+,1,0,1,0,nominal,pdftotext,,MOVES Source<SFC> -> Rn Long (An)+: 1
+10-23,319,10-23,MOVES,Source<SFC> -> Rn Long,-(An),1,0,1,0,nominal,pdftotext,,MOVES Source<SFC> -> Rn Long -(An): 1
+10-23,319,10-23,MOVES,Source<SFC> -> Rn Long,"(d16,An)",1,0,1,0,nominal,pdftotext,,"MOVES Source<SFC> -> Rn Long (d16,An): 1"
+10-23,319,10-23,MOVES,Source<SFC> -> Rn Long,"(d8,An,Xi)",2,0,1,0,nominal,pdftotext,,"MOVES Source<SFC> -> Rn Long (d8,An,Xi): 2"
+10-23,319,10-23,MOVES,Source<SFC> -> Rn Long,"(bd,An,Xi)",3,0,1,0,nominal,pdftotext,,"MOVES Source<SFC> -> Rn Long (bd,An,Xi): 3"
+10-23,319,10-23,MOVES,Source<SFC> -> Rn Long,(xxx).WL,2,0,1,0,nominal,pdftotext,,MOVES Source<SFC> -> Rn Long (xxx).WL: 2
+10-23,319,10-23,MOVES,Rn -> Dest <DFC> Long,(An),1,0,0,1,nominal,pdftotext,,MOVES Rn -> Dest <DFC> Long (An): 1
+10-23,319,10-23,MOVES,Rn -> Dest <DFC> Long,(An)+,1,0,0,1,nominal,pdftotext,,MOVES Rn -> Dest <DFC> Long (An)+: 1
+10-23,319,10-23,MOVES,Rn -> Dest <DFC> Long,-(An),1,0,0,1,nominal,pdftotext,,MOVES Rn -> Dest <DFC> Long -(An): 1
+10-23,319,10-23,MOVES,Rn -> Dest <DFC> Long,"(d16,An)",1,0,0,1,nominal,pdftotext,,"MOVES Rn -> Dest <DFC> Long (d16,An): 1"
+10-23,319,10-23,MOVES,Rn -> Dest <DFC> Long,"(d8,An,Xi)",2,0,0,1,nominal,pdftotext,,"MOVES Rn -> Dest <DFC> Long (d8,An,Xi): 2"
+10-23,319,10-23,MOVES,Rn -> Dest <DFC> Long,"(bd,An,Xi)",3,0,0,1,nominal,pdftotext,,"MOVES Rn -> Dest <DFC> Long (bd,An,Xi): 3"
+10-23,319,10-23,MOVES,Rn -> Dest <DFC> Long,(xxx).WL,2,0,0,1,nominal,pdftotext,,MOVES Rn -> Dest <DFC> Long (xxx).WL: 2
+10-24,319,10-23,ANDI to CCR,Byte,Register,1,0,0,0,nominal,pdftotext,,ANDI to CCR Byte Register: 1
+10-24,319,10-23,EORI to CCR,Byte,Register,1,0,0,0,nominal,pdftotext,,EORI to CCR Byte Register: 1
+10-24,319,10-23,ORI to CCR,Byte,Register,1,0,0,0,nominal,pdftotext,,ORI to CCR Byte Register: 1
+10-24,319,10-23,CHK,Word,Register,2,0,0,0,nominal,pdftotext,,CHK Word Register: 2
+10-24,319,10-23,CHK,Word,Memory,2,0,1,0,nominal,pdftotext,,CHK Word Memory: 2
+10-24,319,10-23,CHK,Long,Register,2,0,0,0,nominal,pdftotext,,CHK Long Register: 2
+10-24,319,10-23,CHK,Long,Memory,2,0,1,0,nominal,pdftotext,,CHK Long Memory: 2
+10-24,319,10-23,CINVA,Memory,operation,17,0,0,0,upper-bound,pdftotext,upper bound (the table prints <=),CINVA Memory operation: 17
+10-24,319,10-23,CINVL,Memory,operation,18,0,0,0,upper-bound,pdftotext,upper bound (the table prints <=),CINVL Memory operation: 18
+10-24,319,10-23,CINVP,Memory,operation,274,0,0,0,upper-bound,pdftotext,upper bound (the table prints <=),CINVP Memory operation: 274
+10-24,319,10-23,CPUSHA,Memory,operation,5394,0,0,512,upper-bound,pdftotext,upper bound (the table prints <=),CPUSHA Memory operation: 5394
+10-24,319,10-23,CPUSHL,Memory,operation,26,0,0,1,upper-bound,pdftotext,upper bound (the table prints <=),CPUSHL Memory operation: 26
+10-24,319,10-23,CPUSHP,Memory,operation,2838,0,0,256,upper-bound,pdftotext,upper bound (the table prints <=),CPUSHP Memory operation: 2838
+10-24,319,10-23,EXG,Long,Register,1,0,0,0,nominal,pdftotext,,EXG Long Register: 1
+10-24,319,10-23,EXT,Word,Register,1,0,0,0,nominal,pdftotext,,EXT Word Register: 1
+10-24,319,10-23,EXT,Long,Register,1,0,0,0,nominal,pdftotext,,EXT Long Register: 1
+10-24,319,10-23,EXTB,Long,Register,1,0,0,0,nominal,pdftotext,,EXTB Long Register: 1
+10-24,320,10-24,SWAP,Word,Register,1,0,0,0,nominal,pdftotext,,SWAP Word Register: 1
+10-24,319,10-23,LINK,Word,Register,2,0,0,1,nominal,pdftotext,,LINK Word Register: 2
+10-24,319,10-23,LINK,Long,Register,2,0,0,1,nominal,pdftotext,,LINK Long Register: 2
+10-24,319,10-23,LPSTOP,Word,Register,15,0,0,1,nominal,pdftotext,,LPSTOP Word Register: 15
+10-24,319,10-23,MOVE from CCR,Word,Register,1,0,0,0,nominal,pdftotext,,MOVE from CCR Word Register: 1
+10-24,319,10-23,MOVE from CCR,Word,Memory,1,0,0,1,nominal,pdftotext,,MOVE from CCR Word Memory: 1
+10-24,319,10-23,MOVE to CCR,Word,Register,1,0,0,0,nominal,pdftotext,,MOVE to CCR Word Register: 1
+10-24,319,10-23,MOVE to CCR,Word,Memory,1,0,1,0,nominal,pdftotext,,MOVE to CCR Word Memory: 1
+10-24,319,10-23,MOVE from USP,Long,Register,1,0,0,0,nominal,pdftotext,,MOVE from USP Long Register: 1
+10-24,319,10-23,MOVE to USP,Long,Register,2,0,0,0,nominal,pdftotext,,MOVE to USP Long Register: 2
+10-24,319,10-23,"MOVEC (SFC,DFC,USP,VBR,PCR)",Long,Reg -> Dest,12,0,0,0,nominal,pdftotext,,"MOVEC (SFC,DFC,USP,VBR,PCR) Long Reg -> Dest: 12"
+10-24,319,10-23,"MOVEC (SFC,DFC,USP,VBR,PCR)",Long,Source -> Reg,11,0,0,0,nominal,pdftotext,,"MOVEC (SFC,DFC,USP,VBR,PCR) Long Source -> Reg: 11"
+10-24,319,10-23,"MOVEC (CACR,TC,TTR,BUSCR,URP,SRP)",Long,Reg -> Dest,15,0,0,0,nominal,pdftotext,,"MOVEC (CACR,TC,TTR,BUSCR,URP,SRP) Long Reg -> Dest: 15"
+10-24,319,10-23,"MOVEC (CACR,TC,TTR,BUSCR,URP,SRP)",Long,Source -> Reg,14,0,0,0,nominal,pdftotext,,"MOVEC (CACR,TC,TTR,BUSCR,URP,SRP) Long Source -> Reg: 14"
+10-24,319,10-23,NOP,-,Register,9,0,0,0,nominal,pdftotext,,NOP - Register: 9
+10-24,319,10-23,PACK,-,Register,2,0,0,0,nominal,pdftotext,,PACK - Register: 2
+10-24,319,10-23,PACK,-,Memory,2,0,1,1,nominal,pdftotext,,PACK - Memory: 2
+10-24,320,10-24,UNPK,-,Register,2,0,0,0,nominal,pdftotext,,UNPK - Register: 2
+10-24,320,10-24,UNPK,-,Memory,2,0,1,1,nominal,pdftotext,,UNPK - Memory: 2
+10-24,320,10-24,PLPA,ATC hit,Register,15,0,0,0,nominal,pdftotext,,PLPA ATC hit Register: 15
+10-24,320,10-24,PLPA,ATC miss,Register,28,0,0,0,not-modeled,pdftotext,reason=ATC miss and the table search are excluded from the base instruction time; actual=15 (the ATC hit value),PLPA ATC miss Register: 28
+10-24,320,10-24,PFLUSH,-,Register,18,0,0,0,nominal,pdftotext,,PFLUSH - Register: 18
+10-24,320,10-24,PFLUSHN,-,Register,18,0,0,0,nominal,pdftotext,,PFLUSHN - Register: 18
+10-24,320,10-24,PFLUSHAN,-,Register,33,0,0,0,nominal,pdftotext,,PFLUSHAN - Register: 33
+10-24,320,10-24,PFLUSHA,-,Register,33,0,0,0,nominal,pdftotext,,PFLUSHA - Register: 33
+10-24,320,10-24,RESET,-,Register,520,0,0,0,nominal,pdftotext,,RESET - Register: 520
+10-24,320,10-24,STOP,Word,Register,8,0,0,0,nominal,pdftotext,,STOP Word Register: 8
+10-24,320,10-24,TRAPF,-,Register,1,0,0,0,nominal,pdftotext,,TRAPF - Register: 1
+10-24,320,10-24,TRAPcc,-,Register,1,0,0,0,nominal,pdftotext,,TRAPcc - Register: 1
+10-24,320,10-24,TRAPV,-,Register,1,0,0,0,nominal,pdftotext,,TRAPV - Register: 1
+10-24,320,10-24,UNLK,-,Register,1,0,1,0,nominal,pdftotext,,UNLK - Register: 1
+10-25,320,10-24,FABS,source=FPn,"op <ea>,FPn",1,0,0,0,nominal,pdftotext,,"FABS source=FPn op <ea>,FPn: 1"
+10-25,320,10-24,FABS,source=Dn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FABS source=Dn op <ea>,FPn: 3"
+10-25,320,10-24,FABS,source=(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FABS source=(An) op <ea>,FPn: 1"
+10-25,320,10-24,FABS,source=(An)+,"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FABS source=(An)+ op <ea>,FPn: 1"
+10-25,320,10-24,FABS,source=-(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FABS source=-(An) op <ea>,FPn: 1"
+10-25,320,10-24,FABS,"source=(d16,An)/(d16,PC)","op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FABS source=(d16,An)/(d16,PC) op <ea>,FPn: 1"
+10-25,320,10-24,FABS,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FABS source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 2"
+10-25,320,10-24,FABS,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FABS source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 3"
+10-25,320,10-24,FABS,source=(xxx).WL,"op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FABS source=(xxx).WL op <ea>,FPn: 2"
+10-25,320,10-24,FABS,source=#imm,"op <ea>,FPn",2,0,0,0,nominal,pdftotext,,"FABS source=#imm op <ea>,FPn: 2"
+10-25,320,10-24,FDABS,source=FPn,"op <ea>,FPn",1,0,0,0,nominal,pdftotext,,"FDABS source=FPn op <ea>,FPn: 1"
+10-25,320,10-24,FDABS,source=Dn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FDABS source=Dn op <ea>,FPn: 3"
+10-25,320,10-24,FDABS,source=(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FDABS source=(An) op <ea>,FPn: 1"
+10-25,320,10-24,FDABS,source=(An)+,"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FDABS source=(An)+ op <ea>,FPn: 1"
+10-25,320,10-24,FDABS,source=-(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FDABS source=-(An) op <ea>,FPn: 1"
+10-25,320,10-24,FDABS,"source=(d16,An)/(d16,PC)","op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FDABS source=(d16,An)/(d16,PC) op <ea>,FPn: 1"
+10-25,320,10-24,FDABS,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FDABS source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 2"
+10-25,320,10-24,FDABS,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FDABS source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 3"
+10-25,320,10-24,FDABS,source=(xxx).WL,"op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FDABS source=(xxx).WL op <ea>,FPn: 2"
+10-25,320,10-24,FDABS,source=#imm,"op <ea>,FPn",2,0,0,0,nominal,pdftotext,,"FDABS source=#imm op <ea>,FPn: 2"
+10-25,320,10-24,FSABS,source=FPn,"op <ea>,FPn",1,0,0,0,nominal,pdftotext,,"FSABS source=FPn op <ea>,FPn: 1"
+10-25,320,10-24,FSABS,source=Dn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FSABS source=Dn op <ea>,FPn: 3"
+10-25,320,10-24,FSABS,source=(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FSABS source=(An) op <ea>,FPn: 1"
+10-25,320,10-24,FSABS,source=(An)+,"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FSABS source=(An)+ op <ea>,FPn: 1"
+10-25,320,10-24,FSABS,source=-(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FSABS source=-(An) op <ea>,FPn: 1"
+10-25,320,10-24,FSABS,"source=(d16,An)/(d16,PC)","op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FSABS source=(d16,An)/(d16,PC) op <ea>,FPn: 1"
+10-25,320,10-24,FSABS,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FSABS source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 2"
+10-25,320,10-24,FSABS,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSABS source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 3"
+10-25,320,10-24,FSABS,source=(xxx).WL,"op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FSABS source=(xxx).WL op <ea>,FPn: 2"
+10-25,320,10-24,FSABS,source=#imm,"op <ea>,FPn",2,0,0,0,nominal,pdftotext,,"FSABS source=#imm op <ea>,FPn: 2"
+10-25,320,10-24,FADD,source=FPn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FADD source=FPn op <ea>,FPn: 3"
+10-25,320,10-24,FADD,source=Dn,"op <ea>,FPn",5,0,0,0,nominal,pdftotext,,"FADD source=Dn op <ea>,FPn: 5"
+10-25,320,10-24,FADD,source=(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FADD source=(An) op <ea>,FPn: 3"
+10-25,320,10-24,FADD,source=(An)+,"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FADD source=(An)+ op <ea>,FPn: 3"
+10-25,320,10-24,FADD,source=-(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FADD source=-(An) op <ea>,FPn: 3"
+10-25,320,10-24,FADD,"source=(d16,An)/(d16,PC)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FADD source=(d16,An)/(d16,PC) op <ea>,FPn: 3"
+10-25,320,10-24,FADD,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FADD source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 4"
+10-25,320,10-24,FADD,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",5,0,1,0,nominal,pdftotext,,"FADD source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 5"
+10-25,320,10-24,FADD,source=(xxx).WL,"op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FADD source=(xxx).WL op <ea>,FPn: 4"
+10-25,320,10-24,FADD,source=#imm,"op <ea>,FPn",4,0,0,0,nominal,pdftotext,,"FADD source=#imm op <ea>,FPn: 4"
+10-25,320,10-24,FDADD,source=FPn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FDADD source=FPn op <ea>,FPn: 3"
+10-25,320,10-24,FDADD,source=Dn,"op <ea>,FPn",5,0,0,0,nominal,pdftotext,,"FDADD source=Dn op <ea>,FPn: 5"
+10-25,320,10-24,FDADD,source=(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FDADD source=(An) op <ea>,FPn: 3"
+10-25,320,10-24,FDADD,source=(An)+,"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FDADD source=(An)+ op <ea>,FPn: 3"
+10-25,320,10-24,FDADD,source=-(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FDADD source=-(An) op <ea>,FPn: 3"
+10-25,320,10-24,FDADD,"source=(d16,An)/(d16,PC)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FDADD source=(d16,An)/(d16,PC) op <ea>,FPn: 3"
+10-25,320,10-24,FDADD,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FDADD source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 4"
+10-25,320,10-24,FDADD,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",5,0,1,0,nominal,pdftotext,,"FDADD source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 5"
+10-25,320,10-24,FDADD,source=(xxx).WL,"op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FDADD source=(xxx).WL op <ea>,FPn: 4"
+10-25,320,10-24,FDADD,source=#imm,"op <ea>,FPn",4,0,0,0,nominal,pdftotext,,"FDADD source=#imm op <ea>,FPn: 4"
+10-25,320,10-24,FSADD,source=FPn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FSADD source=FPn op <ea>,FPn: 3"
+10-25,320,10-24,FSADD,source=Dn,"op <ea>,FPn",5,0,0,0,nominal,pdftotext,,"FSADD source=Dn op <ea>,FPn: 5"
+10-25,320,10-24,FSADD,source=(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSADD source=(An) op <ea>,FPn: 3"
+10-25,320,10-24,FSADD,source=(An)+,"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSADD source=(An)+ op <ea>,FPn: 3"
+10-25,320,10-24,FSADD,source=-(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSADD source=-(An) op <ea>,FPn: 3"
+10-25,320,10-24,FSADD,"source=(d16,An)/(d16,PC)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSADD source=(d16,An)/(d16,PC) op <ea>,FPn: 3"
+10-25,320,10-24,FSADD,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FSADD source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 4"
+10-25,320,10-24,FSADD,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",5,0,1,0,nominal,pdftotext,,"FSADD source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 5"
+10-25,320,10-24,FSADD,source=(xxx).WL,"op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FSADD source=(xxx).WL op <ea>,FPn: 4"
+10-25,320,10-24,FSADD,source=#imm,"op <ea>,FPn",4,0,0,0,nominal,pdftotext,,"FSADD source=#imm op <ea>,FPn: 4"
+10-25,320,10-24,FCMP,source=FPn,"op <ea>,FPn",1,0,0,0,nominal,pdftotext,,"FCMP source=FPn op <ea>,FPn: 1"
+10-25,320,10-24,FCMP,source=Dn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FCMP source=Dn op <ea>,FPn: 3"
+10-25,320,10-24,FCMP,source=(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FCMP source=(An) op <ea>,FPn: 1"
+10-25,320,10-24,FCMP,source=(An)+,"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FCMP source=(An)+ op <ea>,FPn: 1"
+10-25,320,10-24,FCMP,source=-(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FCMP source=-(An) op <ea>,FPn: 1"
+10-25,320,10-24,FCMP,"source=(d16,An)/(d16,PC)","op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FCMP source=(d16,An)/(d16,PC) op <ea>,FPn: 1"
+10-25,320,10-24,FCMP,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FCMP source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 2"
+10-25,320,10-24,FCMP,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FCMP source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 3"
+10-25,320,10-24,FCMP,source=(xxx).WL,"op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FCMP source=(xxx).WL op <ea>,FPn: 2"
+10-25,320,10-24,FCMP,source=#imm,"op <ea>,FPn",2,0,0,0,nominal,pdftotext,,"FCMP source=#imm op <ea>,FPn: 2"
+10-25,320,10-24,FDIV,source=FPn,"op <ea>,FPn",37,0,0,0,nominal,pdftotext,,"FDIV source=FPn op <ea>,FPn: 37"
+10-25,320,10-24,FDIV,source=Dn,"op <ea>,FPn",39,0,0,0,nominal,pdftotext,,"FDIV source=Dn op <ea>,FPn: 39"
+10-25,320,10-24,FDIV,source=(An),"op <ea>,FPn",37,0,1,0,nominal,pdftotext,,"FDIV source=(An) op <ea>,FPn: 37"
+10-25,320,10-24,FDIV,source=(An)+,"op <ea>,FPn",37,0,1,0,nominal,pdftotext,,"FDIV source=(An)+ op <ea>,FPn: 37"
+10-25,320,10-24,FDIV,source=-(An),"op <ea>,FPn",37,0,1,0,nominal,pdftotext,,"FDIV source=-(An) op <ea>,FPn: 37"
+10-25,320,10-24,FDIV,"source=(d16,An)/(d16,PC)","op <ea>,FPn",37,0,1,0,nominal,pdftotext,,"FDIV source=(d16,An)/(d16,PC) op <ea>,FPn: 37"
+10-25,320,10-24,FDIV,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",38,0,1,0,nominal,pdftotext,,"FDIV source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 38"
+10-25,320,10-24,FDIV,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",39,0,1,0,nominal,pdftotext,,"FDIV source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 39"
+10-25,320,10-24,FDIV,source=(xxx).WL,"op <ea>,FPn",38,0,1,0,nominal,pdftotext,,"FDIV source=(xxx).WL op <ea>,FPn: 38"
+10-25,320,10-24,FDIV,source=#imm,"op <ea>,FPn",38,0,0,0,nominal,pdftotext,,"FDIV source=#imm op <ea>,FPn: 38"
+10-25,320,10-24,FDDIV,source=FPn,"op <ea>,FPn",37,0,0,0,nominal,pdftotext,,"FDDIV source=FPn op <ea>,FPn: 37"
+10-25,320,10-24,FDDIV,source=Dn,"op <ea>,FPn",39,0,0,0,nominal,pdftotext,,"FDDIV source=Dn op <ea>,FPn: 39"
+10-25,320,10-24,FDDIV,source=(An),"op <ea>,FPn",37,0,1,0,nominal,pdftotext,,"FDDIV source=(An) op <ea>,FPn: 37"
+10-25,320,10-24,FDDIV,source=(An)+,"op <ea>,FPn",37,0,1,0,nominal,pdftotext,,"FDDIV source=(An)+ op <ea>,FPn: 37"
+10-25,320,10-24,FDDIV,source=-(An),"op <ea>,FPn",37,0,1,0,nominal,pdftotext,,"FDDIV source=-(An) op <ea>,FPn: 37"
+10-25,320,10-24,FDDIV,"source=(d16,An)/(d16,PC)","op <ea>,FPn",37,0,1,0,nominal,pdftotext,,"FDDIV source=(d16,An)/(d16,PC) op <ea>,FPn: 37"
+10-25,320,10-24,FDDIV,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",38,0,1,0,nominal,pdftotext,,"FDDIV source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 38"
+10-25,320,10-24,FDDIV,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",39,0,1,0,nominal,pdftotext,,"FDDIV source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 39"
+10-25,320,10-24,FDDIV,source=(xxx).WL,"op <ea>,FPn",38,0,1,0,nominal,pdftotext,,"FDDIV source=(xxx).WL op <ea>,FPn: 38"
+10-25,320,10-24,FDDIV,source=#imm,"op <ea>,FPn",38,0,0,0,nominal,pdftotext,,"FDDIV source=#imm op <ea>,FPn: 38"
+10-25,320,10-24,FSDIV,source=FPn,"op <ea>,FPn",37,0,0,0,nominal,pdftotext,,"FSDIV source=FPn op <ea>,FPn: 37"
+10-25,320,10-24,FSDIV,source=Dn,"op <ea>,FPn",39,0,0,0,nominal,pdftotext,,"FSDIV source=Dn op <ea>,FPn: 39"
+10-25,320,10-24,FSDIV,source=(An),"op <ea>,FPn",37,0,1,0,nominal,pdftotext,,"FSDIV source=(An) op <ea>,FPn: 37"
+10-25,320,10-24,FSDIV,source=(An)+,"op <ea>,FPn",37,0,1,0,nominal,pdftotext,,"FSDIV source=(An)+ op <ea>,FPn: 37"
+10-25,320,10-24,FSDIV,source=-(An),"op <ea>,FPn",37,0,1,0,nominal,pdftotext,,"FSDIV source=-(An) op <ea>,FPn: 37"
+10-25,320,10-24,FSDIV,"source=(d16,An)/(d16,PC)","op <ea>,FPn",37,0,1,0,nominal,pdftotext,,"FSDIV source=(d16,An)/(d16,PC) op <ea>,FPn: 37"
+10-25,320,10-24,FSDIV,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",38,0,1,0,nominal,pdftotext,,"FSDIV source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 38"
+10-25,320,10-24,FSDIV,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",39,0,1,0,nominal,pdftotext,,"FSDIV source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 39"
+10-25,320,10-24,FSDIV,source=(xxx).WL,"op <ea>,FPn",38,0,1,0,nominal,pdftotext,,"FSDIV source=(xxx).WL op <ea>,FPn: 38"
+10-25,320,10-24,FSDIV,source=#imm,"op <ea>,FPn",38,0,0,0,nominal,pdftotext,,"FSDIV source=#imm op <ea>,FPn: 38"
+10-25,320,10-24,FMOVE,source=FPn,"op <ea>,FPn",1,0,0,0,nominal,pdftotext,,"FMOVE source=FPn op <ea>,FPn: 1"
+10-25,320,10-24,FMOVE,source=Dn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FMOVE source=Dn op <ea>,FPn: 3"
+10-25,320,10-24,FMOVE,source=(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FMOVE source=(An) op <ea>,FPn: 1"
+10-25,320,10-24,FMOVE,source=(An)+,"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FMOVE source=(An)+ op <ea>,FPn: 1"
+10-25,320,10-24,FMOVE,source=-(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FMOVE source=-(An) op <ea>,FPn: 1"
+10-25,320,10-24,FMOVE,"source=(d16,An)/(d16,PC)","op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FMOVE source=(d16,An)/(d16,PC) op <ea>,FPn: 1"
+10-25,320,10-24,FMOVE,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FMOVE source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 2"
+10-25,320,10-24,FMOVE,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FMOVE source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 3"
+10-25,320,10-24,FMOVE,source=(xxx).WL,"op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FMOVE source=(xxx).WL op <ea>,FPn: 2"
+10-25,320,10-24,FMOVE,source=#imm,"op <ea>,FPn",1,0,0,0,nominal,pdftotext,,"FMOVE source=#imm op <ea>,FPn: 1"
+10-25,320,10-24,FDMOVE,source=FPn,"op <ea>,FPn",1,0,0,0,nominal,pdftotext,,"FDMOVE source=FPn op <ea>,FPn: 1"
+10-25,320,10-24,FDMOVE,source=Dn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FDMOVE source=Dn op <ea>,FPn: 3"
+10-25,320,10-24,FDMOVE,source=(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FDMOVE source=(An) op <ea>,FPn: 1"
+10-25,320,10-24,FDMOVE,source=(An)+,"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FDMOVE source=(An)+ op <ea>,FPn: 1"
+10-25,320,10-24,FDMOVE,source=-(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FDMOVE source=-(An) op <ea>,FPn: 1"
+10-25,320,10-24,FDMOVE,"source=(d16,An)/(d16,PC)","op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FDMOVE source=(d16,An)/(d16,PC) op <ea>,FPn: 1"
+10-25,320,10-24,FDMOVE,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FDMOVE source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 2"
+10-25,320,10-24,FDMOVE,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FDMOVE source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 3"
+10-25,320,10-24,FDMOVE,source=(xxx).WL,"op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FDMOVE source=(xxx).WL op <ea>,FPn: 2"
+10-25,320,10-24,FDMOVE,source=#imm,"op <ea>,FPn",1,0,0,0,nominal,pdftotext,,"FDMOVE source=#imm op <ea>,FPn: 1"
+10-25,320,10-24,FSMOVE,source=FPn,"op <ea>,FPn",1,0,0,0,nominal,pdftotext,,"FSMOVE source=FPn op <ea>,FPn: 1"
+10-25,320,10-24,FSMOVE,source=Dn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FSMOVE source=Dn op <ea>,FPn: 3"
+10-25,320,10-24,FSMOVE,source=(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FSMOVE source=(An) op <ea>,FPn: 1"
+10-25,320,10-24,FSMOVE,source=(An)+,"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FSMOVE source=(An)+ op <ea>,FPn: 1"
+10-25,320,10-24,FSMOVE,source=-(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FSMOVE source=-(An) op <ea>,FPn: 1"
+10-25,320,10-24,FSMOVE,"source=(d16,An)/(d16,PC)","op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FSMOVE source=(d16,An)/(d16,PC) op <ea>,FPn: 1"
+10-25,320,10-24,FSMOVE,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FSMOVE source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 2"
+10-25,320,10-24,FSMOVE,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSMOVE source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 3"
+10-25,320,10-24,FSMOVE,source=(xxx).WL,"op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FSMOVE source=(xxx).WL op <ea>,FPn: 2"
+10-25,320,10-24,FSMOVE,source=#imm,"op <ea>,FPn",1,0,0,0,nominal,pdftotext,,"FSMOVE source=#imm op <ea>,FPn: 1"
+10-25,320,10-24,FINT,source=FPn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FINT source=FPn op <ea>,FPn: 3"
+10-25,320,10-24,FINT,source=Dn,"op <ea>,FPn",4,0,0,0,nominal,pdftotext,,"FINT source=Dn op <ea>,FPn: 4"
+10-25,320,10-24,FINT,source=(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FINT source=(An) op <ea>,FPn: 3"
+10-25,320,10-24,FINT,source=(An)+,"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FINT source=(An)+ op <ea>,FPn: 3"
+10-25,320,10-24,FINT,source=-(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FINT source=-(An) op <ea>,FPn: 3"
+10-25,320,10-24,FINT,"source=(d16,An)/(d16,PC)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FINT source=(d16,An)/(d16,PC) op <ea>,FPn: 3"
+10-25,320,10-24,FINT,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FINT source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 3"
+10-25,320,10-24,FINT,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",5,0,1,0,nominal,pdftotext,,"FINT source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 5"
+10-25,320,10-24,FINT,source=(xxx).WL,"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FINT source=(xxx).WL op <ea>,FPn: 3"
+10-25,320,10-24,FINT,source=#imm,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FINT source=#imm op <ea>,FPn: 3"
+10-25,320,10-24,FINTRZ,source=FPn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FINTRZ source=FPn op <ea>,FPn: 3"
+10-25,320,10-24,FINTRZ,source=Dn,"op <ea>,FPn",4,0,0,0,nominal,pdftotext,,"FINTRZ source=Dn op <ea>,FPn: 4"
+10-25,320,10-24,FINTRZ,source=(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FINTRZ source=(An) op <ea>,FPn: 3"
+10-25,320,10-24,FINTRZ,source=(An)+,"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FINTRZ source=(An)+ op <ea>,FPn: 3"
+10-25,320,10-24,FINTRZ,source=-(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FINTRZ source=-(An) op <ea>,FPn: 3"
+10-25,320,10-24,FINTRZ,"source=(d16,An)/(d16,PC)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FINTRZ source=(d16,An)/(d16,PC) op <ea>,FPn: 3"
+10-25,320,10-24,FINTRZ,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FINTRZ source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 3"
+10-25,320,10-24,FINTRZ,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",5,0,1,0,nominal,pdftotext,,"FINTRZ source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 5"
+10-25,320,10-24,FINTRZ,source=(xxx).WL,"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FINTRZ source=(xxx).WL op <ea>,FPn: 3"
+10-25,320,10-24,FINTRZ,source=#imm,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FINTRZ source=#imm op <ea>,FPn: 3"
+10-25,321,10-25,FSGLDIV,source=FPn,"op <ea>,FPn",37,0,0,0,nominal,pdftotext,,"FSGLDIV source=FPn op <ea>,FPn: 37"
+10-25,321,10-25,FSGLDIV,source=Dn,"op <ea>,FPn",39,0,0,0,nominal,pdftotext,,"FSGLDIV source=Dn op <ea>,FPn: 39"
+10-25,321,10-25,FSGLDIV,source=(An),"op <ea>,FPn",37,0,1,0,nominal,pdftotext,,"FSGLDIV source=(An) op <ea>,FPn: 37"
+10-25,321,10-25,FSGLDIV,source=(An)+,"op <ea>,FPn",37,0,1,0,nominal,pdftotext,,"FSGLDIV source=(An)+ op <ea>,FPn: 37"
+10-25,321,10-25,FSGLDIV,source=-(An),"op <ea>,FPn",37,0,1,0,nominal,pdftotext,,"FSGLDIV source=-(An) op <ea>,FPn: 37"
+10-25,321,10-25,FSGLDIV,"source=(d16,An)/(d16,PC)","op <ea>,FPn",37,0,1,0,nominal,pdftotext,,"FSGLDIV source=(d16,An)/(d16,PC) op <ea>,FPn: 37"
+10-25,321,10-25,FSGLDIV,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",38,0,1,0,nominal,pdftotext,,"FSGLDIV source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 38"
+10-25,321,10-25,FSGLDIV,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",39,0,1,0,nominal,pdftotext,,"FSGLDIV source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 39"
+10-25,321,10-25,FSGLDIV,source=(xxx).WL,"op <ea>,FPn",38,0,1,0,nominal,pdftotext,,"FSGLDIV source=(xxx).WL op <ea>,FPn: 38"
+10-25,321,10-25,FSGLDIV,source=#imm,"op <ea>,FPn",38,0,0,0,nominal,pdftotext,,"FSGLDIV source=#imm op <ea>,FPn: 38"
+10-25,321,10-25,FSGLMUL,source=FPn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FSGLMUL source=FPn op <ea>,FPn: 3"
+10-25,321,10-25,FSGLMUL,source=Dn,"op <ea>,FPn",5,0,0,0,nominal,pdftotext,,"FSGLMUL source=Dn op <ea>,FPn: 5"
+10-25,321,10-25,FSGLMUL,source=(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSGLMUL source=(An) op <ea>,FPn: 3"
+10-25,321,10-25,FSGLMUL,source=(An)+,"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSGLMUL source=(An)+ op <ea>,FPn: 3"
+10-25,321,10-25,FSGLMUL,source=-(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSGLMUL source=-(An) op <ea>,FPn: 3"
+10-25,321,10-25,FSGLMUL,"source=(d16,An)/(d16,PC)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSGLMUL source=(d16,An)/(d16,PC) op <ea>,FPn: 3"
+10-25,321,10-25,FSGLMUL,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FSGLMUL source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 4"
+10-25,321,10-25,FSGLMUL,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",5,0,1,0,nominal,pdftotext,,"FSGLMUL source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 5"
+10-25,321,10-25,FSGLMUL,source=(xxx).WL,"op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FSGLMUL source=(xxx).WL op <ea>,FPn: 4"
+10-25,321,10-25,FSGLMUL,source=#imm,"op <ea>,FPn",4,0,0,0,nominal,pdftotext,,"FSGLMUL source=#imm op <ea>,FPn: 4"
+10-25,321,10-25,FMUL,source=FPn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FMUL source=FPn op <ea>,FPn: 3"
+10-25,321,10-25,FMUL,source=Dn,"op <ea>,FPn",5,0,0,0,nominal,pdftotext,,"FMUL source=Dn op <ea>,FPn: 5"
+10-25,321,10-25,FMUL,source=(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FMUL source=(An) op <ea>,FPn: 3"
+10-25,321,10-25,FMUL,source=(An)+,"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FMUL source=(An)+ op <ea>,FPn: 3"
+10-25,321,10-25,FMUL,source=-(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FMUL source=-(An) op <ea>,FPn: 3"
+10-25,321,10-25,FMUL,"source=(d16,An)/(d16,PC)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FMUL source=(d16,An)/(d16,PC) op <ea>,FPn: 3"
+10-25,321,10-25,FMUL,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FMUL source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 4"
+10-25,321,10-25,FMUL,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",5,0,1,0,nominal,pdftotext,,"FMUL source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 5"
+10-25,321,10-25,FMUL,source=(xxx).WL,"op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FMUL source=(xxx).WL op <ea>,FPn: 4"
+10-25,321,10-25,FMUL,source=#imm,"op <ea>,FPn",4,0,0,0,nominal,pdftotext,,"FMUL source=#imm op <ea>,FPn: 4"
+10-25,321,10-25,FDMUL,source=FPn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FDMUL source=FPn op <ea>,FPn: 3"
+10-25,321,10-25,FDMUL,source=Dn,"op <ea>,FPn",5,0,0,0,nominal,pdftotext,,"FDMUL source=Dn op <ea>,FPn: 5"
+10-25,321,10-25,FDMUL,source=(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FDMUL source=(An) op <ea>,FPn: 3"
+10-25,321,10-25,FDMUL,source=(An)+,"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FDMUL source=(An)+ op <ea>,FPn: 3"
+10-25,321,10-25,FDMUL,source=-(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FDMUL source=-(An) op <ea>,FPn: 3"
+10-25,321,10-25,FDMUL,"source=(d16,An)/(d16,PC)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FDMUL source=(d16,An)/(d16,PC) op <ea>,FPn: 3"
+10-25,321,10-25,FDMUL,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FDMUL source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 4"
+10-25,321,10-25,FDMUL,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",5,0,1,0,nominal,pdftotext,,"FDMUL source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 5"
+10-25,321,10-25,FDMUL,source=(xxx).WL,"op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FDMUL source=(xxx).WL op <ea>,FPn: 4"
+10-25,321,10-25,FDMUL,source=#imm,"op <ea>,FPn",4,0,0,0,nominal,pdftotext,,"FDMUL source=#imm op <ea>,FPn: 4"
+10-25,321,10-25,FSMUL,source=FPn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FSMUL source=FPn op <ea>,FPn: 3"
+10-25,321,10-25,FSMUL,source=Dn,"op <ea>,FPn",5,0,0,0,nominal,pdftotext,,"FSMUL source=Dn op <ea>,FPn: 5"
+10-25,321,10-25,FSMUL,source=(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSMUL source=(An) op <ea>,FPn: 3"
+10-25,321,10-25,FSMUL,source=(An)+,"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSMUL source=(An)+ op <ea>,FPn: 3"
+10-25,321,10-25,FSMUL,source=-(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSMUL source=-(An) op <ea>,FPn: 3"
+10-25,321,10-25,FSMUL,"source=(d16,An)/(d16,PC)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSMUL source=(d16,An)/(d16,PC) op <ea>,FPn: 3"
+10-25,321,10-25,FSMUL,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FSMUL source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 4"
+10-25,321,10-25,FSMUL,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",5,0,1,0,nominal,pdftotext,,"FSMUL source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 5"
+10-25,321,10-25,FSMUL,source=(xxx).WL,"op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FSMUL source=(xxx).WL op <ea>,FPn: 4"
+10-25,321,10-25,FSMUL,source=#imm,"op <ea>,FPn",4,0,0,0,nominal,pdftotext,,"FSMUL source=#imm op <ea>,FPn: 4"
+10-25,321,10-25,FNEG,source=FPn,"op <ea>,FPn",1,0,0,0,nominal,pdftotext,,"FNEG source=FPn op <ea>,FPn: 1"
+10-25,321,10-25,FNEG,source=Dn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FNEG source=Dn op <ea>,FPn: 3"
+10-25,321,10-25,FNEG,source=(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FNEG source=(An) op <ea>,FPn: 1"
+10-25,321,10-25,FNEG,source=(An)+,"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FNEG source=(An)+ op <ea>,FPn: 1"
+10-25,321,10-25,FNEG,source=-(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FNEG source=-(An) op <ea>,FPn: 1"
+10-25,321,10-25,FNEG,"source=(d16,An)/(d16,PC)","op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FNEG source=(d16,An)/(d16,PC) op <ea>,FPn: 1"
+10-25,321,10-25,FNEG,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FNEG source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 2"
+10-25,321,10-25,FNEG,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FNEG source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 3"
+10-25,321,10-25,FNEG,source=(xxx).WL,"op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FNEG source=(xxx).WL op <ea>,FPn: 2"
+10-25,321,10-25,FNEG,source=#imm,"op <ea>,FPn",2,0,0,0,nominal,pdftotext,,"FNEG source=#imm op <ea>,FPn: 2"
+10-25,321,10-25,FDNEG,source=FPn,"op <ea>,FPn",1,0,0,0,nominal,pdftotext,,"FDNEG source=FPn op <ea>,FPn: 1"
+10-25,321,10-25,FDNEG,source=Dn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FDNEG source=Dn op <ea>,FPn: 3"
+10-25,321,10-25,FDNEG,source=(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FDNEG source=(An) op <ea>,FPn: 1"
+10-25,321,10-25,FDNEG,source=(An)+,"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FDNEG source=(An)+ op <ea>,FPn: 1"
+10-25,321,10-25,FDNEG,source=-(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FDNEG source=-(An) op <ea>,FPn: 1"
+10-25,321,10-25,FDNEG,"source=(d16,An)/(d16,PC)","op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FDNEG source=(d16,An)/(d16,PC) op <ea>,FPn: 1"
+10-25,321,10-25,FDNEG,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FDNEG source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 2"
+10-25,321,10-25,FDNEG,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FDNEG source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 3"
+10-25,321,10-25,FDNEG,source=(xxx).WL,"op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FDNEG source=(xxx).WL op <ea>,FPn: 2"
+10-25,321,10-25,FDNEG,source=#imm,"op <ea>,FPn",2,0,0,0,nominal,pdftotext,,"FDNEG source=#imm op <ea>,FPn: 2"
+10-25,321,10-25,FSNEG,source=FPn,"op <ea>,FPn",1,0,0,0,nominal,pdftotext,,"FSNEG source=FPn op <ea>,FPn: 1"
+10-25,321,10-25,FSNEG,source=Dn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FSNEG source=Dn op <ea>,FPn: 3"
+10-25,321,10-25,FSNEG,source=(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FSNEG source=(An) op <ea>,FPn: 1"
+10-25,321,10-25,FSNEG,source=(An)+,"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FSNEG source=(An)+ op <ea>,FPn: 1"
+10-25,321,10-25,FSNEG,source=-(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FSNEG source=-(An) op <ea>,FPn: 1"
+10-25,321,10-25,FSNEG,"source=(d16,An)/(d16,PC)","op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FSNEG source=(d16,An)/(d16,PC) op <ea>,FPn: 1"
+10-25,321,10-25,FSNEG,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FSNEG source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 2"
+10-25,321,10-25,FSNEG,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSNEG source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 3"
+10-25,321,10-25,FSNEG,source=(xxx).WL,"op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FSNEG source=(xxx).WL op <ea>,FPn: 2"
+10-25,321,10-25,FSNEG,source=#imm,"op <ea>,FPn",2,0,0,0,nominal,pdftotext,,"FSNEG source=#imm op <ea>,FPn: 2"
+10-25,321,10-25,FSUB,source=FPn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FSUB source=FPn op <ea>,FPn: 3"
+10-25,321,10-25,FSUB,source=Dn,"op <ea>,FPn",5,0,0,0,nominal,pdftotext,,"FSUB source=Dn op <ea>,FPn: 5"
+10-25,321,10-25,FSUB,source=(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSUB source=(An) op <ea>,FPn: 3"
+10-25,321,10-25,FSUB,source=(An)+,"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSUB source=(An)+ op <ea>,FPn: 3"
+10-25,321,10-25,FSUB,source=-(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSUB source=-(An) op <ea>,FPn: 3"
+10-25,321,10-25,FSUB,"source=(d16,An)/(d16,PC)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSUB source=(d16,An)/(d16,PC) op <ea>,FPn: 3"
+10-25,321,10-25,FSUB,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FSUB source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 4"
+10-25,321,10-25,FSUB,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",5,0,1,0,nominal,pdftotext,,"FSUB source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 5"
+10-25,321,10-25,FSUB,source=(xxx).WL,"op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FSUB source=(xxx).WL op <ea>,FPn: 4"
+10-25,321,10-25,FSUB,source=#imm,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FSUB source=#imm op <ea>,FPn: 3"
+10-25,321,10-25,FDSUB,source=FPn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FDSUB source=FPn op <ea>,FPn: 3"
+10-25,321,10-25,FDSUB,source=Dn,"op <ea>,FPn",5,0,0,0,nominal,pdftotext,,"FDSUB source=Dn op <ea>,FPn: 5"
+10-25,321,10-25,FDSUB,source=(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FDSUB source=(An) op <ea>,FPn: 3"
+10-25,321,10-25,FDSUB,source=(An)+,"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FDSUB source=(An)+ op <ea>,FPn: 3"
+10-25,321,10-25,FDSUB,source=-(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FDSUB source=-(An) op <ea>,FPn: 3"
+10-25,321,10-25,FDSUB,"source=(d16,An)/(d16,PC)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FDSUB source=(d16,An)/(d16,PC) op <ea>,FPn: 3"
+10-25,321,10-25,FDSUB,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FDSUB source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 4"
+10-25,321,10-25,FDSUB,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",5,0,1,0,nominal,pdftotext,,"FDSUB source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 5"
+10-25,321,10-25,FDSUB,source=(xxx).WL,"op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FDSUB source=(xxx).WL op <ea>,FPn: 4"
+10-25,321,10-25,FDSUB,source=#imm,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FDSUB source=#imm op <ea>,FPn: 3"
+10-25,321,10-25,FSSUB,source=FPn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FSSUB source=FPn op <ea>,FPn: 3"
+10-25,321,10-25,FSSUB,source=Dn,"op <ea>,FPn",5,0,0,0,nominal,pdftotext,,"FSSUB source=Dn op <ea>,FPn: 5"
+10-25,321,10-25,FSSUB,source=(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSSUB source=(An) op <ea>,FPn: 3"
+10-25,321,10-25,FSSUB,source=(An)+,"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSSUB source=(An)+ op <ea>,FPn: 3"
+10-25,321,10-25,FSSUB,source=-(An),"op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSSUB source=-(An) op <ea>,FPn: 3"
+10-25,321,10-25,FSSUB,"source=(d16,An)/(d16,PC)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FSSUB source=(d16,An)/(d16,PC) op <ea>,FPn: 3"
+10-25,321,10-25,FSSUB,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FSSUB source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 4"
+10-25,321,10-25,FSSUB,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",5,0,1,0,nominal,pdftotext,,"FSSUB source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 5"
+10-25,321,10-25,FSSUB,source=(xxx).WL,"op <ea>,FPn",4,0,1,0,nominal,pdftotext,,"FSSUB source=(xxx).WL op <ea>,FPn: 4"
+10-25,321,10-25,FSSUB,source=#imm,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FSSUB source=#imm op <ea>,FPn: 3"
+10-25,321,10-25,FTST,source=FPn,"op <ea>,FPn",1,0,0,0,nominal,pdftotext,,"FTST source=FPn op <ea>,FPn: 1"
+10-25,321,10-25,FTST,source=Dn,"op <ea>,FPn",3,0,0,0,nominal,pdftotext,,"FTST source=Dn op <ea>,FPn: 3"
+10-25,321,10-25,FTST,source=(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FTST source=(An) op <ea>,FPn: 1"
+10-25,321,10-25,FTST,source=(An)+,"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FTST source=(An)+ op <ea>,FPn: 1"
+10-25,321,10-25,FTST,source=-(An),"op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FTST source=-(An) op <ea>,FPn: 1"
+10-25,321,10-25,FTST,"source=(d16,An)/(d16,PC)","op <ea>,FPn",1,0,1,0,nominal,pdftotext,,"FTST source=(d16,An)/(d16,PC) op <ea>,FPn: 1"
+10-25,321,10-25,FTST,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FTST source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 2"
+10-25,321,10-25,FTST,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",3,0,1,0,nominal,pdftotext,,"FTST source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 3"
+10-25,321,10-25,FTST,source=(xxx).WL,"op <ea>,FPn",2,0,1,0,nominal,pdftotext,,"FTST source=(xxx).WL op <ea>,FPn: 2"
+10-25,321,10-25,FTST,source=#imm,"op <ea>,FPn",1,0,0,0,nominal,pdftotext,,"FTST source=#imm op <ea>,FPn: 1"
+10-25,321,10-25,FSQRT,source=FPn,"op <ea>,FPn",68,0,0,0,nominal,pdftotext,,"FSQRT source=FPn op <ea>,FPn: 68"
+10-25,321,10-25,FSQRT,source=Dn,"op <ea>,FPn",70,0,0,0,nominal,pdftotext,,"FSQRT source=Dn op <ea>,FPn: 70"
+10-25,321,10-25,FSQRT,source=(An),"op <ea>,FPn",68,0,1,0,nominal,pdftotext,,"FSQRT source=(An) op <ea>,FPn: 68"
+10-25,321,10-25,FSQRT,source=(An)+,"op <ea>,FPn",68,0,1,0,nominal,pdftotext,,"FSQRT source=(An)+ op <ea>,FPn: 68"
+10-25,321,10-25,FSQRT,source=-(An),"op <ea>,FPn",68,0,1,0,nominal,pdftotext,,"FSQRT source=-(An) op <ea>,FPn: 68"
+10-25,321,10-25,FSQRT,"source=(d16,An)/(d16,PC)","op <ea>,FPn",68,0,1,0,nominal,pdftotext,,"FSQRT source=(d16,An)/(d16,PC) op <ea>,FPn: 68"
+10-25,321,10-25,FSQRT,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",69,0,1,0,nominal,pdftotext,,"FSQRT source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 69"
+10-25,321,10-25,FSQRT,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",70,0,1,0,nominal,pdftotext,,"FSQRT source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 70"
+10-25,321,10-25,FSQRT,source=(xxx).WL,"op <ea>,FPn",69,0,1,0,nominal,pdftotext,,"FSQRT source=(xxx).WL op <ea>,FPn: 69"
+10-25,321,10-25,FSQRT,source=#imm,"op <ea>,FPn",69,0,0,0,nominal,pdftotext,,"FSQRT source=#imm op <ea>,FPn: 69"
+10-25,321,10-25,FSSQRT,source=FPn,"op <ea>,FPn",68,0,0,0,nominal,pdftotext,,"FSSQRT source=FPn op <ea>,FPn: 68"
+10-25,321,10-25,FSSQRT,source=Dn,"op <ea>,FPn",70,0,0,0,nominal,pdftotext,,"FSSQRT source=Dn op <ea>,FPn: 70"
+10-25,321,10-25,FSSQRT,source=(An),"op <ea>,FPn",68,0,1,0,nominal,pdftotext,,"FSSQRT source=(An) op <ea>,FPn: 68"
+10-25,321,10-25,FSSQRT,source=(An)+,"op <ea>,FPn",68,0,1,0,nominal,pdftotext,,"FSSQRT source=(An)+ op <ea>,FPn: 68"
+10-25,321,10-25,FSSQRT,source=-(An),"op <ea>,FPn",68,0,1,0,nominal,pdftotext,,"FSSQRT source=-(An) op <ea>,FPn: 68"
+10-25,321,10-25,FSSQRT,"source=(d16,An)/(d16,PC)","op <ea>,FPn",68,0,1,0,nominal,pdftotext,,"FSSQRT source=(d16,An)/(d16,PC) op <ea>,FPn: 68"
+10-25,321,10-25,FSSQRT,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",69,0,1,0,nominal,pdftotext,,"FSSQRT source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 69"
+10-25,321,10-25,FSSQRT,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",70,0,1,0,nominal,pdftotext,,"FSSQRT source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 70"
+10-25,321,10-25,FSSQRT,source=(xxx).WL,"op <ea>,FPn",69,0,1,0,nominal,pdftotext,,"FSSQRT source=(xxx).WL op <ea>,FPn: 69"
+10-25,321,10-25,FSSQRT,source=#imm,"op <ea>,FPn",69,0,0,0,nominal,pdftotext,,"FSSQRT source=#imm op <ea>,FPn: 69"
+10-25,321,10-25,FDSQRT,source=FPn,"op <ea>,FPn",68,0,0,0,nominal,pdftotext,,"FDSQRT source=FPn op <ea>,FPn: 68"
+10-25,321,10-25,FDSQRT,source=Dn,"op <ea>,FPn",70,0,0,0,nominal,pdftotext,,"FDSQRT source=Dn op <ea>,FPn: 70"
+10-25,321,10-25,FDSQRT,source=(An),"op <ea>,FPn",68,0,1,0,nominal,pdftotext,,"FDSQRT source=(An) op <ea>,FPn: 68"
+10-25,321,10-25,FDSQRT,source=(An)+,"op <ea>,FPn",68,0,1,0,nominal,pdftotext,,"FDSQRT source=(An)+ op <ea>,FPn: 68"
+10-25,321,10-25,FDSQRT,source=-(An),"op <ea>,FPn",68,0,1,0,nominal,pdftotext,,"FDSQRT source=-(An) op <ea>,FPn: 68"
+10-25,321,10-25,FDSQRT,"source=(d16,An)/(d16,PC)","op <ea>,FPn",68,0,1,0,nominal,pdftotext,,"FDSQRT source=(d16,An)/(d16,PC) op <ea>,FPn: 68"
+10-25,321,10-25,FDSQRT,"source=(d8,An,Xi)/(d8,PC,Xi)","op <ea>,FPn",69,0,1,0,nominal,pdftotext,,"FDSQRT source=(d8,An,Xi)/(d8,PC,Xi) op <ea>,FPn: 69"
+10-25,321,10-25,FDSQRT,"source=(bd,An,Xi)/(bd,PC,Xi)","op <ea>,FPn",70,0,1,0,nominal,pdftotext,,"FDSQRT source=(bd,An,Xi)/(bd,PC,Xi) op <ea>,FPn: 70"
+10-25,321,10-25,FDSQRT,source=(xxx).WL,"op <ea>,FPn",69,0,1,0,nominal,pdftotext,,"FDSQRT source=(xxx).WL op <ea>,FPn: 69"
+10-25,321,10-25,FDSQRT,source=#imm,"op <ea>,FPn",69,0,0,0,nominal,pdftotext,,"FDSQRT source=#imm op <ea>,FPn: 69"
+10-25,320,10-24,"FMOVE FPy,<ea>",dest=Dn,"FPy,<ea>",3,0,0,0,nominal,pdftotext,,"FMOVE FPy,<ea> dest=Dn FPy,<ea>: 3"
+10-25,320,10-24,"FMOVE FPy,<ea>",dest=(An),"FPy,<ea>",1,0,0,1,nominal,pdftotext,,"FMOVE FPy,<ea> dest=(An) FPy,<ea>: 1"
+10-25,320,10-24,"FMOVE FPy,<ea>",dest=(An)+,"FPy,<ea>",1,0,0,1,nominal,pdftotext,,"FMOVE FPy,<ea> dest=(An)+ FPy,<ea>: 1"
+10-25,320,10-24,"FMOVE FPy,<ea>",dest=-(An),"FPy,<ea>",1,0,0,1,nominal,pdftotext,,"FMOVE FPy,<ea> dest=-(An) FPy,<ea>: 1"
+10-25,320,10-24,"FMOVE FPy,<ea>","dest=(d16,An)/(d16,PC)","FPy,<ea>",1,0,0,1,nominal,pdftotext,"the printed read/write count of the (d16,An) store is (1/0); a store writes, so the CSV keeps 0/1 (cycles are as printed)","FMOVE FPy,<ea> dest=(d16,An)/(d16,PC) FPy,<ea>: 1"
+10-25,320,10-24,"FMOVE FPy,<ea>","dest=(d8,An,Xi)/(d8,PC,Xi)","FPy,<ea>",2,0,0,1,nominal,pdftotext,,"FMOVE FPy,<ea> dest=(d8,An,Xi)/(d8,PC,Xi) FPy,<ea>: 2"
+10-25,320,10-24,"FMOVE FPy,<ea>","dest=(bd,An,Xi)/(bd,PC,Xi)","FPy,<ea>",3,0,0,1,nominal,pdftotext,,"FMOVE FPy,<ea> dest=(bd,An,Xi)/(bd,PC,Xi) FPy,<ea>: 3"
+10-25,320,10-24,"FMOVE FPy,<ea>",dest=(xxx).WL,"FPy,<ea>",2,0,0,1,nominal,pdftotext,,"FMOVE FPy,<ea> dest=(xxx).WL FPy,<ea>: 2"
+10-25,320,10-24,"FMOVE <ea>,FPCR",ea=Dn,control register,8,0,0,0,nominal,pdftotext,,"FMOVE <ea>,FPCR ea=Dn control register: 8"
+10-25,320,10-24,"FMOVE <ea>,FPCR",ea=(An),control register,6,0,1,0,nominal,pdftotext,,"FMOVE <ea>,FPCR ea=(An) control register: 6"
+10-25,320,10-24,"FMOVE <ea>,FPCR",ea=(An)+,control register,6,0,1,0,nominal,pdftotext,,"FMOVE <ea>,FPCR ea=(An)+ control register: 6"
+10-25,320,10-24,"FMOVE <ea>,FPCR",ea=-(An),control register,6,0,1,0,nominal,pdftotext,,"FMOVE <ea>,FPCR ea=-(An) control register: 6"
+10-25,320,10-24,"FMOVE <ea>,FPCR","ea=(d16,An)/(d16,PC)",control register,6,0,1,0,nominal,pdftotext,,"FMOVE <ea>,FPCR ea=(d16,An)/(d16,PC) control register: 6"
+10-25,320,10-24,"FMOVE <ea>,FPCR","ea=(d8,An,Xi)/(d8,PC,Xi)",control register,7,0,1,0,nominal,pdftotext,,"FMOVE <ea>,FPCR ea=(d8,An,Xi)/(d8,PC,Xi) control register: 7"
+10-25,320,10-24,"FMOVE <ea>,FPCR","ea=(bd,An,Xi)/(bd,PC,Xi)",control register,8,0,1,0,nominal,pdftotext,,"FMOVE <ea>,FPCR ea=(bd,An,Xi)/(bd,PC,Xi) control register: 8"
+10-25,320,10-24,"FMOVE <ea>,FPCR",ea=(xxx).WL,control register,7,0,1,0,nominal,pdftotext,,"FMOVE <ea>,FPCR ea=(xxx).WL control register: 7"
+10-25,320,10-24,"FMOVE <ea>,FPCR",ea=#imm,control register,7,0,0,0,nominal,pdftotext,,"FMOVE <ea>,FPCR ea=#imm control register: 7"
+10-25,320,10-24,"FMOVE FPCR,<ea>",ea=Dn,control register,4,0,0,0,nominal,pdftotext,,"FMOVE FPCR,<ea> ea=Dn control register: 4"
+10-25,320,10-24,"FMOVE FPCR,<ea>",ea=(An),control register,2,0,0,1,nominal,pdftotext,,"FMOVE FPCR,<ea> ea=(An) control register: 2"
+10-25,320,10-24,"FMOVE FPCR,<ea>",ea=(An)+,control register,2,0,0,1,nominal,pdftotext,,"FMOVE FPCR,<ea> ea=(An)+ control register: 2"
+10-25,320,10-24,"FMOVE FPCR,<ea>",ea=-(An),control register,2,0,0,1,nominal,pdftotext,,"FMOVE FPCR,<ea> ea=-(An) control register: 2"
+10-25,320,10-24,"FMOVE FPCR,<ea>","ea=(d16,An)/(d16,PC)",control register,2,0,0,1,nominal,pdftotext,"the printed read/write count of the (d16,An) store is (1/0); a store writes, so the CSV keeps 0/1 (cycles are as printed)","FMOVE FPCR,<ea> ea=(d16,An)/(d16,PC) control register: 2"
+10-25,320,10-24,"FMOVE FPCR,<ea>","ea=(d8,An,Xi)/(d8,PC,Xi)",control register,3,0,0,1,nominal,pdftotext,,"FMOVE FPCR,<ea> ea=(d8,An,Xi)/(d8,PC,Xi) control register: 3"
+10-25,320,10-24,"FMOVE FPCR,<ea>","ea=(bd,An,Xi)/(bd,PC,Xi)",control register,4,0,0,1,nominal,pdftotext,,"FMOVE FPCR,<ea> ea=(bd,An,Xi)/(bd,PC,Xi) control register: 4"
+10-25,320,10-24,"FMOVE FPCR,<ea>",ea=(xxx).WL,control register,3,0,0,1,nominal,pdftotext,,"FMOVE FPCR,<ea> ea=(xxx).WL control register: 3"
+10-25,321,10-25,"FMOVEM <ea>,FPx",ea=(An),data registers,1,3,n,0,nominal,pdftotext,,"FMOVEM <ea>,FPx ea=(An) data registers: 1"
+10-25,321,10-25,"FMOVEM <ea>,FPx",ea=(An)+,data registers,1,3,n,0,nominal,pdftotext,,"FMOVEM <ea>,FPx ea=(An)+ data registers: 1"
+10-25,321,10-25,"FMOVEM <ea>,FPx","ea=(d16,An)/(d16,PC)",data registers,1,3,n,0,nominal,pdftotext,,"FMOVEM <ea>,FPx ea=(d16,An)/(d16,PC) data registers: 1"
+10-25,321,10-25,"FMOVEM <ea>,FPx","ea=(d8,An,Xi)/(d8,PC,Xi)",data registers,2,3,n,0,nominal,pdftotext,,"FMOVEM <ea>,FPx ea=(d8,An,Xi)/(d8,PC,Xi) data registers: 2"
+10-25,321,10-25,"FMOVEM <ea>,FPx","ea=(bd,An,Xi)/(bd,PC,Xi)",data registers,3,3,n,0,nominal,pdftotext,,"FMOVEM <ea>,FPx ea=(bd,An,Xi)/(bd,PC,Xi) data registers: 3"
+10-25,321,10-25,"FMOVEM <ea>,FPx",ea=(xxx).WL,data registers,2,3,n,0,nominal,pdftotext,,"FMOVEM <ea>,FPx ea=(xxx).WL data registers: 2"
+10-25,321,10-25,"FMOVEM FPy,<ea>",ea=(An),data registers,1,3,0,n,nominal,pdftotext,,"FMOVEM FPy,<ea> ea=(An) data registers: 1"
+10-25,321,10-25,"FMOVEM FPy,<ea>",ea=-(An),data registers,1,3,0,n,nominal,pdftotext,,"FMOVEM FPy,<ea> ea=-(An) data registers: 1"
+10-25,321,10-25,"FMOVEM FPy,<ea>","ea=(d16,An)/(d16,PC)",data registers,1,3,0,n,nominal,pdftotext,,"FMOVEM FPy,<ea> ea=(d16,An)/(d16,PC) data registers: 1"
+10-25,321,10-25,"FMOVEM FPy,<ea>","ea=(d8,An,Xi)/(d8,PC,Xi)",data registers,2,3,0,n,nominal,pdftotext,,"FMOVEM FPy,<ea> ea=(d8,An,Xi)/(d8,PC,Xi) data registers: 2"
+10-25,321,10-25,"FMOVEM FPy,<ea>","ea=(bd,An,Xi)/(bd,PC,Xi)",data registers,3,3,0,n,nominal,pdftotext,,"FMOVEM FPy,<ea> ea=(bd,An,Xi)/(bd,PC,Xi) data registers: 3"
+10-25,321,10-25,"FMOVEM FPy,<ea>",ea=(xxx).WL,data registers,2,3,0,n,nominal,pdftotext,,"FMOVEM FPy,<ea> ea=(xxx).WL data registers: 2"
+10-25,321,10-25,FSAVE,ea=(An),control registers,3,0,0,3,nominal,pdftotext,,FSAVE ea=(An) control registers: 3
+10-25,321,10-25,FRESTORE,ea=(An),control registers,6,0,3,0,nominal,pdftotext,,FRESTORE ea=(An) control registers: 6
+10-25,321,10-25,"FMOVEM <ea>,FPxR",ea=(An),control registers,7,0,n,0,nominal,pdftotext,,"FMOVEM <ea>,FPxR ea=(An) control registers: 7"
+10-25,321,10-25,"FMOVEM FPxR,<ea>",ea=(An),control registers,5,0,0,n,nominal,pdftotext,,"FMOVEM FPxR,<ea> ea=(An) control registers: 5"
+10-25,321,10-25,FPU operand format,byte/word/long operand,addition,3,0,0,0,nominal,pdftotext,,FPU operand format byte/word/long operand addition: 3
+10-25,321,10-25,FPU operand format,extended-precision operand,addition,2,0,0,0,nominal,pdftotext,,FPU operand format extended-precision operand addition: 2
+10-25,321,10-25,FPU operand format,double-precision immediate,addition,1,0,0,0,nominal,pdftotext,,FPU operand format double-precision immediate addition: 1
+10-26,322,10-26,Exception,CPU Reset,exception,45,0,2,0,not-modeled,pdftotext,reason=the time from RSTI negation to the first instruction entering the OEP is not an instruction path; actual=mc68k_reset() reports no cycles,Exception CPU Reset exception: 45
+10-26,322,10-26,Exception,Bus Error,exception,19,0,1,4,nominal,pdftotext,,Exception Bus Error exception: 19
+10-26,322,10-26,Exception,Address Error,exception,19,0,1,3,nominal,pdftotext,,Exception Address Error exception: 19
+10-26,322,10-26,Exception,Illegal Instruction,exception,19,0,1,2,nominal,pdftotext,,Exception Illegal Instruction exception: 19
+10-26,322,10-26,Exception,Integer Divide By Zero,exception,20,0,1,3,nominal,pdftotext,add the EA calculation time,Exception Integer Divide By Zero exception: 20
+10-26,322,10-26,Exception,CHK Instruction,exception,20,0,1,3,nominal,pdftotext,add the EA calculation time,Exception CHK Instruction exception: 20
+10-26,322,10-26,Exception,"TRAPV, TRAPcc Instructions",exception,19,0,1,3,nominal,pdftotext,,"Exception TRAPV, TRAPcc Instructions exception: 19"
+10-26,322,10-26,Exception,Privilege Violation,exception,19,0,1,2,nominal,pdftotext,,Exception Privilege Violation exception: 19
+10-26,322,10-26,Exception,Trace,exception,19,0,1,3,nominal,pdftotext,,Exception Trace exception: 19
+10-26,322,10-26,Exception,Line A Emulator,exception,19,0,1,2,nominal,pdftotext,,Exception Line A Emulator exception: 19
+10-26,322,10-26,Exception,Line F Emulator,exception,19,0,1,2,nominal,pdftotext,,Exception Line F Emulator exception: 19
+10-26,322,10-26,Exception,Unimplemented EA,exception,19,0,1,2,nominal,pdftotext,,Exception Unimplemented EA exception: 19
+10-26,322,10-26,Exception,Unimplemented Integer,exception,19,0,1,2,nominal,pdftotext,,Exception Unimplemented Integer exception: 19
+10-26,322,10-26,Exception,Format Error,exception,23,0,1,2,nominal,pdftotext,,Exception Format Error exception: 23
+10-26,322,10-26,Exception,Nonsupported FP,exception,19,0,1,3,nominal,pdftotext,,Exception Nonsupported FP exception: 19
+10-26,322,10-26,Exception,Interrupt,exception,23,0,1,2,nominal,pdftotext,assumes autovector or a zero-wait-state external vector,Exception Interrupt exception: 23
+10-26,322,10-26,Exception,TRAP Instructions,exception,19,0,1,2,nominal,pdftotext,,Exception TRAP Instructions exception: 19
+10-26,322,10-26,Exception,FP Branch on Unordered Condition,exception,21,0,1,3,nominal,pdftotext,,Exception FP Branch on Unordered Condition exception: 21
+10-26,322,10-26,Exception,FP Inexact Result,exception,19,0,1,3,nominal,pdftotext,add the instruction time minus 1 after a post-exception fault (not modeled),Exception FP Inexact Result exception: 19
+10-26,322,10-26,Exception,FP Divide By Zero,exception,19,0,1,3,nominal,pdftotext,add the instruction time minus 1 after a post-exception fault (not modeled),Exception FP Divide By Zero exception: 19
+10-26,322,10-26,Exception,FP Underflow,exception,19,0,1,3,nominal,pdftotext,add the instruction time minus 1 after a post-exception fault (not modeled),Exception FP Underflow exception: 19
+10-26,322,10-26,Exception,FP Operand Error,exception,19,0,1,3,nominal,pdftotext,add the instruction time minus 1 after a post-exception fault (not modeled),Exception FP Operand Error exception: 19
+10-26,322,10-26,Exception,FP Overflow,exception,19,0,1,3,nominal,pdftotext,add the instruction time minus 1 after a post-exception fault (not modeled),Exception FP Overflow exception: 19
+10-26,322,10-26,Exception,FP Signaling NAN,exception,19,0,1,3,nominal,pdftotext,add the instruction time minus 1 after a post-exception fault (not modeled),Exception FP Signaling NAN exception: 19
+10-26,322,10-26,Exception,FP Unimplemented Data Type,exception,19,0,1,3,nominal,pdftotext,,Exception FP Unimplemented Data Type exception: 19

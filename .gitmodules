@@ -1,0 +1,6 @@
+[submodule "tests/diff/musashi"]
+	path = tests/diff/musashi
+	url = https://github.com/kstenerud/musashi.git
+[submodule "extern/berkeley-softfloat-3"]
+	path = extern/berkeley-softfloat-3
+	url = https://github.com/ucb-bar/berkeley-softfloat-3.git

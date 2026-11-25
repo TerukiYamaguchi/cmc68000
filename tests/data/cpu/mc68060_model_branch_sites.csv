@@ -1,0 +1,481 @@
+file,line,function,class,code
+src/cpu/coproc.c,365,cp_fline,他モデル固有(==/述語),"cpu_is_68030_family(cpu) ? CYC(cpu, CYC_EXC_ILLEGAL)"
+src/cpu/cpu_internal.h,636,cyc_get,040分岐,if (cpu->model == MC68K_MODEL_68040)
+src/cpu/cpu_internal.h,643,model_has_030_access_control,他モデル固有(==/述語),return model == MC68K_MODEL_68EC030 || model == MC68K_MODEL_68030;
+src/cpu/cpu_internal.h,647,model_has_68020_isa,他モデル固有(==/述語),return model == MC68K_MODEL_68020 || model_has_030_access_control(model) ||
+src/cpu/cpu_internal.h,648,model_has_68020_isa,040分岐,model == MC68K_MODEL_68040 || model == MC68K_MODEL_68060;
+src/cpu/cpu_internal.h,655,model_has_68010_isa,他モデル固有(==/述語),return model == MC68K_MODEL_68010 || model == MC68K_MODEL_68020 ||
+src/cpu/cpu_internal.h,656,model_has_68010_isa,他モデル固有(==/述語),model == MC68K_MODEL_68EC030 || model == MC68K_MODEL_68030 ||
+src/cpu/cpu_internal.h,657,model_has_68010_isa,040分岐,model == MC68K_MODEL_68040 || model == MC68K_MODEL_68060;
+src/cpu/cpu_internal.h,661,cpu_has_68010_isa,その他(述語),return model_has_68010_isa(cpu->model);
+src/cpu/cpu_internal.h,665,cpu_has_68020_isa,その他(述語),return model_has_68020_isa(cpu->model);
+src/cpu/cpu_internal.h,683,cpu_is_68000,他モデル固有(==/述語),return cpu->model == MC68K_MODEL_68000;
+src/cpu/cpu_internal.h,687,cpu_is_68010,他モデル固有(==/述語),return cpu->model == MC68K_MODEL_68010;
+src/cpu/cpu_internal.h,691,cpu_is_68020,他モデル固有(==/述語),return cpu->model == MC68K_MODEL_68020;
+src/cpu/cpu_internal.h,695,cpu_is_68ec030,他モデル固有(==/述語),return cpu->model == MC68K_MODEL_68EC030;
+src/cpu/cpu_internal.h,699,cpu_is_68030,他モデル固有(==/述語),return cpu->model == MC68K_MODEL_68030;
+src/cpu/cpu_internal.h,704,cpu_is_68030_family,他モデル固有(==/述語),return cpu->model == MC68K_MODEL_68EC030 || cpu->model == MC68K_MODEL_68030;
+src/cpu/cpu_internal.h,708,cpu_is_68040,040分岐,return cpu->model == MC68K_MODEL_68040;
+src/cpu/cpu_internal.h,712,cpu_is_68060,その他(述語),return cpu->model == MC68K_MODEL_68060;
+src/cpu/cpu_internal.h,717,cpu_has_master_stack,その他(述語),return !cpu_is_68060(cpu) && cpu_has_68020_isa(cpu);
+src/cpu/cpu_internal.h,722,cpu_has_t0_trace,その他(述語),return !cpu_is_68060(cpu) && cpu_has_68020_isa(cpu);
+src/cpu/cpu_internal.h,728,cpu_has_cpid0_privilege_check,その他(述語),return !cpu_is_68060(cpu) && cpu_has_68020_isa(cpu);
+src/cpu/cpu_internal.h,734,cpu_has_68060_unimpl_int,その他(述語),return cpu_is_68060(cpu);
+src/cpu/cpu_internal.h,752,cpu_has_68040_cache,040分岐,return cpu_is_68040(cpu);
+src/cpu/cpu_internal.h,757,cpu_has_onchip_cache,040分岐,return cpu_is_68040(cpu) || cpu_is_68060(cpu);
+src/cpu/cpu_internal.h,762,cpu_has_060_fpu,その他(述語),return cpu_is_68060(cpu) && cpu->fpu_config == MC68K_FPU_68060;
+src/cpu/cpu_internal.h,766,cpu_has_integrated_fpu,040分岐,return cpu_is_68040(cpu) && cpu->fpu_config == MC68K_FPU_68040;
+src/cpu/cpu_internal.h,878,cpu_sp_slot,その他(述語),if (cpu_has_master_stack(cpu) && (sr & SR_M))
+src/cpu/cpu_internal.h,884,cpu_sr_storable,他モデル固有(==/述語),if (cpu->model == MC68K_MODEL_68000)
+src/cpu/cpu_internal.h,1055,model_has_pmmu,他モデル固有(==/述語),return model == MC68K_MODEL_68030;
+src/cpu/cpu_internal.h,1058,model_has_030_cache,その他(述語),return model_has_030_access_control(model);
+src/cpu/cpu_internal.h,1108,cpu_needs_alignment,その他(述語),return !cpu_has_68020_isa(cpu);
+src/cpu/cpu_internal.h,1295,cpu_translate_execute_access,その他(述語),if (cpu_is_68060(cpu)) {
+src/cpu/cpu_internal.h,1309,cpu_translate_write_access,040分岐,if (!cpu_is_68040(cpu) || !cpu->wb2_defer_ok || cpu->wb2.valid ||
+src/cpu/cpu_internal.h,1336,cpu_cache_read_eligible,その他(述語),if (!model_has_030_cache(cpu->model))
+src/cpu/cpu_internal.h,1430,cpu_bus_access_begin,その他(述語),if (!cpu->bus_access_epoch || !cpu_is_68060(cpu))
+src/cpu/cpu_internal.h,1570,cpu_write_byte_access,その他(述語),if (cpu_has_onchip_cache(cpu) &&
+src/cpu/cpu_internal.h,1615,cpu_write_word_access,その他(述語),if (cpu_has_onchip_cache(cpu) &&
+src/cpu/cpu_internal.h,1673,cpu_write_long_access,その他(述語),if (cpu_has_onchip_cache(cpu) &&
+src/cpu/cpu_internal.h,1742,cpu_060_ifetch_fast,その他(述語),if (!cpu_is_68060(cpu) || cpu->atc060_ifast_disable || cpu->ifetch_fast_disable ||
+src/cpu/cpu_internal.h,1789,cpu_fetch_word,他モデル固有(==/述語),if (cpu->model == MC68K_MODEL_68000)
+src/cpu/cycles.c,202,cyc_profile_for_model,get_model/case,case MC68K_MODEL_68000:
+src/cpu/cycles.c,204,cyc_profile_for_model,get_model/case,case MC68K_MODEL_68010:
+src/cpu/cycles.c,206,cyc_profile_for_model,get_model/case,case MC68K_MODEL_68020:
+src/cpu/cycles.c,208,cyc_profile_for_model,get_model/case,case MC68K_MODEL_68EC030:
+src/cpu/cycles.c,209,cyc_profile_for_model,get_model/case,case MC68K_MODEL_68030:
+src/cpu/cycles.c,213,cyc_profile_for_model,get_model/case,case MC68K_MODEL_68040:
+src/cpu/cycles.c,215,cyc_profile_for_model,get_model/case,case MC68K_MODEL_68060:
+src/cpu/decode.c,44,op_illegal,040分岐,"cpu_is_68040(cpu) ? cpu_040_tag(cpu, 32)"
+src/cpu/decode.c,51,op_line_a,040分岐,"cpu_is_68040(cpu)          ? cpu_040_tag(cpu, 32)"
+src/cpu/decode.c,52,op_line_a,他モデル固有(==/述語),": cpu_is_68030_family(cpu) ? CYC(cpu, CYC_EXC_ILLEGAL)"
+src/cpu/decode.c,57,op_line_f,その他(述語),if (cpu_has_cpid0_privilege_check(cpu) && !(cpu->sr & SR_S) && ((opcode >> 9) & 7) == 0)
+src/cpu/decode.c,60,op_line_f,040分岐,"cpu_is_68040(cpu)          ? cpu_040_tag(cpu, 32)"
+src/cpu/decode.c,61,op_line_f,他モデル固有(==/述語),": cpu_is_68030_family(cpu) ? CYC(cpu, CYC_EXC_ILLEGAL)"
+src/cpu/decode.c,108,build_op_table,その他(述語),if (model_has_68010_isa(model))
+src/cpu/decode.c,110,build_op_table,その他(述語),if (model_has_68020_isa(model)) {
+src/cpu/decode.c,115,build_op_table,その他(述語),if (model_has_030_access_control(model))
+src/cpu/decode.c,117,build_op_table,040分岐,if (model == MC68K_MODEL_68040)
+src/cpu/decode.c,119,build_op_table,040分岐,if (model == MC68K_MODEL_68040)
+src/cpu/decode.c,121,build_op_table,040分岐,if (model == MC68K_MODEL_68040)
+src/cpu/decode.c,123,build_op_table,その他(述語),if (model == MC68K_MODEL_68060)
+src/cpu/decode.c,127,build_op_table,040分岐,if (model_has_68020_isa(model) && model != MC68K_MODEL_68040 && model != MC68K_MODEL_68060)
+src/cpu/ea_helpers.c,65,brief_ea_calc,その他(述語),uint32_t scale = cpu_has_68020_isa(cpu) ? 1u << ((ext >> 9) & 3) : 1;
+src/cpu/ea_helpers.c,140,indexed_ea_access,その他(述語),if (!cpu_has_68020_isa(cpu) || !(ext & 0x0100))
+src/cpu/ea_helpers.c,325,mem_write_sized_access_rbw,他モデル固有(==/述語),if (cpu->ea_read_before_write && cpu->model == MC68K_MODEL_68000) {
+src/cpu/m68000.c,40,cpu_exception_frame_origin_begin,その他(述語),if (!cpu_has_68010_isa(cpu))
+src/cpu/m68000.c,62,cpu_exception_frame_origin_complete,その他(述語),if (cpu_is_68060(cpu))
+src/cpu/m68000.c,65,cpu_exception_frame_origin_complete,その他(述語),if (!cpu_has_68010_isa(cpu))
+src/cpu/m68000.c,95,cpu_exception_frame_origin_rte_commit,その他(述語),else if (cpu_has_master_stack(cpu) && (new_sr & SR_M))
+src/cpu/m68000.c,114,fpu_config_accepted,他モデル固有(==/述語),return model == MC68K_MODEL_68020 || model == MC68K_MODEL_68EC030 ||
+src/cpu/m68000.c,115,fpu_config_accepted,他モデル固有(==/述語),model == MC68K_MODEL_68030;
+src/cpu/m68000.c,118,fpu_config_accepted,040分岐,return model == MC68K_MODEL_68040;
+src/cpu/m68000.c,120,fpu_config_accepted,その他(述語),return model == MC68K_MODEL_68060;
+src/cpu/m68000.c,210,mc68k_reset,その他(述語),if (cpu_is_68060(cpu)) {
+src/cpu/m68000.c,222,mc68k_reset,その他(述語),if (!cpu_is_68060(
+src/cpu/m68000.c,233,mc68k_reset,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/m68000.c,364,accept_irq_body,その他(述語),const bool long_frame = cpu_has_68010_isa(cpu);
+src/cpu/m68000.c,374,accept_irq_body,その他(述語),if (cpu_is_68060(cpu))
+src/cpu/m68000.c,390,accept_irq_body,その他(述語),if (!cpu_has_68020_isa(cpu))
+src/cpu/m68000.c,397,accept_irq_body,その他(述語),if (!cpu_has_68020_isa(cpu))
+src/cpu/m68000.c,405,accept_irq_body,その他(述語),if (cpu_has_master_stack(cpu) && (saved_sr & SR_M)) {
+src/cpu/m68000.c,442,accept_irq_body,その他(述語),if (cpu_has_master_stack(cpu) && (saved_sr & SR_M)) {
+src/cpu/m68000.c,453,accept_irq_body,その他(述語),if (!cpu_has_68020_isa(cpu))
+src/cpu/m68000.c,485,accept_irq_body,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/m68000.c,487,accept_irq_body,その他(述語),if (cpu_is_68060(cpu))
+src/cpu/m68000.c,667,group0_ssw,その他(述語),if (cpu_is_68060(cpu))
+src/cpu/m68000.c,669,group0_ssw,040分岐,if (cpu_is_68040(cpu))
+src/cpu/m68000.c,671,group0_ssw,その他(述語),if (cpu_has_68020_isa(cpu))
+src/cpu/m68000.c,673,group0_ssw,その他(述語),if (cpu_has_68010_isa(cpu))
+src/cpu/m68000.c,680,group0_frame_format,その他(述語),if (cpu_is_68060(cpu))
+src/cpu/m68000.c,682,group0_frame_format,040分岐,if (cpu_is_68040(cpu))
+src/cpu/m68000.c,684,group0_frame_format,その他(述語),if (cpu_has_68020_isa(cpu))
+src/cpu/m68000.c,686,group0_frame_format,その他(述語),if (cpu_has_68010_isa(cpu))
+src/cpu/m68000.c,946,deliver_group0_exception_body,他モデル固有(==/述語),uint32_t saved_pc = (cpu->model == MC68K_MODEL_68000) ? cpu->pc : cpu->instr_pc;
+src/cpu/m68000.c,948,deliver_group0_exception_body,その他(述語),if (cpu_is_68060(cpu))
+src/cpu/m68000.c,950,deliver_group0_exception_body,040分岐,if (cpu_is_68040(cpu))
+src/cpu/m68000.c,953,deliver_group0_exception_body,その他(述語),if (cpu_has_68020_isa(cpu)) {
+src/cpu/m68000.c,1067,deliver_group0_exception_body,他モデル固有(==/述語),if (cpu_is_68030_family(cpu) && cpu->fault_vector == 2)
+src/cpu/m68000.c,1075,deliver_group0_exception_body,その他(述語),const bool from_exception_frame = cpu_has_68010_isa(cpu) && origin && !origin->bound;
+src/cpu/m68000.c,1079,deliver_group0_exception_body,その他(述語),} else if (cpu_has_68010_isa(cpu)) {
+src/cpu/m68000.c,1090,deliver_group0_exception_body,その他(述語),if (cpu_has_68010_isa(cpu)) {
+src/cpu/m68000.c,1123,deliver_group0_exception_body,その他(述語),if (cpu_has_68010_isa(cpu)) {
+src/cpu/m68000.c,1299,fault_ring_capture,その他(述語),rec->fault_addr = cpu_is_68060(cpu) ? group0_fault_address_68060(cpu) : cpu->addr_err_addr;
+src/cpu/m68000.c,1365,fault_ring_capture,その他(述語),if (model_has_pmmu(cpu->model)) {
+src/cpu/m68000.c,1413,exc_vector_suppresses_trace,その他(述語),if (cpu_is_68060(cpu)) {
+src/cpu/m68000.c,1433,exception_vector_read_fault,他モデル固有(==/述語),if (cpu->model == MC68K_MODEL_68000) {
+src/cpu/m68000.c,1447,normal_exception_frame_fault,その他(述語),if (!cpu_has_68020_isa(cpu))
+src/cpu/m68000.c,1464,cpu_dispatch_exception,その他(述語),if (cpu_is_68060(cpu)) {
+src/cpu/m68000.c,1490,dispatch_exception_body,その他(述語),if (cpu_has_68020_isa(cpu) &&
+src/cpu/m68000.c,1518,dispatch_exception_body,その他(述語),if (cpu_has_68010_isa(cpu)) {
+src/cpu/m68000.c,1542,dispatch_exception_body,その他(述語),if (!cpu_has_68020_isa(cpu))
+src/cpu/m68000.c,1567,cpu_dispatch_fpu040_exception,その他(述語),if (cpu_is_68060(cpu)) {
+src/cpu/m68000.c,1791,cpu_translate_execute_access_slow,040分岐,if (cpu_is_68040(cpu) && cpu->wb2.valid && !access->read) {
+src/cpu/m68000.c,1796,cpu_translate_execute_access_slow,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/m68000.c,1813,cpu_translate_execute_access_slow,他モデル固有(==/述語),if (!cpu_is_68030(cpu) ||
+src/cpu/m68000.c,1842,cpu_prefetch_speculative_read,否定比較(060は真側),if (cpu->model != MC68K_MODEL_68000 || (addr & 1u))
+src/cpu/m68000.c,1898,cpu_prefetch_enter_exception,否定比較(060は真側),if (cpu->model != MC68K_MODEL_68000)
+src/cpu/m68000.c,1968,cpu_prefetch_complete_instruction,否定比較(060は真側),if (cpu->model != MC68K_MODEL_68000 || cpu->exec_state != CPU_NORMAL) {
+src/cpu/m68000.c,2004,execute_body,その他(述語),const bool is_68000 = cpu_is_68000(cpu);
+src/cpu/m68000.c,2005,execute_body,040分岐,const bool is_68040 = cpu_is_68040(cpu);
+src/cpu/m68000.c,2006,execute_body,その他(述語),const bool is_68060 = cpu_is_68060(cpu);
+src/cpu/m68000.c,2007,execute_body,その他(述語),const bool has_restart_isa = cpu_has_68010_isa(cpu);
+src/cpu/m68000.c,2008,execute_body,その他(述語),const bool has_trace_t0 = cpu_has_t0_trace(cpu);
+src/cpu/m68000.c,2078,execute_body,その他(述語),if (cpu->exec_state == CPU_EXCEPTION && !cpu_has_68020_isa(cpu)) {
+src/cpu/m68000.c,2285,execute_body,他モデル固有(==/述語),if ((cpu_is_68030_family(cpu) || cpu_is_68060(cpu)) && cpu->fault_vector == 2)
+src/cpu/m68000.c,2314,execute_body,その他(述語),if (cpu->exec_state == CPU_EXCEPTION && !cpu_has_68020_isa(cpu)) {
+src/cpu/m68000.c,2402,mc68k_get_mmu_regs,その他(述語),if (model_has_pmmu(cpu->model)) {
+src/cpu/m68000.c,2417,mc68k_get_mmu060_regs,その他(述語),if (!cpu || !cpu_is_68060(cpu))
+src/cpu/m68000.c,2432,mc68k_get_mmu040_regs,040分岐,if (!cpu || !cpu_is_68040(cpu))
+src/cpu/m68000.c,2510,cpu_dcache_read_hit,その他(述語),!cpu_has_onchip_cache(cpu))
+src/cpu/m68000.c,2515,cpu_dcache_read_hit,その他(述語),const unsigned sets = cpu_is_68060(cpu) ? MC68K_060_CACHE_SETS : MC68K_040_CACHE_SETS;
+src/cpu/m68000.c,2542,cpu_read_byte_access,その他(述語),if (cpu_has_onchip_cache(cpu) &&
+src/cpu/m68000.c,2582,cpu_read_word_access,その他(述語),if (cpu_has_onchip_cache(cpu) &&
+src/cpu/m68000.c,2636,cpu_read_long_access,その他(述語),if (cpu_has_onchip_cache(cpu) &&
+src/cpu/ops_68020_arith.c,83,op_extb,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_68020_arith.c,93,op_chk_long,040分岐,if (val >= 0 && val <= bound && cpu_is_68040(cpu)) {
+src/cpu/ops_68020_arith.c,99,op_chk_long,他モデル固有(==/述語),return (cpu_is_68020(cpu) || cpu_is_68030_family(cpu))
+src/cpu/ops_68020_arith.c,106,op_chk_long,他モデル固有(==/述語),if (cpu_is_68030_family(cpu)) {
+src/cpu/ops_68020_arith.c,120,op_muldiv_long,その他(述語),if (cpu_is_68060(c) && wide)
+src/cpu/ops_68020_arith.c,133,op_muldiv_long,040分岐,if (cpu_is_68040(c)) {
+src/cpu/ops_68020_arith.c,138,op_muldiv_long,他モデル固有(==/述語),if (cpu_is_68020(c))
+src/cpu/ops_68020_arith.c,140,op_muldiv_long,他モデル固有(==/述語),if (cpu_is_68030_family(c))
+src/cpu/ops_68020_arith.c,156,op_muldiv_long,040分岐,if (cpu_is_68040(c)) {
+src/cpu/ops_68020_arith.c,161,op_muldiv_long,他モデル固有(==/述語),if (cpu_is_68020(c))
+src/cpu/ops_68020_arith.c,163,op_muldiv_long,他モデル固有(==/述語),if (cpu_is_68030_family(c))
+src/cpu/ops_68020_arith.c,174,op_muldiv_long,040分岐,if (cpu_is_68040(c)) {
+src/cpu/ops_68020_arith.c,179,op_muldiv_long,他モデル固有(==/述語),if (cpu_is_68020(c))
+src/cpu/ops_68020_arith.c,181,op_muldiv_long,他モデル固有(==/述語),if (cpu_is_68030_family(c))
+src/cpu/ops_68020_arith.c,190,op_muldiv_long,040分岐,if (cpu_is_68040(c)) {
+src/cpu/ops_68020_arith.c,195,op_muldiv_long,他モデル固有(==/述語),if (cpu_is_68020(c))
+src/cpu/ops_68020_arith.c,197,op_muldiv_long,他モデル固有(==/述語),if (cpu_is_68030_family(c))
+src/cpu/ops_68020_arith.c,223,op_pack,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_68020_arith.c,225,op_pack,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_68020_arith.c,227,op_pack,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_68020_arith.c,254,op_unpk,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_68020_arith.c,256,op_unpk,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_68020_arith.c,258,op_unpk,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_68020_bitfield.c,229,op_bf,040分岐,if (cpu_is_68040(c) && m == 0)
+src/cpu/ops_68020_bitfield.c,231,op_bf,040分岐,if (cpu_is_68040(c) && m != 0) {
+src/cpu/ops_68020_bitfield.c,236,op_bf,他モデル固有(==/述語),if (cpu_is_68020(c)) {
+src/cpu/ops_68020_bitfield.c,250,op_bf,他モデル固有(==/述語),if (cpu_is_68030_family(c)) {
+src/cpu/ops_68020_system.c,79,op_link_long,040分岐,if (cpu_is_68040(c))
+src/cpu/ops_68020_system.c,81,op_link_long,他モデル固有(==/述語),return cpu_is_68030_family(c) ? 6 : 16;
+src/cpu/ops_68020_system.c,94,op_trapcc,040分岐,if (cpu_is_68040(c))
+src/cpu/ops_68020_system.c,96,op_trapcc,他モデル固有(==/述語),return cpu_is_68030_family(c) ? (form == 2 ? 6 : form == 3 ? 8 : 4) : 4;
+src/cpu/ops_68020_system.c,99,op_trapcc,040分岐,if (cpu_is_68040(c))
+src/cpu/ops_68020_system.c,102,op_trapcc,他モデル固有(==/述語),cpu_is_68030_family(c) ? (form == 2   ? 24
+src/cpu/ops_68020_system.c,130,op_cas,その他(述語),if (cpu_is_68060(c)) {
+src/cpu/ops_68020_system.c,155,op_cas,他モデル固有(==/述語),if (cpu_is_68020(c))
+src/cpu/ops_68020_system.c,158,op_cas,他モデル固有(==/述語),if (cpu_is_68030_family(c))
+src/cpu/ops_68020_system.c,195,op_chk2,他モデル固有(==/述語),if (cpu_is_68030_family(c))
+src/cpu/ops_68020_system.c,202,op_chk2,040分岐,if (cpu_is_68040(c)) {
+src/cpu/ops_68020_system.c,216,op_chk2,他モデル固有(==/述語),if (cpu_is_68020(c))
+src/cpu/ops_68020_system.c,220,op_chk2,他モデル固有(==/述語),if (cpu_is_68030_family(c))
+src/cpu/ops_68020_system.c,255,op_cas2,040分岐,if ((cpu_is_68030_family(c) || cpu_is_68040(c)) &&
+src/cpu/ops_68020_system.c,270,op_cas2,他モデル固有(==/述語),if (cpu_is_68020(c))
+src/cpu/ops_68020_system.c,272,op_cas2,他モデル固有(==/述語),return cpu_is_68030_family(c) ? 24 : 20;
+src/cpu/ops_68030_mmu.c,471,cpu_mmu_translate_result,他モデル固有(==/述語),if (!cpu_is_68030(cpu))
+src/cpu/ops_68030_mmu.c,555,op_68030_mmu,その他(述語),if (!model_has_030_access_control(cpu->model))
+src/cpu/ops_68030_mmu.c,563,op_68030_mmu,他モデル固有(==/述語),if (cpu_is_68030(cpu) && klass == 0 && (ext & 0x00ffu) == 0 && (preg == 2 || preg == 3)) {
+src/cpu/ops_68030_mmu.c,592,op_68030_mmu,他モデル固有(==/述語),if (klass == 2 && cpu_is_68030(cpu) && (ext & 0x00ffu) == 0 &&
+src/cpu/ops_68030_mmu.c,654,op_68030_mmu,他モデル固有(==/述語),if (cpu_is_68030(cpu) && klass == 1) {
+src/cpu/ops_68040_cache.c,25,cache_sets,その他(述語),return cpu_is_68060(cpu) ? MC68K_060_CACHE_SETS : MC68K_040_CACHE_SETS;
+src/cpu/ops_68040_cache.c,103,cpu_040_cache_read,その他(述語),if (cpu_is_68060(cpu) && cache_mode >= 2 && !access->instruction &&
+src/cpu/ops_68040_cache.c,110,cpu_040_cache_read,その他(述語),if (cpu_is_68060(cpu) && access->rmw)
+src/cpu/ops_68040_cache.c,112,cpu_040_cache_read,その他(述語),if (cpu_is_68060(cpu) && cpu->cache_no_allocate && !access->instruction) {
+src/cpu/ops_68040_cache.c,134,cpu_040_cache_write,その他(述語),if (cpu_is_68060(cpu) && cache_mode >= 2 &&
+src/cpu/ops_68040_cache.c,144,cpu_040_cache_write,その他(述語),if (cpu_is_68060(cpu) && access->rmw) {
+src/cpu/ops_68040_cache.c,149,cpu_040_cache_write,その他(述語),const bool allocate = cache_mode == 1 && !(cpu_is_68060(cpu) && cpu->cache_no_allocate);
+src/cpu/ops_68040_cache.c,169,cpu_040_cache_peek,その他(述語),if (!cpu_has_onchip_cache(cpu))
+src/cpu/ops_68040_cache.c,226,table_line,その他(述語),if (cpu_is_68060(cpu) || !(cpu->cacr & MC68K_CACR_040_DE))
+src/cpu/ops_68040_cache.c,370,cpu_040_move16,その他(述語),const bool dcache = !cpu_is_68060(cpu) || (cpu->cacr & MC68K_CACR_040_DE);
+src/cpu/ops_68040_cache.c,414,move16_cycles,その他(述語),"return cpu_is_68060(cpu) ? CYCLES_060_CACHE_OP : cpu_040_tag(cpu, cycles040);"
+src/cpu/ops_alu.c,294,op_add,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_alu.c,299,op_add,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_alu.c,301,op_add,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_alu.c,321,op_add,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_alu.c,326,op_add,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_alu.c,328,op_add,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_alu.c,330,op_add,040分岐,if (cpu_is_68040(cpu) && ea_mode <= 1)
+src/cpu/ops_alu.c,350,op_add,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_alu.c,355,op_add,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_alu.c,357,op_add,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_alu.c,393,op_sub,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_alu.c,398,op_sub,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_alu.c,400,op_sub,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_alu.c,420,op_sub,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_alu.c,425,op_sub,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_alu.c,427,op_sub,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_alu.c,429,op_sub,040分岐,if (cpu_is_68040(cpu) && ea_mode <= 1)
+src/cpu/ops_alu.c,449,op_sub,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_alu.c,454,op_sub,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_alu.c,456,op_sub,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_alu.c,494,op_cmp,040分岐,if (cpu_is_68040(cpu) && size == 4) {
+src/cpu/ops_alu.c,499,op_cmp,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_alu.c,501,op_cmp,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_alu.c,519,op_cmp,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_alu.c,524,op_cmp,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_alu.c,526,op_cmp,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_alu.c,682,op_addi,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_alu.c,687,op_addi,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_alu.c,689,op_addi,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_alu.c,719,op_subi,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_alu.c,724,op_subi,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_alu.c,726,op_subi,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_alu.c,754,op_cmpi,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_alu.c,759,op_cmpi,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_alu.c,761,op_cmpi,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_alu.c,796,op_addq,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_alu.c,798,op_addq,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_alu.c,800,op_addq,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_alu.c,812,op_addq,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_alu.c,817,op_addq,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_alu.c,819,op_addq,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_alu.c,841,op_subq,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_alu.c,843,op_subq,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_alu.c,845,op_subq,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_alu.c,857,op_subq,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_alu.c,862,op_subq,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_alu.c,864,op_subq,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_arith_ext.c,230,op_mulu,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_arith_ext.c,235,op_mulu,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_arith_ext.c,238,op_mulu,他モデル固有(==/述語),if (cpu->model == MC68K_MODEL_68000)
+src/cpu/ops_arith_ext.c,268,op_muls,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_arith_ext.c,273,op_muls,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_arith_ext.c,276,op_muls,他モデル固有(==/述語),if (cpu->model == MC68K_MODEL_68000) {
+src/cpu/ops_arith_ext.c,354,op_chk,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_arith_ext.c,359,op_chk,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_arith_ext.c,362,op_chk,他モデル固有(==/述語),if (cpu->model == MC68K_MODEL_68000 || cpu->model == MC68K_MODEL_68010)
+src/cpu/ops_arith_ext.c,372,op_chk,他モデル固有(==/述語),if (cpu_is_68030_family(cpu)) {
+src/cpu/ops_arith_ext.c,470,op_abcd,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_arith_ext.c,472,op_abcd,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_arith_ext.c,478,op_abcd,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_arith_ext.c,481,op_abcd,他モデル固有(==/述語),return cpu_is_68030_family(cpu) ? 13 : 18;
+src/cpu/ops_arith_ext.c,508,op_sbcd,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_arith_ext.c,510,op_sbcd,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_arith_ext.c,516,op_sbcd,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_arith_ext.c,519,op_sbcd,他モデル固有(==/述語),return cpu_is_68030_family(cpu) ? 13 : 18;
+src/cpu/ops_arith_ext.c,536,op_nbcd,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_arith_ext.c,541,op_nbcd,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_arith_ext.c,574,op_divu,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_arith_ext.c,579,op_divu,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_arith_ext.c,588,op_divu,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_arith_ext.c,594,op_divu,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_arith_ext.c,619,op_divs,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_arith_ext.c,624,op_divs,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_arith_ext.c,634,op_divs,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_arith_ext.c,640,op_divs,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_arith_ext.c,702,op_addx,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_arith_ext.c,704,op_addx,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_arith_ext.c,713,op_addx,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_arith_ext.c,716,op_addx,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_arith_ext.c,764,op_subx,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_arith_ext.c,766,op_subx,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_arith_ext.c,775,op_subx,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_arith_ext.c,778,op_subx,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_arith_ext.c,814,op_cmpm,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_arith_ext.c,817,op_cmpm,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_branch.c,136,op_bcc,その他(述語),if (d8 == -1 && cpu_has_68020_isa(cpu)) {
+src/cpu/ops_branch.c,147,op_bcc,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_branch.c,149,op_bcc,他モデル固有(==/述語),return cpu_is_68030_family(cpu) || cpu_is_68020(cpu) ? 6 : 10;
+src/cpu/ops_branch.c,151,op_bcc,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_branch.c,153,op_bcc,他モデル固有(==/述語),return cpu_is_68030_family(cpu) || cpu_is_68020(cpu) ? 6 : 12;
+src/cpu/ops_branch.c,165,op_bcc,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_branch.c,167,op_bcc,他モデル固有(==/述語),return cpu_is_68030_family(cpu) || cpu_is_68020(cpu) ? 6 : 10;
+src/cpu/ops_branch.c,173,op_bcc,040分岐,"return cpu_is_68040(cpu) ? cpu_040_tag(cpu, 6)"
+src/cpu/ops_branch.c,174,op_bcc,他モデル固有(==/述語),: cpu_is_68030_family(cpu) || cpu_is_68020(cpu)
+src/cpu/ops_branch.c,185,op_bcc,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_branch.c,187,op_bcc,他モデル固有(==/述語),return cpu_is_68030_family(cpu) || cpu_is_68020(cpu) ? 6 : 10;
+src/cpu/ops_branch.c,191,op_bcc,040分岐,"return cpu_is_68040(cpu)          ? cpu_040_tag(cpu, 6)"
+src/cpu/ops_branch.c,192,op_bcc,他モデル固有(==/述語),: cpu_is_68030_family(cpu) ? 4
+src/cpu/ops_branch.c,193,op_bcc,他モデル固有(==/述語),: cpu_is_68020(cpu)        ? 4
+src/cpu/ops_branch.c,209,op_bsr,その他(述語),if (d8 == -1 && cpu_has_68020_isa(cpu)) {
+src/cpu/ops_branch.c,235,op_bsr,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_branch.c,237,op_bsr,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_branch.c,239,op_bsr,他モデル固有(==/述語),return cpu_is_68020(cpu) ? 7 : 18;
+src/cpu/ops_branch.c,259,op_jmp,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_branch.c,264,op_jmp,その他(述語),if (cpu_has_68020_isa(cpu))
+src/cpu/ops_branch.c,266,op_jmp,その他(述語),"return !cpu_has_68020_isa(cpu) ? 8 + ea_cycles(cpu, EA_COST_JUMP, &cpu->last_ea) : 8;"
+src/cpu/ops_branch.c,286,op_jsr,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_branch.c,291,op_jsr,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_branch.c,293,op_jsr,その他(述語),if (cpu_has_68020_isa(cpu))
+src/cpu/ops_branch.c,295,op_jsr,その他(述語),"return !cpu_has_68020_isa(cpu) ? 16 + ea_cycles(cpu, EA_COST_JUMP, &cpu->last_ea) : 16;"
+src/cpu/ops_branch.c,311,op_rts,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_branch.c,313,op_rts,他モデル固有(==/述語),return cpu_is_68030_family(cpu) ? 9 : cpu_is_68020(cpu) ? 10 : 16;
+src/cpu/ops_fpu.c,1641,op_fpu060,その他(述語),if (!cpu_has_060_fpu(cpu))
+src/cpu/ops_logic.c,377,op_clr,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_logic.c,382,op_clr,他モデル固有(==/述語),if (ea_mode == 0 && cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,386,op_clr,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,388,op_clr,その他(述語),if (cpu_is_68000(cpu))
+src/cpu/ops_logic.c,390,op_clr,その他(述語),if (cpu_is_68010(cpu)) {
+src/cpu/ops_logic.c,437,op_neg,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_logic.c,443,op_neg,他モデル固有(==/述語),if (ea_mode == 0 && cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,447,op_neg,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,491,op_negx,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_logic.c,497,op_negx,他モデル固有(==/述語),if (ea_mode == 0 && cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,501,op_negx,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,524,op_not,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_logic.c,530,op_not,他モデル固有(==/述語),if (ea_mode == 0 && cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,534,op_not,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,554,op_tst,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_logic.c,559,op_tst,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,590,op_and,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_logic.c,597,op_and,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,614,op_and,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_logic.c,619,op_and,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,642,op_or,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_logic.c,649,op_or,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,665,op_or,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_logic.c,670,op_or,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,697,op_eor,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_logic.c,704,op_eor,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,751,op_andi,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_logic.c,775,op_andi,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_logic.c,781,op_andi,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,813,op_ori,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_logic.c,837,op_ori,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_logic.c,844,op_ori,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,876,op_eori,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_logic.c,900,op_eori,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_logic.c,907,op_eori,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,948,do_bit_op,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_logic.c,950,do_bit_op,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,965,do_bit_op,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_logic.c,967,do_bit_op,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,985,do_bit_op,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_logic.c,990,do_bit_op,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,1011,do_bit_op,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_logic.c,1018,do_bit_op,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_logic.c,1055,op_move_to_ccr,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_logic.c,1060,op_move_to_ccr,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_move.c,460,do_move,その他(述語),if (!cpu_has_68020_isa(cpu)) {
+src/cpu/ops_move.c,471,do_move,その他(述語),if (cpu_is_68010(cpu) && size == 4 && src_mode <= 1 && dst_mode == 4)
+src/cpu/ops_move.c,479,do_move,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_move.c,481,do_move,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_shift.c,131,op_scc,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_shift.c,139,op_scc,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_shift.c,143,op_scc,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_shift.c,161,op_dbcc,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_shift.c,170,op_dbcc,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_shift.c,177,op_dbcc,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_shift.c,330,op_shift,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_shift.c,339,op_shift,他モデル固有(==/述語),if (cpu_is_68030_family(cpu)) {
+src/cpu/ops_shift.c,432,op_shift_mem,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_shift.c,437,op_shift_mem,他モデル固有(==/述語),if (cpu_is_68030_family(cpu)) {
+src/cpu/ops_system.c,20,op_nop,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_system.c,22,op_nop,他モデル固有(==/述語),return (cpu_is_68020(cpu) || cpu_is_68030_family(cpu)) ? 2 : 4;
+src/cpu/ops_system.c,69,op_rte_body,その他(述語),if (!cpu_has_68010_isa(cpu)) {
+src/cpu/ops_system.c,89,op_rte_body,その他(述語),if (cpu_has_68020_isa(cpu)) {
+src/cpu/ops_system.c,96,op_rte_body,その他(述語),if (cpu_is_68060(cpu)) {
+src/cpu/ops_system.c,121,op_rte_body,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_system.c,253,op_rte_body,他モデル固有(==/述語),"return (cpu_is_68030_family(cpu) ? 12 : 16) + op_rte(cpu, opcode);"
+src/cpu/ops_system.c,299,op_rte_body,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_system.c,301,op_rte_body,他モデル固有(==/述語),else if (cpu_is_68030_family(cpu))
+src/cpu/ops_system.c,409,op_tas,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_system.c,411,op_tas,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_system.c,433,op_rtr,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_system.c,435,op_rtr,他モデル固有(==/述語),return cpu_is_68030_family(cpu) ? 12 : cpu_is_68020(cpu) ? 14 : 20;
+src/cpu/ops_system.c,452,op_reset_instr,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_system.c,454,op_reset_instr,他モデル固有(==/述語),"return (cpu_is_68020(cpu) || cpu_is_68030_family(cpu)) ? 518 : CYC(cpu, CYC_RESET_INSTR);"
+src/cpu/ops_system.c,471,op_stop,他モデル固有(==/述語),return (cpu_is_68020(cpu) || cpu_is_68030_family(cpu)) ? 8 : 4;
+src/cpu/ops_system.c,479,op_trapv,040分岐,"return cpu_is_68040(cpu) ? cpu_040_tag(cpu, 10) : 4;"
+src/cpu/ops_system.c,482,op_trapv,040分岐,"cpu_is_68040(cpu)          ? cpu_040_tag(cpu, 38)"
+src/cpu/ops_system.c,483,op_trapv,他モデル固有(==/述語),: cpu_is_68030_family(cpu) ? 22
+src/cpu/ops_system.c,484,op_trapv,他モデル固有(==/述語),: cpu_is_68020(cpu)        ? 25
+src/cpu/ops_system.c,501,op_move_usp,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_system_ext.c,64,op_move_from_ccr,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_system_ext.c,72,op_move_from_ccr,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_system_ext.c,268,op_movec,その他(述語),if (cpu_is_68060(cpu)) {
+src/cpu/ops_system_ext.c,274,op_movec,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_system_ext.c,301,op_movec,その他(述語),if (cpu_has_68020_isa(cpu)) {
+src/cpu/ops_system_ext.c,307,op_movec,その他(述語),if (cpu_has_68020_isa(cpu)) {
+src/cpu/ops_system_ext.c,313,op_movec,その他(述語),if (cpu_has_68020_isa(cpu)) {
+src/cpu/ops_system_ext.c,319,op_movec,その他(述語),if (cpu_has_68020_isa(cpu)) {
+src/cpu/ops_system_ext.c,332,op_movec,その他(述語),"cpu, cpu->pc - 4, 4, cpu_is_68060(cpu) ? 34 : CYC(cpu, CYC_EXC_MOVEC_ILLEGAL));"
+src/cpu/ops_system_ext.c,350,op_movec,その他(述語),if (cpu_has_68020_isa(cpu)) {
+src/cpu/ops_system_ext.c,351,op_movec,040分岐,cpu->cacr = cpu_is_68040(cpu)
+src/cpu/ops_system_ext.c,353,op_movec,その他(述語),: val & (model_has_030_cache(cpu->model) ? MC68K_CACR_030_MASK
+src/cpu/ops_system_ext.c,359,op_movec,その他(述語),if (cpu_has_68020_isa(cpu)) {
+src/cpu/ops_system_ext.c,360,op_movec,その他(述語),cpu->caar = model_has_030_cache(cpu->model) ? val : (val & 0xfcu);
+src/cpu/ops_system_ext.c,365,op_movec,その他(述語),if (cpu_has_68020_isa(cpu)) {
+src/cpu/ops_system_ext.c,374,op_movec,その他(述語),if (cpu_has_68020_isa(cpu)) {
+src/cpu/ops_system_ext.c,388,op_movec,その他(述語),"cpu, cpu->pc - 4, 4, cpu_is_68060(cpu) ? 34 : CYC(cpu, CYC_EXC_MOVEC_ILLEGAL));"
+src/cpu/ops_system_ext.c,396,op_movec,040分岐,if (cpu_is_68040(cpu)) /* SFC/DFC/USP/VBR/CACR も Table 10-5 の MOVEC 1 行に含まれる */
+src/cpu/ops_system_ext.c,398,op_movec,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_system_ext.c,400,op_movec,他モデル固有(==/述語),if (cpu_is_68030_family(cpu)) {
+src/cpu/ops_system_ext.c,485,moves_access,その他(述語),if (cpu_is_68060(cpu)) {
+src/cpu/ops_system_ext.c,539,op_moves,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_system_ext.c,544,op_moves,他モデル固有(==/述語),if (cpu_is_68020(cpu) || cpu_is_68030_family(cpu))
+src/cpu/ops_system_ext.c,572,op_rtd,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_system_ext.c,574,op_rtd,他モデル固有(==/述語),return cpu_is_68030_family(cpu) ? 10 : 16;
+src/cpu/ops_system_ext.c,587,op_bkpt,その他(述語),if (cpu_is_68060(cpu) && cpu->bus.cpu_space_read) {
+src/cpu/ops_system_ext.c,591,op_bkpt,その他(述語),if (cpu_is_68060(cpu))
+src/cpu/ops_transfer.c,130,op_moveq,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_transfer.c,132,op_moveq,他モデル固有(==/述語),return (cpu_is_68020(cpu) || cpu_is_68030_family(cpu)) ? 2 : 4;
+src/cpu/ops_transfer.c,151,op_move_from_sr,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_transfer.c,158,op_move_from_sr,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_transfer.c,160,op_move_from_sr,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_transfer.c,178,op_move_to_sr,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_transfer.c,183,op_move_to_sr,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_transfer.c,185,op_move_to_sr,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_transfer.c,277,op_lea,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_transfer.c,282,op_lea,その他(述語),if (!cpu_has_68020_isa(cpu))
+src/cpu/ops_transfer.c,284,op_lea,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_transfer.c,286,op_lea,他モデル固有(==/述語),if (cpu_is_68030_family(cpu))
+src/cpu/ops_transfer.c,302,op_pea,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_transfer.c,307,op_pea,その他(述語),if (!cpu_has_68020_isa(cpu))
+src/cpu/ops_transfer.c,309,op_pea,他モデル固有(==/述語),if (cpu_is_68020(cpu))
+src/cpu/ops_transfer.c,311,op_pea,他モデル固有(==/述語),"return cpu_is_68030_family(cpu) ? 4 + ea_cycles(cpu, EA_COST_CALC, &cpu->last_ea) : 12;"
+src/cpu/ops_transfer.c,324,op_swap,040分岐,"return cpu_is_68040(cpu) ? cpu_040_tag(cpu, 2)"
+src/cpu/ops_transfer.c,346,op_ext,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_transfer.c,373,movem_040_capture_fault,040分岐,"if (!cpu_is_68040(cpu) || !movem_040_can_continue(ea_mode, ea_reg) ||"
+src/cpu/ops_transfer.c,392,movem_040_resume,040分岐,return cpu_is_68040(cpu) && cpu->movem040_resume && cpu->movem040_continuation_valid &&
+src/cpu/ops_transfer.c,553,movem_extra_read,他モデル固有(==/述語),if (cpu->model == MC68K_MODEL_68000)
+src/cpu/ops_transfer.c,572,op_movem,その他(述語),if (!cpu_has_68020_isa(cpu)) {
+src/cpu/ops_transfer.c,596,op_movem,その他(述語),val = initial_ea - (cpu_has_68020_isa(cpu) ? (uint32_t)size : 0u);
+src/cpu/ops_transfer.c,693,op_movem,040分岐,if (cpu_is_68040(cpu)) {
+src/cpu/ops_transfer.c,701,op_movem,他モデル固有(==/述語),if (cpu_is_68020(cpu) || cpu_is_68030_family(cpu)) {
+src/cpu/ops_transfer.c,711,op_movem,他モデル固有(==/述語),dir ? 8 + 4 * (int)n : (cpu_is_68030_family(cpu) ? 4 + 2 * (int)n : 4 + 3 * (int)n);
+src/cpu/ops_transfer.c,744,op_link,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_transfer.c,746,op_link,他モデル固有(==/述語),return cpu_is_68030_family(cpu) ? 4 : cpu_is_68020(cpu) ? 5 : 16;
+src/cpu/ops_transfer.c,764,op_unlk,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_transfer.c,766,op_unlk,他モデル固有(==/述語),return cpu_is_68030_family(cpu) ? 5 : cpu_is_68020(cpu) ? 6 : 12;
+src/cpu/ops_transfer.c,799,op_exg,040分岐,if (cpu_is_68040(cpu))
+src/cpu/ops_transfer.c,801,op_exg,他モデル固有(==/述語),return cpu_is_68020(cpu) ? 2 : cpu_is_68030_family(cpu) ? 4 : 6;
+src/cpu/ops_transfer.c,834,op_movep,040分岐,"return cpu_is_68040(cpu)          ? cpu_040_tag(cpu, 9)"
+src/cpu/ops_transfer.c,835,op_movep,他モデル固有(==/述語),: cpu_is_68020(cpu)        ? 12
+src/cpu/ops_transfer.c,836,op_movep,他モデル固有(==/述語),: cpu_is_68030_family(cpu) ? 10
+src/cpu/ops_transfer.c,843,op_movep,040分岐,"return cpu_is_68040(cpu)          ? cpu_040_tag(cpu, 16)"
+src/cpu/ops_transfer.c,844,op_movep,他モデル固有(==/述語),: cpu_is_68020(cpu)        ? 18
+src/cpu/ops_transfer.c,845,op_movep,他モデル固有(==/述語),: cpu_is_68030_family(cpu) ? 14
+src/cpu/ops_transfer.c,850,op_movep,040分岐,"return cpu_is_68040(cpu)          ? cpu_040_tag(cpu, 20)"
+src/cpu/ops_transfer.c,851,op_movep,他モデル固有(==/述語),: cpu_is_68020(cpu)        ? 11
+src/cpu/ops_transfer.c,852,op_movep,他モデル固有(==/述語),: cpu_is_68030_family(cpu) ? 10
+src/cpu/ops_transfer.c,859,op_movep,040分岐,"return cpu_is_68040(cpu)          ? cpu_040_tag(cpu, 24)"
+src/cpu/ops_transfer.c,860,op_movep,他モデル固有(==/述語),: cpu_is_68020(cpu)        ? 17
+src/cpu/ops_transfer.c,861,op_movep,他モデル固有(==/述語),: cpu_is_68030_family(cpu) ? 14
+src/cpu/ops_trap.c,43,op_trap,040分岐,"cpu_is_68040(cpu) ? cpu_040_tag(cpu, 32)"
+src/debug/debugger.c,322,mc68k_debug_read_physical_bytes,その他(述語),uint32_t mask = cpu_has_68020_isa(cpu) ? 0xFFFFFFFFu : 0xFFFFFFu;
+src/debug/debugger.c,337,mc68k_debug_translate,040分岐,cpu_is_68040(cpu)
+src/debug/debugger.c,339,mc68k_debug_translate,その他(述語),: cpu_is_68060(cpu)
+src/debug/debugger.c,344,mc68k_debug_translate,040分岐,".mmusr = (cpu_is_68040(cpu) || cpu_is_68060(cpu)) ? 0 : result.mmusr,"
+src/debug/disasm.c,82,dis_addr,get_model/case,return mc68k_get_model(cpu) >= MC68K_MODEL_68020 ? addr : addr & 0xFFFFFFu;
+src/debug/disasm.c,102,format_brief_ext,get_model/case,bool is_68020 = mc68k_get_model(cpu) >= MC68K_MODEL_68020;
+src/debug/disasm.c,251,format_ea,get_model/case,bool is_68020 = mc68k_get_model(cpu) >= MC68K_MODEL_68020;
+src/debug/disasm.c,318,dis_line0,get_model/case,if (mc68k_get_model(cpu) >= MC68K_MODEL_68020 && (opcode == 0x0CFC || opcode == 0x0EFC)) {
+src/debug/disasm.c,330,dis_line0,get_model/case,if (mc68k_get_model(cpu) >= MC68K_MODEL_68020 && (opcode & 0xF9C0) == 0x08C0 &&
+src/debug/disasm.c,346,dis_line0,get_model/case,if (mc68k_get_model(cpu) >= MC68K_MODEL_68020 && (opcode & 0xF800) == 0x0000 &&
+src/debug/disasm.c,625,dis_line4,get_model/case,if (mc68k_get_model(cpu) >= MC68K_MODEL_68020 && (opcode & 0xFFF8) == 0x49C0) {
+src/debug/disasm.c,630,dis_line4,get_model/case,if (mc68k_get_model(cpu) >= MC68K_MODEL_68020 && (opcode & 0xFFF8) == 0x4808) {
+src/debug/disasm.c,638,dis_line4,get_model/case,if (mc68k_get_model(cpu) >= MC68K_MODEL_68020 && (opcode & 0xFFF8) == 0x4848) {
+src/debug/disasm.c,643,dis_line4,get_model/case,if (mc68k_get_model(cpu) >= MC68K_MODEL_68020 && (opcode & 0xF1C0) == 0x4100) {
+src/debug/disasm.c,651,dis_line4,get_model/case,if (mc68k_get_model(cpu) >= MC68K_MODEL_68020 &&
+src/debug/disasm.c,977,dis_line5,get_model/case,if (mc68k_get_model(cpu) >= MC68K_MODEL_68020 && (opcode & 0x00F8) == 0x00F8) {
+src/debug/disasm.c,1053,dis_line6,get_model/case,} else if ((uint8_t)d8 == 0xFF && mc68k_get_model(cpu) >= MC68K_MODEL_68020) {
+src/debug/disasm.c,1062,dis_line6,get_model/case,bool is_68020 = mc68k_get_model(cpu) >= MC68K_MODEL_68020;
+src/debug/disasm.c,1204,dis_line8,get_model/case,if (mc68k_get_model(cpu) >= MC68K_MODEL_68020 && (opmode == 5 || opmode == 6) &&
+src/debug/disasm.c,1311,dis_lineE,get_model/case,if (mc68k_get_model(cpu) >= MC68K_MODEL_68020 && (opcode & 0xF8C0) >= 0xE8C0 &&
+src/debug/disasm.c,1793,dis_lineF,get_model/case,if (mc68k_get_model(cpu) == MC68K_MODEL_68060 &&
+src/debug/disasm.c,1802,dis_lineF,get_model/case,if (mc68k_get_model(cpu) < MC68K_MODEL_68020 ||
+src/debug/disasm.c,1892,mc68k_disassemble,get_model/case,if (mc68k_get_model(cpu) < MC68K_MODEL_68020)

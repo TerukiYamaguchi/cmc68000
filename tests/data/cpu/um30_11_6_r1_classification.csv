@@ -1,0 +1,540 @@
+table,semantic_id,um20_ref,um20_value,um20_r,um20_p,um20_w,um30_ref,um30_value,um30_r,um30_p,um30_w,class,r1_predicted,delta,note
+11.6.1,dn,UM20 §8.2.1 ord1,0,0,0,0,UM30 §11.6.1 ord1,0,0,0,0,inherit,0,0,
+11.6.1,an,UM20 §8.2.1 ord2,0,0,0,0,UM30 §11.6.1 ord2,0,0,0,0,inherit,0,0,
+11.6.1,an_indirect,UM20 §8.2.1 ord3,4,1,0,0,UM30 §11.6.1 ord3,3,1,0,0,r1_match,3,0,
+11.6.1,an_postinc,UM20 §8.2.1 ord4,4,1,0,0,UM30 §11.6.1 ord4,3,1,0,0,r1_match,3,0,
+11.6.1,an_predec,UM20 §8.2.1 ord5,5,1,0,0,UM30 §11.6.1 ord5,4,1,0,0,r1_match,4,0,
+11.6.1,d16_an_pc,UM20 §8.2.1 ord6,5,1,0,0,UM30 §11.6.1 ord6,4,1,0,0,r1_match,4,0,
+11.6.1,abs_word,UM20 §8.2.1 ord7,4,1,0,0,UM30 §11.6.1 ord7,4,1,0,0,r1_mismatch,3,1,UM30 §11.6.1 retains 4 while R1 predicts 3.
+11.6.1,abs_long,UM20 §8.2.1 ord8,4,1,0,0,UM30 §11.6.1 ord8,4,1,0,0,r1_mismatch,3,1,UM30 §11.6.1 retains 4 while R1 predicts 3.
+11.6.1,immediate_byte,UM20 §8.2.1 ord9,2,0,0,0,UM30 §11.6.1 ord9,2,0,0,0,inherit,2,0,
+11.6.1,immediate_word,UM20 §8.2.1 ord10,2,0,0,0,UM30 §11.6.1 ord10,2,0,0,0,inherit,2,0,
+11.6.1,immediate_long,UM20 §8.2.1 ord11,4,0,0,0,UM30 §11.6.1 ord11,4,0,0,0,inherit,4,0,
+11.6.1,brief_index,UM20 §8.2.1 ord12,7,1,0,0,UM30 §11.6.1 ord12,6,1,0,0,r1_match,6,0,
+11.6.1,full_null_index,UM20 §8.2.1 ord13,7,1,0,0,UM30 §11.6.1 ord13,6,1,0,0,r1_match,6,0,UM20 §8.2.1 index form covers the UM30 index-suppressed alias.
+11.6.1,full_index,UM20 §8.2.1 ord13,7,1,0,0,UM30 §11.6.1 ord14,6,1,0,0,r1_match,6,0,
+11.6.1,preindirect_null_outer,UM20 §8.2.1 ord17,12,2,0,0,UM30 §11.6.1 ord15,10,2,0,0,r1_match,10,0,UM20 §8.2.1 index form covers the UM30 index-suppressed alias.
+11.6.1,preindirect_index_outer,UM20 §8.2.1 ord17,12,2,0,0,UM30 §11.6.1 ord16,10,2,0,0,r1_match,10,0,
+11.6.1,preindirect_null_outer_d16,UM20 §8.2.1 ord18,14,2,0,0,UM30 §11.6.1 ord17,12,2,0,0,r1_match,12,0,UM20 §8.2.1 index form covers the UM30 index-suppressed alias.
+11.6.1,preindirect_index_outer_d16,UM20 §8.2.1 ord18,14,2,0,0,UM30 §11.6.1 ord18,12,2,0,0,r1_match,12,0,
+11.6.1,preindirect_null_outer_d32,UM20 §8.2.1 ord19,14,2,0,0,UM30 §11.6.1 ord19,12,2,0,0,r1_match,12,0,UM20 §8.2.1 index form covers the UM30 index-suppressed alias.
+11.6.1,preindirect_index_outer_d32,UM20 §8.2.1 ord19,14,2,0,0,UM30 §11.6.1 ord20,12,2,0,0,r1_match,12,0,
+11.6.1,full_base,UM20 §8.2.1 ord14,7,1,0,0,UM30 §11.6.1 ord21,6,1,0,0,r1_match,6,0,
+11.6.1,full_base_d16,UM20 §8.2.1 ord15,9,1,0,0,UM30 §11.6.1 ord22,8,1,0,0,r1_match,8,0,
+11.6.1,full_base_d32,UM20 §8.2.1 ord16,13,1,0,0,UM30 §11.6.1 ord23,12,1,0,0,r1_match,12,0,
+11.6.1,postindirect_base_null,UM20 §8.2.1 ord17,12,2,0,0,UM30 §11.6.1 ord24,10,2,0,0,r1_match,10,0,UM20 §8.2.1 index form covers the UM30 index-suppressed alias.
+11.6.1,postindirect_base_index,UM20 §8.2.1 ord17,12,2,0,0,UM30 §11.6.1 ord25,10,2,0,0,r1_match,10,0,
+11.6.1,postindirect_base_null_d16,UM20 §8.2.1 ord18,14,2,0,0,UM30 §11.6.1 ord26,12,2,0,0,r1_match,12,0,UM20 §8.2.1 index form covers the UM30 index-suppressed alias.
+11.6.1,postindirect_base_index_d16,UM20 §8.2.1 ord18,14,2,0,0,UM30 §11.6.1 ord27,12,2,0,0,r1_match,12,0,
+11.6.1,postindirect_base_null_d32,UM20 §8.2.1 ord19,14,2,0,0,UM30 §11.6.1 ord28,12,2,0,0,r1_match,12,0,UM20 §8.2.1 index form covers the UM30 index-suppressed alias.
+11.6.1,postindirect_base_index_d32,UM20 §8.2.1 ord19,14,2,0,0,UM30 §11.6.1 ord29,12,2,0,0,r1_match,12,0,
+11.6.1,postindirect_d16_base_null,UM20 §8.2.1 ord20,14,2,0,0,UM30 §11.6.1 ord30,12,2,0,0,r1_match,12,0,UM20 §8.2.1 index form covers the UM30 index-suppressed alias.
+11.6.1,postindirect_d16_base_index,UM20 §8.2.1 ord20,14,2,0,0,UM30 §11.6.1 ord31,12,2,0,0,r1_match,12,0,
+11.6.1,postindirect_d16_base_null_d16,UM20 §8.2.1 ord21,16,2,0,0,UM30 §11.6.1 ord32,14,2,0,0,r1_match,14,0,UM20 §8.2.1 index form covers the UM30 index-suppressed alias.
+11.6.1,postindirect_d16_base_index_d16,UM20 §8.2.1 ord21,16,2,0,0,UM30 §11.6.1 ord33,14,2,0,0,r1_match,14,0,
+11.6.1,postindirect_d16_base_null_d32,UM20 §8.2.1 ord22,16,2,0,0,UM30 §11.6.1 ord34,14,2,0,0,r1_match,14,0,UM20 §8.2.1 index form covers the UM30 index-suppressed alias.
+11.6.1,postindirect_d16_base_index_d32,UM20 §8.2.1 ord22,16,2,0,0,UM30 §11.6.1 ord35,14,2,0,0,r1_match,14,0,
+11.6.1,postindirect_d32_base_null,UM20 §8.2.1 ord23,18,2,0,0,UM30 §11.6.1 ord36,16,2,0,0,r1_match,16,0,UM20 §8.2.1 index form covers the UM30 index-suppressed alias.
+11.6.1,postindirect_d32_base_index,UM20 §8.2.1 ord23,18,2,0,0,UM30 §11.6.1 ord37,16,2,0,0,r1_match,16,0,
+11.6.1,postindirect_d32_base_null_d16,UM20 §8.2.1 ord24,20,2,0,0,UM30 §11.6.1 ord38,18,2,0,0,r1_match,18,0,UM20 §8.2.1 index form covers the UM30 index-suppressed alias.
+11.6.1,postindirect_d32_base_index_d16,UM20 §8.2.1 ord24,20,2,0,0,UM30 §11.6.1 ord39,18,2,0,0,r1_match,18,0,
+11.6.1,postindirect_d32_base_null_d32,UM20 §8.2.1 ord25,20,2,0,0,UM30 §11.6.1 ord40,18,2,0,0,r1_match,18,0,UM20 §8.2.1 index form covers the UM30 index-suppressed alias.
+11.6.1,postindirect_d32_base_index_d32,UM20 §8.2.1 ord25,20,2,0,0,UM30 §11.6.1 ord41,18,2,0,0,r1_match,18,0,
+11.6.3,dn,UM20 §8.2.3 ord1,0,0,0,0,UM30 §11.6.3 ord1,0,0,0,0,inherit,0,0,
+11.6.3,an,UM20 §8.2.3 ord2,0,0,0,0,UM30 §11.6.3 ord2,0,0,0,0,inherit,0,0,
+11.6.3,an_indirect,UM20 §8.2.3 ord3,2,0,0,0,UM30 §11.6.3 ord3,2,0,0,0,inherit,2,0,
+11.6.3,an_postinc,UM20 §8.2.3 ord4,2,0,0,0,UM30 §11.6.3 ord4,2,0,0,0,inherit,2,0,
+11.6.3,an_predec,UM20 §8.2.3 ord5,2,0,0,0,UM30 §11.6.3 ord5,2,0,0,0,inherit,2,0,
+11.6.3,d16_an_pc,UM20 §8.2.3 ord6,2,0,0,0,UM30 §11.6.3 ord6,2,0,0,0,inherit,2,0,
+11.6.3,abs_word,UM20 §8.2.3 ord7,2,0,0,0,UM30 §11.6.3 ord7,2,0,0,0,inherit,2,0,
+11.6.3,abs_long,UM20 §8.2.3 ord8,4,0,0,0,UM30 §11.6.3 ord8,4,0,0,0,inherit,4,0,
+11.6.3,brief_index,UM20 §8.2.3 ord9,4,0,0,0,UM30 §11.6.3 ord9,4,0,0,0,inherit,4,0,
+11.6.3,full_null_index,UM20 §8.2.3 ord10,6,0,0,0,UM30 §11.6.3 ord10,6,0,0,0,inherit,6,0,UM20 §8.2.3 index form covers the UM30 index-suppressed alias.
+11.6.3,full_index,UM20 §8.2.3 ord10,6,0,0,0,UM30 §11.6.3 ord11,6,0,0,0,inherit,6,0,
+11.6.3,preindirect_null_outer,UM20 §8.2.3 ord14,11,1,0,0,UM30 §11.6.3 ord12,10,1,0,0,r1_match,10,0,UM20 §8.2.3 index form covers the UM30 index-suppressed alias.
+11.6.3,preindirect_index_outer,UM20 §8.2.3 ord14,11,1,0,0,UM30 §11.6.3 ord13,10,1,0,0,r1_match,10,0,
+11.6.3,preindirect_null_outer_d16,UM20 §8.2.3 ord15,13,1,0,0,UM30 §11.6.3 ord14,12,1,0,0,r1_match,12,0,UM20 §8.2.3 index form covers the UM30 index-suppressed alias.
+11.6.3,preindirect_index_outer_d16,UM20 §8.2.3 ord15,13,1,0,0,UM30 §11.6.3 ord15,12,1,0,0,r1_match,12,0,
+11.6.3,preindirect_null_outer_d32,UM20 §8.2.3 ord16,13,1,0,0,UM30 §11.6.3 ord16,12,1,0,0,r1_match,12,0,UM20 §8.2.3 index form covers the UM30 index-suppressed alias.
+11.6.3,preindirect_index_outer_d32,UM20 §8.2.3 ord16,13,1,0,0,UM30 §11.6.3 ord17,12,1,0,0,r1_match,12,0,
+11.6.3,full_base,UM20 §8.2.3 ord11,6,0,0,0,UM30 §11.6.3 ord18,6,0,0,0,inherit,6,0,
+11.6.3,full_base_d16,UM20 §8.2.3 ord12,8,0,0,0,UM30 §11.6.3 ord19,8,0,0,0,inherit,8,0,
+11.6.3,full_base_d32,UM20 §8.2.3 ord13,12,0,0,0,UM30 §11.6.3 ord20,12,0,0,0,inherit,12,0,
+11.6.3,postindirect_base_null,UM20 §8.2.3 ord14,11,1,0,0,UM30 §11.6.3 ord21,10,1,0,0,r1_match,10,0,UM20 §8.2.3 index form covers the UM30 index-suppressed alias.
+11.6.3,postindirect_base_index,UM20 §8.2.3 ord14,11,1,0,0,UM30 §11.6.3 ord22,10,1,0,0,r1_match,10,0,
+11.6.3,postindirect_base_null_d16,UM20 §8.2.3 ord15,13,1,0,0,UM30 §11.6.3 ord23,12,1,0,0,r1_match,12,0,UM20 §8.2.3 index form covers the UM30 index-suppressed alias.
+11.6.3,postindirect_base_index_d16,UM20 §8.2.3 ord15,13,1,0,0,UM30 §11.6.3 ord24,12,1,0,0,r1_match,12,0,
+11.6.3,postindirect_base_null_d32,UM20 §8.2.3 ord16,13,1,0,0,UM30 §11.6.3 ord25,12,1,0,0,r1_match,12,0,UM20 §8.2.3 index form covers the UM30 index-suppressed alias.
+11.6.3,postindirect_base_index_d32,UM20 §8.2.3 ord16,13,1,0,0,UM30 §11.6.3 ord26,12,2,0,0,r1_match,12,0,
+11.6.3,postindirect_d16_base_null,UM20 §8.2.3 ord17,13,1,0,0,UM30 §11.6.3 ord27,12,1,0,0,r1_match,12,0,UM20 §8.2.3 index form covers the UM30 index-suppressed alias.
+11.6.3,postindirect_d16_base_index,UM20 §8.2.3 ord17,13,1,0,0,UM30 §11.6.3 ord28,12,1,0,0,r1_match,12,0,
+11.6.3,postindirect_d16_base_null_d16,UM20 §8.2.3 ord18,15,1,0,0,UM30 §11.6.3 ord29,14,1,0,0,r1_match,14,0,UM20 §8.2.3 index form covers the UM30 index-suppressed alias.
+11.6.3,postindirect_d16_base_index_d16,UM20 §8.2.3 ord18,15,1,0,0,UM30 §11.6.3 ord30,14,1,0,0,r1_match,14,0,
+11.6.3,postindirect_d16_base_null_d32,UM20 §8.2.3 ord19,15,1,0,0,UM30 §11.6.3 ord31,14,1,0,0,r1_match,14,0,UM20 §8.2.3 index form covers the UM30 index-suppressed alias.
+11.6.3,postindirect_d16_base_index_d32,UM20 §8.2.3 ord19,15,1,0,0,UM30 §11.6.3 ord32,14,1,0,0,r1_match,14,0,
+11.6.3,postindirect_d32_base_null,UM20 §8.2.3 ord20,17,1,0,0,UM30 §11.6.3 ord33,16,1,0,0,r1_match,16,0,UM20 §8.2.3 index form covers the UM30 index-suppressed alias.
+11.6.3,postindirect_d32_base_index,UM20 §8.2.3 ord20,17,1,0,0,UM30 §11.6.3 ord34,16,1,0,0,r1_match,16,0,
+11.6.3,postindirect_d32_base_null_d16,UM20 §8.2.3 ord21,19,1,0,0,UM30 §11.6.3 ord35,18,1,0,0,r1_match,18,0,UM20 §8.2.3 index form covers the UM30 index-suppressed alias.
+11.6.3,postindirect_d32_base_index_d16,UM20 §8.2.3 ord21,19,1,0,0,UM30 §11.6.3 ord36,18,1,0,0,r1_match,18,0,
+11.6.3,postindirect_d32_base_null_d32,UM20 §8.2.3 ord22,19,1,0,0,UM30 §11.6.3 ord37,18,1,0,0,r1_match,18,0,UM20 §8.2.3 index form covers the UM30 index-suppressed alias.
+11.6.3,postindirect_d32_base_index_d32,UM20 §8.2.3 ord22,19,1,0,0,UM30 §11.6.3 ord38,18,1,0,0,r1_match,18,0,
+11.6.5,an_indirect,UM20 §8.2.5 ord1,2,0,0,0,UM30 §11.6.5 ord1,2,0,0,0,inherit,2,0,
+11.6.5,d16_an,UM20 §8.2.5 ord2,4,0,0,0,UM30 §11.6.5 ord2,4,0,0,0,inherit,4,0,
+11.6.5,abs_word,UM20 §8.2.5 ord3,2,0,0,0,UM30 §11.6.5 ord3,2,0,0,0,inherit,2,0,
+11.6.5,abs_long,UM20 §8.2.5 ord4,2,0,0,0,UM30 §11.6.5 ord4,2,0,0,0,inherit,2,0,
+11.6.5,brief_index,UM20 §8.2.5 ord5,6,0,0,0,UM30 §11.6.5 ord5,6,0,0,0,inherit,6,0,
+11.6.5,full_null_index,UM20 §8.2.5 ord6,6,0,0,0,UM30 §11.6.5 ord6,6,0,0,0,inherit,6,0,UM20 §8.2.5 index form covers the UM30 index-suppressed alias.
+11.6.5,full_index,UM20 §8.2.5 ord6,6,0,0,0,UM30 §11.6.5 ord7,6,0,0,0,inherit,6,0,
+11.6.5,preindirect_null_outer,UM20 §8.2.5 ord10,11,1,0,0,UM30 §11.6.5 ord8,10,1,0,0,r1_match,10,0,UM20 §8.2.5 index form covers the UM30 index-suppressed alias.
+11.6.5,preindirect_index_outer,UM20 §8.2.5 ord10,11,1,0,0,UM30 §11.6.5 ord9,10,1,0,0,r1_match,10,0,
+11.6.5,preindirect_null_outer_d16,UM20 §8.2.5 ord11,13,1,0,0,UM30 §11.6.5 ord10,12,1,0,0,r1_match,12,0,UM20 §8.2.5 index form covers the UM30 index-suppressed alias.
+11.6.5,preindirect_index_outer_d16,UM20 §8.2.5 ord11,13,1,0,0,UM30 §11.6.5 ord11,12,1,0,0,r1_match,12,0,
+11.6.5,preindirect_null_outer_d32,UM20 §8.2.5 ord12,13,1,0,0,UM30 §11.6.5 ord12,12,1,0,0,r1_match,12,0,UM20 §8.2.5 index form covers the UM30 index-suppressed alias.
+11.6.5,preindirect_index_outer_d32,UM20 §8.2.5 ord12,13,1,0,0,UM30 §11.6.5 ord13,12,1,0,0,r1_match,12,0,
+11.6.5,full_base,UM20 §8.2.5 ord7,6,0,0,0,UM30 §11.6.5 ord14,6,0,0,0,inherit,6,0,
+11.6.5,full_base_d16,UM20 §8.2.5 ord8,8,0,0,0,UM30 §11.6.5 ord15,8,0,0,0,inherit,8,0,
+11.6.5,full_base_d32,UM20 §8.2.5 ord9,12,0,0,0,UM30 §11.6.5 ord16,12,0,0,0,inherit,12,0,
+11.6.5,postindirect_base_null,UM20 §8.2.5 ord10,11,1,0,0,UM30 §11.6.5 ord17,10,1,0,0,r1_match,10,0,UM20 §8.2.5 index form covers the UM30 index-suppressed alias.
+11.6.5,postindirect_base_index,UM20 §8.2.5 ord10,11,1,0,0,UM30 §11.6.5 ord18,10,1,0,0,r1_match,10,0,
+11.6.5,postindirect_base_null_d16,UM20 §8.2.5 ord11,13,1,0,0,UM30 §11.6.5 ord19,12,1,0,0,r1_match,12,0,UM20 §8.2.5 index form covers the UM30 index-suppressed alias.
+11.6.5,postindirect_base_index_d16,UM20 §8.2.5 ord11,13,1,0,0,UM30 §11.6.5 ord20,12,1,0,0,r1_match,12,0,
+11.6.5,postindirect_base_null_d32,UM20 §8.2.5 ord12,13,1,0,0,UM30 §11.6.5 ord21,12,1,0,0,r1_match,12,0,UM20 §8.2.5 index form covers the UM30 index-suppressed alias.
+11.6.5,postindirect_base_index_d32,UM20 §8.2.5 ord12,13,1,0,0,UM30 §11.6.5 ord22,12,1,0,0,r1_match,12,0,
+11.6.5,postindirect_d16_base_null,UM20 §8.2.5 ord13,13,1,0,0,UM30 §11.6.5 ord23,12,1,0,0,r1_match,12,0,UM20 §8.2.5 index form covers the UM30 index-suppressed alias.
+11.6.5,postindirect_d16_base_index,UM20 §8.2.5 ord13,13,1,0,0,UM30 §11.6.5 ord24,12,1,0,0,r1_match,12,0,
+11.6.5,postindirect_d16_base_null_d16,UM20 §8.2.5 ord14,15,1,0,0,UM30 §11.6.5 ord25,14,1,0,0,r1_match,14,0,UM20 §8.2.5 index form covers the UM30 index-suppressed alias.
+11.6.5,postindirect_d16_base_index_d16,UM20 §8.2.5 ord14,15,1,0,0,UM30 §11.6.5 ord26,14,1,0,0,r1_match,14,0,
+11.6.5,postindirect_d16_base_null_d32,UM20 §8.2.5 ord15,15,1,0,0,UM30 §11.6.5 ord27,14,1,0,0,r1_match,14,0,UM20 §8.2.5 index form covers the UM30 index-suppressed alias.
+11.6.5,postindirect_d16_base_index_d32,UM20 §8.2.5 ord15,15,1,0,0,UM30 §11.6.5 ord28,14,1,0,0,r1_match,14,0,
+11.6.5,postindirect_d16_base_index_d32_alt,UM20 §8.2.5 ord15,15,1,0,0,UM30 §11.6.5 ord29,14,1,0,0,r1_match,14,0,
+11.6.5,postindirect_d32_base_null,UM20 §8.2.5 ord16,17,1,0,0,UM30 §11.6.5 ord30,16,1,0,0,r1_match,16,0,UM20 §8.2.5 index form covers the UM30 index-suppressed alias.
+11.6.5,postindirect_d32_base_index,UM20 §8.2.5 ord16,17,1,0,0,UM30 §11.6.5 ord31,16,1,0,0,r1_match,16,0,
+11.6.5,postindirect_d32_base_null_d16,UM20 §8.2.5 ord17,19,1,0,0,UM30 §11.6.5 ord32,18,1,0,0,r1_match,18,0,UM20 §8.2.5 index form covers the UM30 index-suppressed alias.
+11.6.5,postindirect_d32_base_index_d16,UM20 §8.2.5 ord17,19,1,0,0,UM30 §11.6.5 ord33,18,1,0,0,r1_match,18,0,
+11.6.5,postindirect_d32_base_null_d32,UM20 §8.2.5 ord18,19,1,0,0,UM30 §11.6.5 ord34,18,1,0,0,r1_match,18,0,UM20 §8.2.5 index form covers the UM30 index-suppressed alias.
+11.6.5,postindirect_d32_base_index_d32,UM20 §8.2.5 ord18,19,1,0,0,UM30 §11.6.5 ord35,18,1,0,0,r1_match,18,0,
+11.6.15,bcc_taken,UM20 §8.2.15,6,0,0,0,UM30 §11.6.15 ord1,6,0,0,0,inherit,6,0,
+11.6.15,bcc_b_not_taken,UM20 §8.2.15,4,0,0,0,UM30 §11.6.15 ord2,4,0,0,0,inherit,4,0,
+11.6.15,bcc_w_not_taken,UM20 §8.2.15,6,0,0,0,UM30 §11.6.15 ord3,6,0,0,0,inherit,6,0,
+11.6.15,bcc_l_not_taken,UM20 §8.2.15,6,0,0,0,UM30 §11.6.15 ord4,6,0,0,0,inherit,6,0,
+11.6.15,dbcc_branch,UM20 §8.2.15,6,0,0,0,UM30 §11.6.15 ord5,6,0,0,0,inherit,6,0,
+11.6.15,dbcc_expired,UM20 §8.2.15,10,0,0,0,UM30 §11.6.15 ord6,10,0,0,0,inherit,10,0,
+11.6.15,dbcc_cc_true,UM20 §8.2.15,6,0,0,0,UM30 §11.6.15 ord7,6,0,0,0,inherit,6,0,
+11.6.16,andi_sr,UM20 §8.2.16,12,0,0,0,UM30 §11.6.16 ord1,12,0,0,0,inherit,12,0,
+11.6.16,eori_sr,UM20 §8.2.16,12,0,0,0,UM30 §11.6.16 ord2,12,0,0,0,inherit,12,0,
+11.6.16,ori_sr,UM20 §8.2.16,12,0,0,0,UM30 §11.6.16 ord3,12,0,0,0,inherit,12,0,
+11.6.16,andi_ccr,UM20 §8.2.16,12,0,0,0,UM30 §11.6.16 ord4,12,0,0,0,inherit,12,0,
+11.6.16,eori_ccr,UM20 §8.2.16,12,0,0,0,UM30 §11.6.16 ord5,12,0,0,0,inherit,12,0,
+11.6.16,ori_ccr,UM20 §8.2.16,12,0,0,0,UM30 §11.6.16 ord6,12,0,0,0,inherit,12,0,
+11.6.16,bsr,UM20 §8.2.16,7,0,0,1,UM30 §11.6.16 ord7,6,0,0,1,r1_match,6,0,
+11.6.16,cas_success,UM20 §8.2.16,15,1,0,1,UM30 §11.6.16 ord8,13,1,0,1,r1_match,13,0,
+11.6.16,cas_failure,UM20 §8.2.16,12,1,0,0,UM30 §11.6.16 ord9,11,1,0,0,r1_match,11,0,
+11.6.16,cas2_success,UM20 §8.2.16,25,2,0,2,UM30 §11.6.16 ord10,24,2,0,2,r1_mismatch,21,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.16,cas2_failure,UM20 §8.2.16,22,2,0,0,UM30 §11.6.16 ord11,24,2,0,0,r1_mismatch,20,4,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.16,chk_dn_no_exception,UM20 §8.2.16,8,0,0,0,UM30 §11.6.16 ord12,8,0,0,0,inherit,8,0,
+11.6.16,jsr_base,UM20 §8.2.16,5,0,0,1,UM30 §11.6.16 ord19,4,0,0,1,r1_match,4,0,The effective-address addend is classified separately.
+11.6.16,link_w,UM20 §8.2.16,5,0,0,1,UM30 §11.6.16 ord21,4,0,0,1,r1_match,4,0,
+11.6.16,link_l,UM20 §8.2.16,6,0,0,1,UM30 §11.6.16 ord22,6,0,0,1,r1_mismatch,5,1,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.16,nop,UM20 §8.2.16,2,0,0,0,UM30 §11.6.16 ord23,2,0,0,0,inherit,2,0,
+11.6.16,pea_base,UM20 §8.2.16,5,0,0,1,UM30 §11.6.16 ord24,4,0,0,1,r1_match,4,0,The effective-address addend is classified separately.
+11.6.16,rtd,UM20 §8.2.16,10,1,0,0,UM30 §11.6.16 ord25,10,1,0,0,r1_mismatch,9,1,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.16,rtr,UM20 §8.2.16,14,2,0,0,UM30 §11.6.16 ord26,12,2,0,0,r1_match,12,0,
+11.6.16,rts,UM20 §8.2.16,10,1,0,0,UM30 §11.6.16 ord27,9,1,0,0,r1_match,9,0,
+11.6.16,unlk,UM20 §8.2.16,6,1,0,0,UM30 §11.6.16 ord28,5,1,0,0,r1_match,5,0,
+11.6.16,chk_dn_exception,,,,,,UM30 §11.6.16 ord13,,,,,um30_only,,,UM30 splits the exception path; UM20 §8.2.16 has only the CHK base row plus a fetch-EA footnote.
+11.6.16,chk_ea_no_exception,,,,,,UM30 §11.6.16 ord14,,,,,um30_only,,,UM30 reports the EA-expanded CHK form separately; its addend is not a single UM20 semantic row.
+11.6.16,chk_ea_exception,,,,,,UM30 §11.6.16 ord15,,,,,um30_only,,,UM30 reports the EA-expanded exception path separately.
+11.6.16,chk2_no_exception,UM20 §8.2.16,18,2,0,0,UM30 §11.6.16 ord16,18,1,0,0,r1_mismatch,16,2,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.16,chk2_exception,,,,,,UM30 §11.6.16 ord17,,,,,um30_only,,,UM30 reports the exception path separately; UM20 §8.2.16 has no matching complete row.
+11.6.16,jmp_base,UM20 §8.2.16,4,0,0,0,UM30 §11.6.16 ord18,4,0,0,0,inherit,4,0,The jump-effective-address addend is classified separately.
+11.6.16,lea_base,UM20 §8.2.16,2,0,0,0,UM30 §11.6.16 ord20,2,0,0,0,inherit,2,0,The calculate-effective-address addend is classified separately.
+11.6.16,callm_type0,UM20 §8.2.16,,,,,,,,,,um20_only,,,CALLM is absent from UM30 §11.6.16.
+11.6.16,callm_type1_no_copy_a,UM20 §8.2.16,,,,,,,,,,um20_only,,,CALLM is absent from UM30 §11.6.16.
+11.6.16,callm_type1_no_copy_b,UM20 §8.2.16,,,,,,,,,,um20_only,,,CALLM is absent from UM30 §11.6.16.
+11.6.16,callm_type1_stack_copy,UM20 §8.2.16,,,,,,,,,,um20_only,,,CALLM is absent from UM30 §11.6.16.
+11.6.16,rtm_type0,UM20 §8.2.16,,,,,,,,,,um20_only,,,RTM is absent from UM30 §11.6.16.
+11.6.16,rtm_type1,UM20 §8.2.16,,,,,,,,,,um20_only,,,RTM is absent from UM30 §11.6.16.
+11.6.13,btst_imm_dn,UM20 §8.2.13,4,0,0,0,UM30 §11.6.13 ord1,4,0,0,0,inherit,4,0,
+11.6.13,btst_dn_dn,UM20 §8.2.13,4,0,0,0,UM30 §11.6.13 ord2,4,0,0,0,inherit,4,0,
+11.6.13,btst_imm_mem,UM20 §8.2.13,4,0,0,0,UM30 §11.6.13 ord3,4,0,0,0,inherit,4,0,The effective-address addend is classified separately.
+11.6.13,btst_dn_mem,UM20 §8.2.13,4,0,0,0,UM30 §11.6.13 ord4,4,0,0,0,inherit,4,0,The effective-address addend is classified separately.
+11.6.13,bchg_imm_dn,UM20 §8.2.13,4,0,0,0,UM30 §11.6.13 ord5,6,0,0,0,r1_mismatch,4,2,UM20 Cache Case and UM30 I-Cache Case differ.
+11.6.13,bchg_dn_dn,UM20 §8.2.13,4,0,0,0,UM30 §11.6.13 ord6,6,0,0,0,r1_mismatch,4,2,UM20 Cache Case and UM30 I-Cache Case differ.
+11.6.13,bchg_imm_mem,UM20 §8.2.13,4,0,0,1,UM30 §11.6.13 ord7,6,0,0,1,r1_mismatch,3,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.13,bchg_dn_mem,UM20 §8.2.13,4,0,0,1,UM30 §11.6.13 ord8,6,0,0,1,r1_mismatch,3,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.13,bclr_imm_dn,UM20 §8.2.13,4,0,0,0,UM30 §11.6.13 ord9,6,0,0,0,r1_mismatch,4,2,UM20 Cache Case and UM30 I-Cache Case differ.
+11.6.13,bclr_dn_dn,UM20 §8.2.13,4,0,0,0,UM30 §11.6.13 ord10,6,0,0,0,r1_mismatch,4,2,UM20 Cache Case and UM30 I-Cache Case differ.
+11.6.13,bclr_imm_mem,UM20 §8.2.13,4,0,0,1,UM30 §11.6.13 ord11,6,0,0,1,r1_mismatch,3,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.13,bclr_dn_mem,UM20 §8.2.13,4,0,0,1,UM30 §11.6.13 ord12,6,0,0,1,r1_mismatch,3,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.13,bset_imm_dn,UM20 §8.2.13,4,0,0,0,UM30 §11.6.13 ord13,6,0,0,0,r1_mismatch,4,2,UM20 Cache Case and UM30 I-Cache Case differ.
+11.6.13,bset_dn_dn,UM20 §8.2.13,4,0,0,0,UM30 §11.6.13 ord14,6,0,0,0,r1_mismatch,4,2,UM20 Cache Case and UM30 I-Cache Case differ.
+11.6.13,bset_imm_mem,UM20 §8.2.13,4,0,0,1,UM30 §11.6.13 ord15,6,0,0,1,r1_mismatch,3,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.13,bset_dn_mem,UM20 §8.2.13,4,0,0,1,UM30 §11.6.13 ord16,6,0,0,1,r1_mismatch,3,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.14,bftst_dn,UM20 §8.2.14,6,0,0,0,UM30 §11.6.14 ord1,8,0,0,0,r1_mismatch,6,2,UM20 Cache Case and UM30 I-Cache Case differ.
+11.6.14,bftst_mem_short,UM20 §8.2.14,11,1,0,0,UM30 §11.6.14 ord2,10,1,0,0,r1_match,10,0,The effective-address addend is classified separately.
+11.6.14,bftst_mem_five,UM20 §8.2.14,15,2,0,0,UM30 §11.6.14 ord3,14,2,0,0,r1_mismatch,13,1,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.14,bfchg_dn,UM20 §8.2.14,12,0,0,0,UM30 §11.6.14 ord4,14,0,0,0,r1_mismatch,12,2,UM20 Cache Case and UM30 I-Cache Case differ.
+11.6.14,bfchg_mem_short,UM20 §8.2.14,16,1,0,1,UM30 §11.6.14 ord5,14,1,0,1,r1_match,14,0,The effective-address addend is classified separately.
+11.6.14,bfchg_mem_five,UM20 §8.2.14,24,2,0,2,UM30 §11.6.14 ord6,22,2,0,2,r1_mismatch,20,2,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.14,bfclr_dn,UM20 §8.2.14,12,0,0,0,UM30 §11.6.14 ord7,14,0,0,0,r1_mismatch,12,2,UM20 Cache Case and UM30 I-Cache Case differ.
+11.6.14,bfclr_mem_short,UM20 §8.2.14,16,1,0,1,UM30 §11.6.14 ord8,14,1,0,1,r1_match,14,0,The effective-address addend is classified separately.
+11.6.14,bfclr_mem_five,UM20 §8.2.14,24,2,0,2,UM30 §11.6.14 ord9,22,2,0,2,r1_mismatch,20,2,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.14,bfset_dn,UM20 §8.2.14,12,0,0,0,UM30 §11.6.14 ord10,14,0,0,0,r1_mismatch,12,2,UM20 Cache Case and UM30 I-Cache Case differ.
+11.6.14,bfset_mem_short,UM20 §8.2.14,16,1,0,1,UM30 §11.6.14 ord11,14,1,0,1,r1_match,14,0,The effective-address addend is classified separately.
+11.6.14,bfset_mem_five,UM20 §8.2.14,24,2,0,2,UM30 §11.6.14 ord12,22,2,0,2,r1_mismatch,20,2,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.14,bfexts_dn,UM20 §8.2.14,8,0,0,0,UM30 §11.6.14 ord13,10,0,0,0,r1_mismatch,8,2,UM20 Cache Case and UM30 I-Cache Case differ.
+11.6.14,bfexts_mem_short,UM20 §8.2.14,13,1,0,0,UM30 §11.6.14 ord14,12,1,0,0,r1_match,12,0,The effective-address addend is classified separately.
+11.6.14,bfexts_mem_five,UM20 §8.2.14,18,2,0,0,UM30 §11.6.14 ord15,18,2,0,0,r1_mismatch,16,2,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.14,bfextu_dn,UM20 §8.2.14,8,0,0,0,UM30 §11.6.14 ord16,10,0,0,0,r1_mismatch,8,2,UM20 Cache Case and UM30 I-Cache Case differ.
+11.6.14,bfextu_mem_short,UM20 §8.2.14,13,1,0,0,UM30 §11.6.14 ord17,12,1,0,0,r1_match,12,0,The effective-address addend is classified separately.
+11.6.14,bfextu_mem_five,UM20 §8.2.14,18,2,0,0,UM30 §11.6.14 ord18,18,2,0,0,r1_mismatch,16,2,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.14,bfins_dn,UM20 §8.2.14,10,0,0,0,UM30 §11.6.14 ord19,12,0,0,0,r1_mismatch,10,2,UM20 Cache Case and UM30 I-Cache Case differ.
+11.6.14,bfins_mem_short,UM20 §8.2.14,14,1,0,1,UM30 §11.6.14 ord20,12,1,0,1,r1_match,12,0,The effective-address addend is classified separately.
+11.6.14,bfins_mem_five,UM20 §8.2.14,20,2,0,2,UM30 §11.6.14 ord21,18,2,0,2,r1_mismatch,16,2,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.14,bfffo_dn,UM20 §8.2.14,18,0,0,0,UM30 §11.6.14 ord22,20,0,0,0,r1_mismatch,18,2,UM20 Cache Case and UM30 I-Cache Case differ.
+11.6.14,bfffo_mem_short,UM20 §8.2.14,24,1,0,0,UM30 §11.6.14 ord23,22,1,0,0,r1_mismatch,23,-1,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.14,bfffo_mem_five,UM20 §8.2.14,32,2,0,0,UM30 §11.6.14 ord24,28,2,0,0,r1_mismatch,30,-2,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.9,moveq,UM20 §8.2.9,2,0,0,0,UM30 §11.6.9 ord1,2,0,0,0,inherit,2,0,
+11.6.9,addq_rn,UM20 §8.2.9,2,0,0,0,UM30 §11.6.9 ord2,2,0,0,0,inherit,2,0,
+11.6.9,addq_mem,UM20 §8.2.9,4,0,0,1,UM30 §11.6.9 ord3,3,0,0,1,r1_match,3,0,The effective-address addend is classified separately.
+11.6.9,subq_rn,UM20 §8.2.9,2,0,0,0,UM30 §11.6.9 ord4,2,0,0,0,inherit,2,0,
+11.6.9,subq_mem,UM20 §8.2.9,4,0,0,1,UM30 §11.6.9 ord5,3,0,0,1,r1_match,3,0,The effective-address addend is classified separately.
+11.6.9,addi_dn,UM20 §8.2.9,2,0,0,0,UM30 §11.6.9 ord6,2,0,0,0,inherit,2,0,
+11.6.9,addi_mem,UM20 §8.2.9,4,0,0,1,UM30 §11.6.9 ord7,3,0,0,1,r1_match,3,0,The effective-address addend is classified separately.
+11.6.9,andi_dn,UM20 §8.2.9,2,0,0,0,UM30 §11.6.9 ord8,2,0,0,0,inherit,2,0,
+11.6.9,andi_mem,UM20 §8.2.9,4,0,0,1,UM30 §11.6.9 ord9,3,0,0,1,r1_match,3,0,The effective-address addend is classified separately.
+11.6.9,eori_dn,UM20 §8.2.9,2,0,0,0,UM30 §11.6.9 ord10,2,0,0,0,inherit,2,0,
+11.6.9,eori_mem,UM20 §8.2.9,4,0,0,1,UM30 §11.6.9 ord11,3,0,0,1,r1_match,3,0,The effective-address addend is classified separately.
+11.6.9,ori_dn,UM20 §8.2.9,2,0,0,0,UM30 §11.6.9 ord12,2,0,0,0,inherit,2,0,
+11.6.9,ori_mem,UM20 §8.2.9,4,0,0,1,UM30 §11.6.9 ord13,3,0,0,1,r1_match,3,0,The effective-address addend is classified separately.
+11.6.9,subi_dn,UM20 §8.2.9,2,0,0,0,UM30 §11.6.9 ord14,2,0,0,0,inherit,2,0,
+11.6.9,subi_mem,UM20 §8.2.9,4,0,0,1,UM30 §11.6.9 ord15,3,0,0,1,r1_match,3,0,The effective-address addend is classified separately.
+11.6.9,cmpi_dn,UM20 §8.2.9,2,0,0,0,UM30 §11.6.9 ord16,2,0,0,0,inherit,2,0,
+11.6.9,cmpi_mem,UM20 §8.2.9,2,0,0,0,UM30 §11.6.9 ord17,2,0,0,0,inherit,2,0,The effective-address addend is classified separately.
+11.6.10,abcd_dn,UM20 §8.2.10,4,0,0,0,UM30 §11.6.10 ord1,4,0,0,0,inherit,4,0,
+11.6.10,abcd_mem,UM20 §8.2.10,16,2,0,1,UM30 §11.6.10 ord2,13,2,0,1,r1_match,13,0,
+11.6.10,sbcd_dn,UM20 §8.2.10,4,0,0,0,UM30 §11.6.10 ord3,4,0,0,0,inherit,4,0,
+11.6.10,sbcd_mem,UM20 §8.2.10,16,2,0,1,UM30 §11.6.10 ord4,13,2,0,1,r1_match,13,0,
+11.6.10,addx_dn,UM20 §8.2.10,2,0,0,0,UM30 §11.6.10 ord5,2,0,0,0,inherit,2,0,
+11.6.10,addx_mem,UM20 §8.2.10,12,2,0,1,UM30 §11.6.10 ord6,9,2,0,1,r1_match,9,0,
+11.6.10,subx_dn,UM20 §8.2.10,2,0,0,0,UM30 §11.6.10 ord7,2,0,0,0,inherit,2,0,
+11.6.10,subx_mem,UM20 §8.2.10,12,2,0,1,UM30 §11.6.10 ord8,9,2,0,1,r1_match,9,0,
+11.6.10,cmpm,UM20 §8.2.10,9,2,0,0,UM30 §11.6.10 ord9,8,2,0,0,r1_mismatch,7,1,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.10,pack_dn,UM20 §8.2.10,6,0,0,0,UM30 §11.6.10 ord10,6,0,0,0,inherit,6,0,
+11.6.10,pack_mem,UM20 §8.2.10,13,1,0,1,UM30 §11.6.10 ord11,11,1,0,1,r1_match,11,0,
+11.6.10,unpk_dn,UM20 §8.2.10,8,0,0,0,UM30 §11.6.10 ord12,8,0,0,0,inherit,8,0,
+11.6.10,unpk_mem,UM20 §8.2.10,13,1,0,1,UM30 §11.6.10 ord13,11,1,0,1,r1_match,11,0,
+11.6.11,clr_dn,UM20 §8.2.11,2,0,0,0,UM30 §11.6.11 ord1,2,0,0,0,inherit,2,0,
+11.6.11,clr_mem,UM20 §8.2.11,4,0,0,1,UM30 §11.6.11 ord2,3,0,0,1,r1_match,3,0,The effective-address addend is classified separately.
+11.6.11,neg_dn,UM20 §8.2.11,2,0,0,0,UM30 §11.6.11 ord3,2,0,0,0,inherit,2,0,
+11.6.11,neg_mem,UM20 §8.2.11,4,0,0,1,UM30 §11.6.11 ord4,3,0,0,1,r1_match,3,0,The effective-address addend is classified separately.
+11.6.11,negx_dn,UM20 §8.2.11,2,0,0,0,UM30 §11.6.11 ord5,2,0,0,0,inherit,2,0,
+11.6.11,negx_mem,UM20 §8.2.11,4,0,0,1,UM30 §11.6.11 ord6,3,0,0,1,r1_match,3,0,The effective-address addend is classified separately.
+11.6.11,not_dn,UM20 §8.2.11,2,0,0,0,UM30 §11.6.11 ord7,2,0,0,0,inherit,2,0,
+11.6.11,not_mem,UM20 §8.2.11,4,0,0,1,UM30 §11.6.11 ord8,3,0,0,1,r1_match,3,0,The effective-address addend is classified separately.
+11.6.11,ext_dn,UM20 §8.2.11,4,0,0,0,UM30 §11.6.11 ord9,4,0,0,0,inherit,4,0,
+11.6.11,nbcd_dn,UM20 §8.2.11,6,0,0,0,UM30 §11.6.11 ord10,6,0,0,0,inherit,6,0,
+11.6.11,scc_dn,UM20 §8.2.11,4,0,0,0,UM30 §11.6.11 ord11,4,0,0,0,inherit,4,0,
+11.6.11,scc_mem,UM20 §8.2.11,6,0,0,1,UM30 §11.6.11 ord12,5,0,0,1,r1_match,5,0,The effective-address addend is classified separately.
+11.6.11,tas_dn,UM20 §8.2.11,4,0,0,0,UM30 §11.6.11 ord13,4,0,0,0,inherit,4,0,
+11.6.11,tas_mem,UM20 §8.2.11,12,1,0,1,UM30 §11.6.11 ord14,12,1,0,1,r1_mismatch,10,2,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.11,tst_dn,UM20 §8.2.11,2,0,0,0,UM30 §11.6.11 ord15,2,0,0,0,inherit,2,0,
+11.6.11,tst_mem,UM20 §8.2.11,2,0,0,0,UM30 §11.6.11 ord16,2,0,0,0,inherit,2,0,The effective-address addend is classified separately.
+11.6.12,ls_static,UM20 §8.2.12,4,0,0,0,UM30 §11.6.12 ord1,4,0,0,0,inherit,4,0,UM20 groups LSL and LSR as LSd.
+11.6.12,ls_dynamic_short,UM20 §8.2.12,6,0,0,0,UM30 §11.6.12 ord2,6,0,0,0,inherit,6,0,UM20 groups LSL and LSR as LSd.
+11.6.12,ls_dynamic_long,UM20 §8.2.12,6,0,0,0,UM30 §11.6.12 ord3,8,0,0,0,r1_mismatch,6,2,UM20 groups LSL and LSR as LSd; UM30 has an additional long case.
+11.6.12,ls_mem,UM20 §8.2.12,5,0,0,1,UM30 §11.6.12 ord4,4,0,0,1,r1_match,4,0,The effective-address addend is classified separately.
+11.6.12,asl_static,UM20 §8.2.12,8,0,0,0,UM30 §11.6.12 ord5,6,0,0,0,r1_mismatch,8,-2,UM30 splits the UM20 ASL Dn row by count form.
+11.6.12,asl_dynamic,UM20 §8.2.12,8,0,0,0,UM30 §11.6.12 ord6,8,0,0,0,inherit,8,0,UM30 splits the UM20 ASL Dn row by count form.
+11.6.12,asl_mem,UM20 §8.2.12,6,0,0,1,UM30 §11.6.12 ord7,6,0,0,1,r1_mismatch,5,1,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.12,asr_static,UM20 §8.2.12,6,0,0,0,UM30 §11.6.12 ord8,4,0,0,0,r1_mismatch,6,-2,UM30 splits the UM20 ASR Dn row by count form.
+11.6.12,asr_dynamic_short,UM20 §8.2.12,6,0,0,0,UM30 §11.6.12 ord9,6,0,0,0,inherit,6,0,UM30 splits the UM20 ASR Dn row by count form.
+11.6.12,asr_dynamic_long,UM20 §8.2.12,6,0,0,0,UM30 §11.6.12 ord10,10,0,0,0,r1_mismatch,6,4,UM30 splits the UM20 ASR Dn row by count form.
+11.6.12,asr_mem,UM20 §8.2.12,5,0,0,1,UM30 §11.6.12 ord11,4,0,0,1,r1_match,4,0,The effective-address addend is classified separately.
+11.6.12,ro_static,UM20 §8.2.12,8,0,0,0,UM30 §11.6.12 ord12,6,0,0,0,r1_mismatch,8,-2,UM20 groups ROL and ROR as ROd.
+11.6.12,ro_dynamic,UM20 §8.2.12,8,0,0,0,UM30 §11.6.12 ord13,8,0,0,0,inherit,8,0,UM20 groups ROL and ROR as ROd.
+11.6.12,ro_mem,UM20 §8.2.12,7,0,0,1,UM30 §11.6.12 ord14,6,0,0,1,r1_match,6,0,The effective-address addend is classified separately.
+11.6.12,rox_dn,UM20 §8.2.12,12,0,0,0,UM30 §11.6.12 ord15,12,0,0,0,inherit,12,0,UM20 groups ROXL and ROXR as ROXd.
+11.6.12,rox_mem,UM20 §8.2.12,5,0,0,1,UM30 §11.6.12 ord16,4,0,0,0,r1_match,4,0,UM30 prints no write cycle; the effective-address addend is separate.
+11.6.17,bkpt,UM20 §8.2.17,10,1,0,0,UM30 §11.6.17 ord1,9,1,0,0,r1_match,9,0,
+11.6.17,interrupt_i_stack,UM20 §8.2.17,26,2,0,4,UM30 §11.6.17 ord2,23,2,0,4,r1_mismatch,20,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.17,interrupt_m_stack,UM20 §8.2.17,41,2,0,8,UM30 §11.6.17 ord3,33,2,0,8,r1_mismatch,31,2,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.17,reset,UM20 §8.2.17,518,0,0,0,UM30 §11.6.17 ord4,518,0,0,0,inherit,518,0,
+11.6.17,stop,UM20 §8.2.17,8,0,0,0,UM30 §11.6.17 ord5,8,0,0,0,inherit,8,0,
+11.6.17,trace,UM20 §8.2.17,25,1,0,5,UM30 §11.6.17 ord6,22,1,0,5,r1_mismatch,19,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.17,trap_n,UM20 §8.2.17,20,1,0,4,UM30 §11.6.17 ord7,18,1,0,4,r1_mismatch,15,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.17,illegal,UM20 §8.2.17,20,1,0,4,UM30 §11.6.17 ord8,18,1,0,4,r1_mismatch,15,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.17,a_line,UM20 §8.2.17,20,1,0,4,UM30 §11.6.17 ord9,18,1,0,4,r1_mismatch,15,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.17,f_line,UM20 §8.2.17,20,1,0,4,UM30 §11.6.17 ord10,18,1,0,4,r1_mismatch,15,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.17,privilege,UM20 §8.2.17,20,1,0,4,UM30 §11.6.17 ord11,18,1,0,4,r1_mismatch,15,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.17,trapcc_trap,UM20 §8.2.17,25,1,0,5,UM30 §11.6.17 ord12,22,1,0,5,r1_mismatch,19,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.17,trapcc_no_trap,UM20 §8.2.17,4,0,0,0,UM30 §11.6.17 ord13,4,0,0,0,inherit,4,0,
+11.6.17,trapcc_w_trap,UM20 §8.2.17,25,1,0,5,UM30 §11.6.17 ord14,24,1,0,5,r1_mismatch,19,5,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.17,trapcc_w_no_trap,UM20 §8.2.17,6,0,0,0,UM30 §11.6.17 ord15,6,0,0,0,inherit,6,0,
+11.6.17,trapcc_l_trap,UM20 §8.2.17,25,1,0,5,UM30 §11.6.17 ord16,26,1,0,5,r1_mismatch,19,7,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.17,trapcc_l_no_trap,UM20 §8.2.17,8,0,0,0,UM30 §11.6.17 ord17,8,0,0,0,inherit,8,0,
+11.6.17,trapv_trap,UM20 §8.2.17,25,1,0,5,UM30 §11.6.17 ord18,22,1,0,5,r1_mismatch,19,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.17,trapv_no_trap,UM20 §8.2.17,4,0,0,0,UM30 §11.6.17 ord19,4,0,0,0,inherit,4,0,
+11.6.18,bus_fault_short,UM20 §8.2.18,43,1,0,10,UM30 §11.6.18 ord1,36,1,0,10,r1_mismatch,32,4,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.18,bus_fault_long,UM20 §8.2.18,79,1,0,24,UM30 §11.6.18 ord2,62,1,0,24,r1_mismatch,54,8,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.18,rte_normal,UM20 §8.2.18,21,4,0,0,UM30 §11.6.18 ord3,18,4,0,0,r1_mismatch,17,1,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.18,rte_six_word,UM20 §8.2.18,21,4,0,0,UM30 §11.6.18 ord4,18,4,0,0,r1_mismatch,17,1,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.18,rte_throwaway,UM20 §8.2.18,16,4,0,0,UM30 §11.6.18 ord5,12,4,0,0,r1_match,12,0,
+11.6.18,rte_coprocessor,UM20 §8.2.18,32,7,0,0,UM30 §11.6.18 ord6,26,7,0,0,r1_mismatch,25,1,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.18,rte_short_fault,UM20 §8.2.18,43,10,0,0,UM30 §11.6.18 ord7,36,10,0,0,r1_mismatch,33,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.18,rte_long_fault,UM20 §8.2.18,92,24,0,0,UM30 §11.6.18 ord8,76,25,0,0,r1_mismatch,68,8,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.7,exg,UM20 §8.2.7 ord1,2,0,0,0,UM30 §11.6.7 ord1,4,0,0,0,r1_mismatch,2,2,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.7,movec_cr_rn,UM20 §8.2.7 ord2,6,0,0,0,UM30 §11.6.7 ord2,6,0,0,0,inherit,6,0,
+11.6.7,movec_rn_cr_a,UM20 §8.2.7 ord3,12,0,0,0,UM30 §11.6.7 ord3,6,0,0,0,r1_mismatch,12,-6,UM20 §8.2.7 MOVEC Rn-to-Cr row is undifferentiated by register class; UM30 splits it into Cr-A (this row) and Cr-B (ord4).
+11.6.7,movec_rn_cr_b,UM20 §8.2.7 ord3,12,0,0,0,UM30 §11.6.7 ord4,12,0,0,0,inherit,12,0,UM20 §8.2.7 undifferentiated MOVEC Rn-to-Cr value matches this Cr-B alias; see ord3.
+11.6.7,move_ccr_dn,UM20 §8.2.7 ord4,4,0,0,0,UM30 §11.6.7 ord5,4,0,0,0,inherit,4,0,UM20 §8.2.7 MOVE PSW-to-Rn covers both CCR and SR reads to Dn; see ord9.
+11.6.7,move_ccr_mem,UM20 §8.2.7 ord5,5,0,0,1,UM30 §11.6.7 ord6,4,0,0,1,r1_match,4,0,UM20 §8.2.7 MOVE PSW-to-Mem covers both CCR and SR writes to Mem; see ord10.
+11.6.7,move_dn_ccr,UM20 §8.2.7 ord6,4,0,0,0,UM30 §11.6.7 ord7,4,0,0,0,inherit,4,0,UM20 §8.2.7 MOVE EA-to-CCR generalizes over any source EA including Dn; see ord8.
+11.6.7,move_ea_ccr,UM20 §8.2.7 ord6,4,0,0,0,UM30 §11.6.7 ord8,4,0,0,0,inherit,4,0,Same UM20 general-EA row as ord7.
+11.6.7,move_sr_dn,UM20 §8.2.7 ord4,4,0,0,0,UM30 §11.6.7 ord9,4,0,0,0,inherit,4,0,See ord5.
+11.6.7,move_sr_mem,UM20 §8.2.7 ord5,5,0,0,1,UM30 §11.6.7 ord10,4,0,0,1,r1_match,4,0,See ord6.
+11.6.7,move_ea_sr,UM20 §8.2.7 ord7,8,0,0,0,UM30 §11.6.7 ord11,8,0,0,0,inherit,8,0,
+11.6.7,movem_ea_rl,UM20 §8.2.7 ord8,12,1,0,0,UM30 §11.6.7 ord12,12,1,0,0,inherit,11,1,Formula row (n = registers transferred). UM20 8+4n(n/0/0) equals UM30 I-Cache Case 8+4n(n/0/0) for wait<=2 at any n; n=1 shown as a representative instantiation. UM30 adds (wait-2)n once wait>2 with no UM20 counterpart.
+11.6.7,movem_rl_ea,UM20 §8.2.7 ord9,7,0,0,1,UM30 §11.6.7 ord13,6,0,0,1,r1_match,6,0,Formula row (n = registers transferred). UM20 4+3n(0/0/n) vs UM30 I-Cache Case (4+2n)+(n-1)*wait at wait<=2. R1=4+2n holds for all n when UM30 wait=0; n=1 wait=0 shown. UM30 adds a wait>2 term with no UM20 counterpart.
+11.6.7,movep_w_dn_mem,UM20 §8.2.7 ord10,11,0,0,2,UM30 §11.6.7 ord14,10,0,0,2,r1_mismatch,9,1,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.7,movep_w_mem_dn,UM20 §8.2.7 ord12,12,2,0,0,UM30 §11.6.7 ord15,10,2,0,0,r1_match,10,0,
+11.6.7,movep_l_dn_mem,UM20 §8.2.7 ord11,17,0,0,4,UM30 §11.6.7 ord16,14,0,0,4,r1_mismatch,13,1,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.7,movep_l_mem_dn,UM20 §8.2.7 ord13,18,4,0,0,UM30 §11.6.7 ord17,14,4,0,0,r1_match,14,0,
+11.6.7,moves_ea_rn,UM20 §8.2.7 ord14,7,1,0,0,UM30 §11.6.7 ord18,7,1,0,0,inherit,6,1,
+11.6.7,moves_rn_ea,UM20 §8.2.7 ord15,5,0,0,1,UM30 §11.6.7 ord19,5,0,0,1,inherit,4,1,
+11.6.7,move_usp_write,UM20 §8.2.7 ord16,2,0,0,0,UM30 §11.6.7 ord20,4,0,0,0,r1_mismatch,2,2,UM20 §8.2.7 MOVE USP row covers both directions (An-to-USP and USP-to-An); see ord21.
+11.6.7,move_usp_read,UM20 §8.2.7 ord16,2,0,0,0,UM30 §11.6.7 ord21,4,0,0,0,r1_mismatch,2,2,See ord20.
+11.6.7,swap,UM20 §8.2.7 ord17,4,0,0,0,UM30 §11.6.7 ord22,4,0,0,0,inherit,4,0,
+11.6.8,add_rn_dn,UM20 §8.2.8 ord1,2,0,0,0,UM30 §11.6.8 ord1,2,0,0,0,inherit,2,0,UM20 §8.2.8 ADD EA-to-Dn covers the register-direct case; see ord4.
+11.6.8,adda_w_rn_an,UM20 §8.2.8 ord2,2,0,0,0,UM30 §11.6.8 ord2,4,0,0,0,r1_mismatch,2,2,UM20 §8.2.8 ADDA EA-to-An does not distinguish word/long or register-direct forms; see ord3/5/6.
+11.6.8,adda_l_rn_an,UM20 §8.2.8 ord2,2,0,0,0,UM30 §11.6.8 ord3,2,0,0,0,inherit,2,0,See ord2.
+11.6.8,add_ea_dn,UM20 §8.2.8 ord1,2,0,0,0,UM30 §11.6.8 ord4,2,0,0,0,inherit,2,0,See ord1.
+11.6.8,adda_w_ea_an,UM20 §8.2.8 ord2,2,0,0,0,UM30 §11.6.8 ord5,4,0,0,0,r1_mismatch,2,2,See ord2.
+11.6.8,adda_l_ea_an,UM20 §8.2.8 ord2,2,0,0,0,UM30 §11.6.8 ord6,2,0,0,0,inherit,2,0,See ord2.
+11.6.8,add_dn_ea,UM20 §8.2.8 ord3,4,0,0,1,UM30 §11.6.8 ord7,3,0,0,1,r1_match,3,0,
+11.6.8,and_dn_dn,UM20 §8.2.8 ord4,2,0,0,0,UM30 §11.6.8 ord8,2,0,0,0,inherit,2,0,UM20 §8.2.8 AND EA-to-Dn covers the register-direct case; see ord9.
+11.6.8,and_ea_dn,UM20 §8.2.8 ord4,2,0,0,0,UM30 §11.6.8 ord9,2,0,0,0,inherit,2,0,See ord8.
+11.6.8,and_dn_ea,UM20 §8.2.8 ord5,4,0,0,1,UM30 §11.6.8 ord10,3,0,0,1,r1_match,3,0,
+11.6.8,eor_dn_dn,UM20 §8.2.8 ord6,2,0,0,0,UM30 §11.6.8 ord11,2,0,0,0,inherit,2,0,
+11.6.8,eor_dn_ea,UM20 §8.2.8 ord7,4,0,0,1,UM30 §11.6.8 ord12,3,0,0,1,r1_match,3,0,
+11.6.8,or_dn_dn,UM20 §8.2.8 ord8,2,0,0,0,UM30 §11.6.8 ord13,2,0,0,0,inherit,2,0,UM20 §8.2.8 OR EA-to-Dn covers the register-direct case; see ord14.
+11.6.8,or_ea_dn,UM20 §8.2.8 ord8,2,0,0,0,UM30 §11.6.8 ord14,2,0,0,0,inherit,2,0,See ord13.
+11.6.8,or_dn_ea,UM20 §8.2.8 ord9,4,0,0,1,UM30 §11.6.8 ord15,3,0,0,1,r1_match,3,0,
+11.6.8,sub_rn_dn,UM20 §8.2.8 ord10,2,0,0,0,UM30 §11.6.8 ord16,2,0,0,0,inherit,2,0,UM20 §8.2.8 SUB EA-to-Dn covers the register-direct case; see ord17.
+11.6.8,sub_ea_dn,UM20 §8.2.8 ord10,2,0,0,0,UM30 §11.6.8 ord17,2,0,0,0,inherit,2,0,See ord16.
+11.6.8,sub_dn_ea,UM20 §8.2.8 ord12,4,0,0,1,UM30 §11.6.8 ord18,3,0,0,1,r1_match,3,0,
+11.6.8,suba_w_rn_an,UM20 §8.2.8 ord11,2,0,0,0,UM30 §11.6.8 ord19,4,0,0,0,r1_mismatch,2,2,UM20 §8.2.8 SUBA EA-to-An does not distinguish word/long or register-direct forms; see ord20/21/22.
+11.6.8,suba_l_rn_an,UM20 §8.2.8 ord11,2,0,0,0,UM30 §11.6.8 ord20,2,0,0,0,inherit,2,0,See ord19.
+11.6.8,suba_w_ea_an,UM20 §8.2.8 ord11,2,0,0,0,UM30 §11.6.8 ord21,4,0,0,0,r1_mismatch,2,2,See ord19.
+11.6.8,suba_l_ea_an,UM20 §8.2.8 ord11,2,0,0,0,UM30 §11.6.8 ord22,2,0,0,0,inherit,2,0,See ord19.
+11.6.8,cmp_rn_dn,UM20 §8.2.8 ord13,2,0,0,0,UM30 §11.6.8 ord23,2,0,0,0,inherit,2,0,UM20 §8.2.8 CMP EA-to-Dn covers the register-direct case; see ord24.
+11.6.8,cmp_ea_dn,UM20 §8.2.8 ord13,2,0,0,0,UM30 §11.6.8 ord24,2,0,0,0,inherit,2,0,See ord23.
+11.6.8,cmpa_rn_an,UM20 §8.2.8 ord14,4,0,0,0,UM30 §11.6.8 ord25,4,0,0,0,inherit,4,0,UM20 §8.2.8 CMPA EA-to-An covers the register-direct case; see ord26.
+11.6.8,cmpa_ea_an,UM20 §8.2.8 ord14,4,0,0,0,UM30 §11.6.8 ord26,4,0,0,0,inherit,4,0,See ord25.
+11.6.8,cmp2_ea_rn,UM20 §8.2.8 ord15,18,1,0,0,UM30 §11.6.8 ord27,20,1,0,0,r1_mismatch,17,3,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.8,muls_w_ea_dn,UM20 §8.2.8 ord16,27,0,0,0,UM30 §11.6.8 ord28,28,0,0,0,r1_mismatch,27,1,UM20 §8.2.8 MUL.W EA-to-Dn does not distinguish signed/unsigned; see ord30.
+11.6.8,muls_l_ea_dn,UM20 §8.2.8 ord17,43,0,0,0,UM30 §11.6.8 ord29,44,0,0,0,r1_mismatch,43,1,UM20 §8.2.8 MUL.L EA-to-Dn does not distinguish signed/unsigned; see ord31.
+11.6.8,mulu_w_ea_dn,UM20 §8.2.8 ord16,27,0,0,0,UM30 §11.6.8 ord30,28,0,0,0,r1_mismatch,27,1,See ord28.
+11.6.8,mulu_l_ea_dn,UM20 §8.2.8 ord17,43,0,0,0,UM30 §11.6.8 ord31,44,0,0,0,r1_mismatch,43,1,See ord29.
+11.6.8,divs_w_dn_dn,UM20 §8.2.8 ord20,56,0,0,0,UM30 §11.6.8 ord32,56,0,0,0,inherit,56,0,UM20 §8.2.8 DIVS.W EA-to-Dn covers the register-direct case; see ord33.
+11.6.8,divs_w_ea_dn,UM20 §8.2.8 ord20,56,0,0,0,UM30 §11.6.8 ord33,56,0,0,0,inherit,56,0,See ord32.
+11.6.8,divs_l_dn_dn,UM20 §8.2.8 ord21,90,0,0,0,UM30 §11.6.8 ord34,90,0,0,0,inherit,90,0,UM20 §8.2.8 DIVS.L EA-to-Dn covers the register-direct case; see ord35.
+11.6.8,divs_l_ea_dn,UM20 §8.2.8 ord21,90,0,0,0,UM30 §11.6.8 ord35,90,0,0,0,inherit,90,0,See ord34.
+11.6.8,divu_w_dn_dn,UM20 §8.2.8 ord18,44,0,0,0,UM30 §11.6.8 ord36,44,0,0,0,inherit,44,0,UM20 §8.2.8 DIVU.W EA-to-Dn covers the register-direct case; see ord37.
+11.6.8,divu_w_ea_dn,UM20 §8.2.8 ord18,44,0,0,0,UM30 §11.6.8 ord37,44,0,0,0,inherit,44,0,See ord36.
+11.6.8,divu_l_dn_dn,UM20 §8.2.8 ord19,78,0,0,0,UM30 §11.6.8 ord38,78,0,0,0,inherit,78,0,UM20 §8.2.8 DIVU.L EA-to-Dn covers the register-direct case; see ord39.
+11.6.8,divu_l_ea_dn,UM20 §8.2.8 ord19,78,0,0,0,UM30 §11.6.8 ord39,78,0,0,0,inherit,78,0,See ord38.
+11.6.6,move_rn_dn,UM20 §8.2.6 ord2,2,0,0,0,UM30 §11.6.6 ord1,2,0,0,0,inherit,2,0,
+11.6.6,move_rn_an,UM20 §8.2.6 ord1,2,0,0,0,UM30 §11.6.6 ord2,2,0,0,0,inherit,2,0,
+11.6.6,move_ea_an,UM20 §8.2.6 ord1,2,0,0,0,UM30 §11.6.6 ord3,2,0,0,0,inherit,2,0,See ord2 (Rn-source baseline; fetch EA cost is added separately for non-register sources).
+11.6.6,move_ea_dn,UM20 §8.2.6 ord2,2,0,0,0,UM30 §11.6.6 ord4,2,0,0,0,inherit,2,0,See ord1.
+11.6.6,move_rn_an_ind,UM20 §8.2.6 ord3,4,0,0,1,UM30 §11.6.6 ord5,3,0,0,1,r1_match,3,0,
+11.6.6,move_source_an_ind,UM20 §8.2.6 ord3,4,0,0,1,UM30 §11.6.6 ord6,4,0,0,1,inherit,3,1,UM20 §8.2.6 Rn-source row already equals the UM30 SOURCE base value; see ord5.
+11.6.6,move_rn_an_postinc,UM20 §8.2.6 ord4,4,0,0,1,UM30 §11.6.6 ord7,3,0,0,1,r1_match,3,0,
+11.6.6,move_source_an_postinc,UM20 §8.2.6 ord4,4,0,0,1,UM30 §11.6.6 ord8,4,0,0,1,inherit,3,1,See ord7.
+11.6.6,move_rn_an_predec,UM20 §8.2.6 ord5,5,0,0,1,UM30 §11.6.6 ord9,4,0,0,1,r1_match,4,0,
+11.6.6,move_source_an_predec,UM20 §8.2.6 ord5,5,0,0,1,UM30 §11.6.6 ord10,4,0,0,1,r1_match,4,0,See ord9.
+11.6.6,move_ea_d16_an,UM20 §8.2.6 ord6,5,0,0,1,UM30 §11.6.6 ord11,4,0,0,1,r1_match,4,0,
+11.6.6,move_ea_xxx_w,UM20 §8.2.6 ord7,4,0,0,1,UM30 §11.6.6 ord12,4,0,0,1,inherit,3,1,
+11.6.6,move_ea_xxx_l,UM20 §8.2.6 ord8,6,0,0,1,UM30 §11.6.6 ord13,6,0,0,1,inherit,5,1,
+11.6.6,move_ea_d8_an_xn,UM20 §8.2.6 ord9,7,0,0,1,UM30 §11.6.6 ord14,6,0,0,1,r1_match,6,0,
+11.6.6,move_ea_full_null_an_pc,UM20 §8.2.6 ord10,9,0,0,1,UM30 §11.6.6 ord15,8,0,0,1,r1_match,8,0,UM20 §8.2.6 has no index-suppressed column for the full-format extension word; the indexed (d16,An,Xn) column covers both aliases (cf. UM20 §8.2.1 fea table); see ord16.
+11.6.6,move_ea_full_index_an_pc,UM20 §8.2.6 ord10,9,0,0,1,UM30 §11.6.6 ord16,8,0,0,1,r1_match,8,0,See ord15.
+11.6.6,move_ea_preindex_an_pc_null_outer,,,,,,UM30 §11.6.6 ord17,10,1,0,1,um30_only,,,UM30 separately tabulates memory-indirect addressing with an explicit An/PC base distinct from the generalized (B) family at ord22 onward; UM20 §8.2.6 has no matching row at this granularity -- only the generalized (B) family (base = 0/An/PC/Xn/An+Xn/PC+Xn).
+11.6.6,move_ea_preindex_an_pc_d16_outer_null,,,,,,UM30 §11.6.6 ord18,12,1,0,1,um30_only,,,See ord17.
+11.6.6,move_ea_preindex_an_pc_d16_outer_index,,,,,,UM30 §11.6.6 ord19,12,1,0,1,um30_only,,,See ord17.
+11.6.6,move_ea_preindex_an_pc_d32_outer_null,,,,,,UM30 §11.6.6 ord20,14,1,0,1,um30_only,,,See ord17.
+11.6.6,move_ea_preindex_an_pc_d32_outer_index,,,,,,UM30 §11.6.6 ord21,14,1,0,1,um30_only,,,See ord17.
+11.6.6,move_ea_b,UM20 §8.2.6 ord11,8,0,0,1,UM30 §11.6.6 ord22,8,0,0,1,inherit,7,1,
+11.6.6,move_ea_d16_b,UM20 §8.2.6 ord12,10,0,0,1,UM30 §11.6.6 ord23,10,0,0,1,inherit,9,1,
+11.6.6,move_ea_d32_b,UM20 §8.2.6 ord13,14,0,0,1,UM30 §11.6.6 ord24,14,0,0,1,inherit,13,1,
+11.6.6,move_ea_preindirect_b_null_outer,UM20 §8.2.6 ord14,12,1,0,1,UM30 §11.6.6 ord25,10,1,0,1,r1_match,10,0,UM20 §8.2.6 has no index-suppressed column; the indexed ([B],I) column covers both aliases; see ord26.
+11.6.6,move_ea_preindirect_b_index_outer,UM20 §8.2.6 ord14,12,1,0,1,UM30 §11.6.6 ord26,10,1,0,1,r1_match,10,0,See ord25.
+11.6.6,move_ea_preindirect_b_d16_outer_null,UM20 §8.2.6 ord15,14,1,0,1,UM30 §11.6.6 ord27,12,1,0,1,r1_match,12,0,See ord28 alias.
+11.6.6,move_ea_preindirect_b_d16_outer_index,UM20 §8.2.6 ord15,14,1,0,1,UM30 §11.6.6 ord28,12,1,0,1,r1_match,12,0,
+11.6.6,move_ea_preindirect_b_d32_outer_null,UM20 §8.2.6 ord16,15,1,0,1,UM30 §11.6.6 ord29,14,1,0,1,r1_mismatch,13,1,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.6,move_ea_preindirect_b_d32_outer_index,UM20 §8.2.6 ord16,15,1,0,1,UM30 §11.6.6 ord30,14,1,0,1,r1_mismatch,13,1,See ord29.
+11.6.6,move_ea_preindirect_d16b_null_outer,UM20 §8.2.6 ord17,14,1,0,1,UM30 §11.6.6 ord31,12,1,0,1,r1_match,12,0,See ord32 alias.
+11.6.6,move_ea_preindirect_d16b_index_outer,UM20 §8.2.6 ord17,14,1,0,1,UM30 §11.6.6 ord32,12,1,0,1,r1_match,12,0,
+11.6.6,move_ea_preindirect_d16b_d16_outer_null,UM20 §8.2.6 ord18,16,1,0,1,UM30 §11.6.6 ord33,14,1,0,1,r1_match,14,0,See ord34 alias.
+11.6.6,move_ea_preindirect_d16b_d16_outer_index,UM20 §8.2.6 ord18,16,1,0,1,UM30 §11.6.6 ord34,14,1,0,1,r1_match,14,0,
+11.6.6,move_ea_preindirect_d16b_d32_outer_null,UM20 §8.2.6 ord19,17,1,0,1,UM30 §11.6.6 ord35,16,1,0,1,r1_mismatch,15,1,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.6,move_ea_preindirect_d16b_d32_outer_index,UM20 §8.2.6 ord19,17,1,0,1,UM30 §11.6.6 ord36,16,1,0,1,r1_mismatch,15,1,See ord35.
+11.6.6,move_ea_preindirect_d32b_null_outer,UM20 §8.2.6 ord20,18,1,0,1,UM30 §11.6.6 ord37,16,1,0,1,r1_match,16,0,See ord38 alias.
+11.6.6,move_ea_preindirect_d32b_index_outer,UM20 §8.2.6 ord20,18,1,0,1,UM30 §11.6.6 ord38,16,1,0,1,r1_match,16,0,
+11.6.6,move_ea_preindirect_d32b_d16_outer_null,UM20 §8.2.6 ord21,20,1,0,1,UM30 §11.6.6 ord39,18,1,0,1,r1_match,18,0,See ord40 alias.
+11.6.6,move_ea_preindirect_d32b_d16_outer_index,UM20 §8.2.6 ord21,20,1,0,1,UM30 §11.6.6 ord40,18,1,0,1,r1_match,18,0,
+11.6.6,move_ea_preindirect_d32b_d32_outer_null,UM20 §8.2.6 ord22,21,1,0,1,UM30 §11.6.6 ord41,20,1,0,1,r1_mismatch,19,1,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.6,move_ea_preindirect_d32b_d32_outer_index,UM20 §8.2.6 ord22,21,1,0,1,UM30 §11.6.6 ord42,20,1,0,1,r1_mismatch,19,1,See ord41.
+11.6.2,data_w_dn,UM20 §8.2.2 ord1,2,0,0,0,UM30 §11.6.2 ord1,2,0,0,0,inherit,2,0,
+11.6.2,data_l_dn,UM20 §8.2.2 ord2,4,0,0,0,UM30 §11.6.2 ord2,4,0,0,0,inherit,4,0,
+11.6.2,data_w_an_ind,UM20 §8.2.2 ord3,4,1,0,0,UM30 §11.6.2 ord3,3,1,0,0,r1_match,3,0,
+11.6.2,data_l_an_ind,UM20 §8.2.2 ord4,4,1,0,0,UM30 §11.6.2 ord4,4,1,0,0,inherit,3,1,
+11.6.2,data_w_an_postinc,UM20 §8.2.2 ord5,6,1,0,0,UM30 §11.6.2 ord5,5,1,0,0,r1_match,5,0,
+11.6.2,data_l_an_postinc,UM20 §8.2.2 ord6,8,1,0,0,UM30 §11.6.2 ord6,7,1,0,0,r1_match,7,0,
+11.6.2,data_w_an_predec,UM20 §8.2.2 ord7,5,1,0,0,UM30 §11.6.2 ord7,4,1,0,0,r1_match,4,0,
+11.6.2,data_l_an_predec,UM20 §8.2.2 ord8,7,1,0,0,UM30 §11.6.2 ord8,4,1,0,0,r1_mismatch,6,-2,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.2,data_w_d16_an,UM20 §8.2.2 ord9,5,1,0,0,UM30 §11.6.2 ord9,4,1,0,0,r1_match,4,0,
+11.6.2,data_l_d16_an,UM20 §8.2.2 ord10,7,1,0,0,UM30 §11.6.2 ord10,6,1,0,0,r1_match,6,0,
+11.6.2,data_w_xxx_w,UM20 §8.2.2 ord11,5,1,0,0,UM30 §11.6.2 ord11,6,1,0,0,r1_mismatch,4,2,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.2,data_l_xxx_w,UM20 §8.2.2 ord12,7,1,0,0,UM30 §11.6.2 ord12,8,1,0,0,r1_mismatch,6,2,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.2,data_w_xxx_l,UM20 §8.2.2 ord13,6,1,0,0,UM30 §11.6.2 ord13,6,1,0,0,inherit,5,1,
+11.6.2,data_l_xxx_l,UM20 §8.2.2 ord14,8,1,0,0,UM30 §11.6.2 ord14,8,1,0,0,inherit,7,1,
+11.6.2,data_w_data_l,UM20 §8.2.2 ord17,6,0,0,0,UM30 §11.6.2 ord15,6,0,0,0,inherit,6,0,
+11.6.2,data_w_d8_an_xn,UM20 §8.2.2 ord19,9,1,0,0,UM30 §11.6.2 ord16,8,1,0,0,r1_match,8,0,
+11.6.2,data_l_d8_an_xn,UM20 §8.2.2 ord20,11,1,0,0,UM30 §11.6.2 ord17,10,1,0,0,r1_match,10,0,
+11.6.2,data_w_full_null_an_pc,UM20 §8.2.2 ord21,9,1,0,0,UM30 §11.6.2 ord18,8,1,0,0,r1_match,8,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord20.
+11.6.2,data_l_full_null_an_pc,UM20 §8.2.2 ord22,11,1,0,0,UM30 §11.6.2 ord19,10,1,0,0,r1_match,10,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord21.
+11.6.2,data_w_full_idx_an_pc,UM20 §8.2.2 ord21,9,1,0,0,UM30 §11.6.2 ord20,8,1,0,0,r1_match,8,0,
+11.6.2,data_l_full_idx_an_pc,UM20 §8.2.2 ord22,11,1,0,0,UM30 §11.6.2 ord21,10,1,0,0,r1_match,10,0,
+11.6.2,data_w_preidx_an_pc_null_noouter,,,,,,UM30 §11.6.2 ord22,12,2,0,0,um30_only,,,UM30 separately tabulates memory-indirect addressing with an explicit An/PC base distinct from the generalized (B) family at ord34 onward; UM20 §8.2.2 has no matching row at this granularity -- only the generalized (B) family (base = 0/An/PC/Xn/An+Xn/PC+Xn).
+11.6.2,data_l_preidx_an_pc_null_noouter,,,,,,UM30 §11.6.2 ord23,14,2,0,0,um30_only,,,See ord22.
+11.6.2,data_w_preidx_an_pc_idx_noouter,,,,,,UM30 §11.6.2 ord24,12,2,0,0,um30_only,,,See ord22.
+11.6.2,data_l_preidx_an_pc_idx_noouter,,,,,,UM30 §11.6.2 ord25,14,2,0,0,um30_only,,,See ord22.
+11.6.2,data_w_preidx_an_pc_null_d16,,,,,,UM30 §11.6.2 ord26,14,2,0,0,um30_only,,,See ord22.
+11.6.2,data_l_preidx_an_pc_null_d16,,,,,,UM30 §11.6.2 ord27,16,2,0,0,um30_only,,,See ord22.
+11.6.2,data_w_preidx_an_pc_idx_d16,,,,,,UM30 §11.6.2 ord28,14,2,0,0,um30_only,,,See ord22.
+11.6.2,data_l_preidx_an_pc_idx_d16,,,,,,UM30 §11.6.2 ord29,16,2,0,0,um30_only,,,See ord22.
+11.6.2,data_w_preidx_an_pc_null_d32,,,,,,UM30 §11.6.2 ord30,14,2,0,0,um30_only,,,See ord22.
+11.6.2,data_l_preidx_an_pc_null_d32,,,,,,UM30 §11.6.2 ord31,16,2,0,0,um30_only,,,See ord22.
+11.6.2,data_w_preidx_an_pc_idx_d32,,,,,,UM30 §11.6.2 ord32,14,2,0,0,um30_only,,,See ord22.
+11.6.2,data_l_preidx_an_pc_idx_d32,,,,,,UM30 §11.6.2 ord33,16,2,0,0,um30_only,,,See ord22.
+11.6.2,data_w_b,UM20 §8.2.2 ord23,9,1,0,0,UM30 §11.6.2 ord34,8,1,0,0,r1_match,8,0,
+11.6.2,data_l_b,UM20 §8.2.2 ord24,11,1,0,0,UM30 §11.6.2 ord35,10,1,0,0,r1_match,10,0,
+11.6.2,data_w_d16_b,UM20 §8.2.2 ord27,11,1,0,0,UM30 §11.6.2 ord36,10,1,0,0,r1_match,10,0,
+11.6.2,data_l_d16_b,UM20 §8.2.2 ord28,13,1,0,0,UM30 §11.6.2 ord37,12,1,0,0,r1_match,12,0,
+11.6.2,data_w_d32_b,UM20 §8.2.2 ord29,15,1,0,0,UM30 §11.6.2 ord38,14,1,0,0,r1_match,14,0,
+11.6.2,data_l_d32_b,UM20 §8.2.2 ord30,17,1,0,0,UM30 §11.6.2 ord39,16,1,0,0,r1_match,16,0,
+11.6.2,data_w_b_null_noouter,UM20 §8.2.2 ord31,14,2,0,0,UM30 §11.6.2 ord40,12,2,0,0,r1_match,12,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord42.
+11.6.2,data_l_b_null_noouter,UM20 §8.2.2 ord32,16,2,0,0,UM30 §11.6.2 ord41,14,2,0,0,r1_match,14,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord43.
+11.6.2,data_w_b_idx_noouter,UM20 §8.2.2 ord31,14,2,0,0,UM30 §11.6.2 ord42,12,2,0,0,r1_match,12,0,
+11.6.2,data_l_b_idx_noouter,UM20 §8.2.2 ord32,16,2,0,0,UM30 §11.6.2 ord43,14,2,0,0,r1_match,14,0,
+11.6.2,data_w_b_null_d16,UM20 §8.2.2 ord33,16,2,0,0,UM30 §11.6.2 ord44,14,2,0,0,r1_match,14,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord46.
+11.6.2,data_l_b_null_d16,UM20 §8.2.2 ord34,18,2,0,0,UM30 §11.6.2 ord45,16,2,0,0,r1_match,16,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord47.
+11.6.2,data_w_b_idx_d16,UM20 §8.2.2 ord33,16,2,0,0,UM30 §11.6.2 ord46,14,2,0,0,r1_match,14,0,
+11.6.2,data_l_b_idx_d16,UM20 §8.2.2 ord34,18,2,0,0,UM30 §11.6.2 ord47,16,2,0,0,r1_match,16,0,
+11.6.2,data_w_b_null_d32,UM20 §8.2.2 ord35,16,2,0,0,UM30 §11.6.2 ord48,14,2,0,0,r1_match,14,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord50.
+11.6.2,data_l_b_null_d32,UM20 §8.2.2 ord36,18,2,0,0,UM30 §11.6.2 ord49,16,2,0,0,r1_match,16,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord51.
+11.6.2,data_w_b_idx_d32,UM20 §8.2.2 ord35,16,2,0,0,UM30 §11.6.2 ord50,14,2,0,0,r1_match,14,0,
+11.6.2,data_l_b_idx_d32,UM20 §8.2.2 ord36,18,2,0,0,UM30 §11.6.2 ord51,16,2,0,0,r1_match,16,0,
+11.6.2,data_w_d16b_null_noouter,UM20 §8.2.2 ord37,16,2,0,0,UM30 §11.6.2 ord52,14,2,0,0,r1_match,14,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord54.
+11.6.2,data_l_d16b_null_noouter,UM20 §8.2.2 ord38,18,2,0,0,UM30 §11.6.2 ord53,16,2,0,0,r1_match,16,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord55.
+11.6.2,data_w_d16b_idx_noouter,UM20 §8.2.2 ord37,16,2,0,0,UM30 §11.6.2 ord54,14,2,0,0,r1_match,14,0,
+11.6.2,data_l_d16b_idx_noouter,UM20 §8.2.2 ord38,18,2,0,0,UM30 §11.6.2 ord55,16,2,0,0,r1_match,16,0,
+11.6.2,data_w_d16b_null_d16,UM20 §8.2.2 ord39,18,2,0,0,UM30 §11.6.2 ord56,16,2,0,0,r1_match,16,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord58.
+11.6.2,data_l_d16b_null_d16,UM20 §8.2.2 ord40,20,2,0,0,UM30 §11.6.2 ord57,18,2,0,0,r1_match,18,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord59.
+11.6.2,data_w_d16b_idx_d16,UM20 §8.2.2 ord39,18,2,0,0,UM30 §11.6.2 ord58,16,2,0,0,r1_match,16,0,
+11.6.2,data_l_d16b_idx_d16,UM20 §8.2.2 ord40,20,2,0,0,UM30 §11.6.2 ord59,18,2,0,0,r1_match,18,0,
+11.6.2,data_w_d16b_null_d32,,,,,,UM30 §11.6.2 ord60,16,2,0,0,um30_only,,,UM20 §8.2.2's ([d16,B],I,*) run skips directly from d16 outer displacement to ([d32,B],I); the bd=d16/od=d32 combination this row represents is absent from the printed UM20 table.
+11.6.2,data_l_d16b_null_d32,,,,,,UM30 §11.6.2 ord61,18,2,0,0,um30_only,,,UM20 §8.2.2's ([d16,B],I,*) run skips directly from d16 outer displacement to ([d32,B],I); the bd=d16/od=d32 combination this row represents is absent from the printed UM20 table.
+11.6.2,data_w_d16b_idx_d32,,,,,,UM30 §11.6.2 ord62,16,2,0,0,um30_only,,,See ord60/61.
+11.6.2,data_l_d16b_idx_d32,,,,,,UM30 §11.6.2 ord63,18,2,0,0,um30_only,,,See ord60/61.
+11.6.2,data_w_d32b_null_noouter,UM20 §8.2.2 ord41,20,2,0,0,UM30 §11.6.2 ord64,18,2,0,0,r1_match,18,0,
+11.6.2,data_l_d32b_null_noouter,UM20 §8.2.2 ord42,22,2,0,0,UM30 §11.6.2 ord65,20,2,0,0,r1_match,20,0,
+11.6.2,data_w_d32b_idx_noouter,UM20 §8.2.2 ord41,20,2,0,0,UM30 §11.6.2 ord66,18,2,0,0,r1_match,18,0,
+11.6.2,data_l_d32b_idx_noouter,UM20 §8.2.2 ord42,22,2,0,0,UM30 §11.6.2 ord67,20,2,0,0,r1_match,20,0,
+11.6.2,data_w_d32b_null_d16,UM20 §8.2.2 ord43,22,2,0,0,UM30 §11.6.2 ord68,20,2,0,0,r1_match,20,0,
+11.6.2,data_l_d32b_null_d16,UM20 §8.2.2 ord44,24,2,0,0,UM30 §11.6.2 ord69,22,2,0,0,r1_match,22,0,
+11.6.2,data_w_d32b_idx_d16,UM20 §8.2.2 ord43,22,2,0,0,UM30 §11.6.2 ord70,20,2,0,0,r1_match,20,0,
+11.6.2,data_l_d32b_idx_d16,UM20 §8.2.2 ord44,24,2,0,0,UM30 §11.6.2 ord71,22,2,0,0,r1_match,22,0,
+11.6.2,data_w_d32b_null_d32,UM20 §8.2.2 ord45,22,2,0,0,UM30 §11.6.2 ord72,20,2,0,0,r1_match,20,0,
+11.6.2,data_l_d32b_null_d32,UM20 §8.2.2 ord46,24,2,0,0,UM30 §11.6.2 ord73,22,2,0,0,r1_match,22,0,
+11.6.2,data_w_d32b_idx_d32,UM20 §8.2.2 ord45,22,2,0,0,UM30 §11.6.2 ord74,20,2,0,0,r1_match,20,0,
+11.6.2,data_l_d32b_idx_d32,UM20 §8.2.2 ord46,24,2,0,0,UM30 §11.6.2 ord75,22,2,0,0,r1_match,22,0,
+11.6.2,data_w_data_bw_dest,UM20 §8.2.2 ord15,4,0,0,0,,,,,,um20_only,,,UM30 §11.6.2 has no counterpart for an immediate byte/word destination form; only the #(data).W,#(data).L row (ord17) is tabulated (see ord15 of this table).
+11.6.2,data_l_data_bw_dest,UM20 §8.2.2 ord16,6,0,0,0,,,,,,um20_only,,,See data_w_data_bw_dest.
+11.6.2,data_l_data_l_dest,UM20 §8.2.2 ord18,8,0,0,0,,,,,,um20_only,,,UM30 §11.6.2 has no #(data).L,#(data).L row; only the W,L form (ord15) is tabulated.
+11.6.4,data_w_dn,UM20 §8.2.4 ord1,2,0,0,0,UM30 §11.6.4 ord1,2,0,0,0,inherit,2,0,
+11.6.4,data_l_dn,UM20 §8.2.4 ord2,4,0,0,0,UM30 §11.6.4 ord2,4,0,0,0,inherit,4,0,
+11.6.4,data_w_an_ind,UM20 §8.2.4 ord3,2,0,0,0,UM30 §11.6.4 ord3,2,0,0,0,inherit,2,0,
+11.6.4,data_l_an_ind,UM20 §8.2.4 ord4,4,0,0,0,UM30 §11.6.4 ord4,4,0,0,0,inherit,4,0,
+11.6.4,data_w_an_postinc,UM20 §8.2.4 ord5,4,0,0,0,UM30 §11.6.4 ord5,4,0,0,0,inherit,4,0,
+11.6.4,data_l_an_postinc,UM20 §8.2.4 ord6,6,0,0,0,UM30 §11.6.4 ord6,6,0,0,0,inherit,6,0,
+11.6.4,data_w_an_predec,UM20 §8.2.4 ord7,4,0,0,0,UM30 §11.6.4 ord7,2,0,0,0,r1_mismatch,4,-2,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.4,data_l_an_predec,UM20 §8.2.4 ord8,6,0,0,0,UM30 §11.6.4 ord8,4,0,0,0,r1_mismatch,6,-2,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.4,data_w_d16_an,UM20 §8.2.4 ord9,4,0,0,0,UM30 §11.6.4 ord9,4,0,0,0,inherit,4,0,
+11.6.4,data_l_d16_an,UM20 §8.2.4 ord10,6,0,0,0,UM30 §11.6.4 ord10,6,0,0,0,inherit,6,0,
+11.6.4,data_w_xxx_w,UM20 §8.2.4 ord11,4,0,0,0,UM30 §11.6.4 ord11,4,0,0,0,inherit,4,0,
+11.6.4,data_l_xxx_w,UM20 §8.2.4 ord12,8,0,0,0,UM30 §11.6.4 ord12,6,0,0,0,r1_mismatch,8,-2,UM20 Cache Case and UM30 I-Cache Case differ after r+w removal.
+11.6.4,data_w_xxx_l,UM20 §8.2.4 ord13,6,0,0,0,UM30 §11.6.4 ord13,6,0,0,0,inherit,6,0,
+11.6.4,data_l_xxx_l,UM20 §8.2.4 ord14,8,0,0,0,UM30 §11.6.4 ord14,8,0,0,0,inherit,8,0,
+11.6.4,data_w_d8_an_xn,UM20 §8.2.4 ord13,6,0,0,0,UM30 §11.6.4 ord15,6,0,0,0,inherit,6,0,
+11.6.4,data_l_d8_an_xn,UM20 §8.2.4 ord14,8,0,0,0,UM30 §11.6.4 ord16,8,0,0,0,inherit,8,0,
+11.6.4,data_w_full_null_an_pc,UM20 §8.2.4 ord15,8,0,0,0,UM30 §11.6.4 ord17,8,0,0,0,inherit,8,0,
+11.6.4,data_l_full_null_an_pc,UM20 §8.2.4 ord16,10,0,0,0,UM30 §11.6.4 ord18,10,0,0,0,inherit,10,0,
+11.6.4,data_w_full_idx_an_pc,UM20 §8.2.4 ord15,8,0,0,0,UM30 §11.6.4 ord19,8,0,0,0,inherit,8,0,
+11.6.4,data_l_full_idx_an_pc,UM20 §8.2.4 ord16,10,0,0,0,UM30 §11.6.4 ord20,10,0,0,0,inherit,10,0,
+11.6.4,data_w_preidx_an_pc_null_noouter,,,,,,UM30 §11.6.4 ord21,12,1,0,0,um30_only,,,UM30 separately tabulates memory-indirect addressing with an explicit An/PC base distinct from the generalized (B) family at ord33 onward; UM20 §8.2.4 has no matching row at this granularity -- only the generalized (B) family (base = 0/An/PC/Xn/An+Xn/PC+Xn) -- matching the same pattern in UM20 §8.2.2/UM30 §11.6.2.
+11.6.4,data_l_preidx_an_pc_null_noouter,,,,,,UM30 §11.6.4 ord22,14,1,0,0,um30_only,,,See ord21.
+11.6.4,data_w_preidx_an_pc_idx_noouter,,,,,,UM30 §11.6.4 ord23,12,1,0,0,um30_only,,,See ord21.
+11.6.4,data_l_preidx_an_pc_idx_noouter,,,,,,UM30 §11.6.4 ord24,14,1,0,0,um30_only,,,See ord21.
+11.6.4,data_w_preidx_an_pc_null_d16,,,,,,UM30 §11.6.4 ord25,14,1,0,0,um30_only,,,See ord21.
+11.6.4,data_l_preidx_an_pc_null_d16,,,,,,UM30 §11.6.4 ord26,16,1,0,0,um30_only,,,See ord21.
+11.6.4,data_w_preidx_an_pc_idx_d16,,,,,,UM30 §11.6.4 ord27,14,1,0,0,um30_only,,,See ord21.
+11.6.4,data_l_preidx_an_pc_idx_d16,,,,,,UM30 §11.6.4 ord28,16,1,0,0,um30_only,,,See ord21.
+11.6.4,data_w_preidx_an_pc_null_d32,,,,,,UM30 §11.6.4 ord29,14,1,0,0,um30_only,,,See ord21.
+11.6.4,data_l_preidx_an_pc_null_d32,,,,,,UM30 §11.6.4 ord30,16,1,0,0,um30_only,,,See ord21.
+11.6.4,data_w_preidx_an_pc_idx_d32,,,,,,UM30 §11.6.4 ord31,14,1,0,0,um30_only,,,See ord21.
+11.6.4,data_l_preidx_an_pc_idx_d32,,,,,,UM30 §11.6.4 ord32,16,1,0,0,um30_only,,,See ord21.
+11.6.4,data_w_b,UM20 §8.2.4 ord17,8,0,0,0,UM30 §11.6.4 ord33,8,0,0,0,inherit,8,0,
+11.6.4,data_l_b,UM20 §8.2.4 ord18,10,0,0,0,UM30 §11.6.4 ord34,10,0,0,0,inherit,10,0,
+11.6.4,data_w_d16_b,UM20 §8.2.4 ord21,10,0,0,0,UM30 §11.6.4 ord35,10,0,0,0,inherit,10,0,
+11.6.4,data_l_d16_b,UM20 §8.2.4 ord22,12,0,0,0,UM30 §11.6.4 ord36,12,0,0,0,inherit,12,0,
+11.6.4,data_w_d32_b,UM20 §8.2.4 ord23,14,0,0,0,UM30 §11.6.4 ord37,14,0,0,0,inherit,14,0,
+11.6.4,data_l_d32_b,UM20 §8.2.4 ord24,16,0,0,0,UM30 §11.6.4 ord38,16,0,0,0,inherit,16,0,
+11.6.4,data_w_b_null_noouter,UM20 §8.2.4 ord25,13,1,0,0,UM30 §11.6.4 ord39,12,1,0,0,r1_match,12,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord41.
+11.6.4,data_l_b_null_noouter,UM20 §8.2.4 ord26,15,1,0,0,UM30 §11.6.4 ord40,14,1,0,0,r1_match,14,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord42.
+11.6.4,data_w_b_idx_noouter,UM20 §8.2.4 ord25,13,1,0,0,UM30 §11.6.4 ord41,12,1,0,0,r1_match,12,0,
+11.6.4,data_l_b_idx_noouter,UM20 §8.2.4 ord26,15,1,0,0,UM30 §11.6.4 ord42,14,1,0,0,r1_match,14,0,
+11.6.4,data_w_b_null_d16,UM20 §8.2.4 ord27,15,1,0,0,UM30 §11.6.4 ord43,14,1,0,0,r1_match,14,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord45.
+11.6.4,data_l_b_null_d16,UM20 §8.2.4 ord28,17,1,0,0,UM30 §11.6.4 ord44,16,1,0,0,r1_match,16,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord46.
+11.6.4,data_w_b_idx_d16,UM20 §8.2.4 ord27,15,1,0,0,UM30 §11.6.4 ord45,14,1,0,0,r1_match,14,0,
+11.6.4,data_l_b_idx_d16,UM20 §8.2.4 ord28,17,1,0,0,UM30 §11.6.4 ord46,16,2,0,0,r1_match,16,0,
+11.6.4,data_w_b_null_d32,UM20 §8.2.4 ord29,15,1,0,0,UM30 §11.6.4 ord47,14,1,0,0,r1_match,14,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord49.
+11.6.4,data_l_b_null_d32,UM20 §8.2.4 ord30,17,1,0,0,UM30 §11.6.4 ord48,16,1,0,0,r1_match,16,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord50. UM20 §8.2.4 prints this row label using the d16-base form ([d16;B];I;d32) instead of the base-0 form ([B];I;d32); recorded as printed and treated as the L pair by column position and value continuity.
+11.6.4,data_w_b_idx_d32,UM20 §8.2.4 ord29,15,1,0,0,UM30 §11.6.4 ord49,14,1,0,0,r1_match,14,0,
+11.6.4,data_l_b_idx_d32,UM20 §8.2.4 ord30,17,1,0,0,UM30 §11.6.4 ord50,16,1,0,0,r1_match,16,0,
+11.6.4,data_w_d16b_null_noouter,UM20 §8.2.4 ord31,15,1,0,0,UM30 §11.6.4 ord51,14,1,0,0,r1_match,14,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord53.
+11.6.4,data_l_d16b_null_noouter,UM20 §8.2.4 ord32,17,1,0,0,UM30 §11.6.4 ord52,16,1,0,0,r1_match,16,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord54.
+11.6.4,data_w_d16b_idx_noouter,UM20 §8.2.4 ord31,15,1,0,0,UM30 §11.6.4 ord53,14,1,0,0,r1_match,14,0,
+11.6.4,data_l_d16b_idx_noouter,UM20 §8.2.4 ord32,17,1,0,0,UM30 §11.6.4 ord54,16,1,0,0,r1_match,16,0,
+11.6.4,data_w_d16b_null_d16,UM20 §8.2.4 ord33,17,1,0,0,UM30 §11.6.4 ord55,16,1,0,0,r1_match,16,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord57.
+11.6.4,data_l_d16b_null_d16,UM20 §8.2.4 ord34,19,1,0,0,UM30 §11.6.4 ord56,18,1,0,0,r1_match,18,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord58.
+11.6.4,data_w_d16b_idx_d16,UM20 §8.2.4 ord33,17,1,0,0,UM30 §11.6.4 ord57,16,1,0,0,r1_match,16,0,
+11.6.4,data_l_d16b_idx_d16,UM20 §8.2.4 ord34,19,1,0,0,UM30 §11.6.4 ord58,18,1,0,0,r1_match,18,0,
+11.6.4,data_w_d16b_null_d32,UM20 §8.2.4 ord35,17,1,0,0,UM30 §11.6.4 ord59,16,1,0,0,r1_match,16,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord61. UM20 §8.2.4 prints this row label without a W/L prefix; recorded as printed and treated as the W row by column position.
+11.6.4,data_l_d16b_null_d32,UM20 §8.2.4 ord36,19,1,0,0,UM30 §11.6.4 ord60,18,1,0,0,r1_match,18,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord62. UM20 §8.2.4 prints this row label without a W/L prefix; recorded as printed and treated as the L row by column position.
+11.6.4,data_w_d16b_idx_d32,UM20 §8.2.4 ord35,17,1,0,0,UM30 §11.6.4 ord61,16,1,0,0,r1_match,16,0,
+11.6.4,data_l_d16b_idx_d32,UM20 §8.2.4 ord36,19,1,0,0,UM30 §11.6.4 ord62,18,1,0,0,r1_match,18,0,
+11.6.4,data_w_d32b_null_noouter,UM20 §8.2.4 ord37,19,1,0,0,UM30 §11.6.4 ord63,18,1,0,0,r1_match,18,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord65.
+11.6.4,data_l_d32b_null_noouter,UM20 §8.2.4 ord38,21,1,0,0,UM30 §11.6.4 ord64,20,1,0,0,r1_match,20,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord66.
+11.6.4,data_w_d32b_idx_noouter,UM20 §8.2.4 ord37,19,1,0,0,UM30 §11.6.4 ord65,18,1,0,0,r1_match,18,0,
+11.6.4,data_l_d32b_idx_noouter,UM20 §8.2.4 ord38,21,1,0,0,UM30 §11.6.4 ord66,20,1,0,0,r1_match,20,0,
+11.6.4,data_w_d32b_null_d16,UM20 §8.2.4 ord39,21,1,0,0,UM30 §11.6.4 ord67,20,1,0,0,r1_match,20,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord69.
+11.6.4,data_l_d32b_null_d16,UM20 §8.2.4 ord40,23,1,0,0,UM30 §11.6.4 ord68,22,1,0,0,r1_match,22,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord70.
+11.6.4,data_w_d32b_idx_d16,UM20 §8.2.4 ord39,21,1,0,0,UM30 §11.6.4 ord69,20,1,0,0,r1_match,20,0,
+11.6.4,data_l_d32b_idx_d16,UM20 §8.2.4 ord40,23,1,0,0,UM30 §11.6.4 ord70,22,1,0,0,r1_match,22,0,
+11.6.4,data_w_d32b_null_d32,UM20 §8.2.4 ord41,21,1,0,0,UM30 §11.6.4 ord71,20,1,0,0,r1_match,20,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord73.
+11.6.4,data_l_d32b_null_d32,UM20 §8.2.4 ord42,23,1,0,0,UM30 §11.6.4 ord72,22,1,0,0,r1_match,22,0,UM20 has no index-suppressed alias column; the indexed column covers both; see ord74.
+11.6.4,data_w_d32b_idx_d32,UM20 §8.2.4 ord41,21,1,0,0,UM30 §11.6.4 ord73,20,1,0,0,r1_match,20,0,
+11.6.4,data_l_d32b_idx_d32,UM20 §8.2.4 ord42,23,1,0,0,UM30 §11.6.4 ord74,22,1,0,0,r1_match,22,0,

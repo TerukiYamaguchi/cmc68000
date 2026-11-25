@@ -1,0 +1,129 @@
+opmode,name,class,source
+$00,FMOVE,impl,881UM Table 4-13; UM Table E-1
+$01,FINT,unimpl,881UM Table 4-13; UM Table 9-10
+$02,FSINH,unimpl,881UM Table 4-13; UM Table 9-10
+$03,FINTRZ,unimpl,881UM Table 4-13; UM Table 9-10
+$04,FSQRT,impl,881UM Table 4-13; UM Table E-1
+$05,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$06,FLOGNP1,unimpl,881UM Table 4-13; UM Table 9-10
+$07,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$08,FETOXM1,unimpl,881UM Table 4-13; UM Table 9-10
+$09,FTANH,unimpl,881UM Table 4-13; UM Table 9-10
+$0A,FATAN,unimpl,881UM Table 4-13; UM Table 9-10
+$0B,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$0C,FASIN,unimpl,881UM Table 4-13; UM Table 9-10
+$0D,FATANH,unimpl,881UM Table 4-13; UM Table 9-10
+$0E,FSIN,unimpl,881UM Table 4-13; UM Table 9-10
+$0F,FTAN,unimpl,881UM Table 4-13; UM Table 9-10
+$10,FETOX,unimpl,881UM Table 4-13; UM Table 9-10
+$11,FTWOTOX,unimpl,881UM Table 4-13; UM Table 9-10
+$12,FTENTOX,unimpl,881UM Table 4-13; UM Table 9-10
+$13,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$14,FLOGN,unimpl,881UM Table 4-13; UM Table 9-10
+$15,FLOG10,unimpl,881UM Table 4-13; UM Table 9-10
+$16,FLOG2,unimpl,881UM Table 4-13; UM Table E-2（FPSP が実装。Table 9-10 に無い）
+$17,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$18,FABS,impl,881UM Table 4-13; UM Table E-1
+$19,FCOSH,unimpl,881UM Table 4-13; UM Table 9-10
+$1A,FNEG,impl,881UM Table 4-13; UM Table E-1
+$1B,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$1C,FACOS,unimpl,881UM Table 4-13; UM Table 9-10
+$1D,FCOS,unimpl,881UM Table 4-13; UM Table 9-10
+$1E,FGETEXP,unimpl,881UM Table 4-13; UM Table 9-10
+$1F,FGETMAN,unimpl,881UM Table 4-13; UM Table 9-10
+$20,FDIV,impl,881UM Table 4-13; UM Table E-1
+$21,FMOD,unimpl,881UM Table 4-13; UM Table 9-10
+$22,FADD,impl,881UM Table 4-13; UM Table E-1
+$23,FMUL,impl,881UM Table 4-13; UM Table E-1
+$24,FSGLDIV,impl,881UM Table 4-13; UM Table E-1
+$25,FREM,unimpl,881UM Table 4-13; UM Table 9-10
+$26,FSCALE,unimpl,881UM Table 4-13; UM Table 9-10
+$27,FSGLMUL,impl,881UM Table 4-13; UM Table E-1
+$28,FSUB,impl,881UM Table 4-13; UM Table E-1
+$29,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$2A,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$2B,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$2C,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$2D,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$2E,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$2F,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$30,FSINCOS,unimpl,881UM Table 4-13; UM Table 9-10
+$31,FSINCOS,unimpl,881UM Table 4-13; UM Table 9-10
+$32,FSINCOS,unimpl,881UM Table 4-13; UM Table 9-10
+$33,FSINCOS,unimpl,881UM Table 4-13; UM Table 9-10
+$34,FSINCOS,unimpl,881UM Table 4-13; UM Table 9-10
+$35,FSINCOS,unimpl,881UM Table 4-13; UM Table 9-10
+$36,FSINCOS,unimpl,881UM Table 4-13; UM Table 9-10
+$37,FSINCOS,unimpl,881UM Table 4-13; UM Table 9-10
+$38,FCMP,impl,881UM Table 4-13; UM Table E-1
+$39,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$3A,FTST,impl,881UM Table 4-13; UM Table E-1
+$3B,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$3C,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$3D,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$3E,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$3F,,illegal,881UM Table 4-13 Note 3（冗長エンコード。040 では F-line）
+$40,FSMOVE,impl,PRM 各命令頁の opmode 表（強制精度命令）; UM Table E-1
+$41,FSSQRT,impl,PRM 各命令頁の opmode 表（強制精度命令）; UM Table E-1
+$42,,illegal,881UM Table 4-13（未定義・予約）
+$43,,illegal,881UM Table 4-13（未定義・予約）
+$44,FDMOVE,impl,PRM 各命令頁の opmode 表（強制精度命令）; UM Table E-1
+$45,FDSQRT,impl,PRM 各命令頁の opmode 表（強制精度命令）; UM Table E-1
+$46,,illegal,881UM Table 4-13（未定義・予約）
+$47,,illegal,881UM Table 4-13（未定義・予約）
+$48,,illegal,881UM Table 4-13（未定義・予約）
+$49,,illegal,881UM Table 4-13（未定義・予約）
+$4A,,illegal,881UM Table 4-13（未定義・予約）
+$4B,,illegal,881UM Table 4-13（未定義・予約）
+$4C,,illegal,881UM Table 4-13（未定義・予約）
+$4D,,illegal,881UM Table 4-13（未定義・予約）
+$4E,,illegal,881UM Table 4-13（未定義・予約）
+$4F,,illegal,881UM Table 4-13（未定義・予約）
+$50,,illegal,881UM Table 4-13（未定義・予約）
+$51,,illegal,881UM Table 4-13（未定義・予約）
+$52,,illegal,881UM Table 4-13（未定義・予約）
+$53,,illegal,881UM Table 4-13（未定義・予約）
+$54,,illegal,881UM Table 4-13（未定義・予約）
+$55,,illegal,881UM Table 4-13（未定義・予約）
+$56,,illegal,881UM Table 4-13（未定義・予約）
+$57,,illegal,881UM Table 4-13（未定義・予約）
+$58,FSABS,impl,PRM 各命令頁の opmode 表（強制精度命令）; UM Table E-1
+$59,,illegal,881UM Table 4-13（未定義・予約）
+$5A,FSNEG,impl,PRM 各命令頁の opmode 表（強制精度命令）; UM Table E-1
+$5B,,illegal,881UM Table 4-13（未定義・予約）
+$5C,FDABS,impl,PRM 各命令頁の opmode 表（強制精度命令）; UM Table E-1
+$5D,,illegal,881UM Table 4-13（未定義・予約）
+$5E,FDNEG,impl,PRM 各命令頁の opmode 表（強制精度命令）; UM Table E-1
+$5F,,illegal,881UM Table 4-13（未定義・予約）
+$60,FSDIV,impl,PRM 各命令頁の opmode 表（強制精度命令）; UM Table E-1
+$61,,illegal,881UM Table 4-13（未定義・予約）
+$62,FSADD,impl,PRM 各命令頁の opmode 表（強制精度命令）; UM Table E-1
+$63,FSMUL,impl,PRM 各命令頁の opmode 表（強制精度命令）; UM Table E-1
+$64,FDDIV,impl,PRM 各命令頁の opmode 表（強制精度命令）; UM Table E-1
+$65,,illegal,881UM Table 4-13（未定義・予約）
+$66,FDADD,impl,PRM 各命令頁の opmode 表（強制精度命令）; UM Table E-1
+$67,FDMUL,impl,PRM 各命令頁の opmode 表（強制精度命令）; UM Table E-1
+$68,FSSUB,impl,PRM 各命令頁の opmode 表（強制精度命令）; UM Table E-1
+$69,,illegal,881UM Table 4-13（未定義・予約）
+$6A,,illegal,881UM Table 4-13（未定義・予約）
+$6B,,illegal,881UM Table 4-13（未定義・予約）
+$6C,FDSUB,impl,PRM 各命令頁の opmode 表（強制精度命令）; UM Table E-1
+$6D,,illegal,881UM Table 4-13（未定義・予約）
+$6E,,illegal,881UM Table 4-13（未定義・予約）
+$6F,,illegal,881UM Table 4-13（未定義・予約）
+$70,,illegal,881UM Table 4-13（未定義・予約）
+$71,,illegal,881UM Table 4-13（未定義・予約）
+$72,,illegal,881UM Table 4-13（未定義・予約）
+$73,,illegal,881UM Table 4-13（未定義・予約）
+$74,,illegal,881UM Table 4-13（未定義・予約）
+$75,,illegal,881UM Table 4-13（未定義・予約）
+$76,,illegal,881UM Table 4-13（未定義・予約）
+$77,,illegal,881UM Table 4-13（未定義・予約）
+$78,,illegal,881UM Table 4-13（未定義・予約）
+$79,,illegal,881UM Table 4-13（未定義・予約）
+$7A,,illegal,881UM Table 4-13（未定義・予約）
+$7B,,illegal,881UM Table 4-13（未定義・予約）
+$7C,,illegal,881UM Table 4-13（未定義・予約）
+$7D,,illegal,881UM Table 4-13（未定義・予約）
+$7E,,illegal,881UM Table 4-13（未定義・予約）
+$7F,,illegal,881UM Table 4-13（未定義・予約）

@@ -1,0 +1,18 @@
+instruction,cmdreg1b_opmode,cmdreg3b_cmd,precision_bits_6_5,source
+FADD,$22,$12,00,gen_except.sa 写像
+FSUB,$28,$14,00,gen_except.sa 写像
+FMUL,$23,$13,00,gen_except.sa 写像
+FDIV,$20,$10,00,gen_except.sa 写像
+FSQRT,$05,$21,01,UM §9.8 CMDREG3B（$21）と一致
+FSGLMUL,$27,$33,01,util.sa/x_unfl.sa が $33 を FSGLMUL と判定（UM 無記載）
+FSGLDIV,$24,$30,01,util.sa/x_unfl.sa が $30 を FSGLDIV と判定
+FSADD,$62,$52,10,util.sa unf_e3_exc（bits 6-5 = 10: 強制 single）
+FSSUB,$68,$54,10,同上
+FSMUL,$63,$53,10,同上
+FSDIV,$60,$50,10,同上
+FSSQRT,$41,$41,10,同上
+FDADD,$66,$72,11,util.sa unf_e3_exc（bits 6-5 = 11: 強制 double）
+FDSUB,$6C,$74,11,同上
+FDMUL,$67,$73,11,同上
+FDDIV,$64,$70,11,同上
+FDSQRT,$45,$61,11,同上

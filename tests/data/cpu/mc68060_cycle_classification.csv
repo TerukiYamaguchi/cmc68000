@@ -1,0 +1,194 @@
+table,instruction,condition,disposition,implementation,source,notes
+10-1,Superscalar,OEP dispatch test algorithm,out-of-scope,none,060UM Table 10-1,reason=dual issue and the dispatch test are excluded from the single-instruction base time; actual=each instruction is timed alone
+10-2,Superscalar,superscalar classification,out-of-scope,none,060UM Table 10-2,reason=dual issue and the dispatch test are excluded from the single-instruction base time; actual=each instruction is timed alone
+10-3,Superscalar,superscalar classification of privileged instructions,out-of-scope,none,060UM Table 10-3,reason=dual issue and the dispatch test are excluded from the single-instruction base time; actual=each instruction is timed alone
+10-4,Superscalar,superscalar classification of floating-point instructions,out-of-scope,none,060UM Table 10-4,reason=dual issue and the dispatch test are excluded from the single-instruction base time; actual=each instruction is timed alone
+10-5,EA calculation,*,override,ea_helpers.c:full_ext_ea,060UM Table 10-5,time from the 060UM table; no 040-or-earlier row is used
+10-6,MOVE.B/W,*,override,timing_060.c:cyc060_move,060UM Table 10-6,time from the 060UM table; no 040-or-earlier row is used
+10-7,MOVE.L,*,override,timing_060.c:cyc060_move,060UM Table 10-7,time from the 060UM table; no 040-or-earlier row is used
+10-8,MOVE16,*,override,timing_060.c:cyc060_linef,060UM Table 10-8,time from the 060UM table; no 040-or-earlier row is used
+10-9,ADD,*,override,timing_060.c:cyc060_group8_d,060UM Table 10-9,time from the 060UM table; no 040-or-earlier row is used
+10-9,AND,*,override,timing_060.c:cyc060_groupc,060UM Table 10-9,time from the 060UM table; no 040-or-earlier row is used
+10-9,CMP,*,override,timing_060.c:cyc060_groupb,060UM Table 10-9,time from the 060UM table; no 040-or-earlier row is used
+10-9,DIVS,*,override,timing_060.c:cyc060_group8_d/cyc060_group4,060UM Table 10-9,time from the 060UM table; no 040-or-earlier row is used
+10-9,DIVU,*,override,timing_060.c:cyc060_group8_d/cyc060_group4,060UM Table 10-9,time from the 060UM table; no 040-or-earlier row is used
+10-9,EOR,*,override,timing_060.c:cyc060_groupb,060UM Table 10-9,time from the 060UM table; no 040-or-earlier row is used
+10-9,MULS,*,override,timing_060.c:cyc060_groupc/cyc060_group4,060UM Table 10-9,time from the 060UM table; no 040-or-earlier row is used
+10-9,MULU,*,override,timing_060.c:cyc060_groupc/cyc060_group4,060UM Table 10-9,time from the 060UM table; no 040-or-earlier row is used
+10-9,OR,*,override,timing_060.c:cyc060_group8_d,060UM Table 10-9,time from the 060UM table; no 040-or-earlier row is used
+10-9,SUB,*,override,timing_060.c:cyc060_group8_d,060UM Table 10-9,time from the 060UM table; no 040-or-earlier row is used
+10-10,ADDI,*,override,timing_060.c:cyc060_group0/cyc060_group5/cyc060_instruction_raw,060UM Table 10-10,time from the 060UM table; no 040-or-earlier row is used
+10-10,ANDI,*,override,timing_060.c:cyc060_group0/cyc060_group5/cyc060_instruction_raw,060UM Table 10-10,time from the 060UM table; no 040-or-earlier row is used
+10-10,CMPI,*,override,timing_060.c:cyc060_group0/cyc060_group5/cyc060_instruction_raw,060UM Table 10-10,time from the 060UM table; no 040-or-earlier row is used
+10-10,EORI,*,override,timing_060.c:cyc060_group0/cyc060_group5/cyc060_instruction_raw,060UM Table 10-10,time from the 060UM table; no 040-or-earlier row is used
+10-10,ORI,*,override,timing_060.c:cyc060_group0/cyc060_group5/cyc060_instruction_raw,060UM Table 10-10,time from the 060UM table; no 040-or-earlier row is used
+10-10,SUBI,*,override,timing_060.c:cyc060_group0/cyc060_group5/cyc060_instruction_raw,060UM Table 10-10,time from the 060UM table; no 040-or-earlier row is used
+10-10,ADDQ,*,override,timing_060.c:cyc060_group0/cyc060_group5/cyc060_instruction_raw,060UM Table 10-10,time from the 060UM table; no 040-or-earlier row is used
+10-10,SUBQ,*,override,timing_060.c:cyc060_group0/cyc060_group5/cyc060_instruction_raw,060UM Table 10-10,time from the 060UM table; no 040-or-earlier row is used
+10-10,MOVEQ,*,override,timing_060.c:cyc060_group0/cyc060_group5/cyc060_instruction_raw,060UM Table 10-10,time from the 060UM table; no 040-or-earlier row is used
+10-11,CAS,*,override,timing_060.c:cyc060_group0,060UM Table 10-11,time from the 060UM table; no 040-or-earlier row is used
+10-11,NBCD,*,override,timing_060.c:cyc060_group4,060UM Table 10-11,time from the 060UM table; no 040-or-earlier row is used
+10-11,NEG,*,override,timing_060.c:cyc060_group4,060UM Table 10-11,time from the 060UM table; no 040-or-earlier row is used
+10-11,NEGX,*,override,timing_060.c:cyc060_group4,060UM Table 10-11,time from the 060UM table; no 040-or-earlier row is used
+10-11,NOT,*,override,timing_060.c:cyc060_group4,060UM Table 10-11,time from the 060UM table; no 040-or-earlier row is used
+10-11,Scc,*,override,timing_060.c:cyc060_group5,060UM Table 10-11,time from the 060UM table; no 040-or-earlier row is used
+10-11,TAS,*,override,timing_060.c:cyc060_group4,060UM Table 10-11,time from the 060UM table; no 040-or-earlier row is used
+10-11,TST,*,override,timing_060.c:cyc060_group4,060UM Table 10-11,time from the 060UM table; no 040-or-earlier row is used
+10-12,CLR,*,override,timing_060.c:cyc060_group4,060UM Table 10-12,time from the 060UM table; no 040-or-earlier row is used
+10-13,ASL,*,override,timing_060.c:cyc060_groupe,060UM Table 10-13,time from the 060UM table; no 040-or-earlier row is used
+10-13,ASR,*,override,timing_060.c:cyc060_groupe,060UM Table 10-13,time from the 060UM table; no 040-or-earlier row is used
+10-13,LSL,*,override,timing_060.c:cyc060_groupe,060UM Table 10-13,time from the 060UM table; no 040-or-earlier row is used
+10-13,LSR,*,override,timing_060.c:cyc060_groupe,060UM Table 10-13,time from the 060UM table; no 040-or-earlier row is used
+10-13,ROL,*,override,timing_060.c:cyc060_groupe,060UM Table 10-13,time from the 060UM table; no 040-or-earlier row is used
+10-13,ROR,*,override,timing_060.c:cyc060_groupe,060UM Table 10-13,time from the 060UM table; no 040-or-earlier row is used
+10-13,ROXL,*,override,timing_060.c:cyc060_groupe,060UM Table 10-13,time from the 060UM table; no 040-or-earlier row is used
+10-13,ROXR,*,override,timing_060.c:cyc060_groupe,060UM Table 10-13,time from the 060UM table; no 040-or-earlier row is used
+10-14,BTST,*,override,timing_060.c:cyc060_group0,060UM Table 10-14,time from the 060UM table; no 040-or-earlier row is used
+10-15,BTST,*,override,timing_060.c:cyc060_group0,060UM Table 10-15,time from the 060UM table; no 040-or-earlier row is used
+10-14,BCHG,*,override,timing_060.c:cyc060_group0,060UM Table 10-14,time from the 060UM table; no 040-or-earlier row is used
+10-15,BCHG,*,override,timing_060.c:cyc060_group0,060UM Table 10-15,time from the 060UM table; no 040-or-earlier row is used
+10-14,BCLR,*,override,timing_060.c:cyc060_group0,060UM Table 10-14,time from the 060UM table; no 040-or-earlier row is used
+10-15,BCLR,*,override,timing_060.c:cyc060_group0,060UM Table 10-15,time from the 060UM table; no 040-or-earlier row is used
+10-14,BSET,*,override,timing_060.c:cyc060_group0,060UM Table 10-14,time from the 060UM table; no 040-or-earlier row is used
+10-15,BSET,*,override,timing_060.c:cyc060_group0,060UM Table 10-15,time from the 060UM table; no 040-or-earlier row is used
+10-16,BFCHG,*,override,timing_060.c:cyc060_bitfield,060UM Table 10-16,time from the 060UM table; no 040-or-earlier row is used
+10-16,BFCLR,*,override,timing_060.c:cyc060_bitfield,060UM Table 10-16,time from the 060UM table; no 040-or-earlier row is used
+10-16,BFEXTS,*,override,timing_060.c:cyc060_bitfield,060UM Table 10-16,time from the 060UM table; no 040-or-earlier row is used
+10-16,BFEXTU,*,override,timing_060.c:cyc060_bitfield,060UM Table 10-16,time from the 060UM table; no 040-or-earlier row is used
+10-16,BFFFO,*,override,timing_060.c:cyc060_bitfield,060UM Table 10-16,time from the 060UM table; no 040-or-earlier row is used
+10-16,BFINS,*,override,timing_060.c:cyc060_bitfield,060UM Table 10-16,time from the 060UM table; no 040-or-earlier row is used
+10-16,BFSET,*,override,timing_060.c:cyc060_bitfield,060UM Table 10-16,time from the 060UM table; no 040-or-earlier row is used
+10-16,BFTST,*,override,timing_060.c:cyc060_bitfield,060UM Table 10-16,time from the 060UM table; no 040-or-earlier row is used
+10-17,Bcc,*,override,timing_060.c:branch_time/cyc060_bcc/cyc060_group5/cyc060_fpu,060UM Table 10-17,time from the 060UM table; no 040-or-earlier row is used
+10-17,Bcc,predicted correctly as not taken,out-of-scope,timing_060.c:branch_time/cyc060_bcc/cyc060_group5/cyc060_fpu,060UM Table 10-17,reason=the branch cache keeps no predicted-not-taken state; the model uses the static-prediction column instead; actual=static-prediction column
+10-17,BRA,*,override,timing_060.c:branch_time/cyc060_bcc/cyc060_group5/cyc060_fpu,060UM Table 10-17,time from the 060UM table; no 040-or-earlier row is used
+10-17,BSR,*,override,timing_060.c:branch_time/cyc060_bcc/cyc060_group5/cyc060_fpu,060UM Table 10-17,time from the 060UM table; no 040-or-earlier row is used
+10-17,DBcc,*,override,timing_060.c:branch_time/cyc060_bcc/cyc060_group5/cyc060_fpu,060UM Table 10-17,time from the 060UM table; no 040-or-earlier row is used
+10-17,DBcc,predicted correctly as not taken,out-of-scope,timing_060.c:branch_time/cyc060_bcc/cyc060_group5/cyc060_fpu,060UM Table 10-17,reason=the branch cache keeps no predicted-not-taken state; the model uses the static-prediction column instead; actual=static-prediction column
+10-17,DBRA,*,override,timing_060.c:branch_time/cyc060_bcc/cyc060_group5/cyc060_fpu,060UM Table 10-17,time from the 060UM table; no 040-or-earlier row is used
+10-17,DBRA,predicted correctly as not taken,out-of-scope,timing_060.c:branch_time/cyc060_bcc/cyc060_group5/cyc060_fpu,060UM Table 10-17,reason=the branch cache keeps no predicted-not-taken state; the model uses the static-prediction column instead; actual=static-prediction column
+10-17,FBcc,*,override,timing_060.c:branch_time/cyc060_bcc/cyc060_group5/cyc060_fpu,060UM Table 10-17,time from the 060UM table; no 040-or-earlier row is used
+10-17,FBcc,predicted correctly as not taken,out-of-scope,timing_060.c:branch_time/cyc060_bcc/cyc060_group5/cyc060_fpu,060UM Table 10-17,reason=the branch cache keeps no predicted-not-taken state; the model uses the static-prediction column instead; actual=static-prediction column
+10-18,JMP,*,override,timing_060.c:cyc060_jump,060UM Table 10-18,time from the 060UM table; no 040-or-earlier row is used
+10-18,JSR,*,override,timing_060.c:cyc060_jump,060UM Table 10-18,time from the 060UM table; no 040-or-earlier row is used
+10-19,RTD,*,override,timing_060.c:cyc060_group4,060UM Table 10-19,time from the 060UM table; no 040-or-earlier row is used
+10-19,RTE,*,override,timing_060.c:cyc060_group4,060UM Table 10-19,time from the 060UM table; no 040-or-earlier row is used
+10-19,RTR,*,override,timing_060.c:cyc060_group4,060UM Table 10-19,time from the 060UM table; no 040-or-earlier row is used
+10-19,RTS,*,override,timing_060.c:cyc060_group4,060UM Table 10-19,time from the 060UM table; no 040-or-earlier row is used
+10-20,LEA,*,override,timing_060.c:cyc060_group4/cyc060_movem,060UM Table 10-20,time from the 060UM table; no 040-or-earlier row is used
+10-20,PEA,*,override,timing_060.c:cyc060_group4/cyc060_movem,060UM Table 10-20,time from the 060UM table; no 040-or-earlier row is used
+10-20,MOVEM Mem->Reg,*,override,timing_060.c:cyc060_group4/cyc060_movem,060UM Table 10-20,time from the 060UM table; no 040-or-earlier row is used
+10-20,MOVEM Reg->Mem,*,override,timing_060.c:cyc060_group4/cyc060_movem,060UM Table 10-20,time from the 060UM table; no 040-or-earlier row is used
+10-21,ADDX,*,override,timing_060.c:cyc060_group8_d,060UM Table 10-21,time from the 060UM table; no 040-or-earlier row is used
+10-21,CMPM,*,override,timing_060.c:cyc060_groupb,060UM Table 10-21,time from the 060UM table; no 040-or-earlier row is used
+10-21,SUBX,*,override,timing_060.c:cyc060_group8_d,060UM Table 10-21,time from the 060UM table; no 040-or-earlier row is used
+10-21,ABCD,*,override,timing_060.c:cyc060_groupc,060UM Table 10-21,time from the 060UM table; no 040-or-earlier row is used
+10-21,SBCD,*,override,timing_060.c:cyc060_group8_d,060UM Table 10-21,time from the 060UM table; no 040-or-earlier row is used
+10-22,ANDI to SR,*,override,timing_060.c:cyc060_group0/cyc060_group4,060UM Table 10-22,time from the 060UM table; no 040-or-earlier row is used
+10-22,EORI to SR,*,override,timing_060.c:cyc060_group0/cyc060_group4,060UM Table 10-22,time from the 060UM table; no 040-or-earlier row is used
+10-22,ORI to SR,*,override,timing_060.c:cyc060_group0/cyc060_group4,060UM Table 10-22,time from the 060UM table; no 040-or-earlier row is used
+10-22,MOVE from SR,*,override,timing_060.c:cyc060_group0/cyc060_group4,060UM Table 10-22,time from the 060UM table; no 040-or-earlier row is used
+10-22,MOVE to SR,*,override,timing_060.c:cyc060_group0/cyc060_group4,060UM Table 10-22,time from the 060UM table; no 040-or-earlier row is used
+10-23,MOVES,*,override,timing_060.c:cyc060_group0,060UM Table 10-23,time from the 060UM table; no 040-or-earlier row is used
+10-24,ANDI to CCR,*,override,timing_060.c:cyc060_group0,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,EORI to CCR,*,override,timing_060.c:cyc060_group0,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,ORI to CCR,*,override,timing_060.c:cyc060_group0,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,CHK,*,override,timing_060.c:cyc060_group4,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,CINVA,*,override,timing_060.c:cyc060_linef/cyc060_cache_op,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,CINVL,*,override,timing_060.c:cyc060_linef/cyc060_cache_op,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,CINVP,*,override,timing_060.c:cyc060_linef/cyc060_cache_op,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,CPUSHA,*,override,timing_060.c:cyc060_linef/cyc060_cache_op,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,CPUSHL,*,override,timing_060.c:cyc060_linef/cyc060_cache_op,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,CPUSHP,*,override,timing_060.c:cyc060_linef/cyc060_cache_op,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,EXG,*,override,timing_060.c:cyc060_groupc,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,EXT,*,override,timing_060.c:cyc060_group4,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,EXTB,*,override,timing_060.c:cyc060_group4,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,SWAP,*,override,timing_060.c:cyc060_group4,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,LINK,*,override,timing_060.c:cyc060_group4,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,LPSTOP,*,override,timing_060.c:cyc060_linef/cyc060_cache_op,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,MOVE from CCR,*,override,timing_060.c:cyc060_group4,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,MOVE to CCR,*,override,timing_060.c:cyc060_group4,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,MOVE from USP,*,override,timing_060.c:cyc060_group4,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,MOVE to USP,*,override,timing_060.c:cyc060_group4,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,"MOVEC (SFC,DFC,USP,VBR,PCR)",*,override,timing_060.c:cyc060_movec,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,"MOVEC (CACR,TC,TTR,BUSCR,URP,SRP)",*,override,timing_060.c:cyc060_movec,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,NOP,*,override,timing_060.c:cyc060_group4,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,PACK,*,override,timing_060.c:cyc060_group8_d,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,UNPK,*,override,timing_060.c:cyc060_group8_d,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,PLPA,*,override,timing_060.c:cyc060_linef/cyc060_cache_op,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,PLPA,ATC miss,out-of-scope,timing_060.c:cyc060_linef/cyc060_cache_op,060UM Table 10-24,reason=ATC miss and the table search are excluded from the base instruction time; actual=15 (the ATC hit value)
+10-24,PFLUSH,*,override,timing_060.c:cyc060_linef/cyc060_cache_op,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,PFLUSHN,*,override,timing_060.c:cyc060_linef/cyc060_cache_op,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,PFLUSHAN,*,override,timing_060.c:cyc060_linef/cyc060_cache_op,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,PFLUSHA,*,override,timing_060.c:cyc060_linef/cyc060_cache_op,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,RESET,*,override,timing_060.c:cyc060_group4,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,STOP,*,override,timing_060.c:cyc060_group4,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,TRAPF,*,override,timing_060.c:cyc060_group4,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,TRAPcc,*,override,timing_060.c:cyc060_group5,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,TRAPV,*,override,timing_060.c:cyc060_group4,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-24,UNLK,*,override,timing_060.c:cyc060_group4,060UM Table 10-24,time from the 060UM table; no 040-or-earlier row is used
+10-25,FABS,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FDABS,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FSABS,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FADD,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FDADD,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FSADD,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FCMP,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FDIV,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FDDIV,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FSDIV,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FMOVE,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FDMOVE,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FSMOVE,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FINT,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FINTRZ,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FSGLDIV,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FSGLMUL,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FMUL,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FDMUL,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FSMUL,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FNEG,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FDNEG,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FSNEG,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FSUB,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FDSUB,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FSSUB,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FTST,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FSQRT,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FSSQRT,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FDSQRT,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,"FMOVE FPy,<ea>",*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,"FMOVE <ea>,FPCR",*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,"FMOVE FPCR,<ea>",*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,"FMOVEM <ea>,FPx",*,override,timing_060.c:cyc060_fpu/cyc060_fpu_movem,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,"FMOVEM FPy,<ea>",*,override,timing_060.c:cyc060_fpu/cyc060_fpu_movem,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FSAVE,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FRESTORE,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,"FMOVEM <ea>,FPxR",*,override,timing_060.c:cyc060_fpu/cyc060_fpu_movem,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,"FMOVEM FPxR,<ea>",*,override,timing_060.c:cyc060_fpu/cyc060_fpu_movem,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-25,FPU operand format,*,override,timing_060.c:cyc060_fpu/fpu_opmode_base/fpu_format_extra/fpu_ea_extra,060UM Table 10-25,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,CPU Reset,out-of-scope,none,060UM Table 10-26,reason=the time from RSTI negation to the first instruction entering the OEP is not an instruction path; actual=mc68k_reset() reports no cycles
+10-26,Exception,Bus Error,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,Address Error,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,Illegal Instruction,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,Integer Divide By Zero,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,CHK Instruction,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,"TRAPV, TRAPcc Instructions",override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,Privilege Violation,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,Trace,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,Line A Emulator,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,Line F Emulator,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,Unimplemented EA,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,Unimplemented Integer,unimplemented-vector-61,ops_68060.c:op_68060_unimplemented_integer,060UM Table 10-26,"MOVEP, CAS2, CHK2, CMP2 and the 64-bit MULx.L/DIVx.L take vector 61; the time is the exception time"
+10-26,Exception,Format Error,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,Nonsupported FP,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,Interrupt,override,timing_060.c:cyc060_interrupt,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,TRAP Instructions,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,FP Branch on Unordered Condition,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,FP Inexact Result,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,FP Divide By Zero,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,FP Underflow,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,FP Operand Error,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,FP Overflow,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,FP Signaling NAN,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used
+10-26,Exception,FP Unimplemented Data Type,override,timing_060.c:cyc060_exception,060UM Table 10-26,time from the 060UM table; no 040-or-earlier row is used

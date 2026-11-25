@@ -1,0 +1,4 @@
+id,model,scenario,callback_ordinal,expected_cycles,rule,source
+060-ib-1,68060,NOP;STOP with wait=3,1,0,060-IB-1,explicit approximation
+060-ib-1,68060,NOP;STOP with wait=3,2,12,060-IB-1,timing_060 NOP=9 plus prior wait
+060-ib-1,68060,NOP;STOP with wait=3,3,15,060-IB-1,explicit approximation plus prior wait

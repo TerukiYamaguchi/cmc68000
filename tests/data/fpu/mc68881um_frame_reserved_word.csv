@@ -1,0 +1,4 @@
+source,printed_page,state,reserved_word,anchor,basis
+MC68881UM,6-32,idle,FFFF,§6.4.2.2「written as $FFFF and ignored during restore」,primary
+MC68881UM,,busy,FFFF,一次資料に busy の予約 word の値が無い。idle と同じとする,inference
+MC68881UM,,null,0000,一次資料に null の予約 word の値が無い,inference

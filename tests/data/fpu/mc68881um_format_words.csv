@@ -1,0 +1,8 @@
+source,printed_page,format_word,definition,restore_action,anchor,basis
+MC68881UM,6-37,00xx,Null State,受理（size byte は無視）,Table 6-6,primary
+MC68881UM,6-37,01xx,Come Again,format error 扱い（初期モデルは生成しない）,Table 6-6,inference（restore の扱いは一次資料に無い）
+MC68881UM,6-37,02xx,"Illegal, Format Error",format error 扱い,Table 6-6; §6.2.8,primary
+MC68881UM,6-37,vv18,Idle State (MC68881),revision 1F かつ size 18 のみ受理（3F18 は受理しない）,Table 6-6; p.6-34 NOTE,primary（受理範囲は初期モデルの選択）
+MC68881UM,6-37,vvB4,Busy State (MC68881),revision 1F かつ size B4 のみ受理,Table 6-6,primary（受理範囲は初期モデルの選択）
+MC68881UM,6-37,vv38,Idle State (MC68882),revision 1F かつ size 38 のみ受理,Table 6-6,primary（受理範囲は初期モデルの選択）
+MC68881UM,6-37,vvD4,Busy State (MC68882),revision 1F かつ size D4 のみ受理,Table 6-6,primary（受理範囲は初期モデルの選択）

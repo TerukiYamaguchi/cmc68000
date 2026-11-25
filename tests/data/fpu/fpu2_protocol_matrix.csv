@@ -1,0 +1,145 @@
+device,phase,access,setups,expect,basis
+68881,IDLE,command,s2|s9|s2l0,legal,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,IDLE,condition,s2|s9|s2l0,legal,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,IDLE,operand_write,s2|s9|s2l0,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,IDLE,operand_read,s2|s9|s2l0,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,IDLE,register_select_read,s2|s9|s2l0,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,IDLE,register_select_write,s2|s9|s2l0,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68881,IDLE,ia_write,s2|s9|s2l0,legal,68881 は IA 書込みが phase に関係なく常に合法（p.6-22、p.7-7〜8）
+68881,COMMAND_PENDING,command,s12,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）。既知の逸脱候補: 要求の無い命令の最初の NULL を読む前の command 書込みは p.7-22・p.6-38・p.7-6 の反対の読みでは合法（設計書 §4.1）
+68881,COMMAND_PENDING,condition,s12,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,COMMAND_PENDING,operand_write,s12,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,COMMAND_PENDING,operand_read,s12|s12o|s12d,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,COMMAND_PENDING,register_select_read,s12,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,COMMAND_PENDING,register_select_write,s12,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68881,COMMAND_PENDING,ia_write,s12,legal,68881 は IA 書込みが phase に関係なく常に合法（p.6-22、p.7-7〜8）
+68881,CONDITION_PENDING,command,s13,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,CONDITION_PENDING,condition,s13,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,CONDITION_PENDING,operand_write,s13,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,CONDITION_PENDING,operand_read,s13,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,CONDITION_PENDING,register_select_read,s13,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,CONDITION_PENDING,register_select_write,s13,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68881,CONDITION_PENDING,ia_write,s13,legal,68881 は IA 書込みが phase に関係なく常に合法（p.6-22、p.7-7〜8）
+68881,RESPONSE_NEXT,command,s14|s14d,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,RESPONSE_NEXT,condition,s14|s14d,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,RESPONSE_NEXT,operand_write,s14|s14d,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,RESPONSE_NEXT,operand_read,s14|s14d,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,RESPONSE_NEXT,register_select_read,s14|s14d,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,RESPONSE_NEXT,register_select_write,s14|s14d,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68881,RESPONSE_NEXT,ia_write,s14|s14d,legal,68881 は IA 書込みが phase に関係なく常に合法（p.6-22、p.7-7〜8）
+68881,OPERAND_IN,command,s15|s15d|s15r,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,OPERAND_IN,condition,s15|s15d|s15r,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,OPERAND_IN,operand_write,s15|s15d|s15r,legal,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,OPERAND_IN,operand_read,s15|s15d|s15r,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,OPERAND_IN,register_select_read,s15|s15d|s15r,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,OPERAND_IN,register_select_write,s15|s15d|s15r,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68881,OPERAND_IN,ia_write,s15|s15d|s15r,legal,68881 は IA 書込みが phase に関係なく常に合法（p.6-22、p.7-7〜8）
+68881,OPERAND_OUT,command,s16|s16m,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,OPERAND_OUT,condition,s16|s16m,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,OPERAND_OUT,operand_write,s16|s16m,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,OPERAND_OUT,operand_read,s16|s16m,legal,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,OPERAND_OUT,register_select_read,s16|s16m,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,OPERAND_OUT,register_select_write,s16|s16m,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68881,OPERAND_OUT,ia_write,s16|s16m,legal,68881 は IA 書込みが phase に関係なく常に合法（p.6-22、p.7-7〜8）
+68881,REGISTER_SELECT,command,s17,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,REGISTER_SELECT,condition,s17,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,REGISTER_SELECT,operand_write,s17,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,REGISTER_SELECT,operand_read,s17,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,REGISTER_SELECT,register_select_read,s17,legal,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,REGISTER_SELECT,register_select_write,s17,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68881,REGISTER_SELECT,ia_write,s17,legal,68881 は IA 書込みが phase に関係なく常に合法（p.6-22、p.7-7〜8）
+68881,PC,command,s18n|s18e|s18a|s18m|s8,na,68881 は PC 要求を無視できるので PC phase が無い
+68881,PC,condition,s18n|s18e|s18a|s18m|s8,na,68881 は PC 要求を無視できるので PC phase が無い
+68881,PC,operand_write,s18n|s18e|s18a|s18m|s8,na,68881 は PC 要求を無視できるので PC phase が無い
+68881,PC,operand_read,s18n|s18e|s18a|s18m|s8,na,68881 は PC 要求を無視できるので PC phase が無い
+68881,PC,register_select_read,s18n|s18e|s18a|s18m|s8,na,68881 は PC 要求を無視できるので PC phase が無い
+68881,PC,register_select_write,s18n|s18e|s18a|s18m|s8,na,68881 は PC 要求を無視できるので PC phase が無い
+68881,PC,ia_write,s18n|s18e|s18a|s18m|s8,na,68881 は PC 要求を無視できるので PC phase が無い
+68881,SAVE_BODY,command,s19,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,SAVE_BODY,condition,s19,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,SAVE_BODY,operand_write,s19,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,SAVE_BODY,operand_read,s19,legal,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,SAVE_BODY,register_select_read,s19,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,SAVE_BODY,register_select_write,s19,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68881,SAVE_BODY,ia_write,s19,legal,68881 は IA 書込みが phase に関係なく常に合法（p.6-22、p.7-7〜8）
+68881,RESTORE_BODY,command,s20,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,RESTORE_BODY,condition,s20,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,RESTORE_BODY,operand_write,s20,legal,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,RESTORE_BODY,operand_read,s20,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,RESTORE_BODY,register_select_read,s20,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68881,RESTORE_BODY,register_select_write,s20,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68881,RESTORE_BODY,ia_write,s20,legal,68881 は IA 書込みが phase に関係なく常に合法（p.6-22、p.7-7〜8）
+68882,IDLE,command,s2|s9|s2l0,legal,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,IDLE,condition,s2|s9|s2l0,legal,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,IDLE,operand_write,s2|s9|s2l0,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,IDLE,operand_read,s2|s9|s2l0,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,IDLE,register_select_read,s2|s9|s2l0,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,IDLE,register_select_write,s2|s9|s2l0,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68882,IDLE,ia_write,s2|s9|s2l0,violation,p.6-21 の 68882 の規則を phase に当てはめた（推論）
+68882,COMMAND_PENDING,command,s12,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）。既知の逸脱候補: 要求の無い命令の最初の NULL を読む前の command 書込みは p.7-22・p.6-38・p.7-6 の反対の読みでは合法（設計書 §4.1）
+68882,COMMAND_PENDING,condition,s12,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,COMMAND_PENDING,operand_write,s12,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,COMMAND_PENDING,operand_read,s12|s12o|s12d,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）。p.6-21 NOTE の対象（s12o・s12d）。実機は無視と watchdog の bus error でモデルは vector 13 に簡略化（設計書 §5.5）
+68882,COMMAND_PENDING,register_select_read,s12,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,COMMAND_PENDING,register_select_write,s12,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68882,COMMAND_PENDING,ia_write,s12pc,legal,§5.5 の表の最初の primitive 別（推論）
+68882,COMMAND_PENDING,ia_write,s12e,legal,§5.5 の表の最初の primitive 別（推論）
+68882,COMMAND_PENDING,ia_write,s12m,violation,§5.5 の表の最初の primitive 別（推論）
+68882,COMMAND_PENDING,ia_write,s12o,violation,§5.5 の表の最初の primitive 別（推論）
+68882,COMMAND_PENDING,ia_write,s12,legal,§5.5 の表の最初の primitive 別（推論）
+68882,CONDITION_PENDING,command,s13,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,CONDITION_PENDING,condition,s13,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,CONDITION_PENDING,operand_write,s13,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,CONDITION_PENDING,operand_read,s13,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,CONDITION_PENDING,register_select_read,s13,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,CONDITION_PENDING,register_select_write,s13,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68882,CONDITION_PENDING,ia_write,s13,legal,p.6-21 の 68882 の規則を phase に当てはめた（推論）
+68882,RESPONSE_NEXT,command,s14|s14d,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,RESPONSE_NEXT,condition,s14|s14d,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,RESPONSE_NEXT,operand_write,s14|s14d,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,RESPONSE_NEXT,operand_read,s14|s14d,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,RESPONSE_NEXT,register_select_read,s14|s14d,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,RESPONSE_NEXT,register_select_write,s14|s14d,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68882,RESPONSE_NEXT,ia_write,s14|s14d,violation,p.6-21 の 68882 の規則を phase に当てはめた（推論）
+68882,OPERAND_IN,command,s15|s15d|s15r,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,OPERAND_IN,condition,s15|s15d|s15r,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,OPERAND_IN,operand_write,s15|s15d|s15r,legal,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,OPERAND_IN,operand_read,s15|s15d|s15r,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）。p.6-21 NOTE の対象（s15d）。実機は無視と watchdog の bus error でモデルは vector 13 に簡略化（設計書 §5.5）
+68882,OPERAND_IN,register_select_read,s15|s15d|s15r,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,OPERAND_IN,register_select_write,s15|s15d|s15r,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68882,OPERAND_IN,ia_write,s15|s15d|s15r,legal,p.6-21 の 68882 の規則を phase に当てはめた（推論）
+68882,OPERAND_OUT,command,s16|s16m,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,OPERAND_OUT,condition,s16|s16m,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,OPERAND_OUT,operand_write,s16|s16m,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,OPERAND_OUT,operand_read,s16|s16m,legal,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,OPERAND_OUT,register_select_read,s16|s16m,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,OPERAND_OUT,register_select_write,s16|s16m,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68882,OPERAND_OUT,ia_write,s16|s16m,violation,p.6-21 の 68882 の規則を phase に当てはめた（推論）
+68882,REGISTER_SELECT,command,s17,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,REGISTER_SELECT,condition,s17,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,REGISTER_SELECT,operand_write,s17,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,REGISTER_SELECT,operand_read,s17,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,REGISTER_SELECT,register_select_read,s17,legal,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,REGISTER_SELECT,register_select_write,s17,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68882,REGISTER_SELECT,ia_write,s17,violation,p.6-21 の 68882 の規則を phase に当てはめた（推論）
+68882,PC,command,s18n|s18e|s18a|s18m|s8,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,PC,condition,s18n|s18e|s18a|s18m|s8,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,PC,operand_write,s18n|s18e|s18a|s18m|s8,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,PC,operand_read,s18n|s18e|s18a|s18m|s8,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）。p.6-21 NOTE の対象（s18e・s18m）。実機は無視と watchdog の bus error でモデルは vector 13 に簡略化（設計書 §5.5）
+68882,PC,register_select_read,s18n|s18e|s18a|s18m|s8,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,PC,register_select_write,s18n|s18e|s18a|s18m|s8,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68882,PC,ia_write,s18n|s18e|s18a|s18m|s8,legal,p.6-21 の 68882 の規則を phase に当てはめた（推論）
+68882,SAVE_BODY,command,s19,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,SAVE_BODY,condition,s19,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,SAVE_BODY,operand_write,s19,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,SAVE_BODY,operand_read,s19,legal,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,SAVE_BODY,register_select_read,s19,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,SAVE_BODY,register_select_write,s19,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68882,SAVE_BODY,ia_write,s19,violation,p.6-21 の 68882 の規則を phase に当てはめた（推論）
+68882,RESTORE_BODY,command,s20,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,RESTORE_BODY,condition,s20,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,RESTORE_BODY,operand_write,s20,legal,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,RESTORE_BODY,operand_read,s20,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,RESTORE_BODY,register_select_read,s20,violation,p.6-20〜21 と §7.2.6〜7.2.9（厳しい側の当てはめは推論）
+68882,RESTORE_BODY,register_select_write,s20,violation,register select CIR 書込みは全 phase で violation（p.6-21）
+68882,RESTORE_BODY,ia_write,s20,legal,p.6-21 の 68882 の規則を phase に当てはめた（推論）

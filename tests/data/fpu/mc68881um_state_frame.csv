@@ -1,0 +1,7 @@
+source,printed_page,device,state,internal_state_bytes,total_frame_bytes,format_word,size_byte,anchor,basis
+MC68881UM,5-11;6-30..6-32,68881,null,0,4,0000,00,Table 5-8; Figure 6-4; §6.4.2.1,"primary（frame size と version 0）; size byte 00 は inference（p.6-29・Figure 6-4・Table 6-6 脚注は null の size byte を未定義とする。FSAVE が 0000 を出すのは設計書 §7.1 の選択）"
+MC68881UM,5-11;6-30..6-32,68881,idle,24,28,1F18,18,Table 5-8; Figure 6-4; §6.4.2.2,primary
+MC68881UM,5-11;6-30 and 6-35,68881,busy,180,184,1FB4,B4,Table 5-8; Figure 6-4; §6.4.2.3,primary (format word の revision `1F` は初期モデルが選んだ値。size byte と総 byte 数は Table 5-8/6-6)
+MC68881UM,5-11;6-31..6-32,68882,null,0,4,0000,00,Table 5-8; Figure 6-5; §6.4.2.1,"primary（frame size と version 0）; size byte 00 は inference（p.6-29・Figure 6-5・Table 6-6 脚注は null の size byte を未定義とする。FSAVE が 0000 を出すのは設計書 §7.1 の選択）"
+MC68881UM,5-11;6-31..6-32,68882,idle,56,60,1F38,38,Table 5-8; Figure 6-5; §6.4.2.2,primary
+MC68881UM,5-11;6-31 and 6-36,68882,busy,212,216,1FD4,D4,Table 5-8; Figure 6-5; §6.4.2.3,primary (revision `1F` は初期モデルが選んだ値)

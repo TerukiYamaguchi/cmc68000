@@ -1,0 +1,28 @@
+field,busy_offset,unimpl_offset,long_bits,source,note
+VERSION,$00,$00,31-24,UM Fig 9-10; fpsp.h UNIMP_41_SIZE/BUSY_SIZE,$41
+SIZE,$00,$00,23-16,UM Fig 9-10,"$60 busy / $30 unimplemented / $00 idle"
+CU_SAVEPC,$08,-,31-24,fpsp.h CU_SAVEPC equ LV-92,1 byte。busy frame のみ。0 = CU に命令が無い（bugfix.sa）、$FE = FPSP が命令の完了を頼む（res_func）。FSAVE は常に 0
+FPR_DIRTY_BITS,$08,-,23-16,fpsp.h FPR_DIRTY_BITS equ LV-91; bugfix.sa,bit 16 = FP0。FSAVE は E3 frame の宛先の bit を立てる（推論 23）
+WBTS,$18,-,31,UM Fig 9-10; fpsp.h WBTEMP_EX equ LV-76,WBTEMP の符号
+WBTE[14-0],$18,-,30-16,UM Fig 9-10; fpsp.h WBTEMP_EX,biased 指数の下位 15 bit
+WBTM[65-34],$1C,-,31-0,UM Fig 9-10; fpsp.h WBTEMP_HI,64 bit 仮数の上位 32 bit（bit63 = 整数部）
+WBTM[33-02],$20,-,31-0,UM Fig 9-10; fpsp.h WBTEMP_LO,64 bit 仮数の下位 32 bit
+FPIARCU,$28,-,31-0,UM Fig 9-10; fpsp.h FPIARCU equ LV-60,
+CMDREG3B,$34,$04,31-16,UM Fig 9-10; fpsp.h CMDREG3B equ LV-48,2 byte。上位語。写像は mc68040_cmdreg3b_map.csv
+NMNEXC,$38,-,25-24,fpsp.h NMNEXC equ LV-44 / nmn_unsup_bit equ 1 / nmn_snan_bit equ 0,bit 25 = unsup。FSAVE は vector 55 のときに立てる（推論 25）。snan は持たない
+NMCEXC,$39,-,23-16,fpsp.h NMCEXC equ LV-43 / nmc_unsup_bit equ 4,bit 20 = nmc_unsup。FRESTORE は立っていれば未対応データ型とみなす。FSAVE は書かない
+STAG,$3C,$0C,31-29,UM Fig 9-10; fpsp.h stag_mask equ $E0,
+WBTM66,$3C,$0C,26,fpsp.h wbtemp66_bit equ 2 (STAG byte),オーバーフロー bit
+WBTM1 (guard),$3C,$0C,25,fpsp.h wbtemp1_bit equ 1,
+WBTM0 (round),$3C,$0C,24,fpsp.h wbtemp0_bit equ 0,
+SBIT (sticky),$3D,$0D,23,fpsp.h STICKY equ LV-39 / sticky_bit equ 7,
+ETE15 (STAG),$3C,$0C,28,fpsp.h etemp15_bit equ 4 (STAG byte); res_func.sa,FPSP が正規化して負の指数にしたオペランド（推論 24）。FSAVE は 0
+FPTE15 (DTAG),$44,$14,28,fpsp.h fptemp15_bit equ 4 (DTAG byte); res_func.sa,同上
+CMDREG1B,$40,$10,31-16,UM Fig 9-10; fpsp.h CMDREG1B equ LV-36,
+DTAG,$44,$14,31-29,UM Fig 9-10; fpsp.h dtag_mask equ $E0,
+WBTE15,$45,$15,20,fpsp.h WB_BYTE equ LV-31 / wbtemp15_bit equ 4,
+E1,$48,$18,26,fpsp.h E_BYTE equ LV-28 / E1 equ 2,
+E3,$48,$18,25,fpsp.h E_BYTE / E3 equ 1,
+T,$49,$19,20,fpsp.h T_BYTE equ LV-27 / TFLAG equ 4,
+FPTEMP,$4C,$1C,-,UM Fig 9-10,12 byte（S/E/M）
+ETEMP,$58,$28,-,UM Fig 9-10,12 byte（S/E/M）

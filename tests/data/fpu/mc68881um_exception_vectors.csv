@@ -1,0 +1,12 @@
+source,printed_page,vector,offset,assignment,anchor,basis
+MC68881UM,6-4,7,01C,FTRAPcc Instruction,Table 6-1,primary
+MC68881UM,6-4,11,02C,F-Line Emulator,Table 6-1,primary
+MC68881UM,6-4,13,034,Coprocessor Protocol Violation,Table 6-1,primary
+MC68881UM,6-4,48,0C0,Branch or Set on Unordered Condition,Table 6-1,primary
+MC68881UM,6-4,49,0C4,Inexact Result,Table 6-1,primary
+MC68881UM,6-4,50,0C8,Floating-Point Divide by Zero,Table 6-1,primary
+MC68881UM,6-4,51,0CC,Underflow,Table 6-1,primary
+MC68881UM,6-4,52,0D0,Operand Error,Table 6-1,primary
+MC68881UM,6-4,53,0D4,Overflow,Table 6-1,primary
+MC68881UM,6-4,54,0D8,Signaling NAN,Table 6-1,primary
+MC68020UM,6-3,14,038,Format Error（MPU 側が発生。FPU モデルは返さない）,MC68020UM Table 6-1; MC68881UM §6.2.8 p.6-28 は「format error vector number」とだけ書き番号を挙げない,primary（MC68020UM）

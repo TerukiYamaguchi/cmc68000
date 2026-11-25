@@ -1,0 +1,12 @@
+frame,結果
+B1 null（`$00xx`）,`mc68k_fpu_reset()`、`context_valid` 偽 →S1（p.6-32）
+B2 idle、b31=0、30–28=`111`、b27=1,→S2【推】
+B3 idle、b31=0、`111`、b27=0,`arith`=PENDING →S3（p.6-34 Bit 27）
+B4 idle、b31=0、`011`、b27=1,image の command を S2 の command 書込みと同じく開始【推】
+B5 idle、b31=0、`011`、b27=0,`arith`=PENDING にして、image の command を S3 の command 書込みと同じく開始（算術・FMOVE・不正 word と FMOVEM・control move の分岐は S3 のセルに従う）【推】
+B6 idle、b31=0、`001`、b27=1,image の predicate を S2 の condition 書込みと同じく評価【推】
+B7 idle、b31=0、`001`、b27=0,`arith`=PENDING にして、image の predicate を S3 の condition 書込みと同じく評価（分岐は S3 のセルに従う）【推】
+B8 idle または busy、b31=1,`arith` を b27 から作り、violation 保留 →S10。30–28、image、busy の保存 phase は使わない【推】
+B9 idle、b31=0、30–28 が `000`/`010`/`100`/`101`/`110`,適用しない。`begin_restore()` が捨てたので `arith`=NONE、UNSTARTED なしで、violation 保留。`context_valid` は不変で、開始時に真なら →S10、偽なら →S11【推】
+B10 busy、b31=0、モデル固定表現が妥当,`arith` を b27 から作り、保存 phase（S12〜S18）を再開（§7.1）。b27=0（PENDING）で再開できるのは、PENDING を素通しする FMOVEM・control move の command の phase（S12、S14〜S17）だけで、S13 と S18 と、算術・FMOVE の command の phase は b27=0 だと範囲外として B11 と同じ扱いにする（不変条件4。FSAVE の b27 は `arith` で、S13・S18・算術/FMOVE の phase では常に1）【推】
+B11 busy、b31=0、範囲外の phase・FP 番号・長さを含む（B10 の b27 条件を含む）,適用しない。`begin_restore()` が捨てたので `arith`=NONE、UNSTARTED なしで、violation 保留。`context_valid` は不変で、開始時に真なら →S10、偽なら →S11【推】

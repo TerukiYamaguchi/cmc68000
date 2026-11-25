@@ -1,0 +1,9 @@
+source,printed_page,bit30,bit29,bit28,definition,anchor,basis
+MC68881UM,6-35,0,0,0,"(Undefined, Reserved)",Table 6-4,primary
+MC68881UM,6-35,0,0,1,Conditional Instruction Pending,Table 6-4,primary
+MC68881UM,6-35,0,1,0,"(Undefined, Reserved)",Table 6-4,primary
+MC68881UM,6-35,0,1,1,General Instruction Pending,Table 6-4,primary
+MC68881UM,6-35,1,0,0,Write of Operand CIR Pending,Table 6-4,primary
+MC68881UM,6-35,1,0,1,"(Undefined, Reserved)",Table 6-4,primary
+MC68881UM,6-35,1,1,0,Read of Operand CIR Pending,Table 6-4,primary
+MC68881UM,6-35,1,1,1,No Pending Instruction or Operand CIR Access,Table 6-4,primary

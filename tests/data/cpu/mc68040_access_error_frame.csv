@@ -1,0 +1,22 @@
+offset,bytes,field,source
+0x00,2,SR,040UM 8.4.6 access error stack frame
+0x02,4,PC,040UM 8.4.6 access error stack frame
+0x06,2,format-vector,040UM 8.4.6 access error stack frame
+0x08,4,EA,040UM 8.4.6.1
+0x0c,2,SSW,040UM 8.4.6.2 Figure 8-7
+0x0e,1,WB3S,040UM 8.4.6.3 Figure 8-8
+0x0f,1,WB3S-reserved,040UM 8.4.6 access error stack frame
+0x10,1,WB2S,040UM 8.4.6.3 Figure 8-8
+0x11,1,WB2S-reserved,040UM 8.4.6 access error stack frame
+0x12,1,WB1S,040UM 8.4.6.3 Figure 8-8
+0x13,1,WB1S-reserved,040UM 8.4.6 access error stack frame
+0x14,4,FA,040UM 8.4.6.4
+0x18,4,WB3A,040UM 8.4.6.5
+0x1c,4,WB3D,040UM 8.4.6.5
+0x20,4,WB2A,040UM 8.4.6.5
+0x24,4,WB2D,040UM 8.4.6.5
+0x28,4,WB1A,040UM 8.4.6.5
+0x2c,4,WB1D-or-PD0,040UM 8.4.6.5-8.4.6.6
+0x30,4,PD1,040UM 8.4.6.6
+0x34,4,PD2,040UM 8.4.6.6
+0x38,4,PD3,040UM 8.4.6.6

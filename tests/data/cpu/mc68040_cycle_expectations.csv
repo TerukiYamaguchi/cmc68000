@@ -1,0 +1,131 @@
+instruction,condition,operand_form,expected_cycles,source,implementation,status
+DBcc,"false,count>-1",displacement,6,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_shift.c:op_dbcc",implemented
+DBcc,"false,count=-1",displacement,8,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_shift.c:op_dbcc",implemented
+DBcc,true,displacement,8,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_shift.c:op_dbcc",implemented
+Bcc,branch-taken,displacement,4,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_branch.c:op_bcc",implemented
+Bcc,branch-not-taken,displacement,6,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_branch.c:op_bcc",implemented
+BSR,always,displacement,3,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_branch.c:op_bsr",implemented
+RTS,always,stack,10,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_branch.c:op_rts",implemented
+NOP,always,none,15,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_system.c:op_nop",implemented
+RESET,always,none,1042,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_system.c:op_reset_instr",implemented
+TRAPV,not-taken,none,10,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_system.c:op_trapv",implemented
+TRAPV,taken,none,38,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_system.c:op_trapv",implemented
+MOVE USP,An-to-USP,register,13,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_system.c:op_move_usp",implemented
+MOVE USP,USP-to-An,register,4,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_system.c:op_move_usp",implemented
+ILLEGAL/A-line/F-line,unimplemented,none,32,"040UM Table 10-5 (PDF 302, printed 10-11)","decode.c:op_illegal/op_line_a/op_line_f",implemented
+MOVEC,Rn-to-Rc,register/control-register,13,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_system_ext.c:op_movec",implemented
+MOVEC,Rc-to-Rn,control-register/register,21,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_system_ext.c:op_movec",implemented
+MOVEP,word-memory-to-register,"d16(An),Dn",9,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_transfer.c:op_movep",implemented
+MOVEP,long-memory-to-register,"d16(An),Dn",16,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_transfer.c:op_movep",implemented
+MOVEP,word-register-to-memory,"Dn,d16(An)",20,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_transfer.c:op_movep",implemented
+MOVEP,long-register-to-memory,"Dn,d16(An)",24,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_transfer.c:op_movep",implemented
+PFLUSH/PFLUSHA/PFLUSHN,typical,none,21,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_68040_mmu.c:op_040_pflush",implemented
+PFLUSHAN,typical,none,53,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_68040_mmu.c:op_040_pflush",implemented
+RTE,format-0,stack,15,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_system.c:rte040_nominal_cycles",implemented
+RTE,format-2,stack,16,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_system.c:rte040_nominal_cycles",implemented
+RTE,format-3,stack,23,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_system.c:rte040_nominal_cycles",implemented
+RTE,format-4,stack,17,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_system.c:rte040_nominal_cycles",implemented
+RTE,format-7,stack,27,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_system.c:rte040_nominal_cycles",implemented
+TRAP#,always,none,32,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_trap.c:op_trap",implemented
+MOVEQ,always,register,2,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_transfer.c:op_moveq",implemented
+ADD/SUB,register-source,"<ea>,Dn",2,"040UM Table 10-6 (PDF 304, printed 10-13)","ops_alu.c:op_add/op_sub",implemented
+ADDA/SUBA,Dn-source,"<ea>,An",3,"040UM Table 10-6 (PDF 304, printed 10-13)","ops_alu.c:op_add/op_sub",implemented
+ADDA/SUBA,An-source,"<ea>,An",2,"040UM Table 10-6 (PDF 304, printed 10-13)","ops_alu.c:op_add/op_sub",implemented
+AND/OR,Dn-source,"<ea>,Dn",2,"040UM Table 10-6 (PDF 304, printed 10-13)","ops_logic.c:op_and/op_or",implemented
+SWAP,always,register,2,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_transfer.c:op_swap",implemented
+EXT,word,register,3,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_transfer.c:op_ext",implemented
+EXT,long,register,2,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_transfer.c:op_ext",implemented
+EXG,Dy/Dx,register,2,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_transfer.c:op_exg",implemented
+EXG,Ay/Ax,register,3,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_transfer.c:op_exg",implemented
+EXG,Dy/Ax,register,2,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_transfer.c:op_exg",implemented
+ABCD,Dy/Dx,register,4,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_arith_ext.c:op_abcd",implemented
+ABCD,-(Ay)/-(Ax),dual-predecrement,8,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_arith_ext.c:op_abcd",implemented
+ADDX,Dy/Dx,register,2,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_arith_ext.c:op_addx",implemented
+ADDX,-(Ay)/-(Ax),dual-predecrement,7,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_arith_ext.c:op_addx",implemented
+CMPM,always,postincrement-pair,7,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_arith_ext.c:op_cmpm",implemented
+LINK,always,register,4,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_transfer.c:op_link",implemented
+EXTB,long,register,2,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_68020_arith.c:op_extb",implemented
+RTR,always,stack,13,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_system.c:op_rtr",implemented
+SBCD,Dy/Dx,register,4,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_arith_ext.c:op_sbcd",implemented
+SBCD,-(Ay)/-(Ax),dual-predecrement,8,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_arith_ext.c:op_sbcd",implemented
+SUBX,Dy/Dx,register,2,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_arith_ext.c:op_subx",implemented
+SUBX,-(Ay)/-(Ax),dual-predecrement,7,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_arith_ext.c:op_subx",implemented
+UNLK,always,register,3,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_transfer.c:op_unlk",implemented
+MOVE16,"(Ax)+,(Ay)+",memory-pair,13,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_68040_cache.c:op_move16",implemented
+MOVE16,"xxx.L,(An)",absolute-to-memory,11,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_68040_cache.c:op_move16",implemented
+MOVE16,"xxx.L,(An)+",absolute-to-memory-postincrement,13,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_68040_cache.c:op_move16",implemented
+MOVE16,"(An),xxx.L",memory-to-absolute,11,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_68040_cache.c:op_move16",implemented
+MOVE16,"(An)+,xxx.L",memory-postincrement-to-absolute,11,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_68040_cache.c:op_move16",implemented
+ANDI,CCR,immediate,5,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_logic.c:op_andi",implemented
+ANDI,SR,immediate,17,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_logic.c:op_andi",implemented
+EORI,CCR,immediate,5,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_logic.c:op_eori",implemented
+EORI,SR,immediate,17,"040UM Table 10-5 (PDF 302, printed 10-11)","ops_logic.c:op_eori",implemented
+ORI,CCR,immediate,5,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_logic.c:op_ori",implemented
+ORI,SR,immediate,17,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_logic.c:op_ori",implemented
+PACK,register,register,4,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_68020_arith.c:op_pack",implemented
+PACK,memory,dual-predecrement,6,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_68020_arith.c:op_pack",implemented
+RTD,always,stack,11,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_system_ext.c:op_rtd",implemented
+TRAPcc,taken,immediate-or-none,38,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_68020_system.c:op_trapcc",implemented
+TRAPcc,not-taken,immediate-or-none,10,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_68020_system.c:op_trapcc",implemented
+UNPK,register,register,5,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_68020_arith.c:op_unpk",implemented
+UNPK,memory,dual-predecrement,7,"040UM Table 10-5 (PDF 303, printed 10-12)","ops_68020_arith.c:op_unpk",implemented
+ADDQ/SUBQ,Dn/An,register,2,"040UM Table 10-6 (PDF 304, printed 10-13)","ops_alu.c:op_addq/op_subq",implemented
+CLR,Dn,register,2,"040UM Table 10-6 (PDF 304, printed 10-13)","ops_logic.c:op_clr",implemented
+TST,Dn/An,register,2,"040UM Table 10-6 (PDF 304, printed 10-13)","ops_logic.c:op_tst",implemented
+MOVE,"Dn to Dn",register-to-register,2,"040UM Table 10-4 (PDF 300, printed 10-9); Table 10-2 (PDF 294, printed 10-3)","ops_move.c:move40_cycles",implemented
+MOVE,"(An) to Dn",memory-to-register,3,"040UM Table 10-4 (PDF 300, printed 10-9); Table 10-2 (PDF 294, printed 10-3)","ops_move.c:move40_cycles",implemented
+MOVE,"(An)+ to (An)+",postincrement-to-postincrement,4,"040UM Table 10-4 (PDF 300, printed 10-9); Table 10-2 (PDF 294, printed 10-3)","ops_move.c:move40_cycles",implemented
+MOVE,"Dn to (d8,An,Xn)",register-to-indexed-memory,6,"040UM Table 10-4 (PDF 301, printed 10-10); Table 10-2 (PDF 294, printed 10-3)","ops_move.c:move40_cycles",implemented
+MOVE,"(bd,An,Xn) to Dn",full-direct-to-register,14,"040UM Table 10-4 (PDF 300, printed 10-9); Table 10-2 (PDF 294, printed 10-3)","ops_move.c:move40_cycles",implemented
+MOVE,"Dn to (bd,An,Xn)",register-to-full-direct,13,"040UM Table 10-4 (PDF 301, printed 10-10); Table 10-2 (PDF 294, printed 10-3)","ops_move.c:move40_cycles",implemented
+MOVE,"([bd,An,Xn]) to Dn",full-preindex-to-register,21,"040UM Table 10-4 (PDF 300, printed 10-9); Table 10-2 (PDF 294, printed 10-3)","ops_move.c:move40_cycles",implemented
+ADD/SUB,memory-source-basic,memory-to-register,3,"040UM Table 10-6 (PDF 304, printed 10-13); Table 10-2 (PDF 294, printed 10-3)","ops_alu.c:alu40_read_dn_cycles",implemented
+ADD/SUB,brief-index-source,brief-index-to-register,7,"040UM Table 10-6 (PDF 304, printed 10-13); Table 10-2 (PDF 294, printed 10-3)","ops_alu.c:alu40_read_dn_cycles",implemented
+ADD/SUB,IS=1 memory-indirect,postindexed-null-outer,21,"040UM §10.1 (PDF 294, printed 10-4); Table 10-6 (PDF 304, printed 10-13)","ops_alu.c:alu40_read_dn_cycles",implemented
+ADDA/SUBA,memory-source-basic,memory-to-address-register,4,"040UM Table 10-6 (PDF 304, printed 10-13); Table 10-2 (PDF 294, printed 10-3)","ops_alu.c:alu40_adda_cycles",implemented
+ADDA/SUBA,brief-index-source,brief-index-to-address-register,10,"040UM Table 10-6 (PDF 304, printed 10-13); Table 10-2 (PDF 294, printed 10-3)","ops_alu.c:alu40_adda_cycles",implemented
+AND/OR,memory-source-basic,memory-to-register,3,"040UM Table 10-6 (PDF 304, printed 10-13); Table 10-2 (PDF 294, printed 10-3)","ops_logic.c:logic40_read_cycles",implemented
+TST,memory-source-brief-index,brief-index,7,"040UM Table 10-6 (PDF 304, printed 10-13); Table 10-2 (PDF 294, printed 10-3)","ops_logic.c:logic40_read_cycles",implemented
+ADDQ/SUBQ,memory-destination-basic,memory,3,"040UM Table 10-6 (PDF 305, printed 10-14); Table 10-2 (PDF 294, printed 10-3)","ops_alu.c:alu40_addq_cycles",implemented
+ADDQ/SUBQ,brief-index-destination,brief-index-memory,7,"040UM Table 10-6 (PDF 305, printed 10-14); Table 10-2 (PDF 294, printed 10-3)","ops_alu.c:alu40_addq_cycles",implemented
+CHK,in-bounds,memory-bound,17,"040UM Table 10-6 (PDF 308, printed 10-17), notes c/d; Table 10-2 (PDF 294, printed 10-3)","ops_arith_ext.c:op_chk; ops_68020_arith.c:op_chk_long",implemented
+ADDI/SUBI,memory-destination-basic,memory,3,"040UM Table 10-6 (PDF 304, printed 10-13); Table 10-2 (PDF 294, printed 10-3)","ops_alu.c:alu40_immediate_rmw_cycles",implemented
+ANDI/ORI/EORI,memory-destination-basic,memory,3,"040UM Table 10-6 (PDF 304, printed 10-13); Table 10-2 (PDF 294, printed 10-3)","ops_logic.c:logic40_immediate_rmw_cycles",implemented
+CLR,memory-destination-basic,memory,2,"040UM Table 10-6 (PDF 309, printed 10-18)","ops_logic.c:logic40_clr_cycles",implemented
+CLR,brief-index-destination,brief-index-memory,6,"040UM Table 10-6 (PDF 309, printed 10-18)","ops_logic.c:logic40_clr_cycles",implemented
+CLR,active-index-full-extension,full-direct-word-bd,13,"040UM Table 10-6 (PDF 309, printed 10-18)","ops_logic.c:logic40_clr_cycles",implemented
+CMP,memory-source-basic,memory-to-register,3,"040UM Table 10-6 (PDF 309, printed 10-18); Table 10-2 (PDF 294, printed 10-3)","ops_alu.c:alu40_read_dn_cycles",implemented
+ADD/SUB/EOR,memory-destination-standard,memory,3,"040UM Table 10-6 (PDF 304, printed 10-13); Table 10-2 (PDF 294, printed 10-3)","ops_alu.c:alu40_read_dn_cycles; ops_logic.c:logic40_read_cycles",implemented
+CMPI/CMPA.L,memory-source-basic,memory,3,"040UM Table 10-6 (PDF 310, printed 10-19); Table 10-2 (PDF 294, printed 10-3)","ops_alu.c:alu40_cmpi_cycles",implemented
+NEG/NEGX/NOT,memory-destination-basic,memory,3,"040UM Table 10-6 (PDF 316, printed 10-26); Table 10-2 (PDF 294, printed 10-3)","ops_logic.c:logic40_unary_rmw_cycles",implemented
+ASL/ASR/LSL/LSR/ROL/ROR/ROXL/ROXR,register,LSL-immediate,3,"040UM Table 10-6 (PDF 305, printed 10-14)","ops_shift.c:op_shift",implemented
+ASL/ASR/LSL/LSR/ROL/ROR/ROXL/ROXR,memory-destination,LSR-memory,3,"040UM Table 10-6 (PDF 305, printed 10-14)","ops_shift.c:shift40_mem_cycles",implemented
+MULU.W,memory-source-basic,memory-to-register,16,"040UM Table 10-6 (PDF 316, printed 10-25); Table 10-2 (PDF 294, printed 10-3)","ops_arith_ext.c:mul40_word_cycles",implemented
+MULS.W,memory-source-basic,memory-to-register,18,"040UM Table 10-6 (PDF 316, printed 10-25); Table 10-2 (PDF 294, printed 10-3)","ops_arith_ext.c:mul40_word_cycles",implemented
+NBCD,memory-destination-basic,memory,4,"040UM Table 10-6 (PDF 316, printed 10-25); Table 10-2 (PDF 294, printed 10-3)","ops_arith_ext.c:nbcd40_cycles",implemented
+LEA,control-ea,indirect-address,2,"040UM Table 10-6 (PDF 312, printed 10-21)","ops_transfer.c:control40_cycles",implemented
+PEA,control-ea,indirect-address,3,"040UM Table 10-6 (PDF 317, printed 10-26)","ops_transfer.c:control40_cycles",implemented
+MOVE to CCR,source-ea,memory,4,"040UM Table 10-6 (PDF 313, printed 10-22); Table 10-2 (PDF 294, printed 10-3)","ops_logic.c:logic40_to_ccr_cycles",implemented
+MOVE from CCR,destination-ea,memory,3,"040UM Table 10-6 (PDF 312, printed 10-21)","ops_system_ext.c:move40_from_ccr_cycles",implemented
+MOVE from SR,destination-ea,memory,4,"040UM Table 10-6 (PDF 313, printed 10-22)","ops_transfer.c:move40_from_sr_cycles",implemented
+MOVE to SR,source-ea-minimum,memory,19,"040UM Table 10-6 (PDF 313, printed 10-22); Table 10-2 (PDF 294, printed 10-3)","ops_transfer.c:move40_to_sr_cycles",implemented
+DIVS.W/DIVU.W,source-ea,memory-to-register,36,"040UM Table 10-6 (PDF 311, printed 10-20); Table 10-2 (PDF 294, printed 10-3)","ops_arith_ext.c:div40_word_cycles",implemented
+JMP,control-ea,indirect-address,4,"040UM Table 10-6 (PDF 311, printed 10-20)","ops_branch.c:jump40_cycles",implemented
+JSR,control-ea,indirect-address,4,"040UM Table 10-6 (PDF 312, printed 10-21)","ops_branch.c:jump40_cycles",implemented
+MULS.L/MULU.L,source-ea,immediate,21,"040UM Table 10-6 (PDF 316, printed 10-25)","ops_68020_arith.c:muldiv40_long_cycles",implemented
+CMP2,control-ea,memory-bound,24,"040UM Table 10-6 (PDF 310, printed 10-19)","ops_68020_system.c:chk2_40_cycles",implemented
+bit-field,Dn,immediate-offset-width,4,"040UM Table 10-6 (PDF 307, printed 10-16)","ops_68020_bitfield.c:bf40_dn_cycles",implemented
+MOVEM,register-to-memory,one-data-register,5,"040UM Table 10-6 (PDF 314, printed 10-23)","ops_transfer.c:movem40_cycles",implemented
+MOVEM.L,memory-to-register,one-data-register,7,"040UM Table 10-6 (PDF 314, printed 10-23)","ops_transfer.c:movem40_cycles",implemented
+MOVES,memory-to-register,memory-to-data-register,39,"040UM Table 10-6 (PDF 315, printed 10-24)","ops_system_ext.c:moves40_cycles",implemented
+bit-field,memory,memory-immediate-offset-width,16,"040UM Table 10-6 (PDF 307, printed 10-16)","ops_68020_bitfield.c:bf40_memory_cycles",implemented
+CHK,"in-bounds (BR,Xn)",full-extension,24,"040UM Table 10-6 (PDF 308, printed 10-17)",ops_arith_ext.c:chk40_in_bounds_cycles,implemented
+CHK,"in-bounds (bd,BR,Xn)",full-extension,26,"040UM Table 10-6 (PDF 308, printed 10-17)",ops_arith_ext.c:chk40_in_bounds_cycles,implemented
+CHK,in-bounds one-level memory-indirect,full-extension,33,"040UM Table 10-6 (PDF 308, printed 10-17)",ops_arith_ext.c:chk40_in_bounds_cycles,implemented
+CHK,in-bounds memory-indirect with od,full-extension,35,"040UM Table 10-6 (PDF 308, printed 10-17)",ops_arith_ext.c:chk40_in_bounds_cycles,implemented
+CINVL,base,cache-maintenance,9,"040UM Table 10-3 (PDF 299, printed 10-8)",ops_68040_cache.c:op_cache,implemented
+CINVP,base,cache-maintenance,266,"040UM Table 10-3 (PDF 299, printed 10-8)",ops_68040_cache.c:op_cache,implemented
+CINVA,base,cache-maintenance,9,"040UM Table 10-3 (PDF 299, printed 10-8)",ops_68040_cache.c:op_cache,implemented
+CPUSHL,best-case,cache-maintenance,6,"040UM Table 10-4 (PDF 299, printed 10-8)",ops_68040_cache.c:op_cache,implemented
+CPUSHP,best-case,cache-maintenance,267,"040UM Table 10-4 (PDF 299, printed 10-8)",ops_68040_cache.c:op_cache,implemented
+CPUSHA,best-case,cache-maintenance,267,"040UM Table 10-4 (PDF 299, printed 10-8)",ops_68040_cache.c:op_cache,implemented

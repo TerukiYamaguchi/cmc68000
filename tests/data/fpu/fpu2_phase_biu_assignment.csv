@@ -1,0 +1,15 @@
+phase,condition,device,fsave_frame,biu_30_28,biu_26,abort_window_68882,anchor,basis
+IDLE,UNSTARTED なし（保留算術例外・violation 保留・最終応答 NULL の未読を問わない）,both,idle,111,1,outside,design_fpu_2.md §4.1; §4.2,inference（111 は Table 6-4 p.6-35 の No Pending。bit 26=1 と phase への割当ては推論）
+IDLE,UNSTARTED（command。算術の先取り・F-line）,both,idle,011,1,inside,design_fpu_2.md §4.1; §4.2,inference（011 は Table 6-4 p.6-35 の General Instruction Pending。p.6-34 Bit 30・p.6-35 の未開始 command への割当ては推論。window 内は p.7-4 の window 定義（command CIR 書込みから必要な最後の CIR 読み書きまで）で TAKE 読出し前は字義どおり、読出し後は undefined の結果として同じ扱いを採る推論）
+IDLE,UNSTARTED（condition。算術の先取り・BSUN）,both,idle,001,1,outside,design_fpu_2.md §4.1; §4.2,inference（001 は Table 6-4 p.6-35 の Conditional Instruction Pending。p.6-34 Bit 30・p.6-35 の未開始 predicate への割当ては推論）
+COMMAND_PENDING,最初の primitive（TAKE_* 以外。要求の無い register-to-register・FMOVECR の NULL を含む）が未読,both,busy,011,1,inside,design_fpu_2.md §4.1; §7.1,inference（Table 6-4 の 011 General Instruction Pending への割当て）
+CONDITION_PENDING,評価結果の NULL（TF）が未読,both,busy,001,1,outside,design_fpu_2.md §4.1; §7.1,inference（Table 6-4 の 001 Conditional Instruction Pending への割当て。window 外は p.7-4 の開始点から）
+RESPONSE_NEXT,後続 primitive が DR=1 の EA_TRANSFER,both,busy,110,0,inside,design_fpu_2.md §4.1,inference
+RESPONSE_NEXT,後続 primitive が FP_REGISTERS,both,busy,011,1,inside,design_fpu_2.md §4.1,inference
+OPERAND_IN,DR=0 の EA_TRANSFER・MP_REGISTER・FMOVEM 入力の register select 読出しの後,both,busy,100,1,inside,design_fpu_2.md §4.1; §7.1,inference（Table 6-4 の 100 Write of Operand CIR Pending への割当て）
+OPERAND_OUT,DR=1 の EA_TRANSFER・FMOVEM 出力の register select 読出しの後,both,busy,110,0,inside,design_fpu_2.md §4.1,inference（Table 6-4 の 110 Read of Operand CIR Pending と p.6-33 Bit 26 への割当て）
+REGISTER_SELECT,FP_REGISTERS の読出し後,both,busy,011,1,inside,design_fpu_2.md §4.1,inference
+PC,UNSTARTED なし,68882,busy,011,1,inside,design_fpu_2.md §4.1,inference
+PC,UNSTARTED（BSUN）あり（BSUN の TAKE_PRE を読んだ後）,68882,idle,001,1,outside,design_fpu_2.md §4.1; §4.2,inference（001 は Table 6-4 p.6-35。未開始の condition への割当ては推論）
+SAVE_BODY,FSAVE の body 転送中（入れ子の save CIR 読出し）,both,02xx,,,abort_effective,design_fpu_2.md §4.1; §5.3,primary（p.6-37・p.7-5 の illegal format word。body_bytes=0）
+RESTORE_BODY,FRESTORE の body 転送中（入れ子の save CIR 読出し）,both,02xx,,,abort_effective,design_fpu_2.md §4.1; §5.3,primary（p.6-37・p.7-5 の illegal format word。body_bytes=0）

@@ -1,0 +1,847 @@
+table,row_id,current_code,um00_nominal,ds10_nominal,phase,class,note
+7-4,Dn Fetch Byte/Word,N/A(未実装),0(0/0),0(0/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,Dn Fetch Long,N/A(未実装),0(0/0),0(0/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,An Fetch Byte/Word,N/A(未実装),0(0/0),0(0/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,An Fetch Long,N/A(未実装),0(0/0),0(0/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,(An) Fetch Byte/Word,N/A(未実装),4(1/0),4(1/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,(An) Fetch Long,N/A(未実装),8(2/0),8(2/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,(An) No Fetch Byte/Word,N/A(未実装),—,2(0/0),P2a,—,68000に対応列なし（構造差）
+7-4,(An) No Fetch Long,N/A(未実装),—,2(0/0),P2a,—,68000に対応列なし（構造差）
+7-4,(An)+ Fetch Byte/Word,N/A(未実装),4(1/0),4(1/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,(An)+ Fetch Long,N/A(未実装),8(2/0),8(2/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,(An)+ No Fetch Byte/Word,N/A(未実装),—,4(0/0),P2a,—,68000に対応列なし（構造差）
+7-4,(An)+ No Fetch Long,N/A(未実装),—,4(0/0),P2a,—,68000に対応列なし（構造差）
+7-4,-(An) Fetch Byte/Word,N/A(未実装),6(1/0),6(1/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,-(An) Fetch Long,N/A(未実装),10(2/0),10(2/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,-(An) No Fetch Byte/Word,N/A(未実装),—,4(0/0),P2a,—,68000に対応列なし（構造差）
+7-4,-(An) No Fetch Long,N/A(未実装),—,4(0/0),P2a,—,68000に対応列なし（構造差）
+7-4,d(An) Fetch Byte/Word,N/A(未実装),8(2/0),8(2/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,d(An) Fetch Long,N/A(未実装),12(3/0),12(3/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,d(An) No Fetch Byte/Word,N/A(未実装),—,4(0/0),P2a,—,68000に対応列なし（構造差）
+7-4,d(An) No Fetch Long,N/A(未実装),—,4(1/0),P2a,—,68000に対応列なし（構造差）
+7-4,d(An/ix) Fetch Byte/Word,N/A(未実装),10(2/0),10(2/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,d(An/ix) Fetch Long,N/A(未実装),14(3/0),14(3/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,d(An/ix) No Fetch Byte/Word,N/A(未実装),—,8(1/0),P2a,—,68000に対応列なし（構造差）
+7-4,d(An/ix) No Fetch Long,N/A(未実装),—,8(1/0),P2a,—,68000に対応列なし（構造差）
+7-4,xxx.W Fetch Byte/Word,N/A(未実装),8(2/0),8(2/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,xxx.W Fetch Long,N/A(未実装),12(3/0),12(3/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,xxx.W No Fetch Byte/Word,N/A(未実装),—,4(1/0),P2a,—,68000に対応列なし（構造差）
+7-4,xxx.W No Fetch Long,N/A(未実装),—,4(1/0),P2a,—,68000に対応列なし（構造差）
+7-4,xxx.L Fetch Byte/Word,N/A(未実装),12(3/0),12(3/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,xxx.L Fetch Long,N/A(未実装),16(4/0),16(4/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,xxx.L No Fetch Byte/Word,N/A(未実装),—,8(2/0),P2a,—,68000に対応列なし（構造差）
+7-4,xxx.L No Fetch Long,N/A(未実装),—,8(2/0),P2a,—,68000に対応列なし（構造差）
+7-4,d(PC) Fetch Byte/Word,N/A(未実装),8(2/0),8(2/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,d(PC) Fetch Long,N/A(未実装),12(3/0),12(3/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,d(PC/ix) Fetch Byte/Word,N/A(未実装),10(2/0),10(2/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,d(PC/ix) Fetch Long,N/A(未実装),14(3/0),14(3/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,#xxx Fetch Byte/Word,N/A(未実装),4(1/0),4(1/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-4,#xxx Fetch Long,N/A(未実装),8(2/0),8(2/0),P2a,—,[DS10 Table 7-4]/[UM00 Table 8-1]
+7-5,MOVE.B/W Dn→Dn,4,4,4,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W Dn→An,4,4,4,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W Dn→(An),8,8,8,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W Dn→(An)+,8,8,8,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W Dn→-(An),8,8,8,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W Dn→d(An),8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W Dn→d(An,ix)",8,14,14,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W Dn→xxx.W,8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W Dn→xxx.L,8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W An→Dn,4,4,4,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W An→An,4,4,4,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W An→(An),8,8,8,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W An→(An)+,8,8,8,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W An→-(An),8,8,8,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W An→d(An),8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W An→d(An,ix)",8,14,14,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W An→xxx.W,8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W An→xxx.L,8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W (An)→Dn,8,8,8,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W (An)→An,8,8,8,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W (An)→(An),8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W (An)→(An)+,8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W (An)→-(An),8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W (An)→d(An),8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W (An)→d(An,ix)",8,18,18,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W (An)→xxx.W,8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W (An)→xxx.L,8,20,20,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W (An)+→Dn,8,8,8,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W (An)+→An,8,8,8,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W (An)+→(An),8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W (An)+→(An)+,8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W (An)+→-(An),8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W (An)+→d(An),8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W (An)+→d(An,ix)",8,18,18,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W (An)+→xxx.W,8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W (An)+→xxx.L,8,20,20,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W -(An)→Dn,8,10,10,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W -(An)→An,8,10,10,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W -(An)→(An),8,14,14,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W -(An)→(An)+,8,14,14,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W -(An)→-(An),8,14,14,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W -(An)→d(An),8,18,18,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W -(An)→d(An,ix)",8,20,20,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W -(An)→xxx.W,8,18,18,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W -(An)→xxx.L,8,22,22,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W d(An)→Dn,8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W d(An)→An,8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W d(An)→(An),8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W d(An)→(An)+,8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W d(An)→-(An),8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W d(An)→d(An),8,20,20,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(An)→d(An,ix)",8,22,22,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W d(An)→xxx.W,8,20,20,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W d(An)→xxx.L,8,24,24,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(An,ix)→Dn",8,14,14,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(An,ix)→An",8,14,14,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(An,ix)→(An)",8,18,18,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(An,ix)→(An)+",8,18,18,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(An,ix)→-(An)",8,18,18,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(An,ix)→d(An)",8,22,22,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(An,ix)→d(An,ix)",8,24,24,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(An,ix)→xxx.W",8,22,22,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(An,ix)→xxx.L",8,26,26,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W xxx.W→Dn,8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W xxx.W→An,8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W xxx.W→(An),8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W xxx.W→(An)+,8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W xxx.W→-(An),8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W xxx.W→d(An),8,20,20,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W xxx.W→d(An,ix)",8,22,22,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W xxx.W→xxx.W,8,20,20,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W xxx.W→xxx.L,8,24,24,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W xxx.L→Dn,8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W xxx.L→An,8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W xxx.L→(An),8,20,20,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W xxx.L→(An)+,8,20,20,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W xxx.L→-(An),8,20,20,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W xxx.L→d(An),8,24,24,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W xxx.L→d(An,ix)",8,26,26,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W xxx.L→xxx.W,8,24,24,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W xxx.L→xxx.L,8,28,28,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W d(PC)→Dn,8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W d(PC)→An,8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W d(PC)→(An),8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W d(PC)→(An)+,8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W d(PC)→-(An),8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W d(PC)→d(An),8,20,20,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(PC)→d(An,ix)",8,22,22,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W d(PC)→xxx.W,8,20,20,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W d(PC)→xxx.L,8,24,24,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(PC,ix)→Dn",8,14,14,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(PC,ix)→An",8,14,14,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(PC,ix)→(An)",8,18,18,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(PC,ix)→(An)+",8,18,18,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(PC,ix)→-(An)",8,18,18,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(PC,ix)→d(An)",8,22,22,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(PC,ix)→d(An,ix)",8,24,24,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(PC,ix)→xxx.W",8,22,22,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W d(PC,ix)→xxx.L",8,26,26,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W #xxx→Dn,8,8,8,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W #xxx→An,8,8,8,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W #xxx→(An),8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W #xxx→(An)+,8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W #xxx→-(An),8,12,12,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W #xxx→d(An),8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,"MOVE.B/W #xxx→d(An,ix)",8,18,18,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W #xxx→xxx.W,8,16,16,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-5,MOVE.B/W #xxx→xxx.L,8,20,20,P2b,—,[DS10 Table 7-5]/[UM00 Table 8-2]
+7-6,"MOVE.B/W Dn,(An) LoopCont ValidCountFalse",N/A,—,10(0/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W Dn,(An)+ LoopCont ValidCountFalse",N/A,—,10(0/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W Dn,(An) LoopTerm ValidCountTrue",N/A,—,18(2/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W Dn,(An)+ LoopTerm ValidCountTrue",N/A,—,18(2/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W Dn,(An) LoopTerm ExpiredCount",N/A,—,16(2/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W Dn,(An)+ LoopTerm ExpiredCount",N/A,—,16(2/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.W An,(An) LoopCont ValidCountFalse",N/A,—,10(0/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.W An,(An)+ LoopCont ValidCountFalse",N/A,—,10(0/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.W An,(An) LoopTerm ValidCountTrue",N/A,—,18(2/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.W An,(An)+ LoopTerm ValidCountTrue",N/A,—,18(2/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.W An,(An) LoopTerm ExpiredCount",N/A,—,16(2/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.W An,(An)+ LoopTerm ExpiredCount",N/A,—,16(2/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An),(An) LoopCont ValidCountFalse",N/A,—,14(1/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An),(An)+ LoopCont ValidCountFalse",N/A,—,14(1/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An),-(An) LoopCont ValidCountFalse",N/A,—,16(1/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An),(An) LoopTerm ValidCountTrue",N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An),(An)+ LoopTerm ValidCountTrue",N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An),-(An) LoopTerm ValidCountTrue",N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An),(An) LoopTerm ExpiredCount",N/A,—,18(3/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An),(An)+ LoopTerm ExpiredCount",N/A,—,18(3/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An),-(An) LoopTerm ExpiredCount",N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An)+,(An) LoopCont ValidCountFalse",N/A,—,14(1/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An)+,(An)+ LoopCont ValidCountFalse",N/A,—,14(1/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An)+,-(An) LoopCont ValidCountFalse",N/A,—,16(1/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An)+,(An) LoopTerm ValidCountTrue",N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An)+,(An)+ LoopTerm ValidCountTrue",N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An)+,-(An) LoopTerm ValidCountTrue",N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An)+,(An) LoopTerm ExpiredCount",N/A,—,18(3/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An)+,(An)+ LoopTerm ExpiredCount",N/A,—,18(3/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W (An)+,-(An) LoopTerm ExpiredCount",N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W -(An),(An) LoopCont ValidCountFalse",N/A,—,16(1/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W -(An),(An)+ LoopCont ValidCountFalse",N/A,—,16(1/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W -(An),-(An) LoopCont ValidCountFalse",N/A,—,18(1/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W -(An),(An) LoopTerm ValidCountTrue",N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W -(An),(An)+ LoopTerm ValidCountTrue",N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W -(An),-(An) LoopTerm ValidCountTrue",N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W -(An),(An) LoopTerm ExpiredCount",N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W -(An),(An)+ LoopTerm ExpiredCount",N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-6,"MOVE.B/W -(An),-(An) LoopTerm ExpiredCount",N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-7,MOVE.L Dn→Dn,4,4,4,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L Dn→An,4,4,4,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L Dn→(An),12,12,12,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L Dn→(An)+,12,12,12,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L Dn→-(An),12,12,14,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]; 68010で値が変わる（68000:12→68010:14）
+7-7,MOVE.L Dn→d(An),12,16,16,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L Dn→d(An,ix)",12,18,18,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L Dn→xxx.W,12,16,16,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L Dn→xxx.L,12,20,20,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L An→Dn,4,4,4,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L An→An,4,4,4,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L An→(An),12,12,12,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L An→(An)+,12,12,12,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L An→-(An),12,12,14,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]; 68010で値が変わる（68000:12→68010:14）
+7-7,MOVE.L An→d(An),12,16,16,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L An→d(An,ix)",12,18,18,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L An→xxx.W,12,16,16,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L An→xxx.L,12,20,20,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L (An)→Dn,12,12,12,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L (An)→An,12,12,12,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L (An)→(An),12,20,20,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L (An)→(An)+,12,20,20,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L (An)→-(An),12,20,20,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L (An)→d(An),12,24,24,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L (An)→d(An,ix)",12,26,26,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L (An)→xxx.W,12,24,24,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L (An)→xxx.L,12,28,28,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L (An)+→Dn,12,12,12,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L (An)+→An,12,12,12,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L (An)+→(An),12,20,20,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L (An)+→(An)+,12,20,20,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L (An)+→-(An),12,20,20,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L (An)+→d(An),12,24,24,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L (An)+→d(An,ix)",12,26,26,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L (An)+→xxx.W,12,24,24,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L (An)+→xxx.L,12,28,28,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L -(An)→Dn,12,14,14,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L -(An)→An,12,14,14,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L -(An)→(An),12,22,22,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L -(An)→(An)+,12,22,22,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L -(An)→-(An),12,22,22,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L -(An)→d(An),12,26,26,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L -(An)→d(An,ix)",12,28,28,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L -(An)→xxx.W,12,26,26,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L -(An)→xxx.L,12,30,30,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L d(An)→Dn,12,16,16,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L d(An)→An,12,16,16,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L d(An)→(An),12,24,24,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L d(An)→(An)+,12,24,24,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L d(An)→-(An),12,24,24,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L d(An)→d(An),12,28,28,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(An)→d(An,ix)",12,30,30,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L d(An)→xxx.W,12,28,28,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L d(An)→xxx.L,12,32,32,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(An,ix)→Dn",12,18,18,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(An,ix)→An",12,18,18,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(An,ix)→(An)",12,26,26,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(An,ix)→(An)+",12,26,26,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(An,ix)→-(An)",12,26,26,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(An,ix)→d(An)",12,30,30,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(An,ix)→d(An,ix)",12,32,32,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(An,ix)→xxx.W",12,30,30,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(An,ix)→xxx.L",12,34,34,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L xxx.W→Dn,12,16,16,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L xxx.W→An,12,16,16,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L xxx.W→(An),12,24,24,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L xxx.W→(An)+,12,24,24,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L xxx.W→-(An),12,24,24,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L xxx.W→d(An),12,28,28,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L xxx.W→d(An,ix)",12,30,30,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L xxx.W→xxx.W,12,28,28,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L xxx.W→xxx.L,12,32,32,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L xxx.L→Dn,12,20,20,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L xxx.L→An,12,20,20,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L xxx.L→(An),12,28,28,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L xxx.L→(An)+,12,28,28,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L xxx.L→-(An),12,28,28,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L xxx.L→d(An),12,32,32,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L xxx.L→d(An,ix)",12,34,34,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L xxx.L→xxx.W,12,32,32,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L xxx.L→xxx.L,12,36,36,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L d(PC)→Dn,12,16,16,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L d(PC)→An,12,16,16,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L d(PC)→(An),12,24,24,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L d(PC)→(An)+,12,24,24,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L d(PC)→-(An),12,24,24,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L d(PC)→d(An),12,28,28,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(PC)→d(An,ix)",12,30,30,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L d(PC)→xxx.W,12,28,28,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L d(PC)→xxx.L,12,32,32,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(PC,ix)→Dn",12,18,18,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(PC,ix)→An",12,18,18,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(PC,ix)→(An)",12,26,26,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(PC,ix)→(An)+",12,26,26,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(PC,ix)→-(An)",12,26,26,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(PC,ix)→d(An)",12,30,30,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(PC,ix)→d(An,ix)",12,32,32,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(PC,ix)→xxx.W",12,30,30,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L d(PC,ix)→xxx.L",12,34,34,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L #xxx→Dn,12,12,12,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L #xxx→An,12,12,12,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L #xxx→(An),12,20,20,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L #xxx→(An)+,12,20,20,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L #xxx→-(An),12,20,20,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L #xxx→d(An),12,24,24,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,"MOVE.L #xxx→d(An,ix)",12,26,26,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L #xxx→xxx.W,12,24,24,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-7,MOVE.L #xxx→xxx.L,12,28,28,P2b,—,[DS10 Table 7-7]/[UM00 Table 8-3]
+7-8,"MOVE.L Dn,(An) LoopCont ValidCountFalse",N/A,—,14(0/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L Dn,(An)+ LoopCont ValidCountFalse",N/A,—,14(0/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L Dn,(An) LoopTerm ValidCountTrue",N/A,—,20(2/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L Dn,(An)+ LoopTerm ValidCountTrue",N/A,—,20(2/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L Dn,(An) LoopTerm ExpiredCount",N/A,—,18(2/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L Dn,(An)+ LoopTerm ExpiredCount",N/A,—,18(2/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L An,(An) LoopCont ValidCountFalse",N/A,—,14(0/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L An,(An)+ LoopCont ValidCountFalse",N/A,—,14(0/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L An,(An) LoopTerm ValidCountTrue",N/A,—,20(2/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L An,(An)+ LoopTerm ValidCountTrue",N/A,—,20(2/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L An,(An) LoopTerm ExpiredCount",N/A,—,18(2/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L An,(An)+ LoopTerm ExpiredCount",N/A,—,18(2/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An),(An) LoopCont ValidCountFalse",N/A,—,22(2/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An),(An)+ LoopCont ValidCountFalse",N/A,—,22(2/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An),-(An) LoopCont ValidCountFalse",N/A,—,24(2/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An),(An) LoopTerm ValidCountTrue",N/A,—,28(4/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An),(An)+ LoopTerm ValidCountTrue",N/A,—,28(4/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An),-(An) LoopTerm ValidCountTrue",N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An),(An) LoopTerm ExpiredCount",N/A,—,24(4/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An),(An)+ LoopTerm ExpiredCount",N/A,—,24(4/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An),-(An) LoopTerm ExpiredCount",N/A,—,26(4/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An)+,(An) LoopCont ValidCountFalse",N/A,—,22(2/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An)+,(An)+ LoopCont ValidCountFalse",N/A,—,22(2/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An)+,-(An) LoopCont ValidCountFalse",N/A,—,24(2/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An)+,(An) LoopTerm ValidCountTrue",N/A,—,28(4/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An)+,(An)+ LoopTerm ValidCountTrue",N/A,—,28(4/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An)+,-(An) LoopTerm ValidCountTrue",N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An)+,(An) LoopTerm ExpiredCount",N/A,—,24(4/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An)+,(An)+ LoopTerm ExpiredCount",N/A,—,24(4/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L (An)+,-(An) LoopTerm ExpiredCount",N/A,—,26(4/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L -(An),(An) LoopCont ValidCountFalse",N/A,—,24(2/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L -(An),(An)+ LoopCont ValidCountFalse",N/A,—,24(2/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L -(An),-(An) LoopCont ValidCountFalse",N/A,—,26(2/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L -(An),(An) LoopTerm ValidCountTrue",N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L -(An),(An)+ LoopTerm ValidCountTrue",N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L -(An),-(An) LoopTerm ValidCountTrue",N/A,—,32(4/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L -(An),(An) LoopTerm ExpiredCount",N/A,—,26(4/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L -(An),(An)+ LoopTerm ExpiredCount",N/A,—,26(4/2),LOOP,—,設計書§7によりスコープ外
+7-8,"MOVE.L -(An),-(An) LoopTerm ExpiredCount",N/A,—,28(4/2),LOOP,—,設計書§7によりスコープ外
+7-9,ADD Byte/Word op<ea>/An(ADDA),8(1/0)+,8(1/0)+,8(1/0)+,INH,CYC_INHERIT,[DS10/UM00 Table 7-9/8-4] op_add() ea_mode<=1?8:12
+7-9,ADD Byte/Word op<ea>/Dn,4(1/0)+,4(1/0)+,4(1/0)+,INH,CYC_INHERIT,[DS10/UM00 Table 7-9/8-4]
+7-9,ADD Byte/Word op Dn/<M>,8(1/1)+,8(1/1)+,8(1/1)+,INH,CYC_INHERIT,[DS10/UM00 Table 7-9/8-4]
+7-9,ADD Long op<ea>/An(ADDA.L),8(1/0)+,8(6+**),6(1/0)+,P1b,—,調査書§3.1。current=8はUM00の**脚注適用後の値と一致
+7-9,ADD Long op<ea>/Dn,4,8(6+**),6(1/0)+,P1a+P1b,—,調査書§2.1#1・§3.1。current 4はUM00**脚注適用後の8とも不一致（要Phase1a是正）
+7-9,ADD Long op Dn/<M>,8,12(1/2)+,12(1/2)+,P1a,—,調査書§2.1#2。R-C（current8<UM00base12）
+7-9,AND Byte/Word op<ea>/Dn,4(1/0)+,4(1/0)+,4(1/0)+,INH,CYC_INHERIT,[DS10/UM00 Table 7-9/8-4]
+7-9,AND Byte/Word op Dn/<M>,8(1/1)+,8(1/1)+,8(1/1)+,INH,CYC_INHERIT,[DS10/UM00 Table 7-9/8-4]
+7-9,AND Long op<ea>/Dn,4,8(6+**),6(1/0)+,P1a+P1b,—,調査書§2.1#3・§3.1
+7-9,AND Long op Dn/<M>,8,12(1/2)+,12(1/2)+,P1a,—,調査書§2.1#4。R-C
+7-9,CMP Byte/Word op<ea>/An(CMPA),6(1/0)+,6(1/0)+,6(1/0)+,INH,CYC_INHERIT,[DS10/UM00 Table 7-9/8-4]
+7-9,CMP Byte/Word op<ea>/Dn,4(1/0)+,4(1/0)+,4(1/0)+,INH,CYC_INHERIT,[DS10/UM00 Table 7-9/8-4]
+7-9,CMP Long op<ea>/An(CMPA.L),6(1/0)+,6(1/0)+,6(1/0)+,INH,CYC_INHERIT,CMPAはLongでも**脚注なし・現行値一致
+7-9,CMP Long op<ea>/Dn,4,6(1/0)+,6(1/0)+,P1a,—,調査書§2.1#5「68010差分なし」
+7-9,DIVS,158,158(1/0)+*,122(1/0)+,P1b,—,ops_arith_ext.c:314 return 158; UM00と一致・DS10のみ異なる
+7-9,DIVU,140,140(1/0)+*,108(1/0)+,P1b,—,ops_arith_ext.c:283 return 140;
+7-9,EOR Byte/Word op Dn/Dn,4(1/0)**,4(1/0)***,4(1/0)**,INH,CYC_INHERIT,[DS10/UM00 Table 7-9/8-4]
+7-9,EOR Byte/Word op Dn/<M>,8(1/1)+,8(1/1)+,8(1/1)+,INH,CYC_INHERIT,[DS10/UM00 Table 7-9/8-4]
+7-9,EOR Long op Dn/Dn,4,8(1/0)***,6(1/0)**,P1a+P1b,—,調査書§2.1#6・§3.1
+7-9,EOR Long op Dn/<M>,8,12(1/2)+,12(1/2)+,P1a,—,調査書§2.1#7。R-C
+7-9,MULS,70,70(1/0)+*,42(1/0)+*,P1b,—,ops_arith_ext.c:74 return 70;
+7-9,MULU,70,70(1/0)+*,40(1/0)+,P1b,—,ops_arith_ext.c:48 return 70;
+7-9,OR Byte/Word op<ea>/Dn,4(1/0)+,4(1/0)+,4(1/0)+,INH,CYC_INHERIT,[DS10/UM00 Table 7-9/8-4]
+7-9,OR Byte/Word op Dn/<M>,8(1/1)+,8(1/1)+,8(1/1)+,INH,CYC_INHERIT,[DS10/UM00 Table 7-9/8-4]
+7-9,OR Long op<ea>/Dn,4,8(6+**),6(1/0)+,P1a+P1b,—,調査書§2.1#8・§3.1
+7-9,OR Long op Dn/<M>,8,12(1/2)+,12(1/2)+,P1a,—,調査書§2.1#9。R-C
+7-9,SUB Byte/Word op<ea>/An(SUBA),8(1/0)+,8(1/0)+,8(1/0)+,INH,CYC_INHERIT,[DS10/UM00 Table 7-9/8-4]
+7-9,SUB Byte/Word op<ea>/Dn,4(1/0)+,4(1/0)+,4(1/0)+,INH,CYC_INHERIT,[DS10/UM00 Table 7-9/8-4]
+7-9,SUB Byte/Word op Dn/<M>,8(1/1)+,8(1/1)+,8(1/1)+,INH,CYC_INHERIT,[DS10/UM00 Table 7-9/8-4]
+7-9,SUB Long op<ea>/An(SUBA.L),8(1/0)+,8(6+**),6(1/0)+,P1b,—,調査書§3.1
+7-9,SUB Long op<ea>/Dn,4,8(6+**),6(1/0)+,P1a+P1b,—,調査書§2.1#10・§3.1
+7-9,SUB Long op Dn/<M>,8,12(1/2)+,12(1/2)+,P1a,—,調査書§2.1#11。R-C
+7-10,"ADD.B/W op<ea>,An LoopCont ValidCountFalse",N/A,—,18(1/0),LOOP,—,設計書§7によりスコープ外
+7-10,"ADD.B/W op<ea>,Dn LoopCont ValidCountFalse",N/A,—,16(1/0),LOOP,—,設計書§7によりスコープ外
+7-10,"ADD.B/W op Dn,<ea> LoopCont ValidCountFalse",N/A,—,16(1/1),LOOP,—,設計書§7によりスコープ外
+7-10,"ADD.B/W op<ea>,An LoopTerm ValidCountTrue",N/A,—,24(3/0),LOOP,—,設計書§7によりスコープ外
+7-10,"ADD.B/W op<ea>,Dn LoopTerm ValidCountTrue",N/A,—,22(3/0),LOOP,—,設計書§7によりスコープ外
+7-10,"ADD.B/W op Dn,<ea> LoopTerm ValidCountTrue",N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-10,"ADD.B/W op<ea>,An LoopTerm ExpiredCount",N/A,—,22(3/0),LOOP,—,設計書§7によりスコープ外
+7-10,"ADD.B/W op<ea>,Dn LoopTerm ExpiredCount",N/A,—,20(3/0),LOOP,—,設計書§7によりスコープ外
+7-10,"ADD.B/W op Dn,<ea> LoopTerm ExpiredCount",N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-10,"ADD.L op<ea>,An LoopCont ValidCountFalse",N/A,—,22(2/0),LOOP,—,設計書§7によりスコープ外
+7-10,"ADD.L op<ea>,Dn LoopCont ValidCountFalse",N/A,—,22(2/0),LOOP,—,設計書§7によりスコープ外
+7-10,"ADD.L op Dn,<ea> LoopCont ValidCountFalse",N/A,—,24(2/2),LOOP,—,設計書§7によりスコープ外
+7-10,"ADD.L op<ea>,An LoopTerm ValidCountTrue",N/A,—,28(4/0),LOOP,—,設計書§7によりスコープ外
+7-10,"ADD.L op<ea>,Dn LoopTerm ValidCountTrue",N/A,—,28(4/0),LOOP,—,設計書§7によりスコープ外
+7-10,"ADD.L op Dn,<ea> LoopTerm ValidCountTrue",N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-10,"ADD.L op<ea>,An LoopTerm ExpiredCount",N/A,—,26(4/0),LOOP,—,設計書§7によりスコープ外
+7-10,"ADD.L op<ea>,Dn LoopTerm ExpiredCount",N/A,—,26(4/0),LOOP,—,設計書§7によりスコープ外
+7-10,"ADD.L op Dn,<ea> LoopTerm ExpiredCount",N/A,—,28(4/2),LOOP,—,設計書§7によりスコープ外
+7-10,"AND.B/W op<ea>,Dn LoopCont ValidCountFalse",N/A,—,16(1/0),LOOP,—,設計書§7によりスコープ外
+7-10,"AND.B/W op Dn,<ea> LoopCont ValidCountFalse",N/A,—,16(1/1),LOOP,—,設計書§7によりスコープ外
+7-10,"AND.B/W op<ea>,Dn LoopTerm ValidCountTrue",N/A,—,22(3/0),LOOP,—,設計書§7によりスコープ外
+7-10,"AND.B/W op Dn,<ea> LoopTerm ValidCountTrue",N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-10,"AND.B/W op<ea>,Dn LoopTerm ExpiredCount",N/A,—,20(3/0),LOOP,—,設計書§7によりスコープ外
+7-10,"AND.B/W op Dn,<ea> LoopTerm ExpiredCount",N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-10,"AND.L op<ea>,Dn LoopCont ValidCountFalse",N/A,—,22(2/0),LOOP,—,設計書§7によりスコープ外
+7-10,"AND.L op Dn,<ea> LoopCont ValidCountFalse",N/A,—,24(2/2),LOOP,—,設計書§7によりスコープ外
+7-10,"AND.L op<ea>,Dn LoopTerm ValidCountTrue",N/A,—,28(4/0),LOOP,—,設計書§7によりスコープ外
+7-10,"AND.L op Dn,<ea> LoopTerm ValidCountTrue",N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-10,"AND.L op<ea>,Dn LoopTerm ExpiredCount",N/A,—,26(4/0),LOOP,—,設計書§7によりスコープ外
+7-10,"AND.L op Dn,<ea> LoopTerm ExpiredCount",N/A,—,28(4/2),LOOP,—,設計書§7によりスコープ外
+7-10,"CMP.B/W op<ea>,An LoopCont ValidCountFalse",N/A,—,12(1/0),LOOP,—,設計書§7によりスコープ外
+7-10,"CMP.B/W op<ea>,Dn LoopCont ValidCountFalse",N/A,—,12(1/0),LOOP,—,設計書§7によりスコープ外
+7-10,"CMP.B/W op<ea>,An LoopTerm ValidCountTrue",N/A,—,18(3/0),LOOP,—,設計書§7によりスコープ外
+7-10,"CMP.B/W op<ea>,Dn LoopTerm ValidCountTrue",N/A,—,18(3/0),LOOP,—,設計書§7によりスコープ外
+7-10,"CMP.B/W op<ea>,An LoopTerm ExpiredCount",N/A,—,16(3/0),LOOP,—,設計書§7によりスコープ外
+7-10,"CMP.B/W op<ea>,Dn LoopTerm ExpiredCount",N/A,—,16(4/0),LOOP,—,設計書§7によりスコープ外
+7-10,"CMP.L op<ea>,An LoopCont ValidCountFalse",N/A,—,18(2/0),LOOP,—,設計書§7によりスコープ外
+7-10,"CMP.L op<ea>,Dn LoopCont ValidCountFalse",N/A,—,18(2/0),LOOP,—,設計書§7によりスコープ外
+7-10,"CMP.L op<ea>,An LoopTerm ValidCountTrue",N/A,—,24(4/0),LOOP,—,設計書§7によりスコープ外
+7-10,"CMP.L op<ea>,Dn LoopTerm ValidCountTrue",N/A,—,24(4/0),LOOP,—,設計書§7によりスコープ外
+7-10,"CMP.L op<ea>,An LoopTerm ExpiredCount",N/A,—,20(4/0),LOOP,—,設計書§7によりスコープ外
+7-10,"CMP.L op<ea>,Dn LoopTerm ExpiredCount",N/A,—,20(4/0),LOOP,—,設計書§7によりスコープ外
+7-10,"EOR.B/W op Dn,<ea> LoopCont ValidCountFalse",N/A,—,16(1/0),LOOP,—,設計書§7によりスコープ外
+7-10,"EOR.B/W op Dn,<ea> LoopTerm ValidCountTrue",N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-10,"EOR.B/W op Dn,<ea> LoopTerm ExpiredCount",N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-10,"EOR.L op Dn,<ea> LoopCont ValidCountFalse",N/A,—,24(2/2),LOOP,—,設計書§7によりスコープ外
+7-10,"EOR.L op Dn,<ea> LoopTerm ValidCountTrue",N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-10,"EOR.L op Dn,<ea> LoopTerm ExpiredCount",N/A,—,28(4/2),LOOP,—,設計書§7によりスコープ外
+7-10,"OR.B/W op<ea>,Dn LoopCont ValidCountFalse",N/A,—,16(1/0),LOOP,—,設計書§7によりスコープ外
+7-10,"OR.B/W op Dn,<ea> LoopCont ValidCountFalse",N/A,—,16(1/0),LOOP,—,設計書§7によりスコープ外
+7-10,"OR.B/W op<ea>,Dn LoopTerm ValidCountTrue",N/A,—,22(3/0),LOOP,—,設計書§7によりスコープ外
+7-10,"OR.B/W op Dn,<ea> LoopTerm ValidCountTrue",N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-10,"OR.B/W op<ea>,Dn LoopTerm ExpiredCount",N/A,—,20(3/0),LOOP,—,設計書§7によりスコープ外
+7-10,"OR.B/W op Dn,<ea> LoopTerm ExpiredCount",N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-10,"OR.L op<ea>,Dn LoopCont ValidCountFalse",N/A,—,22(2/0),LOOP,—,設計書§7によりスコープ外
+7-10,"OR.L op Dn,<ea> LoopCont ValidCountFalse",N/A,—,24(2/2),LOOP,—,設計書§7によりスコープ外
+7-10,"OR.L op<ea>,Dn LoopTerm ValidCountTrue",N/A,—,28(4/0),LOOP,—,設計書§7によりスコープ外
+7-10,"OR.L op Dn,<ea> LoopTerm ValidCountTrue",N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-10,"OR.L op<ea>,Dn LoopTerm ExpiredCount",N/A,—,26(4/0),LOOP,—,設計書§7によりスコープ外
+7-10,"OR.L op Dn,<ea> LoopTerm ExpiredCount",N/A,—,28(4/2),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.B/W op<ea>,An LoopCont ValidCountFalse",N/A,—,18(1/0),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.B/W op<ea>,Dn LoopCont ValidCountFalse",N/A,—,16(1/0),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.B/W op Dn,<ea> LoopCont ValidCountFalse",N/A,—,16(1/1),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.B/W op<ea>,An LoopTerm ValidCountTrue",N/A,—,24(3/0),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.B/W op<ea>,Dn LoopTerm ValidCountTrue",N/A,—,22(3/0),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.B/W op Dn,<ea> LoopTerm ValidCountTrue",N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.B/W op<ea>,An LoopTerm ExpiredCount",N/A,—,22(3/0),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.B/W op<ea>,Dn LoopTerm ExpiredCount",N/A,—,20(3/0),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.B/W op Dn,<ea> LoopTerm ExpiredCount",N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.L op<ea>,An LoopCont ValidCountFalse",N/A,—,22(2/0),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.L op<ea>,Dn LoopCont ValidCountFalse",N/A,—,20(2/0),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.L op Dn,<ea> LoopCont ValidCountFalse",N/A,—,24(2/2),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.L op<ea>,An LoopTerm ValidCountTrue",N/A,—,28(4/0),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.L op<ea>,Dn LoopTerm ValidCountTrue",N/A,—,26(4/0),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.L op Dn,<ea> LoopTerm ValidCountTrue",N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.L op<ea>,An LoopTerm ExpiredCount",N/A,—,26(4/0),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.L op<ea>,Dn LoopTerm ExpiredCount",N/A,—,24(4/0),LOOP,—,設計書§7によりスコープ外
+7-10,"SUB.L op Dn,<ea> LoopTerm ExpiredCount",N/A,—,28(4/2),LOOP,—,設計書§7によりスコープ外
+7-11,ADDI Byte/Word #/Dn,8(2/0),8(2/0),8(2/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-11/8-5]
+7-11,ADDI Byte/Word #/M,12(2/1)+,12(2/1)+,12(2/1)+,P2a,—,[DS10/UM00 Table 7-11/8-5]
+7-11,ADDI Long #/Dn,16,16(3/0),14(3/0),P1b,—,ops_alu.c:292 ea_mode==0&&size==4→16
+7-11,ADDI Long #/M,20(3/2)+,20(3/2)+,20(3/2)+,P2a,—,[DS10/UM00 Table 7-11/8-5]
+7-11,ADDQ Byte/Word #/Dn,4(1/0),4(1/0),4(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-11/8-5]
+7-11,ADDQ Byte/Word #/An,8,4(1/0)*,4(1/0)*,P1a,—,調査書§2.1#12
+7-11,ADDQ Byte/Word #/M,8(1/1)+,8(1/1)+,8(1/1)+,P2a,—,[DS10/UM00 Table 7-11/8-5]
+7-11,ADDQ Long #/Dn,4,8(1/0),8(1/0),P1a,—,調査書§2.1#13
+7-11,ADDQ Long #/An,8(1/0),8(1/0),8(1/0),INH,CYC_INHERIT,op_addq() An宛return 8;
+7-11,ADDQ Long #/M,8,12(1/2)+,12(1/2)+,P1a,—,調査書§2.1#14。R-C
+7-11,ANDI Byte/Word #/Dn,8(2/0),8(2/0),8(2/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-11/8-5]
+7-11,ANDI Byte/Word #/M,12(2/1)+,12(2/1)+,12(2/1)+,P2a,—,[DS10/UM00 Table 7-11/8-5]
+7-11,ANDI Long #/Dn,8,14(3/0),14(3/0),P1a,—,調査書§2.1#17
+7-11,ANDI Long #/M,12,20(3/2)+,20(3/1)+,P1a,—,調査書§2.1#18。R-C。DS10のr/w表記は原本どおり(3/1)
+7-11,CMPI Byte/Word #/Dn,8(2/0),8(2/0),8(2/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-11/8-5]
+7-11,CMPI Byte/Word #/M,8(2/0)+,8(2/0)+,8(2/0)+,P2a,—,[DS10/UM00 Table 7-11/8-5]
+7-11,CMPI Long #/Dn,14,14(3/0),12(3/0),P1b,—,ops_alu.c:335 ea_mode==0&&size==4→14
+7-11,CMPI Long #/M,12(3/0)+,12(3/0)+,12(3/0)+,P2a,—,[DS10/UM00 Table 7-11/8-5]
+7-11,EORI Byte/Word #/Dn,8(2/0),8(2/0),8(2/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-11/8-5]
+7-11,EORI Byte/Word #/M,12(2/1)+,12(2/1)+,12(2/1)+,P2a,—,[DS10/UM00 Table 7-11/8-5]
+7-11,EORI Long #/Dn,8,16(3/0),14(3/0),P1a+P1b,—,調査書§2.1#19
+7-11,EORI Long #/M,12,20(3/2)+,20(3/2)+,P1a,—,調査書§2.1#20。R-C
+7-11,MOVEQ Long #/Dn,4(1/0),4(1/0),4(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-11/8-5]
+7-11,ORI Byte/Word #/Dn,8(2/0),8(2/0),8(2/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-11/8-5]
+7-11,ORI Byte/Word #/M,12(2/1)+,12(2/1)+,12(2/1)+,P2a,—,[DS10/UM00 Table 7-11/8-5]
+7-11,ORI Long #/Dn,8,16(3/0),14(3/0),P1a+P1b,—,調査書§2.1#21
+7-11,ORI Long #/M,12,20(3/2)+,20(3/2)+,P1a,—,調査書§2.1#22。R-C
+7-11,SUBI Byte/Word #/Dn,8(2/0),8(2/0),8(2/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-11/8-5]
+7-11,SUBI Byte/Word #/M,12(2/1)+,12(2/1)+,12(2/1)+,P2a,—,[DS10/UM00 Table 7-11/8-5]
+7-11,SUBI Long #/Dn,16,16(3/0),14(3/0),P1b,—,ops_alu.c:314 ea_mode==0&&size==4→16
+7-11,SUBI Long #/M,20(3/2)+,20(3/2)+,20(3/2)+,P2a,—,[DS10/UM00 Table 7-11/8-5]
+7-11,SUBQ Byte/Word #/Dn,4(1/0),4(1/0),4(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-11/8-5]
+7-11,SUBQ Byte/Word #/An,8(1/0)*,8(1/0)*,4(1/0)*,P1b,—,調査書§2.3(b)・§3.2
+7-11,SUBQ Byte/Word #/M,8(1/1)+,8(1/1)+,8(1/1)+,P2a,—,[DS10/UM00 Table 7-11/8-5]
+7-11,SUBQ Long #/Dn,4,8(1/0),8(1/0),P1a,—,調査書§2.1#15
+7-11,SUBQ Long #/An,8(1/0),8(1/0),8(1/0),INH,CYC_INHERIT,op_subq() An宛return 8;
+7-11,SUBQ Long #/M,8,12(1/2)+,12(1/2)+,P1a,—,調査書§2.1#16。R-C
+7-12,NBCD Byte Register,6(1/0),6(1/0),6(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-12/8-6]
+7-12,NBCD Byte Memory,8(1/1)+,8(1/1)+,8(1/1)+,P2a,—,[DS10/UM00 Table 7-12/8-6]
+7-12,NEG Byte/Word Register,4(1/0),4(1/0),4(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-12/8-6]
+7-12,NEG Byte/Word Memory,8(1/1)+,8(1/1)+,8(1/1)+,P2a,—,[DS10/UM00 Table 7-12/8-6]
+7-12,NEG Long Register,6(1/0),6(1/0),6(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-12/8-6]
+7-12,NEG Long Memory,8,12(1/2)+,12(1/2)+,P1a,—,調査書§2.1#23。R-C
+7-12,NEGX Byte/Word Register,4(1/0),4(1/0),4(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-12/8-6]
+7-12,NEGX Byte/Word Memory,8(1/1)+,8(1/1)+,8(1/1)+,P2a,—,[DS10/UM00 Table 7-12/8-6]
+7-12,NEGX Long Register,6(1/0),6(1/0),6(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-12/8-6]
+7-12,NEGX Long Memory,8,12(1/2)+,12(1/2)+,P1a,—,調査書§2.1#24。R-C
+7-12,NOT Byte/Word Register,4(1/0),4(1/0),4(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-12/8-6]
+7-12,NOT Byte/Word Memory,8(1/1)+,8(1/1)+,8(1/1)+,P2a,—,[DS10/UM00 Table 7-12/8-6]
+7-12,NOT Long Register,6(1/0),6(1/0),6(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-12/8-6]
+7-12,NOT Long Memory,8,12(1/2)+,12(1/2)+,P1a,—,調査書§2.1#25。R-C
+7-12,Scc Byte False Register,4(1/0),4(1/0),4(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-12/8-6]
+7-12,Scc Byte False Memory,8(1/1)+*,8(1/1)+,8(1/1)+*,P2a,—,[DS10/UM00 Table 7-12/8-6]
+7-12,Scc Byte True Register,6,6(1/0),4(1/0),P1b,—,調査書§3.3。op_scc()は68000として正しい
+7-12,Scc Byte True Memory,8(1/1)+*,8(1/1)+,8(1/1)+*,P2a,—,[DS10/UM00 Table 7-12/8-6]
+7-12,TAS Byte Register,4(1/0),4(1/0),4(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-12/8-6]
+7-12,TAS Byte Memory,14(2/1)+*,14(2/1)+,14(2/1)+*,P2a,—,[DS10/UM00 Table 7-12/8-6]
+7-12,TST Byte/Word Register,4(1/0),4(1/0),4(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-12/8-6]
+7-12,TST Byte/Word Memory,4(1/0)+,4(1/0)+,4(1/0)+,P2a,—,[DS10/UM00 Table 7-12/8-6]（現行は8=4+EA近似）
+7-12,TST Long Register,4(1/0),4(1/0),4(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-12/8-6]
+7-12,TST Long Memory,4(1/0)+,4(1/0)+,4(1/0)+,P2a,—,[DS10/UM00 Table 7-12/8-6]（現行は8=4+EA近似）
+7-13,CLR.B/W Dn,4,4(1/0),4,INH,CYC_INHERIT,[DS10 Table 7-13]/[UM00 Table 8-6]
+7-13,CLR.B/W (An),8,8(1/1)+,8,P2b,—,[DS10 Table 7-13]/[UM00 Table 8-6]
+7-13,CLR.B/W (An)+,8,8(1/1)+,8,P2b,—,[DS10 Table 7-13]/[UM00 Table 8-6]
+7-13,CLR.B/W -(An),8,8(1/1)+,10,P2b,—,[DS10 Table 7-13]/[UM00 Table 8-6]
+7-13,CLR.B/W d(An),8,8(1/1)+,12,P2b,—,[DS10 Table 7-13]/[UM00 Table 8-6]
+7-13,"CLR.B/W d(An,ix)",8,8(1/1)+,16,P2b,—,[DS10 Table 7-13]/[UM00 Table 8-6]
+7-13,CLR.B/W xxx.W,8,8(1/1)+,12,P2b,—,[DS10 Table 7-13]/[UM00 Table 8-6]
+7-13,CLR.B/W xxx.L,8,8(1/1)+,16,P2b,—,[DS10 Table 7-13]/[UM00 Table 8-6]
+7-13,CLR.L Dn,6,6(1/0),6,INH,CYC_INHERIT,[DS10 Table 7-13]/[UM00 Table 8-6]
+7-13,CLR.L (An),8,12(1/2)+,12,P2b,—,[DS10 Table 7-13]/[UM00 Table 8-6]
+7-13,CLR.L (An)+,8,12(1/2)+,12,P2b,—,[DS10 Table 7-13]/[UM00 Table 8-6]
+7-13,CLR.L -(An),8,12(1/2)+,14,P2b,—,[DS10 Table 7-13]/[UM00 Table 8-6]
+7-13,CLR.L d(An),8,12(1/2)+,16,P2b,—,[DS10 Table 7-13]/[UM00 Table 8-6]
+7-13,"CLR.L d(An,ix)",8,12(1/2)+,20,P2b,—,[DS10 Table 7-13]/[UM00 Table 8-6]
+7-13,CLR.L xxx.W,8,12(1/2)+,16,P2b,—,[DS10 Table 7-13]/[UM00 Table 8-6]
+7-13,CLR.L xxx.L,8,12(1/2)+,20,P2b,—,[DS10 Table 7-13]/[UM00 Table 8-6]
+7-14,CLR.B/W (An) LoopCont ValidCountFalse,N/A,—,10(0/1),LOOP,—,設計書§7によりスコープ外
+7-14,CLR.B/W (An)+ LoopCont ValidCountFalse,N/A,—,10(0/1),LOOP,—,設計書§7によりスコープ外
+7-14,CLR.B/W -(An) LoopCont ValidCountFalse,N/A,—,12(0/1),LOOP,—,設計書§7によりスコープ外
+7-14,CLR.B/W (An) LoopTerm ValidCountTrue,N/A,—,18(2/1),LOOP,—,設計書§7によりスコープ外
+7-14,CLR.B/W (An)+ LoopTerm ValidCountTrue,N/A,—,18(2/1),LOOP,—,設計書§7によりスコープ外
+7-14,CLR.B/W -(An) LoopTerm ValidCountTrue,N/A,—,20(2/0),LOOP,—,設計書§7によりスコープ外
+7-14,CLR.B/W (An) LoopTerm ExpiredCount,N/A,—,16(2/1),LOOP,—,設計書§7によりスコープ外
+7-14,CLR.B/W (An)+ LoopTerm ExpiredCount,N/A,—,16(2/1),LOOP,—,設計書§7によりスコープ外
+7-14,CLR.B/W -(An) LoopTerm ExpiredCount,N/A,—,18(2/1),LOOP,—,設計書§7によりスコープ外
+7-14,CLR.L (An) LoopCont ValidCountFalse,N/A,—,14(0/2),LOOP,—,設計書§7によりスコープ外
+7-14,CLR.L (An)+ LoopCont ValidCountFalse,N/A,—,14(0/2),LOOP,—,設計書§7によりスコープ外
+7-14,CLR.L -(An) LoopCont ValidCountFalse,N/A,—,16(0/2),LOOP,—,設計書§7によりスコープ外
+7-14,CLR.L (An) LoopTerm ValidCountTrue,N/A,—,22(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,CLR.L (An)+ LoopTerm ValidCountTrue,N/A,—,22(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,CLR.L -(An) LoopTerm ValidCountTrue,N/A,—,24(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,CLR.L (An) LoopTerm ExpiredCount,N/A,—,20(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,CLR.L (An)+ LoopTerm ExpiredCount,N/A,—,20(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,CLR.L -(An) LoopTerm ExpiredCount,N/A,—,22(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,NBCD (An) LoopCont ValidCountFalse,N/A,—,18(1/1),LOOP,—,設計書§7によりスコープ外
+7-14,NBCD (An)+ LoopCont ValidCountFalse,N/A,—,18(1/1),LOOP,—,設計書§7によりスコープ外
+7-14,NBCD -(An) LoopCont ValidCountFalse,N/A,—,20(1/1),LOOP,—,設計書§7によりスコープ外
+7-14,NBCD (An) LoopTerm ValidCountTrue,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NBCD (An)+ LoopTerm ValidCountTrue,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NBCD -(An) LoopTerm ValidCountTrue,N/A,—,26(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NBCD (An) LoopTerm ExpiredCount,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NBCD (An)+ LoopTerm ExpiredCount,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NBCD -(An) LoopTerm ExpiredCount,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.B/W (An) LoopCont ValidCountFalse,N/A,—,16(1/1),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.B/W (An)+ LoopCont ValidCountFalse,N/A,—,16(1/1),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.B/W -(An) LoopCont ValidCountFalse,N/A,—,18(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.B/W (An) LoopTerm ValidCountTrue,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.B/W (An)+ LoopTerm ValidCountTrue,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.B/W -(An) LoopTerm ValidCountTrue,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.B/W (An) LoopTerm ExpiredCount,N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.B/W (An)+ LoopTerm ExpiredCount,N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.B/W -(An) LoopTerm ExpiredCount,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.L (An) LoopCont ValidCountFalse,N/A,—,24(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.L (An)+ LoopCont ValidCountFalse,N/A,—,24(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.L -(An) LoopCont ValidCountFalse,N/A,—,26(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.L (An) LoopTerm ValidCountTrue,N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.L (An)+ LoopTerm ValidCountTrue,N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.L -(An) LoopTerm ValidCountTrue,N/A,—,32(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.L (An) LoopTerm ExpiredCount,N/A,—,28(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.L (An)+ LoopTerm ExpiredCount,N/A,—,28(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEG.L -(An) LoopTerm ExpiredCount,N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.B/W (An) LoopCont ValidCountFalse,N/A,—,16(1/1),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.B/W (An)+ LoopCont ValidCountFalse,N/A,—,16(1/1),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.B/W -(An) LoopCont ValidCountFalse,N/A,—,18(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.B/W (An) LoopTerm ValidCountTrue,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.B/W (An)+ LoopTerm ValidCountTrue,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.B/W -(An) LoopTerm ValidCountTrue,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.B/W (An) LoopTerm ExpiredCount,N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.B/W (An)+ LoopTerm ExpiredCount,N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.B/W -(An) LoopTerm ExpiredCount,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.L (An) LoopCont ValidCountFalse,N/A,—,24(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.L (An)+ LoopCont ValidCountFalse,N/A,—,24(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.L -(An) LoopCont ValidCountFalse,N/A,—,26(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.L (An) LoopTerm ValidCountTrue,N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.L (An)+ LoopTerm ValidCountTrue,N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.L -(An) LoopTerm ValidCountTrue,N/A,—,32(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.L (An) LoopTerm ExpiredCount,N/A,—,28(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.L (An)+ LoopTerm ExpiredCount,N/A,—,28(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,NEGX.L -(An) LoopTerm ExpiredCount,N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.B/W (An) LoopCont ValidCountFalse,N/A,—,16(1/1),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.B/W (An)+ LoopCont ValidCountFalse,N/A,—,16(1/1),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.B/W -(An) LoopCont ValidCountFalse,N/A,—,18(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.B/W (An) LoopTerm ValidCountTrue,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.B/W (An)+ LoopTerm ValidCountTrue,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.B/W -(An) LoopTerm ValidCountTrue,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.B/W (An) LoopTerm ExpiredCount,N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.B/W (An)+ LoopTerm ExpiredCount,N/A,—,20(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.B/W -(An) LoopTerm ExpiredCount,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.L (An) LoopCont ValidCountFalse,N/A,—,24(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.L (An)+ LoopCont ValidCountFalse,N/A,—,24(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.L -(An) LoopCont ValidCountFalse,N/A,—,26(2/2),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.L (An) LoopTerm ValidCountTrue,N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.L (An)+ LoopTerm ValidCountTrue,N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.L -(An) LoopTerm ValidCountTrue,N/A,—,32(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.L (An) LoopTerm ExpiredCount,N/A,—,28(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.L (An)+ LoopTerm ExpiredCount,N/A,—,28(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,NOT.L -(An) LoopTerm ExpiredCount,N/A,—,30(4/2),LOOP,—,設計書§7によりスコープ外
+7-14,TST.B/W (An) LoopCont ValidCountFalse,N/A,—,12(1/0),LOOP,—,設計書§7によりスコープ外
+7-14,TST.B/W (An)+ LoopCont ValidCountFalse,N/A,—,12(1/0),LOOP,—,設計書§7によりスコープ外
+7-14,TST.B/W -(An) LoopCont ValidCountFalse,N/A,—,14(1/0),LOOP,—,設計書§7によりスコープ外
+7-14,TST.B/W (An) LoopTerm ValidCountTrue,N/A,—,18(3/0),LOOP,—,設計書§7によりスコープ外
+7-14,TST.B/W (An)+ LoopTerm ValidCountTrue,N/A,—,18(3/0),LOOP,—,設計書§7によりスコープ外
+7-14,TST.B/W -(An) LoopTerm ValidCountTrue,N/A,—,20(3/0),LOOP,—,設計書§7によりスコープ外
+7-14,TST.B/W (An) LoopTerm ExpiredCount,N/A,—,16(3/0),LOOP,—,設計書§7によりスコープ外
+7-14,TST.B/W (An)+ LoopTerm ExpiredCount,N/A,—,16(3/0),LOOP,—,設計書§7によりスコープ外
+7-14,TST.B/W -(An) LoopTerm ExpiredCount,N/A,—,18(3/0),LOOP,—,設計書§7によりスコープ外
+7-14,TST.L (An) LoopCont ValidCountFalse,N/A,—,18(2/0),LOOP,—,設計書§7によりスコープ外
+7-14,TST.L (An)+ LoopCont ValidCountFalse,N/A,—,18(2/0),LOOP,—,設計書§7によりスコープ外
+7-14,TST.L -(An) LoopCont ValidCountFalse,N/A,—,20(2/0),LOOP,—,設計書§7によりスコープ外
+7-14,TST.L (An) LoopTerm ValidCountTrue,N/A,—,24(4/0),LOOP,—,設計書§7によりスコープ外
+7-14,TST.L (An)+ LoopTerm ValidCountTrue,N/A,—,24(4/0),LOOP,—,設計書§7によりスコープ外
+7-14,TST.L -(An) LoopTerm ValidCountTrue,N/A,—,26(4/0),LOOP,—,設計書§7によりスコープ外
+7-14,TST.L (An) LoopTerm ExpiredCount,N/A,—,20(4/0),LOOP,—,設計書§7によりスコープ外
+7-14,TST.L (An)+ LoopTerm ExpiredCount,N/A,—,20(4/0),LOOP,—,設計書§7によりスコープ外
+7-14,TST.L -(An) LoopTerm ExpiredCount,N/A,—,22(4/0),LOOP,—,設計書§7によりスコープ外
+7-15,ASR/ASL Byte/Word Register,6+2n(1/0),6+2n(1/0),6+2n(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-15/8-7]
+7-15,ASR/ASL Byte/Word Memory,8(1/1)+,8(1/1)+,8(1/1)+,P2a,—,[DS10/UM00 Table 7-15/8-7]
+7-15,ASR/ASL Long Register,6+2n,8+2n(1/0),8+2n(1/0),P1a,—,調査書§2.1#26
+7-15,LSR/LSL Byte/Word Register,6+2n(1/0),6+2n(1/0),6+2n(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-15/8-7]
+7-15,LSR/LSL Byte/Word Memory,8(1/1)+,8(1/1)+,8(1/1)+,P2a,—,[DS10/UM00 Table 7-15/8-7]
+7-15,LSR/LSL Long Register,6+2n,8+2n(1/0),8+2n(1/0),P1a,—,調査書§2.1#27
+7-15,ROR/ROL Byte/Word Register,6+2n(1/0),6+2n(1/0),6+2n(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-15/8-7]
+7-15,ROR/ROL Byte/Word Memory,8(1/1)+,8(1/1)+,8(1/1)+,P2a,—,[DS10/UM00 Table 7-15/8-7]
+7-15,ROR/ROL Long Register,6+2n,8+2n(1/0),8+2n(1/0),P1a,—,調査書§2.1#28
+7-15,ROXR/ROXL Byte/Word Register,6+2n(1/0),6+2n(1/0),6+2n(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-15/8-7]
+7-15,ROXR/ROXL Byte/Word Memory,8(1/1)+,8(1/1)+,8(1/1)+,P2a,—,[DS10/UM00 Table 7-15/8-7]
+7-15,ROXR/ROXL Long Register,6+2n,8+2n(1/0),8+2n(1/0),P1a,—,調査書§2.1#29
+7-16,ASR/ASL Word (An) LoopCont ValidCountFalse,N/A,—,18(1/1),LOOP,—,設計書§7によりスコープ外
+7-16,ASR/ASL Word (An)+ LoopCont ValidCountFalse,N/A,—,18(1/1),LOOP,—,設計書§7によりスコープ外
+7-16,ASR/ASL Word -(An) LoopCont ValidCountFalse,N/A,—,20(1/1),LOOP,—,設計書§7によりスコープ外
+7-16,ASR/ASL Word (An) LoopTerm ValidCountTrue,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,ASR/ASL Word (An)+ LoopTerm ValidCountTrue,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,ASR/ASL Word -(An) LoopTerm ValidCountTrue,N/A,—,26(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,ASR/ASL Word (An) LoopTerm ExpiredCount,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,ASR/ASL Word (An)+ LoopTerm ExpiredCount,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,ASR/ASL Word -(An) LoopTerm ExpiredCount,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,LSR/LSL Word (An) LoopCont ValidCountFalse,N/A,—,18(1/1),LOOP,—,設計書§7によりスコープ外
+7-16,LSR/LSL Word (An)+ LoopCont ValidCountFalse,N/A,—,18(1/1),LOOP,—,設計書§7によりスコープ外
+7-16,LSR/LSL Word -(An) LoopCont ValidCountFalse,N/A,—,20(1/1),LOOP,—,設計書§7によりスコープ外
+7-16,LSR/LSL Word (An) LoopTerm ValidCountTrue,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,LSR/LSL Word (An)+ LoopTerm ValidCountTrue,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,LSR/LSL Word -(An) LoopTerm ValidCountTrue,N/A,—,26(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,LSR/LSL Word (An) LoopTerm ExpiredCount,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,LSR/LSL Word (An)+ LoopTerm ExpiredCount,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,LSR/LSL Word -(An) LoopTerm ExpiredCount,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROR/ROL Word (An) LoopCont ValidCountFalse,N/A,—,18(1/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROR/ROL Word (An)+ LoopCont ValidCountFalse,N/A,—,18(1/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROR/ROL Word -(An) LoopCont ValidCountFalse,N/A,—,20(1/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROR/ROL Word (An) LoopTerm ValidCountTrue,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROR/ROL Word (An)+ LoopTerm ValidCountTrue,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROR/ROL Word -(An) LoopTerm ValidCountTrue,N/A,—,26(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROR/ROL Word (An) LoopTerm ExpiredCount,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROR/ROL Word (An)+ LoopTerm ExpiredCount,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROR/ROL Word -(An) LoopTerm ExpiredCount,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROXR/ROXL Word (An) LoopCont ValidCountFalse,N/A,—,18(1/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROXR/ROXL Word (An)+ LoopCont ValidCountFalse,N/A,—,18(1/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROXR/ROXL Word -(An) LoopCont ValidCountFalse,N/A,—,20(1/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROXR/ROXL Word (An) LoopTerm ValidCountTrue,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROXR/ROXL Word (An)+ LoopTerm ValidCountTrue,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROXR/ROXL Word -(An) LoopTerm ValidCountTrue,N/A,—,26(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROXR/ROXL Word (An) LoopTerm ExpiredCount,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROXR/ROXL Word (An)+ LoopTerm ExpiredCount,N/A,—,22(3/1),LOOP,—,設計書§7によりスコープ外
+7-16,ROXR/ROXL Word -(An) LoopTerm ExpiredCount,N/A,—,24(3/1),LOOP,—,設計書§7によりスコープ外
+7-17,BCHG Byte Dynamic Memory,8(1/1)+,8(1/1)+,8(1/1)+,P2a,—,[DS10/UM00 Table 7-17/8-8]
+7-17,BCHG Byte Static Memory,12(2/1)+,12(2/1)+,12(2/1)+,P2a,—,[DS10/UM00 Table 7-17/8-8]
+7-17,BCHG Long Dynamic Register,8(1/0)*,8(1/0)*,8(1/0)*,INH,CYC_INHERIT,[DS10/UM00 Table 7-17/8-8]
+7-17,BCHG Long Static Register,12(2/0)*,12(2/0)*,12(2/0)*,INH,CYC_INHERIT,[DS10/UM00 Table 7-17/8-8]
+7-17,BCLR Byte Dynamic Memory,8(1/1)+,8(1/1)+,10(1/1)+,P1b,—,調査書§3.4
+7-17,BCLR Byte Static Memory,12(2/1)+,12(2/1)+,14(2/1)+,P1b,—,調査書§3.4
+7-17,BCLR Long Dynamic Register,8,10(1/0)*,10(1/0)*,P1a,—,調査書§2.1#30
+7-17,BCLR Long Static Register,12,14(2/0)*,14(2/0)*,P1a,—,調査書§2.1#31
+7-17,BSET Byte Dynamic Memory,8(1/1)+,8(1/1)+,8(1/1)+,P2a,—,[DS10/UM00 Table 7-17/8-8]
+7-17,BSET Byte Static Memory,12(2/1)+,12(2/1)+,12(2/1)+,P2a,—,[DS10/UM00 Table 7-17/8-8]
+7-17,BSET Long Dynamic Register,8(1/0)*,8(1/0)*,8(1/0)*,INH,CYC_INHERIT,[DS10/UM00 Table 7-17/8-8]
+7-17,BSET Long Static Register,12(2/0)*,12(2/0)*,12(2/0)*,INH,CYC_INHERIT,[DS10/UM00 Table 7-17/8-8]
+7-17,BTST Byte Dynamic Memory,4(1/0)+,4(1/0)+,4(1/0)+,P2a,—,[DS10/UM00 Table 7-17/8-8]
+7-17,BTST Byte Static Memory,8(2/0)+,8(2/0)+,8(2/0)+,P2a,—,[DS10/UM00 Table 7-17/8-8]
+7-17,BTST Long Dynamic Register,6(1/0),6(1/0),6(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-17/8-8]
+7-17,BTST Long Static Register,10(2/0),10(2/0),10(2/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-17/8-8]
+7-18,Bcc Byte Branch Taken,10(2/0),10(2/0),10(2/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-18/8-9]
+7-18,Bcc Byte Branch Not Taken,8,8(1/0),6(1/0),P1b,—,調査書§3.5
+7-18,Bcc Word Branch Taken,10(2/0),10(2/0),10(2/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-18/8-9]
+7-18,Bcc Word Branch Not Taken,12,12(2/0),10(2/0),P1b,—,調査書§3.5
+7-18,BRA Byte Branch Taken,10(2/0),10(2/0),10(2/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-18/8-9]
+7-18,BRA Word Branch Taken,10(2/0),10(2/0),10(2/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-18/8-9]
+7-18,BSR Byte Branch Taken,18(2/2),18(2/2),18(2/2),INH,CYC_INHERIT,[DS10/UM00 Table 7-18/8-9]
+7-18,BSR Word Branch Taken,18(2/2),18(2/2),18(2/2),INH,CYC_INHERIT,[DS10/UM00 Table 7-18/8-9]
+7-18,DBcc cc true,12,12(2/0),10(2/0),P0,CYC_DBCC_CC_TRUE,Phase 0で実装済み（Issue #174/#37）
+7-18,DBcc cc false 分岐成立,10,10(2/0),10(2/0),P0,CYC_DBCC_BRANCH,Phase 0で実装済み・CYC_INHERIT
+7-18,DBcc cc false Count Expired,14,14(3/0),16(3/0),P0,CYC_DBCC_EXPIRED,Phase 0で実装済み
+7-19,JMP (An),8,8(varies r/w),8(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,JMP d(An),8,10(varies r/w),10(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,"JMP d(An,ix)",8,14(varies r/w),14(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,JMP xxx.W,8,10(varies r/w),10(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,JMP xxx.L,8,12(varies r/w),12(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,JMP d(PC),8,10(varies r/w),10(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,"JMP d(PC,ix)",8,14(varies r/w),14(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,JSR (An),16,16(varies r/w),16(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,JSR d(An),16,18(varies r/w),18(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,"JSR d(An,ix)",16,22(varies r/w),22(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,JSR xxx.W,16,18(varies r/w),18(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,JSR xxx.L,16,20(varies r/w),20(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,JSR d(PC),16,18(varies r/w),18(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,"JSR d(PC,ix)",16,22(varies r/w),22(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,LEA (An),4,4(varies r/w),4(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,LEA d(An),8,8(varies r/w),8(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,"LEA d(An,ix)",8,12(varies r/w),12(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードは8を返すが正しくは12（EAコスト未実装によるずれ）
+7-19,LEA xxx.W,8,8(varies r/w),8(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,LEA xxx.L,8,12(varies r/w),12(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードは8を返すが正しくは12（EAコスト未実装によるずれ）
+7-19,LEA d(PC),8,8(varies r/w),8(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,"LEA d(PC,ix)",8,12(varies r/w),12(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードは8を返すが正しくは12（EAコスト未実装によるずれ）
+7-19,PEA (An),12,12(varies r/w),12(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]
+7-19,PEA d(An),12,16(varies r/w),16(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードは12を返すが正しくは16（EAコスト未実装によるずれ）
+7-19,"PEA d(An,ix)",12,20(varies r/w),20(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードは12を返すが正しくは20（EAコスト未実装によるずれ）
+7-19,PEA xxx.W,12,16(varies r/w),16(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードは12を返すが正しくは16（EAコスト未実装によるずれ）
+7-19,PEA xxx.L,12,20(varies r/w),20(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードは12を返すが正しくは20（EAコスト未実装によるずれ）
+7-19,PEA d(PC),12,16(varies r/w),16(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードは12を返すが正しくは16（EAコスト未実装によるずれ）
+7-19,"PEA d(PC,ix)",12,20(varies r/w),20(varies r/w),P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードは12を返すが正しくは20（EAコスト未実装によるずれ）
+7-19,MOVEM.W M→R (An),8+4n,12+4n,12+4n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.W M→R (An)+,8+4n,12+4n,12+4n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.W M→R d(An),8+4n,16+4n,16+4n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,"MOVEM.W M→R d(An,ix)",8+4n,18+4n,18+4n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.W M→R xxx.W,8+4n,16+4n,16+4n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.W M→R xxx.L,8+4n,20+4n,20+4n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.W M→R d(PC),8+4n,16+4n,16+4n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,"MOVEM.W M→R d(PC,ix)",8+4n,18+4n,18+4n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.L M→R (An),8+8n,12+8n,12+8n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.L M→R (An)+,8+8n,12+8n,12+8n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.L M→R d(An),8+8n,16+8n,16+8n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,"MOVEM.L M→R d(An,ix)",8+8n,18+8n,18+8n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.L M→R xxx.W,8+8n,16+8n,16+8n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.L M→R xxx.L,8+8n,20+8n,20+8n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.L M→R d(PC),8+8n,16+8n,16+8n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,"MOVEM.L M→R d(PC,ix)",8+8n,18+8n,18+8n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.W R→M (An),8+4n,8+4n,8+4n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.W R→M -(An),8+4n,8+4n,8+4n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.W R→M d(An),8+4n,12+4n,12+4n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,"MOVEM.W R→M d(An,ix)",8+4n,14+4n,14+4n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.W R→M xxx.W,8+4n,12+4n,12+4n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.W R→M xxx.L,8+4n,16+4n,16+4n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.L R→M (An),8+8n,8+8n,8+8n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.L R→M -(An),8+8n,8+8n,8+8n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.L R→M d(An),8+8n,12+8n,12+8n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,"MOVEM.L R→M d(An,ix)",8+8n,14+8n,14+8n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.L R→M xxx.W,8+8n,12+8n,12+8n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-19,MOVEM.L R→M xxx.L,8+8n,16+8n,16+8n,P2b,—,[DS10 Table 7-19]/[UM00 Table 8-10]; 現行コードはbase=8固定でEAモード別加算なし
+7-20,"ADDX.B/W -(An),-(An) LoopCont ValidCountFalse",N/A,—,[?],LOOP,—,設計書§7によりスコープ外。原本印字が不鮮明（18(3/1)と推定されるが確証なし）
+7-20,"ADDX.B/W -(An),-(An) LoopTerm ValidCountTrue",N/A,—,28(4/1),LOOP,—,設計書§7によりスコープ外
+7-20,"ADDX.B/W -(An),-(An) LoopTerm ExpiredCount",N/A,—,26(4/1),LOOP,—,設計書§7によりスコープ外
+7-20,"ADDX.L -(An),-(An) LoopCont ValidCountFalse",N/A,—,32(4/2),LOOP,—,設計書§7によりスコープ外
+7-20,"ADDX.L -(An),-(An) LoopTerm ValidCountTrue",N/A,—,38(6/2),LOOP,—,設計書§7によりスコープ外
+7-20,"ADDX.L -(An),-(An) LoopTerm ExpiredCount",N/A,—,36(6/2),LOOP,—,設計書§7によりスコープ外
+7-20,"CMPM.B/W (An)+,(An)+ LoopCont ValidCountFalse",N/A,—,14(2/0),LOOP,—,設計書§7によりスコープ外
+7-20,"CMPM.B/W (An)+,(An)+ LoopTerm ValidCountTrue",N/A,—,20(4/0),LOOP,—,設計書§7によりスコープ外
+7-20,"CMPM.B/W (An)+,(An)+ LoopTerm ExpiredCount",N/A,—,18(4/0),LOOP,—,設計書§7によりスコープ外
+7-20,"CMPM.L (An)+,(An)+ LoopCont ValidCountFalse",N/A,—,24(4/0),LOOP,—,設計書§7によりスコープ外
+7-20,"CMPM.L (An)+,(An)+ LoopTerm ValidCountTrue",N/A,—,30(6/0),LOOP,—,設計書§7によりスコープ外
+7-20,"CMPM.L (An)+,(An)+ LoopTerm ExpiredCount",N/A,—,26(6/0),LOOP,—,設計書§7によりスコープ外
+7-20,"SUBX.B/W -(An),-(An) LoopCont ValidCountFalse",N/A,—,22(2/1),LOOP,—,設計書§7によりスコープ外
+7-20,"SUBX.B/W -(An),-(An) LoopTerm ValidCountTrue",N/A,—,28(4/1),LOOP,—,設計書§7によりスコープ外
+7-20,"SUBX.B/W -(An),-(An) LoopTerm ExpiredCount",N/A,—,26(4/1),LOOP,—,設計書§7によりスコープ外
+7-20,"SUBX.L -(An),-(An) LoopCont ValidCountFalse",N/A,—,32(4/2),LOOP,—,設計書§7によりスコープ外
+7-20,"SUBX.L -(An),-(An) LoopTerm ValidCountTrue",N/A,—,38(6/2),LOOP,—,設計書§7によりスコープ外
+7-20,"SUBX.L -(An),-(An) LoopTerm ExpiredCount",N/A,—,36(6/2),LOOP,—,設計書§7によりスコープ外
+7-20,"ABCD -(An),-(An) LoopCont ValidCountFalse",N/A,—,24(2/1),LOOP,—,設計書§7によりスコープ外
+7-20,"ABCD -(An),-(An) LoopTerm ValidCountTrue",N/A,—,30(4/1),LOOP,—,設計書§7によりスコープ外
+7-20,"ABCD -(An),-(An) LoopTerm ExpiredCount",N/A,—,28(4/1),LOOP,—,設計書§7によりスコープ外
+7-20,"SBCD -(An),-(An) LoopCont ValidCountFalse",N/A,—,24(2/1),LOOP,—,設計書§7によりスコープ外
+7-20,"SBCD -(An),-(An) LoopTerm ValidCountTrue",N/A,—,30(4/1),LOOP,—,設計書§7によりスコープ外
+7-20,"SBCD -(An),-(An) LoopTerm ExpiredCount",N/A,—,28(4/1),LOOP,—,設計書§7によりスコープ外
+7-20,ADDX Byte/Word Dn/Dn,4(1/0),4(1/0),4(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-20/8-11]
+7-20,ADDX Byte/Word -(An)/-(An),12,18(3/1),18(3/1),P1a,—,調査書§2.1#32。R-D
+7-20,ADDX Long Dn/Dn,8,8(1/0),6(1/0),P1b,—,調査書§3.6
+7-20,ADDX Long -(An)/-(An),20,30(5/2),30(5/2),P1a,—,調査書§2.1#33。R-D
+7-20,CMPM Byte/Word (An)+/(An)+,12(3/0),12(3/0),12(3/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-20/8-11]
+7-20,CMPM Long (An)+/(An)+,20(5/0),20(5/0),20(5/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-20/8-11]
+7-20,SUBX Byte/Word Dn/Dn,4(1/0),4(1/0),4(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-20/8-11]
+7-20,SUBX Byte/Word -(An)/-(An),12,18(3/1),18(3/1),P1a,—,調査書§2.1#34。R-D
+7-20,SUBX Long Dn/Dn,8,8(1/0),6(1/0),P1b,—,調査書§3.6
+7-20,SUBX Long -(An)/-(An),20,30(5/2),30(5/2),P1a,—,調査書§2.1#35。R-D
+7-20,ABCD Byte Dn/Dn,6(1/0),6(1/0),6(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-20/8-11]
+7-20,ABCD Byte -(An)/-(An),18(3/1),18(3/1),18(3/1),INH,CYC_INHERIT,[DS10/UM00 Table 7-20/8-11]
+7-20,SBCD Byte Dn/Dn,6(1/0),6(1/0),6(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-20/8-11]
+7-20,SBCD Byte -(An)/-(An),18(3/1),18(3/1),18(3/1),INH,CYC_INHERIT,[DS10/UM00 Table 7-20/8-11]
+7-21,ANDI to CCR,20,20(3/0),16(2/0),P1b,—,調査書§3.7 op_andi()のreturn 20;
+7-21,ANDI to SR,20,20(3/0),16(2/0),P1b,—,調査書§3.7
+7-21,EORI to CCR,20,20(3/0),16(2/0),P1b,—,調査書§3.7 op_eori()
+7-21,EORI to SR,20,20(3/0),16(2/0),P1b,—,調査書§3.7
+7-21,ORI to CCR,20,20(3/0),16(2/0),P1b,—,調査書§3.7 op_ori()
+7-21,ORI to SR,20,20(3/0),16(2/0),P1b,—,調査書§3.7
+7-21,CHK 通常経路,10,10(1/0)+,8(1/0)+,P1b,—,調査書§3.7 op_chk()のreturn 10;
+7-21,MOVE from SR Register,6,6(1/0),4(1/0),P1b,—,調査書§3.7 op_move_from_sr()
+7-21,MOVE from CCR Register,6,命令なし,4(1/0),P1b,—,調査書§3.7。68010新規命令、現行6は出典不明の値
+7-21,MOVE from USP,4,4(1/0),6(1/0),P1b,—,調査書§3.7 op_move_usp()
+7-21,MOVE to USP,4,4(1/0),6(1/0),P1b,—,調査書§3.7
+7-21,MOVEC Source→Register(Rc→Rn),10,命令なし,12(2/0),P1b,—,調査書§3.7。新設クラス。Rn→RcはDONE
+7-21,MOVES.L Register→Destination,16,命令なし,20(2/2)+,P1b,—,調査書§3.7・§6。新設クラス
+7-21,MOVES.L Source→Register,16,命令なし,20(4/0)+,P1b,—,調査書§3.7・§6
+7-21,RESET命令,132,132(1/0),130(1/0),P1b,—,ops_system.c:184 op_reset_instr() return 132;
+7-21,RTE Short(format $0),20,20(5/0),24(6/0),P1b,—,ops_system.c 68010分岐
+7-21,RTE Long No Retry(format $8),20,—,110(26/0),P1b,—,調査書§5.2。現行実装はNo Retry相当
+7-21,EXG,6(1/0),6(1/0),6(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-21/8-12]
+7-21,EXT Word,4(1/0),4(1/0),4(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-21/8-12]
+7-21,EXT Long,4(1/0),4(1/0),4(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-21/8-12]
+7-21,LINK,16(2/2),16(2/2),16(2/2),INH,CYC_INHERIT,[DS10/UM00 Table 7-21/8-12]
+7-21,MOVE to CCR Register,12(1/0),12(2/0),12(2/0),INH,CYC_INHERIT,r/w内訳のみ違い総クロックは同値
+7-21,MOVE to SR Register,12(2/0),12(2/0),12(2/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-21/8-12]
+7-21,MOVEP Word Register→Memory,16(2/2),16(2/2),16(2/2),INH,CYC_INHERIT,[DS10 Table7-21]/[UM00 Table 8-13]
+7-21,MOVEP Word Memory→Register,16(4/0),16(4/0),16(4/0),INH,CYC_INHERIT,[DS10 Table7-21]/[UM00 Table 8-13]
+7-21,MOVEP Long Register→Memory,24(2/4),24(2/4),24(2/4),INH,CYC_INHERIT,[DS10 Table7-21]/[UM00 Table 8-13]
+7-21,MOVEP Long Memory→Register,24(6/0),24(6/0),24(6/0),INH,CYC_INHERIT,[DS10 Table7-21]/[UM00 Table 8-13]
+7-21,NOP,4(1/0),4(1/0),4(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-21/8-12]
+7-21,RTR,20(2/0),20(5/0),20(5/0),INH,CYC_INHERIT,r/w内訳のみ違い総クロックは同値
+7-21,RTS,16(4/0),16(4/0),16(4/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-21/8-12]
+7-21,STOP,4(0/0),4(0/0),4(0/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-21/8-12]
+7-21,SWAP,4(1/0),4(1/0),4(1/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-21/8-12]
+7-21,TRAPV(V=0 不成立時),4(1/0),4(1/0),4(1/0),INH,CYC_INHERIT,例外を起こさない経路。[DS10/UM00 Table 7-21/8-12]
+7-21,UNLK,12(3/0),12(3/0),12(3/0),INH,CYC_INHERIT,[DS10/UM00 Table 7-21/8-12]
+7-21,MOVE from CCR Memory,8,8(1/1)+*,8(1/1)+*,P2a,—,調査書§4「現行は16=12+EA近似」は誤記、from系は8系統
+7-21,MOVE from SR Memory,8(1/1)+*,8(1/1)+*,8(1/1)+*,P2a,—,[DS10/UM00 Table 7-21/8-12]
+7-21,MOVE to CCR Memory,16,12(2/0)+,12(2/0)+,P2a,—,調査書§4「現行は16=12+EA近似」
+7-21,MOVE to SR Memory,16,12(2/0)+,12(2/0)+,P2a,—,調査書§4「現行は16=12+EA近似」
+7-21,RTE Long Retry Read(format $8),到達不能,—,112(27/0),OUT,—,調査書§5.2。再実行セマンティクス未実装のため別Issue
+7-21,RTE Long Retry Write(format $8),到達不能,—,112(26/1),OUT,—,調査書§5.2。再実行セマンティクス未実装のため別Issue
+7-21,MOVEC Register→Destination(Rn→Rc),10(2/0),命令なし,10(2/0),DONE,—,調査書§4.1。decode.c:99-100+ops_system_ext.c:279-280の登録により68000未定義、op_movec()が既にflat10
+7-21,MOVES.B/W Register→Destination,16(2/1)+*,命令なし,16(2/1)+*,DONE,—,調査書§4.1。ops_system_ext.c:289の登録、op_moves()が既にflat16
+7-21,MOVES.B/W Source→Register,16(3/0)+*,命令なし,16(3/0)+*,DONE,—,調査書§4.1。同上
+7-21,RTD,16(4/0),命令なし,16(4/0),DONE,—,調査書§4.1。ops_system_ext.c:283の登録、op_rtd()が既に16
+7-22,Address Error,68000:50/68010:126,50(4/7),126(4/26),DONE,—,m68000.c:523(68000)/:464(68010) dispatch_group0_exception()
+7-22,Breakpoint Instruction,68010未登録→Illegal経路,命令なし,42(5/4),OUT,—,調査書§5.1。命令セット欠落、別Issue
+7-22,Bus Error,68000:50/68010:126,50(4/7),126(4/26),DONE,—,Address Errorと共通経路
+7-22,CHK Instruction,40,40(4/3)+,44(5/4)+,P1b,—,調査書§3.8
+7-22,Divide By Zero,38,38(4/3)+,42(5/4),P1b,—,調査書§3.8
+7-22,Illegal Instruction,34,34(4/3),38(4/4),P1b,—,調査書§3.8
+7-22,Interrupt,44,44(5/3)*,46(5/4),P1b,—,accept_irq()のreturn 44;
+7-22,MOVEC Illegal Cr,34(Illegalと共通),命令なし,46(5/4),P1b,—,調査書§3.8。Illegalとは別class必要
+7-22,Privilege Violation,34,34(4/3),38(4/4),P1b,—,調査書§3.8
+7-22,Reset(起動シーケンス),未モデル化,40(6/0),40(6/0),OUT,—,調査書§5.4。opcodeに紐づかない
+7-22,RTE Illegal Format,50,—,50(7/4),DONE,—,ops_system.c:119 cpu_dispatch_exception(.../14/50)
+7-22,RTE Illegal Revision,未実装(到達不能),—,70(12/4),OUT,—,調査書§5.3。意図的未実装、別Issue
+7-22,Trace,34,34(4/3),38(4/4),P1b,—,m68000.c:877
+7-22,TRAP Instruction,34,34(4/3),38(4/4),P1b,—,調査書§3.8
+7-22,TRAPV Instruction,34,34(5/3),40(5/4),P1b,—,調査書§3.8。V=0時の4は別セル(Table 7-21側)
